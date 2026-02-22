@@ -13,7 +13,6 @@
             --parchment: #f4e4bc;
             --ui-font: 'Cinzel', serif;
             --dialogue-font: 'Crimson Text', serif;
-            --transition-speed: 0.8s;
         }
 
         * {
@@ -26,7 +25,7 @@
         body, html {
             height: 100%;
             width: 100%;
-            overflow-x: hidden;
+            overflow: hidden;
             background-color: #050505;
             color: #fff;
         }
@@ -44,10 +43,7 @@
             animation: slowZoom 40s linear infinite alternate;
         }
 
-        @keyframes slowZoom {
-            from { transform: scale(1); }
-            to { transform: scale(1.1); }
-        }
+        @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.1); } }
 
         .overlay {
             position: fixed;
@@ -65,246 +61,66 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             width: 100vw;
             padding: 20px;
-            padding-bottom: 220px; /* Space for fixed dialogue */
+            padding-bottom: 220px;
             opacity: 0;
             transition: opacity 1.5s ease-in;
             position: relative;
             z-index: 1;
-            text-align: center;
         }
 
-        .game-container.ready {
-            opacity: 1;
-            display: flex !important;
-        }
+        .game-container.ready { opacity: 1; display: flex !important; }
 
-        .branding-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--ui-font);
-            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-            z-index: 20;
-            margin-bottom: 25px;
-        }
+        .branding-container { display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 25px; }
+        .official-logo { max-width: 450px; width: 90%; height: auto; filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6)); }
+        .branding-container p { font-family: var(--ui-font); font-size: 0.9rem; color: #ccc; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; }
 
-        .official-logo {
-            max-width: 450px;
-            width: 90%;
-            height: auto;
-            object-fit: contain;
-            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6));
-            margin-bottom: 5px;
-        }
+        .menu-container { display: flex; flex-direction: column; gap: 12px; width: 350px; max-width: 90%; margin-bottom: 20px; }
+        .menu-btn { background: var(--dark-bg); border: 1px solid rgba(212, 175, 55, 0.3); color: var(--gold); padding: 12px 30px; font-family: var(--ui-font); font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); text-decoration: none; text-align: center; }
+        .menu-btn:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.1); }
 
-        .branding-container p {
-            font-style: italic;
-            font-size: 0.9rem;
-            color: #ccc;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
+        .dialogue-wrapper { width: 90%; max-width: 900px; position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 3000; }
+        .dialogue-box { background: rgba(20, 20, 25, 1); border: 2px solid rgba(212, 175, 55, 0.8); padding: 20px 30px; min-height: 120px; border-radius: 2px; }
+        .speaker-name { position: absolute; top: -14px; left: 20px; background: var(--gold); color: #000; padding: 3px 15px; font-family: var(--ui-font); font-weight: bold; text-transform: uppercase; font-size: 0.7rem; display: flex; align-items: center; gap: 8px; }
+        .game-icon-seal { width: 20px; height: 20px; object-fit: contain; }
+        .dialogue-text { font-family: var(--dialogue-font); font-size: 1.3rem; line-height: 1.4; color: #f0f0f0; }
 
-        .menu-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            z-index: 10;
-            width: 350px;
-            max-width: 90%;
-            margin-bottom: 20px;
-        }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 100; justify-content: center; align-items: center; padding: 20px; padding-bottom: 220px; }
+        .modal.visible { display: flex; }
+        body.modal-open .branding-container, body.modal-open .menu-container { opacity: 0; pointer-events: none; }
 
-        .menu-btn {
-            background: var(--dark-bg);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            color: var(--gold);
-            padding: 12px 30px;
-            font-family: var(--ui-font);
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            text-decoration: none;
-        }
+        .parchment { background: var(--parchment); background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #2c1e0f; width: 95%; max-width: 750px; padding: 25px; border-radius: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.7); position: relative; font-family: var(--dialogue-font); max-height: 65vh; overflow-y: auto; }
+        .parchment h2 { font-family: var(--ui-font); margin-bottom: 20px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 10px; text-align: center; color: #5d2e0a; }
 
-        .menu-btn:hover {
-            border-color: var(--gold);
-            background: rgba(212, 175, 55, 0.1);
-            transform: scale(1.02);
-        }
+        .carousel-container { position: relative; width: 100%; height: 400px; background: #000; display: flex; justify-content: center; align-items: center; border: 4px double #5d2e0a; overflow: hidden; margin-top: 10px; }
+        .carousel-image { position: absolute; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.5s ease; }
+        .carousel-image.active { opacity: 1; }
 
-        .dialogue-wrapper {
-            width: 90%;
-            max-width: 900px;
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: left;
-            z-index: 3000;
-        }
-
-        .dialogue-box {
-            background: rgba(20, 20, 25, 1);
-            border: 2px solid rgba(212, 175, 55, 0.8);
-            padding: 20px 30px;
-            min-height: 120px;
-            position: relative;
-            box-shadow: 0 0 30px rgba(0,0,0,1);
-            border-radius: 2px;
-        }
-
-        .speaker-name {
-            position: absolute;
-            top: -14px;
-            left: 20px;
-            background: var(--gold);
-            color: #000;
-            padding: 3px 15px;
-            font-family: var(--ui-font);
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.7rem;
-            letter-spacing: 1px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .game-icon-seal {
-            width: 20px;
-            height: 20px;
-            object-fit: contain;
-        }
-
-        .dialogue-text {
-            font-family: var(--dialogue-font);
-            font-size: 1.3rem;
-            line-height: 1.4;
-            color: #f0f0f0;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.85);
-            z-index: 100;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            padding-bottom: 220px;
-        }
-
-        .modal.visible {
-            display: flex;
-        }
-
-        body.modal-open .branding-container,
-        body.modal-open .menu-container {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .parchment {
-            background: var(--parchment);
-            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-            color: #2c1e0f;
-            width: 100%;
-            max-width: 750px;
-            padding: 30px;
-            border-radius: 3px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.7);
-            position: relative;
-            font-family: var(--dialogue-font);
-            max-height: 60vh;
-            overflow-y: auto;
-        }
-
-        .parchment h2 {
-            font-family: var(--ui-font);
-            margin-bottom: 25px;
-            border-bottom: 1px solid rgba(139, 69, 19, 0.3);
-            padding-bottom: 10px;
-            text-align: center;
-            color: #5d2e0a;
-        }
-
-        .carousel-container {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background: rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px double #5d2e0a;
-        }
-
-        .carousel-image {
-            position: absolute;
-            width: 90%;
-            height: 90%;
-            object-fit: contain;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .carousel-image.active {
-            opacity: 1;
-        }
-
-        .community-links {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .community-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-            color: #2c1e0f;
-            padding: 10px;
-            background: rgba(139, 69, 19, 0.05);
-            border-radius: 4px;
-        }
+        .community-links { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+        .community-item { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #2c1e0f; padding: 8px 12px; background: rgba(139, 69, 19, 0.08); border-radius: 4px; font-size: 0.95rem; border: 1px solid rgba(139, 69, 19, 0.1); }
 
         @media (max-width: 768px) {
-            .game-container { 
-                justify-content: flex-start; 
-                padding-top: 60px;
-            }
-            .official-logo { max-width: 220px; }
+            .game-container { justify-content: flex-start; padding-top: 60px; transform: translateY(-30px); }
+            .official-logo { max-width: 240px; }
             .branding-container p { font-size: 0.65rem; }
-            .menu-container { width: 280px; gap: 8px; }
-            .menu-btn { padding: 8px; font-size: 0.85rem; }
+            .menu-container { width: 300px; gap: 8px; }
+            .menu-btn { padding: 10px; font-size: 0.85rem; }
             .dialogue-text { font-size: 1.1rem; }
-            .parchment { padding: 20px; max-height: 55vh; }
-            .carousel-container { height: 260px; }
-            .community-links { grid-template-columns: 1fr; }
+            .parchment { padding: 15px; max-height: 60vh; }
+            .carousel-container { height: 280px; }
+            .community-links { grid-template-columns: 1fr 1fr; } /* Force 2 columns on mobile for Common Room */
+            .community-item { font-size: 0.8rem; padding: 6px; }
         }
 
-        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 2rem; cursor: pointer; color: #8b4513; }
-        .inventory-tag { position: absolute; top: 10px; left: 10px; background: var(--gold); color: #000; padding: 3px 10px; font-size: 0.7rem; font-weight: bold; opacity: 0; transition: opacity 0.5s; }
-        .inventory-tag.visible { opacity: 1; }
-        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(139, 69, 19, 0.1); border: none; color: #5d2e0a; font-size: 1.5rem; cursor: pointer; z-index: 10; padding: 10px; }
-        .carousel-arrow.prev { left: 5px; }
-        .carousel-arrow.next { right: 5px; }
+        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 2rem; cursor: pointer; color: #8b4513; z-index: 10; }
+        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.4); color: #fff; border: none; font-size: 1.5rem; cursor: pointer; z-index: 10; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        .carousel-arrow.prev { left: 10px; }
+        .carousel-arrow.next { right: 10px; }
         .video-container { position: relative; width: 100%; padding-top: 56.25%; background: #000; border: 2px solid var(--gold); }
         video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; }
-        .findie-logo-fixed { position: fixed; top: 10px; right: 10px; display: flex; align-items: center; gap: 5px; text-decoration: none; color: var(--gold); font-size: 0.6rem; padding: 5px 10px; background: rgba(0,0,0,0.8); z-index: 1000; }
+        .findie-logo-fixed { position: fixed; top: 15px; right: 15px; display: flex; align-items: center; gap: 5px; text-decoration: none; color: var(--gold); font-size: 0.65rem; padding: 8px 12px; background: rgba(0,0,0,0.8); z-index: 1000; border: 1px solid rgba(212, 175, 55, 0.3); }
         .studio-logo { height: 20px; }
     </style>
 </head>
@@ -314,7 +130,7 @@
 
     <div id="game-ui" class="game-container">
         <div class="branding-container">
-            <img src="images/official_logo.png" alt="Arcane Merchant Logo" class="official-logo">
+            <img src="images/official_logo.png" alt="Arcane Merchant" class="official-logo">
             <p>MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026</p>
         </div>
         <div class="menu-container">
@@ -332,10 +148,7 @@
 
     <div class="dialogue-wrapper">
         <div class="dialogue-box">
-            <div class="speaker-name">
-                <img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="A">
-                Master Merchant
-            </div>
+            <div class="speaker-name"><img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="A"> Master Merchant</div>
             <div id="dialogue" class="dialogue-text"></div>
         </div>
     </div>
@@ -345,7 +158,6 @@
             <span class="close-modal" onclick="closeModals()">&times;</span>
             <h2>Manifest of Wonders</h2>
             <div class="carousel-container">
-                <div id="inventory-tag" class="inventory-tag">RARE</div>
                 <button class="carousel-arrow prev" onclick="moveCarousel(-1)">❮</button>
                 <div id="carousel-track" style="width: 100%; height: 100%; position: relative;"></div>
                 <button class="carousel-arrow next" onclick="moveCarousel(1)">❯</button>
@@ -370,9 +182,9 @@
             <span class="close-modal" onclick="closeModals()">&times;</span>
             <h2>The Common Room</h2>
             <div class="community-links">
-                <a href="https://www.findiestudios.com/" target="_blank" class="community-item">🏰 Findie Studios</a>
+                <a href="https://www.findiestudios.com/" target="_blank" class="community-item">🏰 Findie</a>
                 <a href="https://discord.gg/findiestudios" target="_blank" class="community-item">⚔️ Discord</a>
-                <a href="https://x.com/FindieStudios" target="_blank" class="community-item">📜 X / Twitter</a>
+                <a href="https://x.com/FindieStudios" target="_blank" class="community-item">📜 Twitter</a>
                 <a href="https://www.youtube.com/@FindieStudios" target="_blank" class="community-item">🛡️ YouTube</a>
                 <a href="https://www.instagram.com/findiestudios" target="_blank" class="community-item">🏺 Instagram</a>
                 <a href="https://www.tiktok.com/@findiestudios" target="_blank" class="community-item">🎭 TikTok</a>
@@ -385,7 +197,7 @@
     <div id="features-modal" class="modal">
         <div class="parchment">
             <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2>Mastering the Arcane Arts</h2>
+            <h2>Mastering the Arts</h2>
             <div style="margin-top: 10px;">
                 <p style="margin-bottom: 15px;">✧ <strong>Grand Display:</strong> Design a sanctuary for your wares.</p>
                 <p style="margin-bottom: 15px;">✧ <strong>Alchemy:</strong> Transform raw essence into artifacts.</p>
@@ -403,131 +215,63 @@
 
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
-        const dialogueElement = document.getElementById('dialogue');
-        const welcomeText = "Step into the warmth, traveler. Every coin traded is a signal. Will you strengthen the town's infrastructure, or seek to redefine the calculus of your own reward?";
-        const merchantDialogues = [
+        const dEl = document.getElementById('dialogue');
+        const wText = "Step into the warmth, traveler. Every coin traded is a signal. Will you strengthen the town's infrastructure, or seek to redefine the calculus of your own reward?";
+        const mDialogues = [
             "Traders from the distant realms arrive without warning and vanish like mist. Timing is the only magic that truly matters here.",
             "In these lands, Fame is a functional currency—more potent than gold. A high reputation opens doors that keys cannot touch.",
             "In economic downturns, your reputation is your shield. Social trust is the only armor that softens a market-wide recession.",
             "The Void is cold, but my hearth is always lit. I see you have an eye for the extraordinary...",
             "Behold my collection of rare artifacts... each item tells a tale, and some... well, they might just choose you."
         ];
-        
-        let currentDialogueIndex = 0;
-        let typeTimeout;
-        let isTyping = false;
+        let cIdx = 0, tTimeout, isT = false;
 
-        function typeWriter(text, element, speed = 30, callback) {
-            if (isTyping) clearTimeout(typeTimeout);
-            isTyping = true;
-            element.innerHTML = "";
-            let i = 0;
+        function tWriter(text, element, speed = 30, callback) {
+            if (isT) clearTimeout(tTimeout);
+            isT = true; element.innerHTML = ""; let i = 0;
             function type() {
-                if (i < text.length) {
-                    element.innerHTML += text.charAt(i);
-                    i++;
-                    typeTimeout = setTimeout(type, speed);
-                } else {
-                    isTyping = false;
-                    if (callback) callback();
-                }
+                if (i < text.length) { element.innerHTML += text.charAt(i); i++; tTimeout = setTimeout(type, speed); }
+                else { isT = false; if (callback) callback(); }
             }
             type();
         }
 
-        function handleWatch() { showVideoModal(); typeWriter("Behold the visions of the trade...", dialogueElement); }
-        function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter("Behold my rare artifacts...", dialogueElement); }
-        function handleRumors() { showModal('rumors-modal'); typeWriter("The walls have ears...", dialogueElement); }
-        function handleCommunity() { showModal('community-modal'); typeWriter("The common rooms are bustling...", dialogueElement); }
-        function handleFeatures() { showModal('features-modal'); typeWriter("Merchantry is an art of logistics...", dialogueElement); }
+        function handleWatch() { showVideoModal(); tWriter("Behold the visions of the trade...", dEl); }
+        function handleWares() { showModal('wares-modal'); initCarousel(); tWriter("Behold my rare artifacts...", dEl); }
+        function handleRumors() { showModal('rumors-modal'); tWriter("The walls have ears...", dEl); }
+        function handleCommunity() { showModal('community-modal'); tWriter("The common rooms are bustling...", dEl); }
+        function handleFeatures() { showModal('features-modal'); tWriter("Merchantry is an art of logistics...", dEl); }
 
-        function showModal(id) {
-            document.getElementById(id).classList.add('visible');
-            document.body.classList.add('modal-open');
-        }
-
-        function closeModals() {
-            document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
-            document.body.classList.remove('modal-open');
-            stopCarousel();
-        }
-
+        function showModal(id) { document.getElementById(id).classList.add('visible'); document.body.classList.add('modal-open'); }
+        function closeModals() { document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible')); document.body.classList.remove('modal-open'); stopCarousel(); }
         function showVideoModal() {
-            const modal = document.getElementById('video-modal');
-            const video = document.getElementById('video-player');
-            const src = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/hls_264_master.m3u8';
-            modal.classList.add('visible');
-            document.body.classList.add('modal-open');
-            if (Hls.isSupported()) {
-                let hls = new Hls();
-                hls.loadSource(src);
-                hls.attachMedia(video);
-                hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-            }
+            const m = document.getElementById('video-modal'), v = document.getElementById('video-player');
+            const s = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/hls_264_master.m3u8';
+            m.classList.add('visible'); document.body.classList.add('modal-open');
+            if (Hls.isSupported()) { let h = new Hls(); h.loadSource(s); h.attachMedia(v); h.on(Hls.Events.MANIFEST_PARSED, () => v.play()); }
         }
-
         function closeVideoModal() { document.getElementById('video-player').pause(); closeModals(); }
 
-        let carouselImages = [];
-        for (let i = 1; i <= 18; i++) carouselImages.push(`images/inventory/inventory_${i}.jpg`);
-        let currentCarouselIndex = 0;
-        let carouselInterval;
-        let carouselInitialized = false;
-
+        let imgs = []; for (let i = 1; i <= 18; i++) imgs.push(`images/inventory/inventory_${i}.jpg`);
+        let curIdx = 0, cInt, cInit = false;
         function initCarousel() {
-            const track = document.getElementById('carousel-track');
-            if (carouselInitialized) { startCarousel(); return; }
-            track.innerHTML = '';
-            carouselImages.forEach((src, index) => {
-                const img = document.createElement('img');
-                img.src = src;
-                img.className = 'carousel-image' + (index === 0 ? ' active' : '');
-                track.appendChild(img);
-            });
-            carouselInitialized = true;
-            startCarousel();
+            const t = document.getElementById('carousel-track'); if (cInit) { startC(); return; }
+            t.innerHTML = ''; imgs.forEach((s, i) => { const img = document.createElement('img'); img.src = s; img.className = 'carousel-image' + (i === 0 ? ' active' : ''); t.appendChild(img); });
+            cInit = true; startC();
         }
-
-        function startCarousel() {
-            stopCarousel();
-            carouselInterval = setInterval(() => {
-                let next;
-                do { next = Math.floor(Math.random() * carouselImages.length); } while (next === currentCarouselIndex);
-                showCarouselImage(next);
-            }, 4000);
+        function startC() { stopC(); cInt = setInterval(() => { let n; do { n = Math.floor(Math.random() * imgs.length); } while (n === curIdx); showCI(n); }, 4000); }
+        function stopC() { if (cInt) clearInterval(cInt); }
+        function showCI(idx) {
+            const im = document.querySelectorAll('.carousel-image'); if (!im.length) return;
+            im.forEach(i => i.classList.remove('active')); curIdx = (idx + im.length) % im.length; im[curIdx].classList.add('active');
         }
-
-        function stopCarousel() { if (carouselInterval) clearInterval(carouselInterval); }
-
-        function showCarouselImage(index) {
-            const imgs = document.querySelectorAll('.carousel-image');
-            if (!imgs.length) return;
-            imgs.forEach(i => i.classList.remove('active'));
-            currentCarouselIndex = (index + imgs.length) % imgs.length;
-            imgs[currentCarouselIndex].classList.add('active');
-            const tag = document.getElementById('inventory-tag');
-            const tags = ['Rare', 'Epic', 'Legendary', 'Ancient', 'Mythical'];
-            tag.classList.remove('visible');
-            setTimeout(() => { tag.textContent = tags[Math.floor(Math.random()*tags.length)]; tag.classList.add('visible'); }, 300);
-        }
-
-        function moveCarousel(s) { stopCarousel(); showCarouselImage(currentCarouselIndex + s); startCarousel(); }
+        function moveCarousel(s) { stopC(); showCI(curIdx + s); startC(); }
 
         window.onload = () => {
             document.getElementById('game-ui').classList.add('ready');
-            setTimeout(() => { 
-                typeWriter(welcomeText, dialogueElement); 
-                setInterval(() => {
-                    if (!isTyping) {
-                        currentDialogueIndex = (currentDialogueIndex + 1) % merchantDialogues.length;
-                        typeWriter(merchantDialogues[currentDialogueIndex], dialogueElement);
-                    }
-                }, 12000);
-            }, 800);
+            setTimeout(() => { tWriter(wText, dEl); setInterval(() => { if (!isT) { cIdx = (cIdx + 1) % mDialogues.length; tWriter(mDialogues[cIdx], dEl); } }, 12000); }, 800);
         };
-
         window.onclick = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
-        window.ontouchstart = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
     </script>
 </body>
 </html>
