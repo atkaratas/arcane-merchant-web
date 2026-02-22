@@ -36,14 +36,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('images/main-merchant-bg.webp') no-repeat center center;
+            background: #050505 url('images/official-background.jpg?v=final') no-repeat center center;
             background-size: cover;
             z-index: -1;
-            filter: brightness(0.7) sepia(0.1);
-            animation: slowZoom 40s linear infinite alternate;
+            filter: brightness(0.8) sepia(0.1);
+            animation: slowZoom 60s linear infinite alternate;
         }
 
-        @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.1); } }
+        @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.15); } }
 
         .overlay {
             position: fixed;
@@ -51,7 +51,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.6) 100%);
+            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.7) 100%);
             pointer-events: none;
             z-index: 0;
         }
@@ -242,11 +242,11 @@
             type();
         }
 
-        function handleWatch() { showVideoModal(); tWriter("Behold the memories of the trade... visions of what was and what is yet to come.", dEl); }
-        function handleWares() { showModal('wares-modal'); initCarousel(); tWriter("Behold my collection of rare artifacts...", dEl); }
-        function handleRumors() { showModal('rumors-modal'); tWriter("The walls have ears, and the wind has a tongue.", dEl); }
-        function handleCommunity() { showModal('community-modal'); tWriter("How can you stay updated, you ask? The ravens carry our news.", dEl); }
-        function handleFeatures() { showModal('features-modal'); tWriter("Being a merchant is more than just counting gold. It is an art of logistics.", dEl); }
+        function handleWatch() { showVideoModal(); tWriter("Behold the memories of the trade...", dEl); }
+        function handleWares() { showModal('wares-modal'); initCarousel(); tWriter("Behold my rare artifacts...", dEl); }
+        function handleRumors() { showModal('rumors-modal'); tWriter("The walls have ears...", dEl); }
+        function handleCommunity() { showModal('community-modal'); tWriter("The common rooms are bustling...", dEl); }
+        function handleFeatures() { showModal('features-modal'); tWriter("Merchantry is an art of logistics...", dEl); }
 
         function showModal(id) { document.getElementById(id).classList.add('visible'); document.body.classList.add('modal-open'); }
         function closeModals() { document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible')); document.body.classList.remove('modal-open'); stopC(); }
@@ -258,7 +258,7 @@
         }
         function closeVideoModal() { document.getElementById('video-player').pause(); closeModals(); }
 
-        let imgs = []; for (let i = 1; i <= 18; i++) imgs.push(`images/inventory/inventory_${i}.jpg?v=4`);
+        let imgs = []; for (let i = 1; i <= 18; i++) imgs.push(`images/inventory/inventory_${i}.jpg?v=final`);
         let curIdx = 0, cInt, cInit = false;
         function initCarousel() {
             const t = document.getElementById('carousel-track'); if (cInit) { startC(); return; }
@@ -286,8 +286,8 @@
             }, 800);
         };
 
-        window.onclick = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
-        window.ontouchstart = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
+        window.onclick = e => { if (e.target.classList.contains('modal')) closeModals(); };
+        window.ontouchstart = e => { if (e.target.classList.contains('modal')) closeModals(); };
     </script>
 </body>
 </html>
