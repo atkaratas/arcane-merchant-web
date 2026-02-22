@@ -252,7 +252,7 @@
         }
         function closeVideoModal() { document.getElementById('video-player').pause(); closeModals(); }
 
-        let imgs = []; for (let i = 1; i <= 22; i++) imgs.push(`images/inventory/inventory_${i}.jpg`);
+        let imgs = []; for (let i = 1; i <= 18; i++) imgs.push(`images/inventory/inventory_${i}.jpg?v=2`);
         let curIdx = 0, cInt, cInit = false;
         function initCarousel() {
             const t = document.getElementById('carousel-track'); if (cInit) { startC(); return; }
