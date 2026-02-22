@@ -157,6 +157,7 @@
             transform: translateY(0);
             transition: transform 0.5s ease;
             text-align: left;
+            z-index: 1000; /* Ensure it stays above everything */
         }
 
         .dialogue-box {
@@ -263,6 +264,22 @@
             padding: 20px;
             opacity: 0;
             transition: opacity 0.5s ease;
+        }
+
+        /* Persistent Dialogue Box Logic */
+        body.modal-open .branding-container,
+        body.modal-open .menu-container {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        body.modal-open .dialogue-wrapper {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 900px;
         }
 
         .modal.visible {
@@ -878,7 +895,10 @@
 
         function showModal(id) {
             const modal = document.getElementById(id);
-            if (modal) modal.classList.add('visible');
+            if (modal) {
+                modal.classList.add('visible');
+                document.body.classList.add('modal-open');
+            }
         }
 
         function cycleDialogue() {
@@ -889,6 +909,7 @@
 
         function closeModals() {
             document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
+            document.body.classList.remove('modal-open');
             stopCarousel();
             setTimeout(() => {
                 cycleDialogue();
