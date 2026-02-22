@@ -736,8 +736,22 @@
 
     <script>
         const dialogueElement = document.getElementById('dialogue');
-        const welcomeText = "Step into the warmth, traveler. The Void is cold, but my hearth is always lit. I see you have an eye for the extraordinary... and perhaps the coin to match?";
+        const welcomeText = "Step into the warmth, traveler. This shop is but a focal point in a vast digital economy... where cycles of abundance and scarcity dictate the rhythm of our lives.";
         
+        const merchantDialogues = [
+            "Observe the market's pulse. As the town grows, opportunities flourish, but every investment carries its own storm of risk.",
+            "Every coin traded is a signal. Will you strengthen the town's infrastructure, or seek to redefine the calculus of your own reward?",
+            "Traders from the distant realms arrive without warning and vanish like mist. Timing is the only magic that truly matters here.",
+            "In these lands, Fame is a functional currency—more potent than gold. A high reputation opens doors that keys cannot touch.",
+            "Low fame may relegate you to the shadows, but remember: the greatest arbitrage often hides where no one else dares to look.",
+            "When guilds unite, even the town's policies bend. Will you seek collective action, or let the 'Invisible Hand' guide your fate?",
+            "In economic downturns, your reputation is your shield. Social trust is the only armor that softens a market-wide recession.",
+            "No two shops are alike. Seek differentiation, find your niche, and hunt for 'hero' artifacts that carry an outsized cachet.",
+            "The market never sleeps. A savvy merchant anticipates the cycle before the first ripple appears on the surface.",
+            "Every choice ripples outward. Success lies in anticipating not just your own needs, but the needs of the entire ecosystem."
+        ];
+        
+        let currentDialogueIndex = 0;
         let typeTimeout;
         let isTyping = false;
         let hls;
@@ -852,11 +866,17 @@
             }, 600);
         }
 
+        function cycleDialogue() {
+            if (isTyping) return;
+            currentDialogueIndex = (currentDialogueIndex + 1) % merchantDialogues.length;
+            typeWriter(merchantDialogues[currentDialogueIndex], dialogueElement, 35);
+        }
+
         function closeModals() {
             document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
             stopCarousel();
             setTimeout(() => {
-                typeWriter("Shall we continue our business, or does the world outside beckon?", dialogueElement);
+                cycleDialogue();
             }, 400);
         }
 
@@ -896,10 +916,8 @@
 
         function startCarousel() {
             stopCarousel();
-            // Start with a random image
             showCarouselImage(Math.floor(Math.random() * carouselImages.length));
             carouselInterval = setInterval(() => {
-                // Pick a random next index that isn't the current one
                 let nextIndex;
                 do {
                     nextIndex = Math.floor(Math.random() * carouselImages.length);
@@ -951,6 +969,7 @@
                 if (ui) ui.classList.add('ready');
                 setTimeout(() => {
                     typeWriter(welcomeText, dialogueElement, 40);
+                    setInterval(cycleDialogue, 12000);
                 }, 800);
             }, 500);
         };
@@ -963,7 +982,6 @@
             }
         }
 
-        // Add touch support for mobile to close on outside tap
         window.addEventListener('touchstart', function(event) {
             if (event.target.classList.contains('modal')) {
                 const video = document.getElementById('video-player');
