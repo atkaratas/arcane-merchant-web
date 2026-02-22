@@ -243,7 +243,11 @@
         function handleFeatures() { showModal('features-modal'); tWriter("Merchantry is an art of logistics...", dEl); }
 
         function showModal(id) { document.getElementById(id).classList.add('visible'); document.body.classList.add('modal-open'); }
-        function closeModals() { document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible')); document.body.classList.remove('modal-open'); stopCarousel(); }
+        function closeModals() {
+            document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
+            document.body.classList.remove('modal-open');
+            stopC();
+        }
         function showVideoModal() {
             const m = document.getElementById('video-modal'), v = document.getElementById('video-player');
             const s = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/hls_264_master.m3u8';
