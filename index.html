@@ -71,13 +71,12 @@
             height: 100vh;
             width: 100vw;
             padding: 20px;
-            padding-bottom: 200px; /* Leave room for dialogue */
             opacity: 0;
             transition: opacity 1.5s ease-in;
             position: relative;
             z-index: 1;
             text-align: center;
-            transform: translateY(-30px); /* Move entire menu up */
+            transform: translateY(-40px);
         }
 
         .game-container.ready {
@@ -94,7 +93,6 @@
             text-shadow: 0 2px 10px rgba(0,0,0,0.8);
             z-index: 20;
             margin-bottom: 25px;
-            transition: opacity 0.5s ease;
         }
 
         .official-logo {
@@ -124,9 +122,8 @@
             width: 350px !important;
             margin-left: auto !important;
             margin-right: auto !important;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             justify-content: center;
-            transition: opacity 0.5s ease;
         }
 
         .menu-btn {
@@ -158,12 +155,12 @@
             width: 90%;
             max-width: 900px;
             position: fixed;
-            bottom: 30px;
+            bottom: 35px;
             left: 50%;
             transform: translateX(-50%);
             transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             text-align: left;
-            z-index: 3000; /* Ensure it's above modals */
+            z-index: 3000;
         }
 
         .dialogue-box {
@@ -202,7 +199,7 @@
 
         .dialogue-text {
             font-family: var(--dialogue-font);
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             line-height: 1.4;
             color: #f0f0f0;
         }
@@ -219,7 +216,7 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            padding-bottom: 220px; /* Room for dialogue */
+            padding-bottom: 220px;
             opacity: 0;
             transition: opacity 0.5s ease;
         }
@@ -241,7 +238,7 @@
             color: #2c1e0f;
             width: 95%;
             max-width: 750px;
-            padding: 30px;
+            padding: 40px;
             border-radius: 3px;
             box-shadow: 0 20px 50px rgba(0,0,0,0.7), inset 0 0 60px rgba(139, 69, 19, 0.2);
             position: relative;
@@ -252,11 +249,21 @@
             transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
+        .parchment h2 {
+            font-family: var(--ui-font);
+            margin-bottom: 30px; /* Daha fazla boşluk */
+            border-bottom: 1px solid rgba(139, 69, 19, 0.3);
+            padding-bottom: 15px;
+            color: #5d2e0a;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
         .carousel-container {
             position: relative;
             width: 100%;
-            height: 400px;
-            margin: 15px 0;
+            height: 450px;
+            margin: 20px 0;
             overflow: hidden;
             border: 3px double #5d2e0a;
             background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, rgba(0,0,0,0.4) 100%);
@@ -281,34 +288,67 @@
             opacity: 1;
         }
 
+        /* Common Room Grid */
+        .community-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .community-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #2c1e0f;
+            font-size: 1.1rem;
+            padding: 12px;
+            border-radius: 4px;
+            background: rgba(139, 69, 19, 0.05);
+            border: 1px solid rgba(139, 69, 19, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .community-item:hover {
+            background: rgba(139, 69, 19, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .community-icon {
+            font-size: 1.4rem;
+        }
+
+        .rumor-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed rgba(139, 69, 19, 0.2);
+        }
+
         @media (max-width: 768px) {
-            .game-container { padding-bottom: 220px; transform: translateY(-50px); }
+            .game-container { padding-bottom: 220px; transform: translateY(-60px); }
             .official-logo { max-width: 260px; }
-            .branding-container p { font-size: 0.7rem; }
             .menu-container { width: 300px !important; gap: 10px; }
             .menu-btn { padding: 10px; font-size: 0.85rem; }
             .dialogue-text { font-size: 1.1rem; }
-            .parchment { max-height: 55vh; }
+            .parchment { padding: 30px 20px; max-height: 55vh; }
             .carousel-container { height: 280px; }
+            .community-links { grid-template-columns: 1fr; }
         }
 
-        /* Essential for modal functionality */
-        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 2.2rem; cursor: pointer; color: #8b4513; z-index: 10; }
-        .inventory-tag { position: absolute; top: 15px; left: 15px; background: var(--gold); color: #000; padding: 4px 12px; font-family: var(--ui-font); font-weight: bold; font-size: 0.75rem; z-index: 15; opacity: 0; transition: opacity 0.6s; }
+        .close-modal { position: absolute; top: 20px; right: 25px; font-size: 2.5rem; cursor: pointer; color: #8b4513; z-index: 10; transition: transform 0.3s; }
+        .close-modal:hover { transform: rotate(90deg); }
+        .inventory-tag { position: absolute; top: 15px; left: 15px; background: var(--gold); color: #000; padding: 4px 12px; font-family: var(--ui-font); font-weight: bold; font-size: 0.75rem; z-index: 15; opacity: 0; transition: opacity 0.6s; border: 1px solid #000; }
         .inventory-tag.visible { opacity: 1; }
-        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(139, 69, 19, 0.2); color: #5d2e0a; font-size: 2rem; cursor: pointer; z-index: 10; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-        .carousel-arrow.prev { left: 10px; }
-        .carousel-arrow.next { right: 10px; }
-        .rumor-item { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); }
-        .community-links { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-        .community-item { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #2c1e0f; padding: 8px; border-radius: 4px; background: rgba(139, 69, 19, 0.05); }
+        .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(139, 69, 19, 0.2); color: #5d2e0a; font-size: 2rem; cursor: pointer; z-index: 10; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        .carousel-arrow.prev { left: 15px; }
+        .carousel-arrow.next { right: 15px; }
         .video-container { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; border: 4px solid var(--gold); }
-        video { width: 100%; height: 100%; }
-        .findie-logo-fixed { position: fixed; top: 15px; right: 15px; display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--gold); font-size: 0.7rem; padding: 8px 12px; background: rgba(0,0,0,0.8); z-index: 1000; }
+        .findie-logo-fixed { position: fixed; top: 15px; right: 15px; display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--gold); font-size: 0.7rem; padding: 8px 12px; background: rgba(0,0,0,0.8); z-index: 1000; border: 1px solid rgba(212, 175, 55, 0.3); }
         .studio-logo { height: 25px; }
     </style>
 </head>
-<body class="ready">
+<body>
     <div class="background"></div>
     <div class="overlay"></div>
 
@@ -343,7 +383,7 @@
     <div id="wares-modal" class="modal">
         <div class="parchment">
             <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2 style="font-family: var(--ui-font); text-align: center; color: #5d2e0a;">Manifest of Wonders</h2>
+            <h2>Manifest of Wonders</h2>
             <div class="carousel-container">
                 <div id="inventory-tag" class="inventory-tag">RARE</div>
                 <button class="carousel-arrow prev" onclick="moveCarousel(-1)">❮</button>
@@ -357,22 +397,26 @@
     <div id="rumors-modal" class="modal">
         <div class="parchment">
             <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2 style="font-family: var(--ui-font); text-align: center; color: #5d2e0a;">Whispers from the Void</h2>
-            <div class="rumor-item"><p><strong>✧ The Lost Caravan:</strong> Star-Iron was lost in the Whispering Woods.</p></div>
-            <div class="rumor-item"><p><strong>✧ The King's Debt:</strong> The crown seeks a specific relic.</p></div>
-            <div class="rumor-item"><p><strong>✧ Celestial Alignment:</strong> Moon-blessed artifacts potency triples soon.</p></div>
+            <h2>Whispers from the Void</h2>
+            <div class="rumor-item"><p><strong>✧ The Lost Caravan:</strong> Rumor has it a shipment of Star-Iron was lost in the Whispering Woods. Finders, keepers, they say...</p></div>
+            <div class="rumor-item"><p><strong>✧ The King's Debt:</strong> The crown is looking for a specific relic to settle a debt with the Iron Bank. High risk, higher reward.</p></div>
+            <div class="rumor-item"><p><strong>✧ Celestial Alignment:</strong> The stars suggest that next month, moon-blessed artifacts will triple in potency—and price.</p></div>
         </div>
     </div>
 
     <div id="community-modal" class="modal">
         <div class="parchment">
             <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2 style="font-family: var(--ui-font); text-align: center; color: #5d2e0a;">The Common Room</h2>
+            <h2>The Common Room</h2>
             <div class="community-links">
-                <a href="https://www.findiestudios.com/" target="_blank" class="community-item">🌐 Findie Studios</a>
-                <a href="https://discord.gg/findiestudios" target="_blank" class="community-item">🔮 Discord</a>
-                <a href="https://x.com/FindieStudios" target="_blank" class="community-item">🐦 X</a>
-                <a href="https://www.youtube.com/@FindieStudios" target="_blank" class="community-item">📽️ YouTube</a>
+                <a href="https://www.findiestudios.com/" target="_blank" class="community-item"><span class="community-icon">🌐</span> Findie Studios</a>
+                <a href="https://discord.gg/findiestudios" target="_blank" class="community-item"><span class="community-icon">🔮</span> Discord</a>
+                <a href="https://x.com/FindieStudios" target="_blank" class="community-item"><span class="community-icon">🐦</span> X / Twitter</a>
+                <a href="https://www.youtube.com/@FindieStudios" target="_blank" class="community-item"><span class="community-icon">📽️</span> YouTube</a>
+                <a href="https://www.instagram.com/findiestudios" target="_blank" class="community-item"><span class="community-icon">🖼️</span> Instagram</a>
+                <a href="https://www.tiktok.com/@findiestudios" target="_blank" class="community-item"><span class="community-icon">🎭</span> TikTok</a>
+                <a href="https://www.reddit.com/r/arcanemerchant" target="_blank" class="community-item"><span class="community-icon">🗣️</span> Reddit</a>
+                <a href="https://www.linkedin.com/company/findiestudios" target="_blank" class="community-item"><span class="community-icon">📜</span> LinkedIn</a>
             </div>
         </div>
     </div>
@@ -380,10 +424,10 @@
     <div id="features-modal" class="modal">
         <div class="parchment">
             <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2 style="font-family: var(--ui-font); text-align: center; color: #5d2e0a;">Shop Systems</h2>
-            <div class="rumor-item"><p><strong>✧ Grand Display:</strong> Design your sanctuary.</p></div>
-            <div class="rumor-item"><p><strong>✧ Alchemy:</strong> Transform raw essence.</p></div>
-            <div class="rumor-item"><p><strong>✧ Economy:</strong> Wars and festivals shift value.</p></div>
+            <h2>Mastering the Arcane Arts</h2>
+            <div class="rumor-item"><p><strong>✧ Grand Display:</strong> Design a sanctuary for your wares. The placement of an enchanted gem can entice a king.</p></div>
+            <div class="rumor-item"><p><strong>✧ Alchemy & Crafting:</strong> Transform raw essence into legendary artifacts. Your workbench is where myths are forged.</p></div>
+            <div class="rumor-item"><p><strong>✧ Dynamic Economy:</strong> The world is alive. Wars, plagues, and festivals shift the value of your inventory.</p></div>
         </div>
     </div>
 
@@ -403,13 +447,16 @@
             "In these lands, Fame is a functional currency—more potent than gold. A high reputation opens doors that keys cannot touch.",
             "In economic downturns, your reputation is your shield. Social trust is the only armor that softens a market-wide recession.",
             "The Void is cold, but my hearth is always lit. I see you have an eye for the extraordinary... and perhaps the coin to match?",
-            "Behold my collection of rare artifacts... each item tells a tale, and some... well, they might just choose you."
+            "Behold my collection of rare artifacts... each item tells a tale, and some... well, they might just choose you.",
+            "Low fame may relegate you to the shadows, but remember: the greatest arbitrage often hides where no one else dares to look.",
+            "When guilds unite, even the town's policies bend. Will you seek collective action, or let the 'Invisible Hand' guide your fate?",
+            "No two shops are alike. Seek differentiation, find your niche, and hunt for 'hero' artifacts that carry an outsized cachet.",
+            "The market never sleeps. A savvy merchant anticipates the cycle before the first ripple appears on the surface."
         ];
         
         let currentDialogueIndex = 0;
         let typeTimeout;
         let isTyping = false;
-        let hls;
 
         function typeWriter(text, element, speed = 30, callback) {
             if (isTyping) clearTimeout(typeTimeout);
@@ -429,11 +476,11 @@
             type();
         }
 
-        function handleWatch() { showVideoModal(); typeWriter("Behold the visions of the trade...", dialogueElement); }
-        function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter("Behold my rare artifacts...", dialogueElement); }
-        function handleRumors() { showModal('rumors-modal'); typeWriter("The walls have ears...", dialogueElement); }
-        function handleCommunity() { showModal('community-modal'); typeWriter("The common rooms are bustling...", dialogueElement); }
-        function handleFeatures() { showModal('features-modal'); typeWriter("Merchantry is an art of logistics...", dialogueElement); }
+        function handleWatch() { showVideoModal(); typeWriter("Behold the memories of the trade... visions of what was and what is yet to come.", dialogueElement); }
+        function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter("Behold my collection of rare artifacts...", dialogueElement); }
+        function handleRumors() { showModal('rumors-modal'); typeWriter("The walls have ears, and the wind has a tongue.", dialogueElement); }
+        function handleCommunity() { showModal('community-modal'); typeWriter("How can you stay updated, you ask? The ravens carry our news.", dialogueElement); }
+        function handleFeatures() { showModal('features-modal'); typeWriter("Being a merchant is more than just counting gold. It is an art of logistics.", dialogueElement); }
 
         function showModal(id) {
             document.getElementById(id).classList.add('visible');
@@ -453,8 +500,7 @@
             modal.classList.add('visible');
             document.body.classList.add('modal-open');
             if (Hls.isSupported()) {
-                if (hls) hls.destroy();
-                hls = new Hls();
+                let hls = new Hls();
                 hls.loadSource(src);
                 hls.attachMedia(video);
                 hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
@@ -485,7 +531,6 @@
 
         function startCarousel() {
             stopCarousel();
-            showCarouselImage(Math.floor(Math.random() * carouselImages.length));
             carouselInterval = setInterval(() => {
                 let next;
                 do { next = Math.floor(Math.random() * carouselImages.length); } while (next === currentCarouselIndex);
@@ -502,7 +547,7 @@
             currentCarouselIndex = (index + imgs.length) % imgs.length;
             imgs[currentCarouselIndex].classList.add('active');
             const tag = document.getElementById('inventory-tag');
-            const tags = ['Rare', 'Epic', 'Legendary', 'Ancient', 'Mythical'];
+            const tags = ['Rare', 'Epic', 'Legendary', 'Ancient', 'Mythical', 'Artifact', 'Relic'];
             tag.classList.remove('visible');
             setTimeout(() => { tag.textContent = tags[Math.floor(Math.random()*tags.length)]; tag.classList.add('visible'); }, 300);
         }
@@ -511,15 +556,19 @@
 
         window.onload = () => {
             document.getElementById('game-ui').classList.add('ready');
-            setTimeout(() => { typeWriter(welcomeText, dialogueElement); setInterval(() => {
-                if (!isTyping) {
-                    currentDialogueIndex = (currentDialogueIndex + 1) % merchantDialogues.length;
-                    typeWriter(merchantDialogues[currentDialogueIndex], dialogueElement);
-                }
-            }, 12000); }, 800);
+            setTimeout(() => { 
+                typeWriter(welcomeText, dialogueElement); 
+                setInterval(() => {
+                    if (!isTyping) {
+                        currentDialogueIndex = (currentDialogueIndex + 1) % merchantDialogues.length;
+                        typeWriter(merchantDialogues[currentDialogueIndex], dialogueElement);
+                    }
+                }, 12000);
+            }, 800);
         };
 
         window.onclick = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
+        window.ontouchstart = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
     </script>
 </body>
 </html>
