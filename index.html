@@ -779,9 +779,8 @@
 
         function handleWatch() {
             playSFX('click');
-            typeWriter("Behold the memories of the trade... visions of what was and what is yet to come.", dialogueElement, 30, () => {
-                showVideoModal();
-            });
+            showVideoModal();
+            typeWriter("Behold the memories of the trade... visions of what was and what is yet to come.", dialogueElement, 30);
         }
 
         function showVideoModal() {
@@ -861,30 +860,26 @@
 
         function handleRumors() {
             playSFX('click');
-            typeWriter("The walls have ears, and the wind has a tongue. In these dark times, a whisper can be worth more than a pouch of diamonds.", dialogueElement, 30, () => {
-                showModal('rumors-modal');
-            });
+            showModal('rumors-modal');
+            typeWriter("The walls have ears, and the wind has a tongue. In these dark times, a whisper can be worth more than a pouch of diamonds.", dialogueElement, 30);
         }
 
         function handleCommunity() {
             playSFX('click');
-            typeWriter("How can you stay updated, you ask? The ravens carry our news, and the common rooms are always bustling with talk of our upcoming wares.", dialogueElement, 30, () => {
-                showModal('community-modal');
-            });
+            showModal('community-modal');
+            typeWriter("How can you stay updated, you ask? The ravens carry our news, and the common rooms are always bustling with talk of our upcoming wares.", dialogueElement, 30);
         }
 
         function handleFeatures() {
             playSFX('click');
-            typeWriter("Being a merchant is more than just counting gold. It is an art of logistics, a dance of pricing, and the crafting of a sanctuary.", dialogueElement, 30, () => {
-                showModal('features-modal');
-            });
+            showModal('features-modal');
+            typeWriter("Being a merchant is more than just counting gold. It is an art of logistics, a dance of pricing, and the crafting of a sanctuary.", dialogueElement, 30);
+        }
         }
 
         function showModal(id) {
-            setTimeout(() => {
-                const modal = document.getElementById(id);
-                if (modal) modal.classList.add('visible');
-            }, 600);
+            const modal = document.getElementById(id);
+            if (modal) modal.classList.add('visible');
         }
 
         function cycleDialogue() {
