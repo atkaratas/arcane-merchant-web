@@ -83,211 +83,30 @@
             display: flex !important;
         }
 
-        .branding-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--ui-font);
-            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
-            z-index: 20;
-            margin-bottom: 30px;
-            transition: opacity 0.5s ease;
+        body.modal-open .game-container {
+            /* Keep container visible but hide children specifically to keep layout */
         }
 
-        .official-logo {
-            max-width: 450px;
-            width: 95%;
-            height: auto;
-            object-fit: contain;
-            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6)) drop-shadow(0 0 40px rgba(212, 175, 55, 0.2));
-            margin-bottom: 5px;
-            display: block;
-        }
-
-        .branding-container p {
-            font-style: italic;
-            font-size: 0.9rem;
-            color: #ccc;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .menu-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 10;
-            width: 350px !important;
-            margin-left: auto !important;
-            margin-right: auto !important;
-            margin-bottom: 40px;
-            justify-content: center;
-            transition: opacity 0.5s ease;
-        }
-
-        .menu-btn {
-            background: var(--dark-bg);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            color: var(--gold);
-            padding: 14px 30px;
-            font-family: var(--ui-font);
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            width: 100%;
-        }
-
-        .menu-btn:hover {
-            border-color: var(--gold);
-            background: rgba(212, 175, 55, 0.1);
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-        }
-
-        .dialogue-wrapper {
-            width: 100%;
-            max-width: 900px;
-            position: relative;
-            transform: translateY(0);
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-            text-align: left;
-            z-index: 2000; /* Stays above modals (100) and overlay */
-        }
-
-        .dialogue-box {
-            background: rgba(20, 20, 25, 1); /* Fully opaque black/dark bg */
-            border: 2px solid rgba(212, 175, 55, 0.8); /* Sharper gold border */
-            padding: 30px 40px;
-            min-height: 150px;
-            position: relative;
-            box-shadow: 0 0 30px rgba(0,0,0,1), 0 0 15px rgba(212, 175, 55, 0.1);
-            border-radius: 2px;
-        }
-
-        .findie-logo-fixed {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            opacity: 0.8;
-            transition: all 0.4s ease;
-            text-decoration: none;
-            color: var(--gold);
-            font-family: var(--ui-font);
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 10px 15px;
-            border-radius: 4px;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-        }
-
-        .findie-logo-fixed:hover {
-            opacity: 1;
-            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.6));
-            transform: translateY(-2px);
-            border-color: rgba(212, 175, 55, 1);
-        }
-
-        .studio-logo {
-            height: 35px;
-            width: auto;
-            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
-        }
-
-        .speaker-name {
-            position: absolute;
-            top: -14px;
-            left: 30px;
-            background: var(--gold);
-            color: #000;
-            padding: 3px 18px;
-            font-family: var(--ui-font);
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.75rem;
-            letter-spacing: 1px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-        }
-
-        .game-icon-seal {
-            width: 24px;
-            height: 24px;
-            object-fit: contain;
-            filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
-        }
-
-        .dialogue-text {
-            font-family: var(--dialogue-font);
-            font-size: 1.6rem;
-            line-height: 1.5;
-            color: #f0f0f0;
-            min-height: 1.5em;
-        }
-
-        .dialogue-text::after {
-            content: "|";
-            animation: blink 1s step-end infinite;
-            margin-left: 5px;
-            color: var(--gold);
-        }
-
-        @keyframes blink {
-            from, to { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.85);
-            z-index: 100;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            padding-bottom: 220px; /* Make room for the persistent dialogue box */
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .modal.visible {
-            display: flex;
-            opacity: 1;
-        }
-
-        /* Persistent Dialogue UI State */
         body.modal-open .branding-container,
         body.modal-open .menu-container {
             opacity: 0;
             pointer-events: none;
         }
 
-        body.modal-open .dialogue-wrapper {
+        .dialogue-wrapper {
+            width: 100%;
+            max-width: 900px;
             position: fixed;
-            bottom: 30px;
+            bottom: 40px;
             left: 50%;
             transform: translateX(-50%);
-            width: 90%;
-            max-width: 900px;
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: left;
+            z-index: 2000;
+        }
+
+        body:not(.modal-open) .dialogue-wrapper {
+            /* Positioned at bottom normally but relative to viewport */
         }
 
         .parchment {
@@ -647,15 +466,15 @@
                 Wishlist on Steam
             </a>
         </div>
+    </div>
 
-        <div class="dialogue-wrapper">
-            <div class="dialogue-box">
-                <div class="speaker-name">
-                    <img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal">
-                    Master Merchant
-                </div>
-                <div id="dialogue" class="dialogue-text"></div>
+    <div class="dialogue-wrapper">
+        <div class="dialogue-box">
+            <div class="speaker-name">
+                <img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal">
+                Master Merchant
             </div>
+            <div id="dialogue" class="dialogue-text"></div>
         </div>
     </div>
 
