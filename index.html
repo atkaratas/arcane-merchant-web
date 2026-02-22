@@ -154,10 +154,26 @@
             width: 100%;
             max-width: 900px;
             position: relative;
-            transform: translateY(0);
+            transform: translateY(-20px);
             transition: transform 0.5s ease;
             text-align: left;
             z-index: 2000;
+        }
+
+        /* Modallar açıkken kutunun görünür kalması için */
+        body.modal-open .branding-container,
+        body.modal-open .menu-container {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        body.modal-open .dialogue-wrapper {
+            position: fixed;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 900px;
         }
 
         .dialogue-box {
