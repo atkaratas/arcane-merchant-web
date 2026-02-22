@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Arcane Merchant | Shop Management Sim</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark-bg: rgba(15, 15, 20, 0.98);
+            --parchment: #f4e4bc;
+            --ui-font: 'Cinzel', serif;
+            --dialogue-font: 'Crimson Text', serif;
+            --transition-speed: 0.8s;
+            --magical-glow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background-color: #050505;
+            color: #fff;
+            position: fixed;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/clean-shop-bg.jpg') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+            filter: brightness(0.7) sepia(0.1);
+            animation: slowZoom 40s linear infinite alternate;
+            will-change: transform;
+        }
+
+        @keyframes slowZoom {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.6) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            padding: 40px;
+            opacity: 0;
+            transition: opacity 1.5s ease-in;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .game-container.ready {
+            opacity: 1;
+            display: flex !important;
+        }
+
+        .branding-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ui-font);
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            z-index: 20;
+            margin-bottom: 30px;
+        }
+
+        .official-logo {
+            max-width: 450px;
+            width: 95%;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.6)) drop-shadow(0 0 40px rgba(212, 175, 55, 0.2));
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .branding-container p {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #ccc;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 10;
+            width: 350px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+
+        .menu-btn {
+            background: var(--dark-bg);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--gold);
+            padding: 14px 30px;
+            font-family: var(--ui-font);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+        }
+
+        .menu-btn:hover {
+            border-color: var(--gold);
+            background: rgba(212, 175, 55, 0.1);
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .dialogue-wrapper {
+            width: 100%;
+            max-width: 900px;
+            position: relative;
+            transform: translateY(0);
+            transition: transform 0.5s ease;
+            text-align: left;
+        }
+
+        .dialogue-box {
+            background: var(--dark-bg);
+            border: 2px solid rgba(212, 175, 55, 0.5);
+            padding: 30px 40px;
+            min-height: 150px;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+            border-radius: 2px;
+        }
+
+        .findie-logo-fixed {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            opacity: 0.8;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            color: var(--gold);
+            font-family: var(--ui-font);
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .findie-logo-fixed:hover {
+            opacity: 1;
+            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.6));
+            transform: translateY(-2px);
+            border-color: rgba(212, 175, 55, 1);
+        }
+
+        .studio-logo {
+            height: 35px;
+            width: auto;
+            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.4));
+        }
+
+        .speaker-name {
+            position: absolute;
+            top: -18px;
+            left: 40px;
+            background: var(--gold);
+            color: #000;
+            padding: 4px 25px;
+            font-family: var(--ui-font);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .game-icon-seal {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+        }
+
+        .dialogue-text {
+            font-family: var(--dialogue-font);
+            font-size: 1.6rem;
+            line-height: 1.5;
+            color: #f0f0f0;
+            min-height: 1.5em;
+        }
+
+        .dialogue-text::after {
+            content: "|";
+            animation: blink 1s step-end infinite;
+            margin-left: 5px;
+            color: var(--gold);
+        }
+
+        @keyframes blink {
+            from, to { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .modal.visible {
+            display: flex;
+            opacity: 1;
+        }
+
+        .parchment {
+            background: var(--parchment);
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            color: #2c1e0f;
+            width: 95%;
+            max-width: 750px;
+            padding: 40px;
+            border-radius: 3px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.7), inset 0 0 60px rgba(139, 69, 19, 0.2);
+            position: relative;
+            font-family: var(--dialogue-font);
+            max-height: 90vh;
+            overflow-y: auto;
+            transform: scale(0.9);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .modal.visible .parchment {
+            transform: scale(1);
+        }
+
+        .parchment h2 {
+            font-family: var(--ui-font);
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(139, 69, 19, 0.3);
+            padding-bottom: 12px;
+            color: #5d2e0a;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 650px;
+            margin: 20px 0;
+            overflow: hidden;
+            border: 3px double #5d2e0a;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.25) 0%, rgba(0,0,0,0.4) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.5), 0 15px 40px rgba(0,0,0,0.6);
+            border-radius: 8px;
+        }
+
+        .carousel-image {
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            object-fit: contain;
+            margin: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.95);
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, filter 0.8s ease-in-out;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0)) brightness(0.8);
+            will-change: opacity, transform, filter;
+            z-index: 1;
+        }
+
+        .carousel-image.active {
+            opacity: 1;
+            z-index: 2;
+            transform: translate(-50%, -50%) scale(1);
+            filter: drop-shadow(0 15px 35px rgba(0,0,0,0.7)) brightness(1.1) drop-shadow(0 0 15px rgba(212, 175, 55, 0.4));
+        }
+
+        .loading-glyph {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(212, 175, 55, 0.1);
+            border-top: 3px solid var(--gold);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes magicalPulse {
+            0%, 100% { opacity: 0.7; transform: scale(1); text-shadow: 0 0 5px rgba(212, 175, 55, 0.2); }
+            50% { opacity: 1; transform: scale(1.05); text-shadow: 0 0 20px rgba(212, 175, 55, 0.6); }
+        }
+
+        .inventory-tag {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            background: var(--gold);
+            color: #000;
+            padding: 5px 15px;
+            font-family: var(--ui-font);
+            font-weight: bold;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            z-index: 15;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            border: 1px solid #000;
+        }
+
+        .inventory-tag.visible {
+            opacity: 1;
+        }
+
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(139, 69, 19, 0.2);
+            border: 1px solid rgba(139, 69, 19, 0.4);
+            color: #5d2e0a;
+            font-size: 2.5rem;
+            cursor: pointer;
+            z-index: 10;
+            opacity: 0.7;
+            transition: all 0.3s;
+            font-family: serif;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .carousel-arrow:hover {
+            opacity: 1;
+            background: rgba(212, 175, 55, 0.3);
+            color: #5d2e0a;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-arrow.prev { left: 20px; }
+        .carousel-arrow.next { right: 20px; }
+
+        .rumor-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed rgba(139, 69, 19, 0.2);
+        }
+
+        .community-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .community-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: #2c1e0f;
+            font-size: 1.1rem;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .community-item:hover {
+            transform: translateX(5px);
+            color: #8b4513;
+        }
+
+        .community-icon {
+            font-size: 1.4rem;
+            filter: sepia(1) saturate(2);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: #8b4513;
+            line-height: 1;
+            transition: transform 0.3s ease;
+            z-index: 10;
+        }
+
+        .close-modal:hover {
+            transform: rotate(90deg);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border: 4px solid var(--gold);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.2), inset 0 0 50px rgba(0,0,0,0.8);
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .background {
+                background-image: url('images/clean-shop-bg.jpg');
+                animation: slowZoom 40s linear infinite alternate;
+                transform: scale(1);
+            }
+
+            .game-container {
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .official-logo {
+                max-width: 280px;
+            }
+
+            .menu-container {
+                gap: 10px;
+                margin-bottom: 25px;
+                max-width: 280px;
+            }
+
+            .menu-btn {
+                padding: 10px 15px;
+                font-size: 0.85rem;
+            }
+
+            .dialogue-box {
+                padding: 20px;
+                min-height: 120px;
+            }
+
+            .dialogue-text {
+                font-size: 1.1rem;
+            }
+
+            .parchment {
+                padding: 30px 20px;
+            }
+
+            .carousel-container {
+                height: 350px;
+            }
+
+            .community-links {
+                grid-template-columns: 1fr;
+            }
+
+            .findie-logo-fixed {
+                position: fixed;
+                top: 15px;
+                right: 15px;
+                transform: none;
+                padding: 6px 12px;
+                font-size: 0.65rem;
+                background: rgba(0, 0, 0, 0.8);
+                z-index: 1000;
+                width: max-content;
+            }
+
+            .studio-logo {
+                height: 25px;
+            }
+        }
+
+        @media (max-height: 700px) {
+            .game-container {
+                justify-content: flex-start;
+                padding-top: 20px;
+                overflow-y: auto;
+            }
+            .official-logo { max-width: 200px; }
+            .menu-container { gap: 8px; margin-bottom: 15px; }
+            .menu-btn { padding: 8px 12px; font-size: 0.8rem; }
+            .dialogue-box { min-height: 100px; padding: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <div id="game-ui" class="game-container">
+        
+        <div class="branding-container">
+            <img src="images/official_logo.png" alt="Arcane Merchant Logo" class="official-logo">
+            <p>A Magical Shop Simulation • Coming 2026</p>
+        </div>
+
+        <div class="menu-container">
+            <button class="menu-btn" onclick="handleWatch()">Watch Chronicles</button>
+            <button class="menu-btn" onclick="handleWares()">Browse Wares</button>
+            <button class="menu-btn" onclick="handleRumors()">Ask Rumors</button>
+            <button class="menu-btn" onclick="handleCommunity()">The Common Room</button>
+            <button class="menu-btn" onclick="handleFeatures()">Shop Systems</button>
+            <a href="https://store.steampowered.com/app/3430070/Arcane_Merchant/" target="_blank" class="menu-btn" style="color: #fff; background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%); border-color: #66c0f4; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.54-.37 1.19-.603 1.898-.603.11 0 .21.01.319.02l2.749-4.004V9.06c0-2.435 1.974-4.41 4.41-4.41s4.41 1.975 4.41 4.41-1.974 4.41-4.41 4.41c-.08 0-.16-.01-.24-.01l-3.858 4.125h.002c.01.11.02.21.02.32 0 1.741-1.412 3.153-3.153 3.153-1.313 0-2.435-.805-2.906-1.957L.319 14.936c1.645 5.533 6.756 9.064 11.66 9.064 7.404 0 13.409-6.005 13.409-13.409S19.383 0 11.979 0zM10.29 18.911c0 1.132-.918 2.05-2.05 2.05-1.132 0-2.05-.918-2.05-2.05 0-1.132.918-2.05 2.05-2.05 1.132 0 2.05.918 2.05 2.05zm5.556-9.851c0 1.583-1.283 2.865-2.865 2.865s-2.865-1.283-2.865-2.865 1.283-2.865 2.865-2.865 2.865 1.282 2.865 2.865z"/></svg>
+                Wishlist on Steam
+            </a>
+        </div>
+
+        <div class="dialogue-wrapper">
+            <div class="dialogue-box">
+                <div class="speaker-name">
+                    <img src="images/game-icon.png" class="game-icon-seal" alt="Seal">
+                    Master Merchant
+                </div>
+                <div id="dialogue" class="dialogue-text"></div>
+            </div>
+        </div>
+
+        <a href="https://findiestudios.com" target="_blank" class="findie-logo-fixed">
+            <span>© 2025 Findie Studios</span>
+            <img src="images/findie_logo.webp" class="studio-logo" alt="Findie Studios Logo">
+        </a>
+    </div>
+
+    <div id="wares-modal" class="modal">
+        <div class="parchment" style="max-width: 900px; width: 95vw;">
+            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <h2 style="font-size: 2.2rem; text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);">Manifest of Wonders</h2>
+            
+            <p style="font-style: italic; margin-bottom: 25px; text-align: center; font-size: 1.2rem; color: #5d2e0a; line-height: 1.5; padding: 0 20px;">
+                "Step closer, traveler... Behold my collection of rare artifacts, harvested from the forgotten corners of the realm. Each piece tells a story of a kingdom lost or a hero fallen."
+            </p>
+
+            <div class="carousel-container">
+                <div class="loading-glyph"></div>
+                <div id="inventory-tag" class="inventory-tag">RARE</div>
+                <button class="carousel-arrow prev" onclick="moveCarousel(-1)">❮</button>
+                <div id="carousel-track" style="width: 100%; height: 100%; position: relative;">
+                    <!-- Images will be injected here -->
+                </div>
+                <button class="carousel-arrow next" onclick="moveCarousel(1)">❯</button>
+            </div>
+            
+            <p id="artifact-description" style="text-align: center; font-size: 1.1rem; margin-top: 20px; color: #5d2e0a; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; animation: magicalPulse 2s ease-in-out infinite;">
+                ✧ Magically Discovered ✧
+            </p>
+        </div>
+    </div>
+
+    <div id="rumors-modal" class="modal">
+        <div class="parchment">
+            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <h2>Whispers from the Void</h2>
+            <p style="font-style: italic; margin-bottom: 25px; text-align: center;">"Information is the only currency that never loses its value."</p>
+            
+            <div class="rumor-item">
+                <p><strong>✧ The Lost Caravan:</strong> Rumor has it a shipment of Star-Iron was lost in the Whispering Woods. Finders, keepers, they say...</p>
+            </div>
+            <div class="rumor-item">
+                <p><strong>✧ The King's Debt:</strong> The crown is looking for a specific relic to settle a debt with the Iron Bank. High risk, higher reward.</p>
+            </div>
+            <div class="rumor-item">
+                <p><strong>✧ Celestial Alignment:</strong> The stars suggest that next month, moon-blessed artifacts will triple in potency—and price.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="community-modal" class="modal">
+        <div class="parchment">
+            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <h2>The Common Room</h2>
+            <p style="font-style: italic; margin-bottom: 20px; text-align: center;">"Where the ravens gather and the scrolls of the world are shared."</p>
+            
+            <div class="community-links">
+                <a href="https://discord.gg/findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🔮</span>
+                    <span>Discord</span>
+                </a>
+                <a href="https://www.instagram.com/findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🖼️</span>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.linkedin.com/company/findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">📜</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.reddit.com/r/arcanemerchant" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🗣️</span>
+                    <span>Reddit</span>
+                </a>
+                <a href="https://www.tiktok.com/@findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🎭</span>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://x.com/FindieStudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🐦</span>
+                    <span>X</span>
+                </a>
+                <a href="https://www.youtube.com/@FindieStudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">📽️</span>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="features-modal" class="modal">
+        <div class="parchment">
+            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <h2>Mastering the Arcane Arts</h2>
+            <p style="font-style: italic; margin-bottom: 25px; text-align: center;">"A true merchant does more than just trade—they shape the world around them."</p>
+            
+            <div class="rumor-item">
+                <p><strong>✧ Grand Display:</strong> Design a sanctuary for your wares. The placement of a single enchanted gem can entice a king or ward off a thief.</p>
+            </div>
+            <div class="rumor-item">
+                <p><strong>✧ Alchemy & Crafting:</strong> Transform raw essence into legendary artifacts. Your workbench is where myths are forged.</p>
+            </div>
+            <div class="rumor-item">
+                <p><strong>✧ Dynamic Economy:</strong> The world is alive. Wars, plagues, and festivals shift the value of your inventory in real-time.</p>
+            </div>
+            <div class="rumor-item">
+                <p><strong>✧ Staffing & Security:</strong> Hire apprentices to mind the counter and gargoyles to watch the shadows.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="video-modal" class="modal">
+        <div class="parchment" style="max-width: 900px; background: #0a0a0a; color: var(--gold); padding: 20px; border: 2px solid var(--gold);">
+            <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+            <h2 style="color: var(--gold); border-bottom-color: var(--gold);">Chronicles of the Merchant</h2>
+            <div class="video-container">
+                <video id="video-player" controls muted playsinline></video>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dialogueElement = document.getElementById('dialogue');
+        const welcomeText = "Step into the warmth, traveler. The Void is cold, but my hearth is always lit. I see you have an eye for the extraordinary... and perhaps the coin to match?";
+        
+        let typeTimeout;
+        let isTyping = false;
+        let hls;
+
+        function handleWatch() {
+            playSFX('click');
+            typeWriter("Behold the memories of the trade... visions of what was and what is yet to come.", dialogueElement, 30, () => {
+                showVideoModal();
+            });
+        }
+
+        function showVideoModal() {
+            const modal = document.getElementById('video-modal');
+            const video = document.getElementById('video-player');
+            const videoSrc = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/hls_264_master.m3u8';
+
+            modal.classList.add('visible');
+            
+            if (typeof Hls === 'undefined') {
+                const script = document.createElement('script');
+                script.src = "https://cdn.jsdelivr.net/npm/hls.js@latest";
+                script.onload = () => initHls(video, videoSrc);
+                document.head.appendChild(script);
+            } else {
+                initHls(video, videoSrc);
+            }
+        }
+
+        function initHls(video, videoSrc) {
+            if (Hls.isSupported()) {
+                if (hls) {
+                    hls.destroy();
+                }
+                hls = new Hls();
+                hls.loadSource(videoSrc);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                    video.play().catch(e => console.log("Auto-play prevented or failed", e));
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = videoSrc;
+                video.addEventListener('loadedmetadata', function() {
+                    video.play().catch(e => console.log("Auto-play prevented or failed", e));
+                });
+            }
+        }
+
+        function closeVideoModal() {
+            const video = document.getElementById('video-player');
+            video.pause();
+            closeModals();
+        }
+
+        function typeWriter(text, element, speed = 35, callback) {
+            if (isTyping) {
+                clearTimeout(typeTimeout);
+            }
+            
+            isTyping = true;
+            element.innerHTML = "";
+            let i = 0;
+
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    typeTimeout = setTimeout(type, speed);
+                } else {
+                    isTyping = false;
+                    if (callback) callback();
+                }
+            }
+            type();
+        }
+
+        function playSFX(type) {
+            console.log("Playing SFX: " + type);
+        }
+
+        function handleWares() {
+            playSFX('click');
+            showModal('wares-modal');
+            initCarousel();
+            typeWriter("Behold my collection of rare artifacts... each item tells a tale, and some... well, they might just choose you.", dialogueElement, 30);
+        }
+
+        function handleRumors() {
+            playSFX('click');
+            typeWriter("The walls have ears, and the wind has a tongue. In these dark times, a whisper can be worth more than a pouch of diamonds.", dialogueElement, 30, () => {
+                showModal('rumors-modal');
+            });
+        }
+
+        function handleCommunity() {
+            playSFX('click');
+            typeWriter("How can you stay updated, you ask? The ravens carry our news, and the common rooms are always bustling with talk of our upcoming wares.", dialogueElement, 30, () => {
+                showModal('community-modal');
+            });
+        }
+
+        function handleFeatures() {
+            playSFX('click');
+            typeWriter("Being a merchant is more than just counting gold. It is an art of logistics, a dance of pricing, and the crafting of a sanctuary.", dialogueElement, 30, () => {
+                showModal('features-modal');
+            });
+        }
+
+        function showModal(id) {
+            setTimeout(() => {
+                const modal = document.getElementById(id);
+                if (modal) modal.classList.add('visible');
+            }, 600);
+        }
+
+        function closeModals() {
+            document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
+            stopCarousel();
+            setTimeout(() => {
+                typeWriter("Shall we continue our business, or does the world outside beckon?", dialogueElement);
+            }, 400);
+        }
+
+        let carouselImages = [];
+        for (let i = 1; i <= 38; i++) {
+            carouselImages.push(`images/inventory/inventory_${i}.jpg`);
+        }
+        
+        const tags = ['Rare', 'Epic', 'Legendary', 'Ancient', 'Cursed', 'Blessed', 'Mythical', 'Artifact', 'Relic'];
+
+        let currentCarouselIndex = 0;
+        let carouselInterval;
+        let carouselInitialized = false;
+
+        function initCarousel() {
+            const track = document.getElementById('carousel-track');
+            if (!track || carouselInitialized) {
+                if (carouselInitialized) startCarousel();
+                return;
+            }
+            
+            track.innerHTML = '';
+            
+            carouselImages.forEach((src, index) => {
+                const img = document.createElement('img');
+                img.src = src;
+                img.className = 'carousel-image' + (index === 0 ? ' active' : '');
+                img.alt = "Mystical Ware";
+                img.loading = "lazy";
+                track.appendChild(img);
+            });
+            
+            carouselInitialized = true;
+            updateInventoryTag();
+            startCarousel();
+        }
+
+        function startCarousel() {
+            stopCarousel();
+            // Start with a random image
+            showCarouselImage(Math.floor(Math.random() * carouselImages.length));
+            carouselInterval = setInterval(() => {
+                // Pick a random next index that isn't the current one
+                let nextIndex;
+                do {
+                    nextIndex = Math.floor(Math.random() * carouselImages.length);
+                } while (nextIndex === currentCarouselIndex);
+                showCarouselImage(nextIndex);
+            }, 4000);
+        }
+
+        function stopCarousel() {
+            if (carouselInterval) clearInterval(carouselInterval);
+        }
+
+        function updateInventoryTag() {
+            const tag = document.getElementById('inventory-tag');
+            if (!tag) return;
+            
+            tag.classList.remove('visible');
+            
+            setTimeout(() => {
+                const randomTag = tags[Math.floor(Math.random() * tags.length)];
+                tag.textContent = randomTag;
+                tag.classList.add('visible');
+            }, 300);
+        }
+
+        function showCarouselImage(index) {
+            const images = document.querySelectorAll('.carousel-image');
+            if (images.length === 0) return;
+            
+            images.forEach(img => img.classList.remove('active'));
+            currentCarouselIndex = (index + images.length) % images.length;
+            if (images[currentCarouselIndex]) {
+                images[currentCarouselIndex].classList.add('active');
+            }
+            updateInventoryTag();
+        }
+
+        function moveCarousel(step) {
+            stopCarousel();
+            showCarouselImage(currentCarouselIndex + step);
+            if (document.getElementById('wares-modal').classList.contains('visible')) {
+                startCarousel();
+            }
+        }
+
+        window.onload = () => {
+            setTimeout(() => {
+                const ui = document.getElementById('game-ui');
+                if (ui) ui.classList.add('ready');
+                setTimeout(() => {
+                    typeWriter(welcomeText, dialogueElement, 40);
+                }, 800);
+            }, 500);
+        };
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeModals();
+            }
+        }
+    </script>
+</body>
+</html>
