@@ -936,6 +936,8 @@
 
         window.onclick = function(event) {
             if (event.target.classList.contains('modal')) {
+                const video = document.getElementById('video-player');
+                if (video) video.pause();
                 closeModals();
             }
         }
