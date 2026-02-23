@@ -59,6 +59,67 @@
             z-index: 0;
         }
 
+        /* --- LANGUAGE SELECTOR --- */
+        .lang-toggle {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
+            padding: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .lang-toggle:hover {
+            border-color: var(--gold);
+            background: rgba(212, 175, 55, 0.15);
+            transform: scale(1.1);
+        }
+
+        #lang-modal .parchment {
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .lang-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            max-height: 50vh;
+            overflow-y: auto;
+            margin-top: 15px;
+            padding-right: 5px;
+        }
+
+        .lang-btn {
+            background: rgba(139, 69, 19, 0.1);
+            border: 1px solid rgba(139, 69, 19, 0.3);
+            padding: 8px;
+            font-family: var(--ui-font);
+            font-size: 0.8rem;
+            color: #2c1e0f;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-radius: 4px;
+        }
+
+        .lang-btn:hover, .lang-btn.active {
+            background: rgba(212, 175, 55, 0.2);
+            border-color: #d4af37;
+            font-weight: bold;
+        }
+
+        /* --- END LANGUAGE --- */
+
         /* --- COZY ATMOSPHERE --- */
         .warm-overlay {
             position: fixed;
@@ -713,6 +774,22 @@
     <div class="overlay"></div>
     <div class="warm-overlay"></div>
 
+    <!-- Language Map -->
+    <div class="lang-toggle" onclick="showModal('lang-modal')" title="Select Region">
+        <i class="fa-solid fa-map-location-dot"></i>
+    </div>
+
+    <div id="lang-modal" class="modal">
+        <div class="parchment">
+            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <h2>Select Region</h2>
+            <p style="font-size: 0.9rem; font-style: italic; margin-bottom: 15px;">Where does your journey begin?</p>
+            <div class="lang-grid" id="lang-grid">
+                <!-- Langs injected by JS -->
+            </div>
+        </div>
+    </div>
+
     <div id="game-ui" class="game-container">
         
         <div class="branding-container">
@@ -1146,7 +1223,62 @@
             showCarouselImage(target);
         }
 
+        // Initialize Language
+        let currentLang = 'en';
+
+        function initLanguage() {
+            // 1. Populate Grid
+            const grid = document.getElementById('lang-grid');
+            if (grid) {
+                grid.innerHTML = '';
+                Object.keys(translations).forEach(code => {
+                    const btn = document.createElement('div');
+                    btn.className = 'lang-btn';
+                    btn.innerText = translations[code].name;
+                    btn.onclick = () => setLanguage(code);
+                    if (code === currentLang) btn.classList.add('active');
+                    grid.appendChild(btn);
+                });
+            }
+
+            // 2. Auto-Detect or Load Saved
+            const saved = localStorage.getItem('arcane_lang');
+            if (saved && translations[saved]) {
+                setLanguage(saved);
+            } else {
+                const browserLang = navigator.language || navigator.userLanguage;
+                // Try exact match or prefix match
+                let match = 'en';
+                if (translations[browserLang]) match = browserLang;
+                else {
+                    const prefix = browserLang.split('-')[0];
+                    const found = Object.keys(translations).find(k => k.startsWith(prefix));
+                    if (found) match = found;
+                }
+                setLanguage(match);
+            }
+        }
+
+        function setLanguage(code) {
+            currentLang = code;
+            localStorage.setItem('arcane_lang', code);
+            
+            // Visual update
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            // (Re-render grid active state if needed, or simple class toggle loop)
+            
+            // Update "About" text immediately if open, or prep it
+            updateAboutText(code);
+            
+            // Close modal if open
+            if (document.getElementById('lang-modal').classList.contains('visible')) {
+                closeModals();
+            }
+        }
+
         window.onload = () => {
+            initLanguage(); // Run lang detection first
+            
             const ui = document.getElementById('game-ui');
             if (ui) ui.classList.add('ready');
             
