@@ -421,17 +421,88 @@
         }
 
         @media (max-width: 768px) {
-            .game-container { padding-top: 60px; justify-content: flex-start; }
-            .official-logo { max-width: 260px; }
-            .branding-container p { font-size: 0.7rem; }
-            .menu-container { width: 300px !important; gap: 10px; }
-            .menu-btn { padding: 10px; font-size: 0.85rem; }
-            .dialogue-box { padding: 20px; min-height: 120px; }
-            .dialogue-text { font-size: 1.1rem; }
-            .parchment { padding: 30px 20px; }
-            .carousel-container { height: 350px; }
-            .community-links { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-            .community-item { font-size: 0.9rem; padding: 8px; }
+            .game-container { 
+                justify-content: flex-start; 
+                padding-top: 40px; 
+                padding-bottom: 220px; /* Space for fixed dialogue */
+                overflow-y: auto; 
+                height: 100vh;
+                display: block !important; /* Allow normal flow */
+            }
+            
+            .branding-container {
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            .official-logo { 
+                max-width: 280px; 
+            }
+            
+            .branding-container p { 
+                font-size: 0.65rem; 
+                margin-top: 8px;
+            }
+            
+            .menu-container { 
+                width: 85% !important; 
+                gap: 12px; 
+                margin: 0 auto 40px auto; /* Center horizontally */
+            }
+            
+            .menu-btn { 
+                padding: 12px; 
+                font-size: 0.9rem; 
+            }
+            
+            .dialogue-wrapper {
+                position: fixed;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 92%;
+                z-index: 1000;
+                margin: 0;
+            }
+
+            .dialogue-box { 
+                padding: 20px 25px; 
+                min-height: 140px; 
+                background: rgba(15, 15, 20, 0.95); /* Slightly more opaque */
+                border: 1px solid var(--gold);
+                box-shadow: 0 -5px 30px rgba(0,0,0,0.8);
+            }
+            
+            .dialogue-text { 
+                font-size: 1.1rem; 
+                line-height: 1.4;
+            }
+
+            .speaker-name {
+                top: -12px;
+                left: 20px;
+                font-size: 0.7rem;
+            }
+
+            .parchment { 
+                padding: 25px 15px; 
+                width: 92vw;
+                max-height: 80vh;
+            }
+            
+            .carousel-container { 
+                height: 300px; 
+            }
+            
+            .community-links { 
+                grid-template-columns: repeat(2, 1fr); 
+                gap: 10px; 
+            }
+            
+            .community-item { 
+                font-size: 0.85rem; 
+                padding: 8px; 
+            }
         }
 
         @media (max-height: 700px) {
