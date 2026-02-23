@@ -708,9 +708,14 @@
     <div class="overlay"></div>
     <div class="warm-overlay"></div>
 
-    <!-- Language Map -->
+    <!-- Language Map SVG -->
     <div class="lang-toggle" onclick="showModal('lang-modal')" title="Select Region">
-        <i class="fa-solid fa-map-location-dot"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="24" height="24">
+            <path d="M565.6 36.2C572.1 40.7 576 48.1 576 56V392c0 10-6.2 18.9-15.5 22.4l-168 60c-10.1 3.6-21.2 1.5-28.1-5.4l-160-160c-5.3-5.3-12.7-7.6-20.1-6.1l-141.3 28.3c-5.8 1.1-11.1-3.1-11.8-9L30.5 304.4c-.6-5.1 2.2-9.9 7.1-11.7l168-60c10.1-3.6 21.2-1.5 28.1 5.4l160 160c5.3 5.3 12.7 7.6 20.1 6.1l141.3-28.3c5.8-1.1 11.1 3.1 11.8 9zm-388.9 44.9l141.3-28.3c5.8-1.1 11.1 3.1 11.8 9L353.5 83.6c.6 5.1-2.2 9.9-7.1 11.7l-168 60c-10.1 3.6-21.2 1.5-28.1-5.4l-160-160c-5.3-5.3-12.7-7.6-20.1-6.1L28.7 12.1c-5.8 1.1-11.1-3.1-11.8-9L16.2 1.9C15.6-3.2 18.4-8 23.3-6.2l168 60c10.1 3.6 21.2 1.5 28.1-5.4l160-160c5.3-5.3 12.7-7.6 20.1-6.1l141.3 28.3c5.8 1.1 11.1-3.1 11.8-9L554.5 197.6c.6 5.1-2.2 9.9-7.1 11.7l-168 60c-10.1 3.6-21.2 1.5-28.1-5.4l-160-160zM288 288c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32z"/>
+            <!-- Simplified Map Path fallback -->
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M20.5 3l-.16 .03L15 5.1 9 3 3.36 4.9c-.21 .07-.36 .25-.36 .48V20.5c0 .28 .22 .5 .5 .5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07 .36-.25 .36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/>
+        </svg>
     </div>
 
     <div id="game-ui" class="game-container">
@@ -1103,9 +1108,18 @@
             const menuContainer = document.querySelector('.menu-container');
             if (menuContainer) {
                 menuContainer.innerHTML = '';
+                
+                // Define actions map to avoid eval
+                const actions = {
+                    'menu_watch': handleWatch,
+                    'menu_wares': handleWares,
+                    'menu_rumors': handleRumors,
+                    'menu_common': handleCommunity,
+                    'menu_about': handleAbout
+                };
+
                 menuKeys.forEach(item => {
                     let el;
-                    // Safe access
                     let text = "Menu Item";
                     try {
                         text = (data.ui && data.ui[item.key]) ? data.ui[item.key] : (en.ui && en.ui[item.key] ? en.ui[item.key] : item.key);
@@ -1121,7 +1135,10 @@
                     } else {
                         el = document.createElement('button');
                         el.className = 'menu-btn';
-                        el.onclick = () => eval(item.action);
+                        // Bind function directly
+                        if (actions[item.key]) {
+                            el.onclick = actions[item.key];
+                        }
                         el.innerText = text;
                     }
                     menuContainer.appendChild(el);
