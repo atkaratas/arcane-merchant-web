@@ -459,6 +459,7 @@
             <button class="menu-btn" onclick="handleWares()">Browse Wares</button>
             <button class="menu-btn" onclick="handleRumors()">Ask Rumors</button>
             <button class="menu-btn" onclick="handleCommunity()">The Common Room</button>
+            <button class="menu-btn" onclick="handleAbout()">About the Game</button>
             <button class="menu-btn" onclick="handleFeatures()">Shop Systems</button>
             <a href="https://store.steampowered.com/app/4086760/Arcane_Merchant/" target="_blank" class="menu-btn" style="color: #fff; background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%); border-color: #66c0f4; display: flex; align-items: center; justify-content: center; gap: 10px;">
                 <img src="images/steam_logo_official.jpg" width="20" height="20" style="border-radius: 50%;">
@@ -536,6 +537,25 @@
         </div>
     </div>
 
+    <div id="about-modal" class="modal">
+        <div class="parchment" style="max-width: 850px; width: 95vw;">
+            <span class="close-modal" onclick="closeModals()">&times;</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 15px;">
+                <h2 style="margin: 0; border: none;">The Merchant's Guide</h2>
+                <select id="lang-select" onchange="updateAboutText(this.value)" style="background: rgba(139, 69, 19, 0.1); border: 1px solid #8b4513; color: #2c1e0f; padding: 5px 10px; font-family: var(--ui-font); cursor: pointer; border-radius: 4px;">
+                    <!-- Options populated by JS -->
+                </select>
+            </div>
+            
+            <div id="about-content" style="margin-top: 20px; line-height: 1.6; font-size: 1.1rem;">
+                <p id="about-intro" style="margin-bottom: 25px; font-style: italic;"></p>
+                <div id="about-features" style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+                    <!-- Features populated by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="video-modal" class="modal">
         <div class="parchment" style="max-width: 900px; background: #0a0a0a; border: 2px solid var(--gold); padding: 10px;">
             <span class="close-modal" onclick="closeVideoModal()">&times;</span>
@@ -543,6 +563,7 @@
         </div>
     </div>
 
+    <script src="translations.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
         const dialogueElement = document.getElementById('dialogue');
@@ -570,6 +591,51 @@
         function handleRumors() { showModal('rumors-modal'); typeWriter("The walls have ears, and the wind has a tongue.", dialogueElement, 30); }
         function handleCommunity() { showModal('community-modal'); typeWriter("The ravens carry our news...", dialogueElement, 30); }
         function handleFeatures() { showModal('features-modal'); typeWriter("Merchantry is an art of logistics...", dialogueElement, 30); }
+        function handleAbout() {
+            showModal('about-modal');
+            typeWriter("The story of the merchant is written in many tongues...", dialogueElement, 30);
+            initAbout();
+        }
+
+        function initAbout() {
+            const select = document.getElementById('lang-select');
+            if (select.options.length === 0) {
+                // Populate languages
+                Object.keys(translations).forEach(code => {
+                    const option = document.createElement('option');
+                    option.value = code;
+                    option.text = translations[code].name;
+                    select.appendChild(option);
+                });
+                // Default to English
+                select.value = 'en';
+                updateAboutText('en');
+            }
+        }
+
+        function updateAboutText(langCode) {
+            const data = translations[langCode];
+            if (!data) return;
+            
+            document.getElementById('about-intro').innerText = data.intro;
+            
+            const featuresContainer = document.getElementById('about-features');
+            featuresContainer.innerHTML = '';
+            
+            data.features.forEach(feature => {
+                const p = document.createElement('p');
+                // Extract emoji and bold part if possible for styling, but simple text is safer for now
+                // We'll use simple HTML replacement for bolding the start if needed, but textContent is safer.
+                // Let's try to bold the title part before the first space after the emoji?
+                // Actually, the format is "🛍️ Title Description". Let's split by first space after emoji?
+                // Or just display as is for stability.
+                p.innerText = feature;
+                p.style.marginBottom = '15px';
+                p.style.paddingLeft = '10px';
+                p.style.borderLeft = '3px solid #d4af37';
+                featuresContainer.appendChild(p);
+            });
+        }
 
         function showModal(id) {
             const modal = document.getElementById(id);
