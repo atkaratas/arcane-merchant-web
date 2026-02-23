@@ -39,11 +39,11 @@
             background: #050505 url('images/official-background.jpg?v=final_fix') no-repeat center center;
             background-size: cover;
             z-index: -1;
-            filter: brightness(0.7) sepia(0.1);
-            animation: slowZoom 40s linear infinite alternate;
+            filter: brightness(0.8) sepia(0.1);
+            animation: slowZoom 60s linear infinite alternate;
         }
 
-        @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.1); } }
+        @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.15); } }
 
         .overlay {
             position: fixed;
@@ -51,7 +51,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.6) 100%);
+            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.7) 100%);
             pointer-events: none;
             z-index: 0;
         }
@@ -64,12 +64,12 @@
             height: 100vh;
             width: 100vw;
             padding: 20px;
+            padding-bottom: 220px;
             opacity: 0;
             transition: opacity 1.5s ease-in;
             position: relative;
             z-index: 1;
             text-align: center;
-            transform: translateY(-40px);
         }
 
         .game-container.ready { opacity: 1; display: flex !important; }
@@ -82,22 +82,21 @@
         .menu-btn { background: var(--dark-bg); border: 1px solid rgba(212, 175, 55, 0.3); color: var(--gold); padding: 12px 30px; font-family: var(--ui-font); font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); text-decoration: none; text-align: center; }
         .menu-btn:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.1); }
 
-        .dialogue-wrapper { width: 90%; max-width: 900px; position: relative; margin: 0 auto; text-align: left; z-index: 2; }
-        .dialogue-box { background: var(--dark-bg); border: 2px solid rgba(212, 175, 55, 0.5); padding: 25px 35px; min-height: 140px; position: relative; box-shadow: 0 10px 40px rgba(0,0,0,0.9); border-radius: 2px; }
+        .dialogue-wrapper { width: 90%; max-width: 900px; position: fixed; bottom: 35px; left: 50%; transform: translateX(-50%); z-index: 3000; }
+        .dialogue-box { background: rgba(20, 20, 25, 1); border: 2px solid rgba(212, 175, 55, 0.8); padding: 25px 35px; min-height: 140px; border-radius: 2px; box-shadow: 0 0 30px rgba(0,0,0,1); }
         .speaker-name { position: absolute; top: -14px; left: 30px; background: var(--gold); color: #000; padding: 3px 18px; font-family: var(--ui-font); font-weight: bold; text-transform: uppercase; font-size: 0.75rem; display: flex; align-items: center; gap: 8px; }
         .game-icon-seal { width: 24px; height: 24px; object-fit: contain; }
-        .dialogue-text { font-family: var(--dialogue-font); font-size: 1.6rem; line-height: 1.5; color: #f0f0f0; }
-        .dialogue-text::after { content: "|"; animation: blink 1s step-end infinite; margin-left: 5px; color: var(--gold); }
-        @keyframes blink { from, to { opacity: 1; } 50% { opacity: 0; } }
+        .dialogue-text { font-family: var(--dialogue-font); font-size: 1.4rem; line-height: 1.4; color: #f0f0f0; }
 
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 100; justify-content: center; align-items: center; padding: 20px; opacity: 0; transition: opacity 0.5s ease; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 100; justify-content: center; align-items: center; padding: 20px; padding-bottom: 220px; opacity: 0; transition: opacity 0.5s ease; }
         .modal.visible { display: flex; opacity: 1; }
-        
-        .parchment { background: var(--parchment); background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #2c1e0f; width: 95%; max-width: 750px; padding: 40px; border-radius: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.7), inset 0 0 60px rgba(139, 69, 19, 0.2); position: relative; font-family: var(--dialogue-font); max-height: 90vh; overflow-y: auto; transform: scale(0.9); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .modal.visible .parchment { transform: scale(1); }
-        .parchment h2 { font-family: var(--ui-font); margin-bottom: 25px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 15px; text-align: center; color: #5d2e0a; letter-spacing: 2px; }
+        body.modal-open .branding-container, body.modal-open .menu-container { opacity: 0; pointer-events: none; }
 
-        .carousel-container { position: relative; width: 100%; height: 500px; margin: 20px 0; overflow: hidden; border: 3px double #5d2e0a; background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, rgba(0,0,0,0.4) 100%); display: flex; justify-content: center; align-items: center; }
+        .parchment { background: var(--parchment); background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #2c1e0f; width: 95%; max-width: 750px; padding: 40px; border-radius: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.7), inset 0 0 60px rgba(139, 69, 19, 0.2); position: relative; font-family: var(--dialogue-font); max-height: 65vh; overflow-y: auto; transform: scale(0.9); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .modal.visible .parchment { transform: scale(1); }
+        .parchment h2 { font-family: var(--ui-font); margin-bottom: 30px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 15px; text-align: center; color: #5d2e0a; letter-spacing: 2px; }
+
+        .carousel-container { position: relative; width: 100%; height: 450px; background: #000; display: flex; justify-content: center; align-items: center; border: 4px double #5d2e0a; overflow: hidden; margin-top: 10px; }
         .carousel-image { position: absolute; width: 90%; height: 90%; object-fit: contain; opacity: 0; transition: opacity 0.8s ease; top: 50%; left: 50%; transform: translate(-50%, -50%); }
         .carousel-image.active { opacity: 1; }
 
@@ -106,8 +105,9 @@
         .community-item:hover { background: rgba(139, 69, 19, 0.12); transform: translateY(-2px); }
 
         @media (max-width: 768px) {
-            .game-container { padding-top: 60px; transform: translateY(-40px); justify-content: flex-start; }
-            .official-logo { max-width: 260px; }
+            .game-container { justify-content: flex-start; padding-top: 60px; transform: translateY(-40px); }
+            .official-logo { max-width: 240px; }
+            .branding-container p { font-size: 0.65rem; }
             .menu-container { width: 300px; gap: 10px; }
             .menu-btn { padding: 10px; font-size: 0.85rem; }
             .dialogue-text { font-size: 1.1rem; }
@@ -117,7 +117,8 @@
             .community-item { font-size: 0.85rem; padding: 8px; }
         }
 
-        .close-modal { position: absolute; top: 15px; right: 20px; font-size: 2.5rem; cursor: pointer; color: #8b4513; z-index: 10; line-height: 1; }
+        .close-modal { position: absolute; top: 10px; right: 10px; font-size: 2rem; cursor: pointer; color: #8b4513; z-index: 10; line-height: 1; transition: transform 0.3s; }
+        .close-modal:hover { transform: rotate(90deg); }
         .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(139, 69, 19, 0.2); color: #5d2e0a; font-size: 2rem; cursor: pointer; z-index: 10; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: none; }
         .carousel-arrow.prev { left: 15px; }
         .carousel-arrow.next { right: 15px; }
@@ -147,11 +148,12 @@
                 Wishlist on Steam
             </a>
         </div>
-        <div class="dialogue-wrapper">
-            <div class="dialogue-box">
-                <div class="speaker-name"><img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="A"> Master Merchant</div>
-                <div id="dialogue" class="dialogue-text"></div>
-            </div>
+    </div>
+
+    <div class="dialogue-wrapper">
+        <div class="dialogue-box">
+            <div class="speaker-name"><img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="A"> Master Merchant</div>
+            <div id="dialogue" class="dialogue-text"></div>
         </div>
     </div>
 
@@ -201,7 +203,7 @@
         <div class="parchment">
             <span class="close-modal" onclick="closeModals()">&times;</span>
             <h2>Mastering the Arts</h2>
-            <div style="margin-top: 20px;">
+            <div style="margin-top: 10px;">
                 <p style="margin-bottom: 20px;">✧ <strong>Grand Display:</strong> Design a sanctuary for your wares.</p>
                 <p style="margin-bottom: 20px;">✧ <strong>Alchemy:</strong> Transform raw essence into artifacts.</p>
                 <p>✧ <strong>Economy:</strong> Wars and festivals shift value in real-time.</p>
@@ -229,7 +231,7 @@
         ];
         let cIdx = 0, tTimeout, isT = false;
 
-        function typeWriter(text, element, speed = 30, callback) {
+        function tWriter(text, element, speed = 30, callback) {
             if (isT) clearTimeout(tTimeout);
             isT = true; element.innerHTML = ""; let i = 0;
             function type() {
@@ -239,19 +241,19 @@
             type();
         }
 
-        function handleWatch() { showVideoModal(); typeWriter("Behold the memories of the trade...", dEl); }
-        function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter("Behold my collection of rare artifacts...", dEl); }
-        function handleRumors() { showModal('rumors-modal'); typeWriter("The walls have ears...", dEl); }
-        function handleCommunity() { showModal('community-modal'); typeWriter("The common rooms are bustling...", dEl); }
-        function handleFeatures() { showModal('features-modal'); typeWriter("Merchantry is an art of logistics...", dEl); }
+        function handleWatch() { showVideoModal(); tWriter("Behold the memories of the trade...", dEl); }
+        function handleWares() { showModal('wares-modal'); initCarousel(); tWriter("Behold my collection of rare artifacts...", dEl); }
+        function handleRumors() { showModal('rumors-modal'); tWriter("The walls have ears...", dEl); }
+        function handleCommunity() { showModal('community-modal'); tWriter("The common rooms are bustling...", dEl); }
+        function handleFeatures() { showModal('features-modal'); tWriter("Merchantry is an art of logistics...", dEl); }
 
-        function showModal(id) { document.getElementById(id).classList.add('visible'); }
-        function closeModals() { document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible')); stopC(); }
+        function showModal(id) { document.getElementById(id).classList.add('visible'); document.body.classList.add('modal-open'); }
+        function closeModals() { document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible')); document.body.classList.remove('modal-open'); stopC(); }
         
         function showVideoModal() {
             const m = document.getElementById('video-modal'), v = document.getElementById('video-player');
             const s = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/hls_264_master.m3u8';
-            m.classList.add('visible');
+            m.classList.add('visible'); document.body.classList.add('modal-open');
             if (Hls.isSupported()) { let hls = new Hls(); hls.loadSource(s); hls.attachMedia(v); hls.on(Hls.Events.MANIFEST_PARSED, () => v.play()); }
         }
         function closeVideoModal() { document.getElementById('video-player').pause(); closeModals(); }
@@ -274,8 +276,8 @@
         window.onload = () => {
             document.getElementById('game-ui').classList.add('ready');
             setTimeout(() => { 
-                typeWriter(wText, dEl); 
-                setInterval(() => { if (!isT) { cIdx = (cIdx + 1) % mDialogues.length; typeWriter(mDialogues[cIdx], dEl); } }, 12000);
+                tWriter(wText, dEl); 
+                setInterval(() => { if (!isT) { cIdx = (cIdx + 1) % mDialogues.length; tWriter(mDialogues[cIdx], dEl); } }, 12000);
             }, 800);
         };
 
