@@ -963,18 +963,16 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script>
         const dialogueElement = document.getElementById('dialogue');
-        const welcomeText = "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.";
+        let merchantDialogues = []; 
+        let currentLang = 'en'; // Global
         
-        const merchantDialogues = [
-            "There is no rush here, friend. Take a moment to breathe. The storm outside can wait while we share a quiet moment.",
-            "Every artifact on these shelves has a story to tell. Some are grand adventures, others are gentle whispers. Which one calls to you?",
-            "Gold is useful, certainly, but the true joy of a merchant is finding the perfect home for a lost treasure.",
-            "Listen to the fire crackle... it’s the oldest song in the world. A shop should be a sanctuary first, a business second.",
-            "They say the moon is exceptionally bright tonight. A perfect evening to sort through old scrolls and dream of new journeys.",
-            "Have you met the shop cat? She usually sleeps by the window. She is the true owner of this place; I just pay the bills.",
-            "In a world that moves so fast, I find great peace in the simple act of polishing a dusty lamp. There is magic in care.",
-            "A customer is not just a transaction. They are a guest in your home. Offer them warmth, and they will return with loyalty.",
-            "If you listen closely, you can hear the town settling down for the night. It is my favorite sound."
+        const menuKeys = [
+            { key: 'menu_watch', action: 'handleWatch()' },
+            { key: 'menu_wares', action: 'handleWares()' },
+            { key: 'menu_rumors', action: 'handleRumors()' },
+            { key: 'menu_common', action: 'handleCommunity()' },
+            { key: 'menu_about', action: 'handleAbout()' },
+            { key: 'menu_steam', link: 'https://store.steampowered.com/app/4086760/Arcane_Merchant/' }
         ];
 
         let currentDialogueIndex = 0;
@@ -982,15 +980,15 @@
         let isTyping = false;
         let hls;
 
-        function handleWatch() { showVideoModal(); typeWriter("Behold the memories of the trade... visions of what was and what is yet to come.", dialogueElement, 30); }
-        function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter("Behold the relics of an age forgotten.", dialogueElement, 30); }
-        function handleRumors() { showModal('rumors-modal'); typeWriter("The walls have ears, and the wind has a tongue.", dialogueElement, 30); }
-        function handleCommunity() { showModal('community-modal'); typeWriter("The ravens carry our news...", dialogueElement, 30); }
-        function handleAbout() {
-            showModal('about-modal');
-            typeWriter("The story of the merchant is written in many tongues...", dialogueElement, 30);
-            initAbout();
+        function getQuotes() {
+            return translations[currentLang].merchant ? translations[currentLang].merchant.quotes : translations['en'].merchant.quotes;
         }
+
+        function handleWatch() { showVideoModal(); typeWriter(getQuotes()[0], dialogueElement, 30); }
+        function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter(getQuotes()[1], dialogueElement, 30); }
+        function handleRumors() { showModal('rumors-modal'); typeWriter(getQuotes()[4], dialogueElement, 30); }
+        function handleCommunity() { showModal('community-modal'); typeWriter(getQuotes()[8], dialogueElement, 30); }
+        function handleAbout() { showModal('about-modal'); typeWriter(getQuotes()[2], dialogueElement, 30); }
 
         function initAbout() {
             const select = document.getElementById('lang-select');
@@ -1263,20 +1261,69 @@
         function setLanguage(code) {
             currentLang = code;
             localStorage.setItem('arcane_lang', code);
+            const data = translations[code];
+            const en = translations['en'];
             
-            // Visual update
-            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-            // Close modal if open
-            if (document.getElementById('lang-modal').classList.contains('visible')) {
-                closeModals();
+            document.querySelectorAll('.lang-btn').forEach(b => {
+                b.classList.remove('active');
+                if (b.innerText === data.name) b.classList.add('active');
+            });
+            
+            if (document.getElementById('lang-modal').classList.contains('visible')) closeModals();
+
+            // UPDATE UI ELEMENTS
+            const menuContainer = document.querySelector('.menu-container');
+            if (menuContainer) {
+                menuContainer.innerHTML = '';
+                menuKeys.forEach(item => {
+                    let el;
+                    const text = (data.ui && data.ui[item.key]) ? data.ui[item.key] : en.ui[item.key];
+                    if (item.link) {
+                        el = document.createElement('a');
+                        el.href = item.link;
+                        el.target = "_blank";
+                        el.className = 'menu-btn';
+                        el.style = "color: #fff; background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%); border-color: #66c0f4; display: flex; align-items: center; justify-content: center; gap: 10px;";
+                        el.innerHTML = `<img src="images/steam_logo_official.jpg" width="20" height="20" style="border-radius: 50%;"> ${text}`;
+                    } else {
+                        el = document.createElement('button');
+                        el.className = 'menu-btn';
+                        el.onclick = () => eval(item.action);
+                        el.innerText = text;
+                    }
+                    menuContainer.appendChild(el);
+                });
             }
 
-            // Update "About" text immediately if open, or prep it
+            // Safe update function
+            const safeText = (selector, key) => {
+                const el = document.querySelector(selector);
+                if (el) el.innerText = (data.ui && data.ui[key]) ? data.ui[key] : en.ui[key];
+            };
+
+            safeText('#wares-modal .story-username', 'merchant_name');
+            safeText('#rumors-modal h2', 'modal_rumors_title');
+            safeText('#community-modal h2', 'modal_common_title');
+            safeText('#about-modal h2', 'modal_about_title');
+            safeText('.copyright-footer', 'footer_rights');
+            
+            const scrollTitle = document.querySelector('#rumors-modal h3');
+            if(scrollTitle) {
+                const titleText = (data.ui && data.ui['specs_title']) ? data.ui['specs_title'] : en.ui['specs_title'];
+                scrollTitle.innerText = "⚡ " + titleText;
+            }
+            
+            const mName = (data.ui && data.ui['merchant_name']) ? data.ui['merchant_name'] : en.ui['merchant_name'];
+            document.querySelector('.speaker-name').innerHTML = `<img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal"> ${mName}`;
+            
+            merchantDialogues = (data.merchant && data.merchant.quotes) ? data.merchant.quotes : en.merchant.quotes;
+            const welcome = (data.merchant && data.merchant.welcome) ? data.merchant.welcome : en.merchant.welcome;
+            if (!isTyping) typeWriter(welcome, dialogueElement, 40);
+
             updateAboutText(code);
             
-            // Show Feedback
             const toast = document.createElement('div');
-            toast.innerText = `Region Set: ${translations[code].name}`;
+            toast.innerText = `Region Set: ${data.name}`;
             toast.style.position = 'fixed';
             toast.style.top = '20px';
             toast.style.left = '50%';
@@ -1286,24 +1333,17 @@
             toast.style.padding = '10px 20px';
             toast.style.borderRadius = '4px';
             toast.style.border = '1px solid #d4af37';
-            toast.style.zIndex = '2000';
+            toast.style.zIndex = '3000';
             toast.style.fontFamily = 'var(--ui-font)';
             document.body.appendChild(toast);
-            
-            setTimeout(() => {
-                toast.style.transition = 'opacity 0.5s';
-                toast.style.opacity = '0';
-                setTimeout(() => toast.remove(), 500);
-            }, 2000);
+            setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 500); }, 2000);
         }
 
         window.onload = () => {
-            initLanguage(); // Run lang detection first
-            
+            initLanguage(); 
             const ui = document.getElementById('game-ui');
             if (ui) ui.classList.add('ready');
             
-            // Spawn Embers
             setInterval(() => {
                 const ember = document.createElement('div');
                 ember.className = 'ember';
@@ -1311,16 +1351,19 @@
                 ember.style.animationDuration = (Math.random() * 5 + 5) + 's';
                 ember.style.opacity = Math.random();
                 document.body.appendChild(ember);
-                
                 setTimeout(() => ember.remove(), 10000);
-            }, 300); // New ember every 300ms
+            }, 300);
 
             setTimeout(() => {
-                typeWriter(welcomeText, dialogueElement, 40);
+                const data = translations[currentLang];
+                const welcome = (data.merchant && data.merchant.welcome) ? data.merchant.welcome : translations['en'].merchant.welcome;
+                typeWriter(welcome, dialogueElement, 40);
+                
                 setInterval(() => {
                     if (!isTyping) {
-                        currentDialogueIndex = (currentDialogueIndex + 1) % merchantDialogues.length;
-                        typeWriter(merchantDialogues[currentDialogueIndex], dialogueElement, 35);
+                        const quotes = getQuotes();
+                        currentDialogueIndex = (currentDialogueIndex + 1) % quotes.length;
+                        typeWriter(quotes[currentDialogueIndex], dialogueElement, 35);
                     }
                 }, 12000);
             }, 800);

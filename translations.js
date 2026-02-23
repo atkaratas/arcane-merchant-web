@@ -8,7 +8,38 @@ const translations = {
             "🏰 Become the Wealthiest Merchant of the Kingdom\nStart from a humble stall; over time, expand and upgrade your store with new display areas. As your fame and fortune rise, work your way toward becoming the most respected and wealthiest merchant in town. Build your trading empire and take control of the economy of the Fantasy Middle Ages!",
             "🌿 Cozy and Relaxing Atmosphere\nRelax and grow your shop in a warm medieval fantasy world. Plan your trades and find your own pace. Enjoy the cozy vibes while you decide what to buy, what to sell and how to make your shop the best in town. There is no rush, but your choices still matter. Focus on building a successful business in a space where you can truly unwind."
         ],
-        "ending": "Open your own shop in the heart of a Medieval Fantasy realm! Stock your shelves with everything from potions and swords to mysterious crystals and legendary artifacts. Set your prices, earn your customers' trust and become the richest merchant in the town!"
+        "ending": "Open your own shop in the heart of a Medieval Fantasy realm! Stock your shelves with everything from potions and swords to mysterious crystals and legendary artifacts. Set your prices, earn your customers' trust and become the richest merchant in the town!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "tr": {
         "name": "Turkish",
@@ -19,7 +50,38 @@ const translations = {
             "🏰 Krallığın En Zengin Tüccarı Olun\nMütevazı bir tezgahtan başlayın; zamanla mağazanızı yeni teşhir alanlarıyla genişletin ve geliştirin. Şöhretiniz ve servetiniz arttıkça, kasabanın en saygın ve en zengin tüccarı olma yolunda ilerleyin. Ticaret imparatorluğunuzu kurun ve Fantezi Orta Çağı'nın ekonomisinin kontrolünü elinize alın!",
             "🌿 Huzurlu ve Rahatlatıcı Atmosfer\nSıcak bir orta çağ fantezi dünyasında rahatlayın ve dükkanınızı büyütün. Ticaretinizi planlayın ve kendi hızınızı bulun. Ne alacağınıza, ne satacağınıza ve dükkanınızı kasabanın en iyisi haline nasıl getireceğinize karar verirken huzurlu atmosferin tadını çıkarın. Acele yok, ancak seçimleriniz yine de önemli. Gerçekten rahatlayabileceğiniz bir alanda başarılı bir işletme kurmaya odaklanın."
         ],
-        "ending": "Orta Çağ Fantezi dünyasının kalbinde kendi dükkanını aç! Raflarını iksirlerden kılıçlara, gizemli kristallerden efsanevi eserlere kadar her şeyle doldur. Fiyatlarını belirle, müşterilerinin güvenini kazan ve kasabanın en zengin tüccarı ol!"
+        "ending": "Orta Çağ Fantezi dünyasının kalbinde kendi dükkanını aç! Raflarını iksirlerden kılıçlara, gizemli kristallerden efsanevi eserlere kadar her şeyle doldur. Fiyatlarını belirle, müşterilerinin güvenini kazan ve kasabanın en zengin tüccarı ol!",
+        "ui": {
+            "menu_watch": "Günlükleri İzle",
+            "menu_wares": "Ürünlere Göz At",
+            "menu_rumors": "Söylentileri Sor",
+            "menu_common": "Ortak Salon",
+            "menu_about": "Oyun Hakkında",
+            "menu_steam": "Steam İstek Listesi",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "zh": {
         "name": "Chinese (Simplified)",
@@ -30,7 +92,38 @@ const translations = {
             "🏰 成为王国最富有的商人\n从一个简陋的摊位开始；随着时间的推移，用新的展示区扩展和升级你的商店。随着名望和财富的增长，努力成为镇上最受尊敬和最富有的商人。建立你的贸易帝国，掌控中世纪奇幻世界的经济！",
             "🌿 舒适轻松的氛围\n在温暖的中世纪奇幻世界中放松身心，通过经营发展你的商店。规划你的交易，找到属于你自己的节奏。在决定买什么、卖什么以及如何让你的商店成为镇上最好的商店时，享受舒适的氛围。没有匆忙，但你的选择依然重要。专注于在一个你可以真正放松的空间里建立成功的企业。"
         ],
-        "ending": "在中世纪奇幻王国的中心开设你自己的商店！在货架上摆满从药水和剑到神秘水晶和传奇神器的所有物品。设定价格，赢得顾客的信任，成为镇上最富有的商人！"
+        "ending": "在中世纪奇幻王国的中心开设你自己的商店！在货架上摆满从药水和剑到神秘水晶和传奇神器的所有物品。设定价格，赢得顾客的信任，成为镇上最富有的商人！",
+        "ui": {
+            "menu_watch": "观看编年史",
+            "menu_wares": "浏览商品",
+            "menu_rumors": "询问传闻",
+            "menu_common": "公共休息室",
+            "menu_about": "关于游戏",
+            "menu_steam": "Steam 愿望单",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "zh-TW": {
         "name": "Chinese (Traditional)",
@@ -41,7 +134,38 @@ const translations = {
             "🏰 成為王國最富有的商人\n從一個簡陋的攤位開始；隨著時間的推移，用新的展示區擴展和升級您的商店。隨著名望和財富的增長，努力成為鎮上最受尊敬和最富有的商人。建立您的貿易帝國，掌控中世紀奇幻世界的經濟！",
             "🌿 舒適輕鬆的氛圍\n在溫暖的中世紀奇幻世界中放鬆身心，透過經營發展您的商店。規劃您的交易，找到屬於您自己的節奏。在決定買什麼、賣什麼以及如何讓您的商店成為鎮上最好的商店時，享受舒適的氛圍。沒有匆忙，但您的選擇依然重要。專注於在一個您可以真正放鬆的空間裡建立成功的企業。"
         ],
-        "ending": "在中世紀奇幻王國的中心開設您自己的商店！在貨架上擺滿從藥水和劍到神秘水晶和傳奇神器的所有物品。設定價格，贏得顧客的信任，成為鎮上最富有的商人！"
+        "ending": "在中世紀奇幻王國的中心開設您自己的商店！在貨架上擺滿從藥水和劍到神秘水晶和傳奇神器的所有物品。設定價格，贏得顧客的信任，成為鎮上最富有的商人！",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "fr-FR": {
         "name": "French (France)",
@@ -52,7 +176,38 @@ const translations = {
             "🏰 Devenez le Marchand le Plus Riche du Royaume\nCommencez par un modeste étal ; au fil du temps, agrandissez et améliorez votre magasin avec de nouvelles zones d'exposition. À mesure que votre renommée et votre fortune augmentent, progressez pour devenir le marchand le plus respecté et le plus riche de la ville. Bâtissez votre empire commercial et prenez le contrôle de l'économie du Moyen Âge Fantastique !",
             "🌿 Atmosphère Douillette et Relaxante\nDétendez-vous et développez votre boutique dans un monde fantastique médiéval chaleureux. Planifiez vos échanges et trouvez votre propre rythme. Profitez de l'ambiance douillette pendant que vous décidez quoi acheter, quoi vendre et comment faire de votre boutique la meilleure de la ville. Il n'y a pas d'urgence, mais vos choix comptent toujours. Concentrez-vous sur la création d'une entreprise prospère dans un espace où vous pouvez vraiment vous détendre."
         ],
-        "ending": "Ouvrez votre propre boutique au cœur d'un royaume médiéval fantastique ! Remplissez vos étagères de tout, des potions et épées aux cristaux mystérieux et artefacts légendaires. Fixez vos prix, gagnez la confiance de vos clients et devenez le marchand le plus riche de la ville !"
+        "ending": "Ouvrez votre propre boutique au cœur d'un royaume médiéval fantastique ! Remplissez vos étagères de tout, des potions et épées aux cristaux mystérieux et artefacts légendaires. Fixez vos prix, gagnez la confiance de vos clients et devenez le marchand le plus riche de la ville !",
+        "ui": {
+            "menu_watch": "Voir les Chroniques",
+            "menu_wares": "Parcourir les Marchandises",
+            "menu_rumors": "Demander des Rumeurs",
+            "menu_common": "La Salle Commune",
+            "menu_about": "À propos du jeu",
+            "menu_steam": "Liste de souhaits Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "de": {
         "name": "German",
@@ -63,7 +218,38 @@ const translations = {
             "🏰 Werde der reichste Händler des Königreichs\nBeginne mit einem bescheidenen Stand; im Laufe der Zeit erweitere und verbessere deinen Laden mit neuen Ausstellungsbereichen. Während dein Ruhm und dein Vermögen steigen, arbeite dich hoch, um der angesehenste und reichste Händler der Stadt zu werden. Baue dein Handelsimperium auf und übernimm die Kontrolle über die Wirtschaft des Fantasy-Mittelalters!",
             "🌿 Gemütliche und entspannende Atmosphäre\nEntspanne dich und lass deinen Laden in einer warmen mittelalterlichen Fantasy-Welt wachsen. Plane deine Geschäfte und finde dein eigenes Tempo. Genieße die gemütliche Stimmung, während du entscheidest, was du kaufen, was du verkaufen und wie du deinen Laden zum besten der Stadt machen willst. Es gibt keine Eile, aber deine Entscheidungen zählen trotzdem. Konzentriere dich darauf, ein erfolgreiches Geschäft in einem Raum aufzubauen, in dem du wirklich abschalten kannst."
         ],
-        "ending": "Eröffne deinen eigenen Laden im Herzen eines mittelalterlichen Fantasy-Reichs! Fülle deine Regale mit allem, von Tränken und Schwertern bis hin zu geheimnisvollen Kristallen und legendären Artefakten. Lege deine Preise fest, gewinne das Vertrauen deiner Kunden und werde der reichste Händler der Stadt!"
+        "ending": "Eröffne deinen eigenen Laden im Herzen eines mittelalterlichen Fantasy-Reichs! Fülle deine Regale mit allem, von Tränken und Schwertern bis hin zu geheimnisvollen Kristallen und legendären Artefakten. Lege deine Preise fest, gewinne das Vertrauen deiner Kunden und werde der reichste Händler der Stadt!",
+        "ui": {
+            "menu_watch": "Chroniken ansehen",
+            "menu_wares": "Waren durchstöbern",
+            "menu_rumors": "Gerüchte fragen",
+            "menu_common": "Der Gemeinschaftsraum",
+            "menu_about": "Über das Spiel",
+            "menu_steam": "Auf Steam wünschen",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "ja-JP": {
         "name": "Japanese (Japan)",
@@ -74,7 +260,38 @@ const translations = {
             "🏰 王国で最も裕福な商人になろう\n質素な露店から始めましょう。時間の経過とともに、新しい展示エリアでお店を拡張し、アップグレードしていきましょう。名声と富が高まるにつれて、街で最も尊敬され、最も裕福な商人になる道を進んでください。あなたの貿易帝国を築き、ファンタジー中世の経済を支配しましょう！",
             "🌿 居心地の良いリラックスできる雰囲気\n暖かい中世ファンタジーの世界でリラックスしてお店を成長させましょう。取引を計画し、自分のペースを見つけましょう。何を買い、何を売り、どうすればあなたのお店を街一番にできるかを決めながら、居心地の良い雰囲気を楽しんでください。急ぐ必要はありませんが、あなたの選択は重要です。心からくつろげる空間で、成功するビジネスを築くことに集中しましょう。"
         ],
-        "ending": "中世ファンタジー王国の中心で自分のお店を開こう！ポーションや剣から、神秘的なクリスタルや伝説のアーティファクトまで、あらゆるものを棚に並べよう。価格を設定し、顧客の信頼を勝ち取り、街で一番の大商人になろう！"
+        "ending": "中世ファンタジー王国の中心で自分のお店を開こう！ポーションや剣から、神秘的なクリスタルや伝説のアーティファクトまで、あらゆるものを棚に並べよう。価格を設定し、顧客の信頼を勝ち取り、街で一番の大商人になろう！",
+        "ui": {
+            "menu_watch": "年代記を見る",
+            "menu_wares": "商品を見る",
+            "menu_rumors": "噂を聞く",
+            "menu_common": "談話室",
+            "menu_about": "ゲームについて",
+            "menu_steam": "Steamウィッシュリスト",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "ko": {
         "name": "Korean",
@@ -85,7 +302,38 @@ const translations = {
             "🏰 왕국에서 가장 부유한 상인이 되세요\n소박한 가판대에서 시작하여 시간이 지남에 따라 새로운 진열 공간으로 상점을 확장하고 업그레이드하세요. 명성과 부가 높아짐에 따라 마을에서 가장 존경받고 부유한 상인이 되기 위해 노력하세요. 무역 제국을 건설하고 판타지 중세 시대의 경제를 장악하세요!",
             "🌿 아늑하고 편안한 분위기\n따뜻한 중세 판타지 세계에서 휴식을 취하며 상점을 성장시키세요. 거래를 계획하고 자신만의 속도를 찾으세요. 무엇을 사고, 무엇을 팔고, 어떻게 하면 마을 최고의 상점을 만들 수 있을지 결정하면서 아늑한 분위기를 즐기세요. 서두를 필요는 없지만, 여러분의 선택은 여전히 중요합니다. 진정으로 긴장을 풀 수 있는 공간에서 성공적인 사업을 구축하는 데 집중하세요."
         ],
-        "ending": "중세 판타지 왕국의 중심에 나만의 상점을 여세요! 물약과 검부터 신비한 수정과 전설적인 유물까지 모든 것으로 선반을 채우세요. 가격을 정하고, 고객의 신뢰를 얻고, 마을에서 가장 부유한 상인이 되세요!"
+        "ending": "중세 판타지 왕국의 중심에 나만의 상점을 여세요! 물약과 검부터 신비한 수정과 전설적인 유물까지 모든 것으로 선반을 채우세요. 가격을 정하고, 고객의 신뢰를 얻고, 마을에서 가장 부유한 상인이 되세요!",
+        "ui": {
+            "menu_watch": "연대기 보기",
+            "menu_wares": "상품 찾아보기",
+            "menu_rumors": "소문 묻기",
+            "menu_common": "공용실",
+            "menu_about": "게임 소개",
+            "menu_steam": "Steam 찜하기",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "pl-PL": {
         "name": "Polish (Poland)",
@@ -96,7 +344,38 @@ const translations = {
             "🏰 Zostań Najbogatszym Kupcem w Królestwie\nZacznij od skromnego straganu; z czasem rozbuduj i ulepsz swój sklep o nowe obszary wystawowe. W miarę wzrostu sławy i fortuny, pracuj nad tym, by stać się najbardziej szanowanym i najbogatszym kupcem w mieście. Zbuduj swoje imperium handlowe i przejmij kontrolę nad gospodarką Średniowiecznego Fantasy!",
             "🌿 Przytulna i Relaksująca Atmosfera\nZrelaksuj się i rozwijaj swój sklep w ciepłym średniowiecznym świecie fantasy. Planuj swoje transakcje i znajdź własne tempo. Ciesz się przytulną atmosferą, decydując, co kupić, co sprzedać i jak sprawić, by twój sklep był najlepszy w mieście. Nie ma pośpiechu, ale twoje wybory wciąż mają znaczenie. Skup się na budowaniu odnoszącego sukcesy biznesu w przestrzeni, w której możesz naprawdę odpocząć."
         ],
-        "ending": "Otwórz własny sklep w sercu średniowiecznego królestwa fantasy! Wypełnij swoje półki wszystkim, od mikstur i mieczy po tajemnicze kryształy i legendarne artefakty. Ustalaj ceny, zdobywaj zaufanie klientów i zostań najbogatszym kupcem w mieście!"
+        "ending": "Otwórz własny sklep w sercu średniowiecznego królestwa fantasy! Wypełnij swoje półki wszystkim, od mikstur i mieczy po tajemnicze kryształy i legendarne artefakty. Ustalaj ceny, zdobywaj zaufanie klientów i zostań najbogatszym kupcem w mieście!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "pt-BR": {
         "name": "Portuguese (Brazil)",
@@ -107,7 +386,38 @@ const translations = {
             "🏰 Torne-se o Comerciante Mais Rico do Reino\nComece de uma banca humilde; com o tempo, expanda e melhore sua loja com novas áreas de exibição. À medida que sua fama e fortuna aumentam, trabalhe para se tornar o comerciante mais respeitado e rico da cidade. Construa seu império comercial e assuma o controle da economia da Idade Média de Fantasia!",
             "🌿 Atmosfera Aconchegante e Relaxante\nRelaxe e faça sua loja crescer em um mundo de fantasia medieval acolhedor. Planeje suas negociações e encontre seu próprio ritmo. Aproveite as vibrações aconchegantes enquanto decide o que comprar, o que vender e como tornar sua loja a melhor da cidade. Não há pressa, mas suas escolhas ainda importam. Concentre-se em construir um negócio de sucesso em um espaço onde você pode realmente relaxar."
         ],
-        "ending": "Abra sua própria loja no coração de um reino de fantasia medieval! Encha suas prateleiras com tudo, desde poções e espadas até cristais misteriosos e artefatos lendários. Defina seus preços, conquiste a confiança de seus clientes e torne-se o comerciante mais rico da cidade!"
+        "ending": "Abra sua própria loja no coração de um reino de fantasia medieval! Encha suas prateleiras com tudo, desde poções e espadas até cristais misteriosos e artefatos lendários. Defina seus preços, conquiste a confiança de seus clientes e torne-se o comerciante mais rico da cidade!",
+        "ui": {
+            "menu_watch": "Ver Crônicas",
+            "menu_wares": "Navegar nos Itens",
+            "menu_rumors": "Perguntar Rumores",
+            "menu_common": "Salão Comum",
+            "menu_about": "Sobre o Jogo",
+            "menu_steam": "Lista de Desejos Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "ru-RU": {
         "name": "Russian (Russia)",
@@ -118,7 +428,38 @@ const translations = {
             "🏰 Станьте Самым Богатым Купцом Королевства\nНачните со скромного прилавка; со временем расширяйте и улучшайте свой магазин новыми торговыми зонами. По мере роста вашей славы и состояния, стремитесь стать самым уважаемым и богатым торговцем в городе. Постройте свою торговую империю и возьмите под контроль экономику Фэнтезийного Средневековья!",
             "🌿 Уютная и Расслабляющая Атмосфера\nРасслабьтесь и развивайте свой магазин в теплом мире средневекового фэнтези. Планируйте свои сделки и найдите свой собственный темп. Наслаждайтесь уютной атмосферой, решая, что покупать, что продавать и как сделать свой магазин лучшим в городе. Спешить некуда, но ваш выбор все равно имеет значение. Сосредоточьтесь на создании успешного бизнеса в пространстве, где вы можете по-настоящему отдохнуть."
         ],
-        "ending": "Откройте свой собственный магазин в самом сердце средневекового фэнтезийного королевства! Заполните полки всем: от зелий и мечей до таинственных кристаллов и легендарных артефактов. Устанавливайте цены, завоевывайте доверие клиентов и станьте самым богатым торговцем в городе!"
+        "ending": "Откройте свой собственный магазин в самом сердце средневекового фэнтезийного королевства! Заполните полки всем: от зелий и мечей до таинственных кристаллов и легендарных артефактов. Устанавливайте цены, завоевывайте доверие клиентов и станьте самым богатым торговцем в городе!",
+        "ui": {
+            "menu_watch": "Смотреть Хроники",
+            "menu_wares": "Просмотр Товаров",
+            "menu_rumors": "Спросить Слухи",
+            "menu_common": "Общая Комната",
+            "menu_about": "Об Игре",
+            "menu_steam": "В Желаемое Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "es-ES": {
         "name": "Spanish (Spain)",
@@ -129,7 +470,38 @@ const translations = {
             "🏰 Conviértete en el Comerciante Más Rico del Reino\nEmpieza desde un humilde puesto; con el tiempo, expande y mejora tu tienda con nuevas áreas de exhibición. A medida que tu fama y fortuna aumenten, trabaja para convertirte en el comerciante más respetado y rico de la ciudad. ¡Construye tu imperio comercial y toma el control de la economía de la Edad Media de Fantasía!",
             "🌿 Atmósfera Acogedora y Relajante\nRelájate y haz crecer tu tienda en un cálido mundo de fantasía medieval. Planifica tus comercios y encuentra tu propio ritmo. Disfruta del ambiente acogedor mientras decides qué comprar, qué vender y cómo hacer que tu tienda sea la mejor de la ciudad. No hay prisa, pero tus elecciones siguen importando. Concéntrate en construir un negocio exitoso en un espacio donde realmente puedas desconectar."
         ],
-        "ending": "¡Abre tu propia tienda en el corazón de un reino de fantasía medieval! Llena tus estanterías con todo, desde pociones y espadas hasta cristales misteriosos y artefactos legendarios. ¡Fija tus precios, gánate la confianza de tus clientes y conviértete en el comerciante más rico de la ciudad!"
+        "ending": "¡Abre tu propia tienda en el corazón de un reino de fantasía medieval! Llena tus estanterías con todo, desde pociones y espadas hasta cristales misteriosos y artefactos legendarios. ¡Fija tus precios, gánate la confianza de tus clientes y conviértete en el comerciante más rico de la ciudad!",
+        "ui": {
+            "menu_watch": "Ver Crónicas",
+            "menu_wares": "Explorar Mercancías",
+            "menu_rumors": "Preguntar Rumores",
+            "menu_common": "Sala Común",
+            "menu_about": "Sobre el Juego",
+            "menu_steam": "Lista de Deseos Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "it-IT": {
         "name": "Italian (Italy)",
@@ -140,7 +512,38 @@ const translations = {
             "🏰 Diventa il Mercante Più Ricco del Regno\nInizia da un'umile bancarella; col tempo, espandi e migliora il tuo negozio con nuove aree espositive. Man mano che la tua fama e la tua fortuna aumentano, lavora per diventare il mercante più rispettato e ricco della città. Costruisci il tuo impero commerciale e prendi il controllo dell'economia del Medioevo Fantasy!",
             "🌿 Atmosfera Accogliente e Rilassante\nRilassati e fai crescere il tuo negozio in un caldo mondo fantasy medievale. Pianifica i tuoi scambi e trova il tuo ritmo. Goditi le vibrazioni accoglienti mentre decidi cosa comprare, cosa vendere e come rendere il tuo negozio il migliore della città. Non c'è fretta, ma le tue scelte contano comunque. Concentrati sulla costruzione di un'attività di successo in uno spazio in cui puoi davvero rilassarti."
         ],
-        "ending": "Apri il tuo negozio nel cuore di un regno fantasy medievale! Riempi i tuoi scaffali con tutto, da pozioni e spade a cristalli misteriosi e artefatti leggendari. Imposta i tuoi prezzi, guadagna la fiducia dei tuoi clienti e diventa il mercante più ricco della città!"
+        "ending": "Apri il tuo negozio nel cuore di un regno fantasy medievale! Riempi i tuoi scaffali con tutto, da pozioni e spade a cristalli misteriosi e artefatti leggendari. Imposta i tuoi prezzi, guadagna la fiducia dei tuoi clienti e diventa il mercante più ricco della città!",
+        "ui": {
+            "menu_watch": "Guarda Cronache",
+            "menu_wares": "Sfoglia Merci",
+            "menu_rumors": "Chiedi Voci",
+            "menu_common": "Sala Comune",
+            "menu_about": "Sul Gioco",
+            "menu_steam": "Desideri Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "id-ID": {
         "name": "Indonesian (Indonesia)",
@@ -151,7 +554,38 @@ const translations = {
             "🏰 Menjadi Pedagang Terkaya di Kerajaan\nMulailah dari kios sederhana; seiring waktu, perluas dan tingkatkan toko Anda dengan area tampilan baru. Seiring ketenaran dan kekayaan Anda meningkat, berusahalah untuk menjadi pedagang yang paling dihormati dan terkaya di kota. Bangun kerajaan dagang Anda dan ambil kendali ekonomi Abad Pertengahan Fantasi!",
             "🌿 Suasana Nyaman dan Santai\nBersantai dan kembangkan toko Anda di dunia fantasi abad pertengahan yang hangat. Rencanakan perdagangan Anda dan temukan ritme Anda sendiri. Nikmati suasana nyaman saat Anda memutuskan apa yang akan dibeli, apa yang akan dijual, dan bagaimana menjadikan toko Anda yang terbaik di kota. Tidak perlu terburu-buru, tetapi pilihan Anda tetap penting. Fokuslah untuk membangun bisnis yang sukses di ruang di mana Anda dapat benar-benar bersantai."
         ],
-        "ending": "Buka toko Anda sendiri di jantung kerajaan Fantasi Abad Pertengahan! Isi rak Anda dengan segala sesuatu mulai dari ramuan dan pedang hingga kristal misterius dan artefak legendaris. Tetapkan harga Anda, dapatkan kepercayaan pelanggan Anda, dan jadilah pedagang terkaya di kota!"
+        "ending": "Buka toko Anda sendiri di jantung kerajaan Fantasi Abad Pertengahan! Isi rak Anda dengan segala sesuatu mulai dari ramuan dan pedang hingga kristal misterius dan artefak legendaris. Tetapkan harga Anda, dapatkan kepercayaan pelanggan Anda, dan jadilah pedagang terkaya di kota!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "vi-VN": {
         "name": "Vietnamese (Vietnam)",
@@ -162,7 +596,38 @@ const translations = {
             "🏰 Trở Thành Thương Nhân Giàu Có Nhất Vương Quốc\nBắt đầu từ một gian hàng khiêm tốn; theo thời gian, hãy mở rộng và nâng cấp cửa hàng của bạn với các khu vực trưng bày mới. Khi danh tiếng và tài sản của bạn tăng lên, hãy nỗ lực để trở thành thương nhân được kính trọng và giàu có nhất trong thị trấn. Xây dựng đế chế thương mại của bạn và nắm quyền kiểm soát nền kinh tế của Thời Trung Cổ Giả Tưởng!",
             "🌿 Bầu Không Khí Ấm Cúng và Thư Giãn\nThư giãn và phát triển cửa hàng của bạn trong một thế giới giả tưởng thời trung cổ ấm áp. Lên kế hoạch cho các giao dịch và tìm ra nhịp độ của riêng bạn. Tận hưởng những rung cảm ấm cúng trong khi bạn quyết định mua gì, bán gì và làm thế nào để biến cửa hàng của mình trở thành cửa hàng tốt nhất trong thị trấn. Không cần phải vội vã, nhưng những lựa chọn của bạn vẫn rất quan trọng. Tập trung vào việc xây dựng một doanh nghiệp thành công trong một không gian mà bạn có thể thực sự thư giãn."
         ],
-        "ending": "Mở cửa hàng của riêng bạn tại trung tâm của một vương quốc Giả tưởng Thời trung cổ! Lấp đầy các kệ hàng của bạn với mọi thứ từ thuốc độc và kiếm cho đến những tinh thể bí ẩn và hiện vật huyền thoại. Đặt giá, giành được lòng tin của khách hàng và trở thành thương nhân giàu có nhất trong thị trấn!"
+        "ending": "Mở cửa hàng của riêng bạn tại trung tâm của một vương quốc Giả tưởng Thời trung cổ! Lấp đầy các kệ hàng của bạn với mọi thứ từ thuốc độc và kiếm cho đến những tinh thể bí ẩn và hiện vật huyền thoại. Đặt giá, giành được lòng tin của khách hàng và trở thành thương nhân giàu có nhất trong thị trấn!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "th-TH": {
         "name": "Thai (Thailand)",
@@ -173,7 +638,38 @@ const translations = {
             "🏰 ก้าวเป็นพ่อค้าที่ร่ำรวยที่สุดในอาณาจักร\nเริ่มต้นจากแผงขายของเล็กๆ เมื่อเวลาผ่านไป ขยายและอัปเกรดร้านค้าของคุณด้วยพื้นที่จัดแสดงใหม่ๆ เมื่อชื่อเสียงและความมั่งคั่งของคุณเพิ่มขึ้น จงมุ่งมั่นที่จะเป็นพ่อค้าที่ได้รับการเคารพและร่ำรวยที่สุดในเมือง สร้างจักรวรรดิการค้าของคุณและเข้าควบคุมเศรษฐกิจของยุคกลางแฟนตาซี!",
             "🌿 บรรยากาศที่อบอุ่นและผ่อนคลาย\nผ่อนคลายและพัฒนาร้านค้าของคุณในโลกแฟนตาซียุคกลางที่อบอุ่น วางแผนการค้าของคุณและค้นหาจังหวะของตัวเอง เพลิดเพลินไปกับบรรยากาศที่แสนสบายในขณะที่คุณตัดสินใจว่าจะซื้ออะไร ขายอะไร และจะทำให้ร้านของคุณเป็นร้านที่ดีที่สุดในเมืองได้อย่างไร ไม่มีความรีบร้อน แต่ทางเลือกของคุณยังคงมีความสำคัญ มุ่งเน้นไปที่การสร้างธุรกิจที่ประสบความสำเร็จในพื้นที่ที่คุณสามารถผ่อนคลายได้อย่างแท้จริง"
         ],
-        "ending": "เปิดร้านค้าของคุณเองในใจกลางอาณาจักรแฟนตาซียุคกลาง! เติมเต็มชั้นวางของคุณด้วยทุกสิ่งตั้งแต่น้ำยาและดาบไปจนถึงคริสตัลลึกลับและสิ่งประดิษฐ์ในตำนาน กำหนดราคาของคุณ ได้รับความไว้วางใจจากลูกค้า และกลายเป็นพ่อค้าที่ร่ำรวยที่สุดในเมือง!"
+        "ending": "เปิดร้านค้าของคุณเองในใจกลางอาณาจักรแฟนตาซียุคกลาง! เติมเต็มชั้นวางของคุณด้วยทุกสิ่งตั้งแต่น้ำยาและดาบไปจนถึงคริสตัลลึกลับและสิ่งประดิษฐ์ในตำนาน กำหนดราคาของคุณ ได้รับความไว้วางใจจากลูกค้า และกลายเป็นพ่อค้าที่ร่ำรวยที่สุดในเมือง!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "ar-SA": {
         "name": "Arabic (Saudi Arabia)",
@@ -184,7 +680,38 @@ const translations = {
             "🏰 كن أغنى تاجر في المملكة\nابدأ من كشك متواضع؛ بمرور الوقت، قم بتوسيع وتحديث متجرك بمناطق عرض جديدة. مع ارتفاع شهرتك وثروتك، شق طريقك لتصبح التاجر الأكثر احترامًا وثراءً في المدينة. ابن إمبراطوريتك التجارية وسيطر على اقتصاد العصور الوسطى الخيالية!",
             "🌿 جو مريح ومريح\nاسترخ وقم بتنمية متجرك في عالم خيالي دافئ من العصور الوسطى. خطط لتداولاتك واعثر على وتيرتك الخاصة. استمتع بالأجواء المريحة بينما تقرر ما ستشتريه وما ستبيعه وكيف تجعل متجرك الأفضل في المدينة. ليس هناك عجلة من أمرك، لكن خياراتك لا تزال مهمة. ركز على بناء عمل ناجح في مساحة يمكنك فيها الاسترخاء حقًا."
         ],
-        "ending": "افتح متجرك الخاص في قلب مملكة خيالية من العصور الوسطى! املأ أرففك بكل شيء من الجرعات والسيوف إلى البلورات الغامضة والتحف الأسطورية. حدد أسعارك، واكسب ثقة عملائك وكن أغنى تاجر في المدينة!"
+        "ending": "افتح متجرك الخاص في قلب مملكة خيالية من العصور الوسطى! املأ أرففك بكل شيء من الجرعات والسيوف إلى البلورات الغامضة والتحف الأسطورية. حدد أسعارك، واكسب ثقة عملائك وكن أغنى تاجر في المدينة!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "hi-IN": {
         "name": "Hindi (India)",
@@ -195,7 +722,38 @@ const translations = {
             "🏰 राज्य के सबसे अमीर व्यापारी बनें\nएक विनम्र स्टाल से शुरू करें; समय के साथ, नए प्रदर्शन क्षेत्रों के साथ अपनी दुकान का विस्तार और उन्नयन करें। जैसे-जैसे आपकी प्रसिद्धि और भाग्य बढ़ता है, शहर में सबसे सम्मानित और सबसे अमीर व्यापारी बनने की दिशा में काम करें। अपना व्यापारिक साम्राज्य बनाएं और काल्पनिक मध्य युग की अर्थव्यवस्था पर नियंत्रण रखें!",
             "🌿 आरामदायक और आरामदेह माहौल\nएक गर्म मध्ययुगीन फंतासी दुनिया में आराम करें और अपनी दुकान बढ़ाएं। अपने व्यापार की योजना बनाएं और अपनी गति पाएं। आरामदायक वाइब्स का आनंद लें जब आप तय करते हैं कि क्या खरीदना है, क्या बेचना है और अपनी दुकान को शहर में सबसे अच्छा कैसे बनाना है। कोई जल्दबाजी नहीं है, लेकिन आपकी पसंद अभी भी मायने रखती है। एक ऐसी जगह में एक सफल व्यवसाय बनाने पर ध्यान केंद्रित करें जहां आप वास्तव में आराम कर सकें।"
         ],
-        "ending": "मध्ययुगीन फंतासी साम्राज्य के केंद्र में अपनी खुद की दुकान खोलें! अपनी अलमारियों को औषधि और तलवारों से लेकर रहस्यमय क्रिस्टल और पौराणिक कलाकृतियों तक सब कुछ से भर दें। अपनी कीमतें निर्धारित करें, अपने ग्राहकों का विश्वास जीतें और शहर के सबसे अमीर व्यापारी बनें!"
+        "ending": "मध्ययुगीन फंतासी साम्राज्य के केंद्र में अपनी खुद की दुकान खोलें! अपनी अलमारियों को औषधि और तलवारों से लेकर रहस्यमय क्रिस्टल और पौराणिक कलाकृतियों तक सब कुछ से भर दें। अपनी कीमतें निर्धारित करें, अपने ग्राहकों का विश्वास जीतें और शहर के सबसे अमीर व्यापारी बनें!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "nl-NL": {
         "name": "Dutch (Netherlands)",
@@ -206,7 +764,38 @@ const translations = {
             "🏰 Word de Rijkste Koopman van het Koninkrijk\nBegin met een bescheiden kraampje; breid na verloop van tijd je winkel uit en upgrade deze met nieuwe displayruimtes. Naarmate je roem en fortuin stijgen, werk je je omhoog om de meest gerespecteerde en rijkste koopman in de stad te worden. Bouw je handelsimperium op en neem de controle over de economie van de Fantasy Middeleeuwen!",
             "🌿 Gezellige en Ontspannende Sfeer\nOntspan en laat je winkel groeien in een warme middeleeuwse fantasiewereld. Plan je transacties en vind je eigen tempo. Geniet van de gezellige vibes terwijl je beslist wat je wilt kopen, wat je wilt verkopen en hoe je je winkel de beste van de stad kunt maken. Er is geen haast, maar je keuzes doen er nog steeds toe. Richt je op het opbouwen van een succesvol bedrijf in een ruimte waar je echt tot rust kunt komen."
         ],
-        "ending": "Open je eigen winkel in het hart van een middeleeuws fantasierijk! Vul je planken met alles van drankjes en zwaarden tot mysterieuze kristallen en legendarische artefacten. Bepaal je prijzen, win het vertrouwen van je klanten en word de rijkste koopman van de stad!"
+        "ending": "Open je eigen winkel in het hart van een middeleeuws fantasierijk! Vul je planken met alles van drankjes en zwaarden tot mysterieuze kristallen en legendarische artefacten. Bepaal je prijzen, win het vertrouwen van je klanten en word de rijkste koopman van de stad!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "cs-CZ": {
         "name": "Czech (Czech Republic)",
@@ -217,7 +806,38 @@ const translations = {
             "🏰 Staňte se Nejbohatším Obchodníkem Království\nZačněte od skromného stánku; postupem času rozšiřujte a vylepšujte svůj obchod o nové výstavní prostory. Jak vaše sláva a jmění porostou, pracujte na tom, abyste se stali nejuznávanějším a nejbohatším obchodníkem ve městě. Vybudujte své obchodní impérium a převezměte kontrolu nad ekonomikou Fantasy Středověku!",
             "🌿 Útulná a Relaxační Atmosféra\nOdpočiňte si a rozvíjejte svůj obchod v teplém středověkém fantasy světě. Plánujte své obchody a najděte si své vlastní tempo. Užijte si útulnou atmosféru, zatímco se rozhodujete, co koupit, co prodat a jak udělat svůj obchod nejlepším ve městě. Není kam spěchat, ale na vašich volbách stále záleží. Zaměřte se na budování úspěšného podnikání v prostoru, kde si můžete skutečně odpočinout."
         ],
-        "ending": "Otevřete si vlastní obchod v srdci středověké fantasy říše! Naplňte své regály vším od lektvarů a mečů po tajemné krystaly a legendární artefakty. Nastavte si ceny, získejte důvěru svých zákazníků a staňte se nejbohatším obchodníkem ve městě!"
+        "ending": "Otevřete si vlastní obchod v srdci středověké fantasy říše! Naplňte své regály vším od lektvarů a mečů po tajemné krystaly a legendární artefakty. Nastavte si ceny, získejte důvěru svých zákazníků a staňte se nejbohatším obchodníkem ve městě!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "uk-UA": {
         "name": "Ukrainian (Ukraine)",
@@ -228,7 +848,38 @@ const translations = {
             "🏰 Станьте Найбагатшим Купцем Королівства\nПочніть зі скромного прилавка; з часом розширюйте та покращуйте свій магазин новими торговими зонами. У міру зростання вашої слави та статків прагніть стати найбільш шанованим і найбагатшим торговцем у місті. Побудуйте свою торгову імперію та візьміть під контроль економіку Фентезійного Середньовіччя!",
             "🌿 Затишна та Розслаблююча Атмосфера\nРозслабтеся та розвивайте свій магазин у теплому світі середньовічного фентезі. Плануйте свої угоди та знайдіть свій власний темп. Насолоджуйтесь затишною атмосферою, вирішуючи, що купувати, що продавати та як зробити свій магазин найкращим у місті. Поспішати нікуди, але ваш вибір все одно має значення. Зосередьтеся на побудові успішного бізнесу в просторі, де ви можете по-справжньому відпочити."
         ],
-        "ending": "Відкрийте власний магазин у серці середньовічного фентезійного королівства! Заповніть свої полиці всім: від зілля та мечів до таємничих кристалів і легендарних артефактів. Встановлюйте ціни, завойовуйте довіру клієнтів і станьте найбагатшим торговцем у місті!"
+        "ending": "Відкрийте власний магазин у серці середньовічного фентезійного королівства! Заповніть свої полиці всім: від зілля та мечів до таємничих кристалів і легендарних артефактів. Встановлюйте ціни, завойовуйте довіру клієнтів і станьте найбагатшим торговцем у місті!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "sv-SE": {
         "name": "Swedish (Sweden)",
@@ -239,7 +890,38 @@ const translations = {
             "🏰 Bli Kungarikets Rikaste Köpman\nBörja från ett ödmjukt stånd; med tiden, expandera och uppgradera din butik med nya visningsområden. I takt med att din berömmelse och förmögenhet ökar, arbeta dig uppåt för att bli den mest respekterade och rikaste köpmannen i staden. Bygg ditt handelsimperium och ta kontroll över ekonomin i Fantasy-medeltiden!",
             "🌿 Mysig och Avkopplande Atmosfär\nKoppla av och få din butik att växa i en varm medeltida fantasyvärld. Planera dina affärer och hitta din egen takt. Njut av den mysiga stämningen medan du bestämmer vad du ska köpa, vad du ska sälja och hur du ska göra din butik till den bästa i staden. Det är ingen brådska, men dina val spelar fortfarande roll. Fokusera på att bygga ett framgångsrikt företag i ett utrymme där du verkligen kan varva ner."
         ],
-        "ending": "Öppna din egen butik i hjärtat av ett medeltida fantasyrike! Fyll dina hyllor med allt från drycker och svärd till mystiska kristaller och legendariska artefakter. Sätt dina priser, förtjäna dina kunders förtroende och bli den rikaste köpmannen i staden!"
+        "ending": "Öppna din egen butik i hjärtat av ett medeltida fantasyrike! Fyll dina hyllor med allt från drycker och svärd till mystiska kristaller och legendariska artefakter. Sätt dina priser, förtjäna dina kunders förtroende och bli den rikaste köpmannen i staden!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "el-GR": {
         "name": "Greek (Greece)",
@@ -250,7 +932,38 @@ const translations = {
             "🏰 Γίνετε ο Πλουσιότερος Έμπορος του Βασιλείου\nΞεκινήστε από έναν ταπεινό πάγκο. με την πάροδο του χρόνου, επεκτείνετε και αναβαθμίστε το κατάστημά σας με νέους χώρους έκθεσης. Καθώς η φήμη και η περιουσία σας αυξάνονται, εργαστείτε για να γίνετε ο πιο σεβαστός και πλούσιος έμπορος στην πόλη. Χτίστε την εμπορική σας αυτοκρατορία και πάρτε τον έλεγχο της οικονομίας του Μεσαίωνα Φαντασίας!",
             "🌿 Ζεστή και Χαλαρωτική Ατμόσφαιρα\nΧαλαρώστε και αναπτύξτε το κατάστημά σας σε έναν ζεστό μεσαιωνικό κόσμο φαντασίας. Σχεδιάστε τις συναλλαγές σας και βρείτε τον δικό σας ρυθμό. Απολαύστε τη ζεστή ατμόσφαιρα καθώς αποφασίζετε τι θα αγοράσετε, τι θα πουλήσετε και πώς θα κάνετε το κατάστημά σας το καλύτερο στην πόλη. Δεν υπάρχει βιασύνη, αλλά οι επιλογές σας εξακολουθούν να έχουν σημασία. Εστιάστε στο χτίσιμο μιας επιτυχημένης επιχείρησης σε έναν χώρο όπου μπορείτε πραγματικά να χαλαρώσετε."
         ],
-        "ending": "Ανοίξτε το δικό σας κατάστημα στην καρδιά ενός μεσαιωνικού βασιλείου φαντασίας! Γεμίστε τα ράφια σας με τα πάντα, από φίλτρα και σπαθιά μέχρι μυστηριώδεις κρυστάλλους και θρυλικά αντικείμενα. Καθορίστε τις τιμές σας, κερδίστε την εμπιστοσύνη των πελατών σας και γίνετε ο πλουσιότερος έμπορος στην πόλη!"
+        "ending": "Ανοίξτε το δικό σας κατάστημα στην καρδιά ενός μεσαιωνικού βασιλείου φαντασίας! Γεμίστε τα ράφια σας με τα πάντα, από φίλτρα και σπαθιά μέχρι μυστηριώδεις κρυστάλλους και θρυλικά αντικείμενα. Καθορίστε τις τιμές σας, κερδίστε την εμπιστοσύνη των πελατών σας και γίνετε ο πλουσιότερος έμπορος στην πόλη!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "ro-RO": {
         "name": "Romanian (Romania)",
@@ -261,7 +974,38 @@ const translations = {
             "🏰 Devino Cel Mai Bogat Comerciant al Regatului\nÎncepe de la o tarabă modestă; în timp, extinde și modernizează-ți magazinul cu noi zone de expunere. Pe măsură ce faima și averea ta cresc, lucrează pentru a deveni cel mai respectat și bogat comerciant din oraș. Construiește-ți imperiul comercial și preia controlul asupra economiei Evului Mediu Fantastic!",
             "🌿 Atmosferă Confortabilă și Relaxantă\nRelaxează-te și dezvoltă-ți magazinul într-o lume fantastică medievală caldă. Planifică-ți tranzacțiile și găsește-ți propriul ritm. Bucură-te de vibrațiile confortabile în timp ce decizi ce să cumperi, ce să vinzi și cum să faci magazinul tău cel mai bun din oraș. Nu e nicio grabă, dar alegerile tale contează totuși. Concentrează-te pe construirea unei afaceri de succes într-un spațiu în care te poți relaxa cu adevărat."
         ],
-        "ending": "Deschide-ți propriul magazin în inima unui tărâm fantastic medieval! Umple-ți rafturile cu de toate, de la poțiuni și săbii la cristale misterioase și artefacte legendare. Stabilește-ți prețurile, câștigă încrederea clienților și devino cel mai bogat comerciant din oraș!"
+        "ending": "Deschide-ți propriul magazin în inima unui tărâm fantastic medieval! Umple-ți rafturile cu de toate, de la poțiuni și săbii la cristale misterioase și artefacte legendare. Stabilește-ți prețurile, câștigă încrederea clienților și devino cel mai bogat comerciant din oraș!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "fi-FI": {
         "name": "Finnish (Finland)",
@@ -272,7 +1016,38 @@ const translations = {
             "🏰 Tule Valtakunnan Rikkaimmaksi Kauppiaaksi\nAloita vaatimattomasta kojusta; ajan myötä laajenna ja päivitä kauppaasi uusilla esittelyalueilla. Kun maineesi ja omaisuutesi kasvavat, pyri tulemaan kaupungin arvostetuimmaksi ja rikkaimmaksi kauppiaaksi. Rakenna kauppaimperiumisi ja ota fantasia-keskiajan talous hallintaasi!",
             "🌿 Kodikas ja Rentouttava Ilmapiiri\nRentoudu ja kasvata kauppaasi lämpimässä keskiaikaisessa fantasiamaailmassa. Suunnittele kauppasi ja löydä oma tahtisi. Nauti kodikkaasta tunnelmasta päättäessäsi, mitä ostat, mitä myyt ja miten teet kaupastasi kaupungin parhaan. Ei ole kiirettä, mutta valinnoillasi on silti merkitystä. Keskity rakentamaan menestyvä yritys tilassa, jossa voit todella rentoutua."
         ],
-        "ending": "Avaa oma kauppasi keskiaikaisen fantasiavaltakunnan sydämessä! Täytä hyllysi kaikella taikajuomista ja miekoista salaperäisiin kristalleihin ja legendaarisiin esineisiin. Aseta hintasi, ansaitse asiakkaidesi luottamus ja tule kaupungin rikkaimmaksi kauppiaaksi!"
+        "ending": "Avaa oma kauppasi keskiaikaisen fantasiavaltakunnan sydämessä! Täytä hyllysi kaikella taikajuomista ja miekoista salaperäisiin kristalleihin ja legendaarisiin esineisiin. Aseta hintasi, ansaitse asiakkaidesi luottamus ja tule kaupungin rikkaimmaksi kauppiaaksi!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "tl-PH": {
         "name": "Filipino (Philippines)",
@@ -283,7 +1058,38 @@ const translations = {
             "🏰 Maging Pinakamayamang Mangangalakal ng Kaharian\nMagsimula sa isang hamak na stall; sa paglipas ng panahon, palawakin at i-upgrade ang iyong tindahan gamit ang mga bagong display area. Habang tumataas ang iyong katanyagan at kapalaran, gawin ang iyong paraan upang maging pinaka-respetado at pinakamayamang mangangalakal sa bayan. Buuin ang iyong trading empire at kontrolin ang ekonomiya ng Fantasy Middle Ages!",
             "🌿 Maaliwalas at Nakakarelaks na Kapaligiran\nMag-relax at palaguin ang iyong tindahan sa isang mainit na medieval na mundo ng pantasiya. Planuhin ang iyong mga pangangalakal at hanapin ang sarili mong bilis. Tangkilikin ang maaliwalas na vibes habang nagpapasya ka kung ano ang bibilhin, kung ano ang ibebenta at kung paano gagawin ang iyong tindahan na pinakamahusay sa bayan. Walang pagmamadali, ngunit mahalaga pa rin ang iyong mga pagpipilian. Tumutok sa pagbuo ng isang matagumpay na negosyo sa isang puwang kung saan maaari kang tunay na makapagpahinga."
         ],
-        "ending": "Buksan ang sarili mong tindahan sa puso ng isang Medieval Fantasy realm! I-stock ang iyong mga istante ng lahat mula sa mga gayuma at espada hanggang sa mga mahiwagang kristal at maalamat na artifact. Itakda ang iyong mga presyo, kunin ang tiwala ng iyong mga customer at maging pinakamayamang mangangalakal sa bayan!"
+        "ending": "Buksan ang sarili mong tindahan sa puso ng isang Medieval Fantasy realm! I-stock ang iyong mga istante ng lahat mula sa mga gayuma at espada hanggang sa mga mahiwagang kristal at maalamat na artifact. Itakda ang iyong mga presyo, kunin ang tiwala ng iyong mga customer at maging pinakamayamang mangangalakal sa bayan!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "ms-MY": {
         "name": "Malay (Malaysia)",
@@ -294,7 +1100,38 @@ const translations = {
             "🏰 Jadilah Saudagar Terkaya di Kerajaan\nMulakan dari gerai yang sederhana; dari masa ke masa, kembangkan dan naik taraf kedai anda dengan kawasan paparan baharu. Apabila kemasyhuran dan kekayaan anda meningkat, berusaha untuk menjadi pedagang yang paling dihormati dan terkaya di bandar. Bina empayar perdagangan anda dan mengawal ekonomi Zaman Pertengahan Fantasi!",
             "🌿 Suasana Selesa dan Santai\nBersantai dan kembangkan kedai anda dalam dunia fantasi zaman pertengahan yang hangat. Rancang dagangan anda dan cari rentak anda sendiri. Nikmati suasana yang selesa sambil anda memutuskan perkara yang hendak dibeli, perkara yang hendak dijual dan cara menjadikan kedai anda yang terbaik di bandar. Tidak perlu tergesa-gesa, tetapi pilihan anda tetap penting. Fokus pada membina perniagaan yang berjaya dalam ruang di mana anda benar-benar boleh berehat."
         ],
-        "ending": "Buka kedai anda sendiri di tengah-tengah alam Fantasi Abad Pertengahan! Penuhi rak anda dengan segala-galanya daripada ramuan dan pedang kepada kristal misteri dan artifak legenda. Tetapkan harga anda, dapatkan kepercayaan pelanggan anda dan jadilah saudagar terkaya di bandar!"
+        "ending": "Buka kedai anda sendiri di tengah-tengah alam Fantasi Abad Pertengahan! Penuhi rak anda dengan segala-galanya daripada ramuan dan pedang kepada kristal misteri dan artifak legenda. Tetapkan harga anda, dapatkan kepercayaan pelanggan anda dan jadilah saudagar terkaya di bandar!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "kk-KZ": {
         "name": "Kazakh (Kazakhstan)",
@@ -305,7 +1142,38 @@ const translations = {
             "🏰 Патшалықтың ең бай көпесі болыңыз\nҚарапайым дүңгіршектен бастаңыз; уақыт өте келе дүкеніңізді жаңа көрсету аймақтарымен кеңейтіңіз және жаңартыңыз. Сіздің атағыңыз бен байлығыңыз артқан сайын, қаладағы ең құрметті және ең бай саудагер болу жолында еңбек етіңіз. Сауда империяңызды құрыңыз және Фантастикалық орта ғасырлар экономикасын бақылауға алыңыз!",
             "🌿 Жайлы және тыныштандыратын атмосфера\nЖылы ортағасырлық қиял әлемінде демалыңыз және дүкеніңізді өсіріңіз. Сауда-саттықты жоспарлаңыз және өз қарқыныңызды табыңыз. Не сатып алу керектігін, не сату керектігін және дүкеніңізді қаладағы ең жақсы дүкенге қалай айналдыру керектігін шешкен кезде жайлы дірілден ләззат алыңыз. Асығыс жоқ, бірақ сіздің таңдауыңыз әлі де маңызды. Шынымен демалуға болатын кеңістікте табысты бизнес құруға назар аударыңыз."
         ],
-        "ending": "Ортағасырлық қиял әлемінің қақ ортасында өз дүкеніңізді ашыңыз! Сөрелеріңізді сусындар мен қылыштардан бастап жұмбақ кристалдар мен аңызға айналған жәдігерлерге дейін толтырыңыз. Бағаларыңызды белгілеңіз, тұтынушыларыңыздың сеніміне ие болыңыз және қаладағы ең бай көпес болыңыз!"
+        "ending": "Ортағасырлық қиял әлемінің қақ ортасында өз дүкеніңізді ашыңыз! Сөрелеріңізді сусындар мен қылыштардан бастап жұмбақ кристалдар мен аңызға айналған жәдігерлерге дейін толтырыңыз. Бағаларыңызды белгілеңіз, тұтынушыларыңыздың сеніміне ие болыңыз және қаладағы ең бай көпес болыңыз!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "az-AZ": {
         "name": "Azerbaijani (Azerbaijan)",
@@ -316,7 +1184,38 @@ const translations = {
             "🏰 Krallığın Ən Zəngin Taciri Olun\nTəvazökar bir piştaxtadan başlayın; zaman keçdikcə mağazanızı yeni nümayiş sahələri ilə genişləndirin və təkmilləşdirin. Şöhrətiniz və sərvətiniz artdıqca, şəhərin ən hörmətli və ən zəngin taciri olmaq yolunda çalışın. Ticarət imperiyanızı qurun və Fantaziya Orta Əsrlərinin iqtisadiyyatını nəzarətə götürün!",
             "🌿 Rahat və Rahatlaşdırıcı Atmosfer\nİsti orta əsr fantaziya dünyasında dincəlin və mağazanızı böyüdün. Ticarətinizi planlaşdırın və öz tempinizi tapın. Nə alacağınıza, nə satacağınıza və mağazanızı şəhərin ən yaxşısı halına necə gətirəcəyinizə qərar verərkən rahat ab-havadan həzz alın. Tələsmək yoxdur, amma seçimləriniz yenə də önəmlidir. Həqiqətən dincələ biləcəyiniz bir məkanda uğurlu bir iş qurmağa diqqət yetirin."
         ],
-        "ending": "Orta Əsr Fantaziya səltənətinin mərkəzində öz mağazanızı açın! Rəflərinizi iksirlərdən və qılınclardan tutmuş sirli kristallara və əfsanəvi artefaktlara qədər hər şeylə doldurun. Qiymətlərinizi təyin edin, müştərilərinizin etibarını qazanın və şəhərin ən zəngin taciri olun!"
+        "ending": "Orta Əsr Fantaziya səltənətinin mərkəzində öz mağazanızı açın! Rəflərinizi iksirlərdən və qılınclardan tutmuş sirli kristallara və əfsanəvi artefaktlara qədər hər şeylə doldurun. Qiymətlərinizi təyin edin, müştərilərinizin etibarını qazanın və şəhərin ən zəngin taciri olun!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "af-ZA": {
         "name": "Afrikaans (South Africa)",
@@ -327,7 +1226,38 @@ const translations = {
             "🏰 Word die Rykste Handelaar van die Koninkryk\nBegin by 'n nederige stalletjie; met verloop van tyd, brei uit en gradeer jou winkel op met nuwe vertoonareas. Soos jou roem en fortuin styg, werk jou pad op om die mees gerespekteerde en rykste handelaar in die dorp te word. Bou jou handelsryk en neem beheer oor die ekonomie van die Fantasie Middeleeue!",
             "🌿 Gesellige en Ontspannende Atmosfeer\nOntspan en laat jou winkel groei in 'n warm middeleeuse fantasiewêreld. Beplan jou ambagte en vind jou eie pas. Geniet die gesellige atmosfeer terwyl jy besluit wat om te koop, wat om te verkoop en hoe om jou winkel die beste in die dorp te maak. Daar is geen haas nie, maar jou keuses maak steeds saak. Fokus daarop om 'n suksesvolle besigheid te bou in 'n ruimte waar jy werklik kan ontspan."
         ],
-        "ending": "Maak jou eie winkel oop in die hart van 'n Middeleeuse Fantasieryk! Vul jou rakke met alles van drankies en swaarde tot geheimsinnige kristalle en legendariese artefakte. Stel jou pryse, verdien jou kliënte se vertroue en word die rykste handelaar in die dorp!"
+        "ending": "Maak jou eie winkel oop in die hart van 'n Middeleeuse Fantasieryk! Vul jou rakke met alles van drankies en swaarde tot geheimsinnige kristalle en legendariese artefakte. Stel jou pryse, verdien jou kliënte se vertroue en word die rykste handelaar in die dorp!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "da": {
         "name": "Danish",
@@ -338,7 +1268,38 @@ const translations = {
             "🏰 Bliv Rigets Rigeste Købmand\nStart fra en beskeden bod; med tiden udvid og opgrader din butik med nye udstillingsområder. Efterhånden som din berømmelse og formue stiger, arbejd dig op til at blive den mest respekterede og rigeste købmand i byen. Byg dit handelsimperium og tag kontrol over økonomien i Fantasiens Middelalder!",
             "🌿 Hyggelig og Afslappende Atmosfære\nSlap af og få din butik til at vokse i en varm middelalderlig fantasiverden. Planlæg dine handler og find dit eget tempo. Nyd den hyggelige stemning, mens du beslutter, hvad du skal købe, hvad du skal sælge, og hvordan du gør din butik til den bedste i byen. Der er intet hastværk, men dine valg betyder stadig noget. Fokuser på at opbygge en succesfuld forretning i et rum, hvor du virkelig kan slappe af."
         ],
-        "ending": "Åbn din egen butik i hjertet af et Middelalderligt Fantasirige! Fyld dine hylder med alt fra trylledrikke og sværd til mystiske krystaller og legendariske artefakter. Sæt dine priser, gør dig fortjent til dine kunders tillid og bliv den rigeste købmand i byen!"
+        "ending": "Åbn din egen butik i hjertet af et Middelalderligt Fantasirige! Fyld dine hylder med alt fra trylledrikke og sværd til mystiske krystaller og legendariske artefakter. Sæt dine priser, gør dig fortjent til dine kunders tillid og bliv den rigeste købmand i byen!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "no": {
         "name": "Norwegian",
@@ -349,7 +1310,38 @@ const translations = {
             "🏰 Bli Rikets Rikeste Kjøpmann\nStart fra en beskjeden bod; over tid utvid og oppgrader butikken din med nye utstillingsområder. Etter hvert som berømmelsen og formuen din stiger, jobb deg opp til å bli den mest respekterte og rikeste kjøpmannen i byen. Bygg ditt handelsimperium og ta kontroll over økonomien i Fantasiens Middelalder!",
             "🌿 Koselig og Avslappende Atmosfære\nSlapp av og få butikken din til å vokse i en varm middelaldersk fantasiverden. Planlegg handlene dine og finn ditt eget tempo. Nyt den koselige stemningen mens du bestemmer hva du skal kjøpe, hva du skal selge, og hvordan du gjør butikken din til den beste i byen. Det er ingen hast, men valgene dine betyr fortsatt noe. Fokuser på å bygge en vellykket bedrift i et rom hvor du virkelig kan slappe av."
         ],
-        "ending": "Åpne din egen butikk i hjertet av et Middelaldersk Fantasirike! Fyll hyllene dine med alt fra trylledrikker og sverd til mystiske krystaller og legendariske gjenstander. Sett prisene dine, gjør deg fortjent til kundenes tillit og bli den rikeste kjøpmannen i byen!"
+        "ending": "Åpne din egen butikk i hjertet av et Middelaldersk Fantasirike! Fyll hyllene dine med alt fra trylledrikker og sverd til mystiske krystaller og legendariske gjenstander. Sett prisene dine, gjør deg fortjent til kundenes tillit og bli den rikeste kjøpmannen i byen!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "hu": {
         "name": "Hungarian",
@@ -360,7 +1352,38 @@ const translations = {
             "🏰 Légy a Királyság Leggazdagabb Kereskedője\nKezdd egy szerény bódéval; idővel bővítsd és fejleszd boltodat új kiállítóterekkel. Ahogy hírneved és vagyonod nő, küzdd fel magad, hogy a város legtiszteltebb és leggazdagabb kereskedőjévé válj. Építsd ki kereskedelmi birodalmadat, és vedd át az irányítást a Fantázia Középkor gazdasága felett!",
             "🌿 Hangulatos és Pihentető Légkör\nLazíts és növeld boltodat egy meleg középkori fantáziavilágban. Tervezd meg kereskedelmedet, és találd meg saját tempódat. Élvezd a hangulatos légkört, miközben eldöntöd, mit vegyél, mit adj el, és hogyan tedd boltodat a város legjobbjává. Nincs rohanás, de döntéseidnek súlya van. Koncentrálj egy sikeres vállalkozás felépítésére egy olyan helyen, ahol igazán kikapcsolódhatsz."
         ],
-        "ending": "Nyisd meg saját boltodat egy Középkori Fantáziavilág szívében! Töltsd meg polcaidat mindennel a bájitaloktól és kardoktól a rejtélyes kristályokig és legendás ereklyékig. Állítsd be áraidat, érdemeld ki vevőid bizalmát, és légy a város leggazdagabb kereskedője!"
+        "ending": "Nyisd meg saját boltodat egy Középkori Fantáziavilág szívében! Töltsd meg polcaidat mindennel a bájitaloktól és kardoktól a rejtélyes kristályokig és legendás ereklyékig. Állítsd be áraidat, érdemeld ki vevőid bizalmát, és légy a város leggazdagabb kereskedője!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "pt-PT": {
         "name": "Portuguese (Portugal)",
@@ -371,7 +1394,38 @@ const translations = {
             "🏰 Torne-se o Comerciante Mais Rico do Reino\nComece numa banca humilde; com o tempo, expanda e melhore a sua loja com novas áreas de exposição. À medida que a sua fama e fortuna aumentam, trabalhe para se tornar o comerciante mais respeitado e rico da cidade. Construa o seu império comercial e assuma o controlo da economia da Idade Média de Fantasia!",
             "🌿 Atmosfera Acolhedora e Relaxante\nRelaxe e faça a sua loja crescer num mundo de fantasia medieval acolhedor. Planeie as suas negociações e encontre o seu próprio ritmo. Aproveite a atmosfera acolhedora enquanto decide o que comprar, o que vender e como tornar a sua loja a melhor da cidade. Não há pressa, mas as suas escolhas ainda importam. Concentre-se em construir um negócio de sucesso num espaço onde pode realmente relaxar."
         ],
-        "ending": "Abra a sua própria loja no coração de um Reino de Fantasia Medieval! Encha as suas prateleiras com tudo, desde poções e espadas até cristais misteriosos e artefactos lendários. Defina os seus preços, ganhe a confiança dos seus clientes e torne-se o comerciante mais rico da cidade!"
+        "ending": "Abra a sua própria loja no coração de um Reino de Fantasia Medieval! Encha as suas prateleiras com tudo, desde poções e espadas até cristais misteriosos e artefactos lendários. Defina os seus preços, ganhe a confiança dos seus clientes e torne-se o comerciante mais rico da cidade!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "bg": {
         "name": "Bulgarian",
@@ -382,7 +1436,38 @@ const translations = {
             "🏰 Станете Най-Богатият Търговец в Кралството\nЗапочнете от скромна сергия; с времето разширете и надстройте магазина си с нови зони за излагане. С нарастването на славата и състоянието ви, работете, за да станете най-уважаваният и най-богатият търговец в града. Изградете своята търговска империя и поемете контрола над икономиката на Фентъзи Средновековието!",
             "🌿 Уютна и Релаксираща Атмосфера\nОтпуснете се и развивайте магазина си в топъл средновековен фентъзи свят. Планирайте сделките си и намерете своя собствен ритъм. Насладете се на уютната атмосфера, докато решавате какво да купите, какво да продадете и как да направите магазина си най-добрия в града. Няма бързане, но изборите ви все пак имат значение. Фокусирайте се върху изграждането на успешен бизнес в пространство, където наистина можете да си починете."
         ],
-        "ending": "Отворете свой собствен магазин в сърцето на Средновековно Фентъзи кралство! Напълнете рафтовете си с всичко от отвари и мечове до мистериозни кристали и легендарни артефакти. Определете цените си, спечелете доверието на клиентите си и станете най-богатият търговец в града!"
+        "ending": "Отворете свой собствен магазин в сърцето на Средновековно Фентъзи кралство! Напълнете рафтовете си с всичко от отвари и мечове до мистериозни кристали и легендарни артефакти. Определете цените си, спечелете доверието на клиентите си и станете най-богатият търговец в града!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "he": {
         "name": "Hebrew",
@@ -393,7 +1478,38 @@ const translations = {
             "🏰 הפכו לסוחר העשיר ביותר בממלכה\nהתחילו מדוכן צנוע; עם הזמן, הרחיבו ושדרגו את החנות שלכם עם אזורי תצוגה חדשים. ככל שהתהילה וההון שלכם גדלים, פלסו את דרככם להפוך לסוחר המכובד והעשיר ביותר בעיר. בנו את אימפריית המסחר שלכם וקחו שליטה על כלכלת ימי הביניים הפנטסטיים!",
             "🌿 אווירה נעימה ומרגיעה\nהירגעו והצמיחו את החנות שלכם בעולם פנטזיה חמים מימי הביניים. תכננו את העסקאות שלכם ומצאו את הקצב שלכם. תיהנו מהאווירה הנעימה בזמן שאתם מחליטים מה לקנות, מה למכור וכיצד להפוך את החנות שלכם לטובה ביותר בעיר. אין לאן למהר, אבל לבחירות שלכם עדיין יש חשיבות. התמקדו בבניית עסק מצליח במרחב שבו תוכלו באמת להירגע."
         ],
-        "ending": "פתחו חנות משלכם בלב ממלכת פנטזיה מימי הביניים! מלאו את המדפים שלכם בכל דבר, משיקויים וחרבות ועד קריסטלים מסתוריים וחפצים אגדיים. קבעו את המחירים, הרוויחו את אמון הלקוחות והפכו לסוחר העשיר ביותר בעיר!"
+        "ending": "פתחו חנות משלכם בלב ממלכת פנטזיה מימי הביניים! מלאו את המדפים שלכם בכל דבר, משיקויים וחרבות ועד קריסטלים מסתוריים וחפצים אגדיים. קבעו את המחירים, הרוויחו את אמון הלקוחות והפכו לסוחר העשיר ביותר בעיר!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "fa": {
         "name": "Persian (Farsi)",
@@ -404,7 +1520,38 @@ const translations = {
             "🏰 به ثروتمندترین تاجر پادشاهی تبدیل شوید\nاز یک غرفه ساده شروع کنید؛ با گذشت زمان، فروشگاه خود را با مناطق نمایش جدید گسترش دهید و ارتقا دهید. با افزایش شهرت و ثروت شما، تلاش کنید تا به محترم‌ترین و ثروتمندترین تاجر شهر تبدیل شوید. امپراتوری تجاری خود را بسازید و کنترل اقتصاد قرون وسطای فانتزی را در دست بگیرید!",
             "🌿 فضای دنج و آرام‌بخش\nدر یک دنیای فانتزی گرم قرون وسطایی استراحت کنید و فروشگاه خود را رشد دهید. معاملات خود را برنامه‌ریزی کنید و سرعت خود را پیدا کنید. از حال و هوای دنج لذت ببرید در حالی که تصمیم می‌گیرید چه چیزی بخرید، چه چیزی بفروشید و چگونه فروشگاه خود را به بهترین فروشگاه شهر تبدیل کنید. عجله‌ای نیست، اما انتخاب‌های شما هنوز هم اهمیت دارند. روی ساختن یک کسب‌وکار موفق در فضایی تمرکز کنید که واقعاً می‌توانید در آن آرامش پیدا کنید."
         ],
-        "ending": "فروشگاه خود را در قلب یک قلمرو فانتزی قرون وسطایی باز کنید! قفسه‌های خود را با همه چیز از معجون‌ها و شمشیرها تا کریستال‌های مرموز و مصنوعات افسانه‌ای پر کنید. قیمت‌های خود را تعیین کنید، اعتماد مشتریان خود را جلب کنید و به ثروتمندترین تاجر شهر تبدیل شوید!"
+        "ending": "فروشگاه خود را در قلب یک قلمرو فانتزی قرون وسطایی باز کنید! قفسه‌های خود را با همه چیز از معجون‌ها و شمشیرها تا کریستال‌های مرموز و مصنوعات افسانه‌ای پر کنید. قیمت‌های خود را تعیین کنید، اعتماد مشتریان خود را جلب کنید و به ثروتمندترین تاجر شهر تبدیل شوید!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "sk": {
         "name": "Slovak",
@@ -415,7 +1562,38 @@ const translations = {
             "🏰 Staňte sa Najbohatším Obchodníkom Kráľovstva\nZačnite od skromného stánku; časom rozšírte a vylepšite svoj obchod o nové výstavné priestory. Ako vaša sláva a majetok rastú, pracujte na tom, aby ste sa stali najuznávanejším a najbohatším obchodníkom v meste. Vybudujte svoje obchodné impérium a prevezmite kontrolu nad ekonomikou Fantasy Stredoveku!",
             "🌿 Útulná a Relaxačná Atmosféra\nOddýchnite si a rozvíjajte svoj obchod v teplom stredovekom fantasy svete. Naplánujte si svoje obchody a nájdite si svoje vlastné tempo. Užite si útulnú atmosféru, zatiaľ čo sa rozhodujete, čo kúpiť, čo predať a ako urobiť svoj obchod najlepším v meste. Nie je kam sa ponáhľať, ale na vašich voľbách stále záleží. Zamerajte sa na budovanie úspešného podnikania v priestore, kde si môžete skutočne oddýchnuť."
         ],
-        "ending": "Otvorte si vlastný obchod v srdci stredovekého Fantasy kráľovstva! Naplňte svoje regály všetkým od elixírov a mečov po tajomné kryštály a legendárne artefakty. Nastavte si ceny, získajte dôveru svojich zákazníkov a staňte sa najbohatším obchodníkom v meste!"
+        "ending": "Otvorte si vlastný obchod v srdci stredovekého Fantasy kráľovstva! Naplňte svoje regály všetkým od elixírov a mečov po tajomné kryštály a legendárne artefakty. Nastavte si ceny, získajte dôveru svojich zákazníkov a staňte sa najbohatším obchodníkom v meste!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "hr": {
         "name": "Croatian",
@@ -426,7 +1604,38 @@ const translations = {
             "🏰 Postanite Najbogatiji Trgovac Kraljevstva\nPočnite od skromnog štanda; s vremenom proširite i nadogradite svoju trgovinu novim izložbenim prostorima. Kako vaša slava i bogatstvo rastu, probijajte se do toga da postanete najpoštovaniji i najbogatiji trgovac u gradu. Izgradite svoje trgovačko carstvo i preuzmite kontrolu nad ekonomijom Fantastičnog Srednjeg Vijeka!",
             "🌿 Ugodna i Opuštajuća Atmosfera\nOpustite se i razvijajte svoju trgovinu u toplom srednjovjekovnom svijetu mašte. Planirajte svoje trgovine i pronađite vlastiti ritam. Uživajte u ugodnoj atmosferi dok odlučujete što kupiti, što prodati i kako učiniti svoju trgovinu najboljom u gradu. Nema žurbe, ali vaši izbori su i dalje važni. Usredotočite se na izgradnju uspješnog poslovanja u prostoru gdje se stvarno možete opustiti."
         ],
-        "ending": "Otvorite vlastitu trgovinu u srcu Srednjovjekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cijene, zaradite povjerenje svojih kupaca i postanite najbogatiji trgovac u gradu!"
+        "ending": "Otvorite vlastitu trgovinu u srcu Srednjovjekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cijene, zaradite povjerenje svojih kupaca i postanite najbogatiji trgovac u gradu!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "sr": {
         "name": "Serbian",
@@ -437,7 +1646,38 @@ const translations = {
             "🏰 Postanite Najbogatiji Trgovac Kraljevstva\nPočnite od skromnog štanda; s vremenom proširite i nadogradite svoju prodavnicu novim izložbenim prostorima. Kako vaša slava i bogatstvo rastu, probijajte se do toga da postanete najpoštovaniji i najbogatiji trgovac u gradu. Izgradite svoje trgovačko carstvo i preuzmite kontrolu nad ekonomijom Fantastičnog Srednjeg Veka!",
             "🌿 Prijatna i Opuštajuća Atmosfera\nOpustite se i razvijajte svoju prodavnicu u toplom srednjovekovnom svetu mašte. Planirajte svoje trgovine i pronađite sopstveni ritam. Uživajte u prijatnoj atmosferi dok odlučujete šta kupiti, šta prodati i kako učiniti svoju prodavnicu najboljom u gradu. Nema žurbe, ali vaši izbori su i dalje važni. Usredsredite se na izgradnju uspešnog poslovanja u prostoru gde se stvarno možete opustiti."
         ],
-        "ending": "Otvorite sopstvenu prodavnicu u srcu Srednjovekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cene, zaradite poverenje svojih kupaca i postanite najbogatiji trgovac u gradu!"
+        "ending": "Otvorite sopstvenu prodavnicu u srcu Srednjovekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cene, zaradite poverenje svojih kupaca i postanite najbogatiji trgovac u gradu!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "bn": {
         "name": "Bengali",
@@ -448,7 +1688,38 @@ const translations = {
             "🏰 রাজ্যের সবচেয়ে ধনী বণিক হয়ে উঠুন\nএকটি সাধারণ স্টল থেকে শুরু করুন; সময়ের সাথে সাথে, নতুন প্রদর্শনী এলাকা দিয়ে আপনার দোকান প্রসারিত এবং আপগ্রেড করুন। আপনার খ্যাতি এবং ভাগ্য বাড়ার সাথে সাথে, শহরের সবচেয়ে সম্মানিত এবং ধনী বণিক হওয়ার পথে কাজ করুন। আপনার বাণিজ্য সাম্রাজ্য গড়ে তুলুন এবং ফ্যান্টাসি মধ্যযুগের অর্থনীতির নিয়ন্ত্রণ নিন!",
             "🌿 আরামদায়ক এবং শিথিল পরিবেশ\nএকটি উষ্ণ মধ্যযুগীয় ফ্যান্টাসি বিশ্বে আরাম করুন এবং আপনার দোকান বড় করুন। আপনার বাণিজ্যের পরিকল্পনা করুন এবং আপনার নিজস্ব গতি খুঁজুন। আপনি কী কিনবেন, কী বিক্রি করবেন এবং কীভাবে আপনার দোকানকে শহরের সেরা করে তুলবেন তা সিদ্ধান্ত নেওয়ার সময় আরামদায়ক পরিবেশ উপভোগ করুন। কোন তাড়া নেই, কিন্তু আপনার পছন্দগুলি এখনও গুরুত্বপূর্ণ। এমন একটি জায়গায় একটি সফল ব্যবসা গড়ে তোলার দিকে মনোনিবেশ করুন যেখানে আপনি সত্যিই বিশ্রাম নিতে পারেন।"
         ],
-        "ending": "মধ্যযুগীয় ফ্যান্টাসি রাজ্যের হৃদয়ে আপনার নিজস্ব দোকান খুলুন! ওষুধ এবং তলোয়ার থেকে শুরু করে রহস্যময় স্ফটিক এবং কিংবদন্তি নিদর্শন পর্যন্ত সবকিছু দিয়ে আপনার তাকগুলি পূরণ করুন। আপনার দাম নির্ধারণ করুন, আপনার গ্রাহকদের বিশ্বাস অর্জন করুন এবং শহরের সবচেয়ে ধনী বণিক হয়ে উঠুন!"
+        "ending": "মধ্যযুগীয় ফ্যান্টাসি রাজ্যের হৃদয়ে আপনার নিজস্ব দোকান খুলুন! ওষুধ এবং তলোয়ার থেকে শুরু করে রহস্যময় স্ফটিক এবং কিংবদন্তি নিদর্শন পর্যন্ত সবকিছু দিয়ে আপনার তাকগুলি পূরণ করুন। আপনার দাম নির্ধারণ করুন, আপনার গ্রাহকদের বিশ্বাস অর্জন করুন এবং শহরের সবচেয়ে ধনী বণিক হয়ে উঠুন!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "ur": {
         "name": "Urdu",
@@ -459,7 +1730,38 @@ const translations = {
             "🏰 سلطنت کے امیر ترین تاجر بنیں\nایک معمولی اسٹال سے شروع کریں؛ وقت کے ساتھ، نئے ڈسپلے والے علاقوں کے ساتھ اپنی دکان کو وسعت دیں اور اپ گریڈ کریں۔ جیسے جیسے آپ کی شہرت اور خوش قسمتی بڑھتی ہے، شہر میں سب سے معزز اور امیر ترین تاجر بننے کے لیے کام کریں۔ اپنی تجارتی سلطنت بنائیں اور تصوراتی قرون وسطی کی معیشت پر قابو پالیں!",
             "🌿 آرام دہ اور پرسکون ماحول\nآرام کریں اور ایک گرم قرون وسطی کی فنتاسی دنیا میں اپنی دکان کو بڑھائیں۔ اپنی تجارت کا منصوبہ بنائیں اور اپنی رفتار تلاش کریں۔ آرام دہ ماحول کا لطف اٹھائیں جب آپ فیصلہ کرتے ہیں کہ کیا خریدنا ہے، کیا بیچنا ہے اور اپنی دکان کو شہر میں بہترین کیسے بنانا ہے۔ کوئی جلدی نہیں ہے، لیکن آپ کے انتخاب اب بھی اہمیت رکھتے ہیں۔ ایسی جگہ پر ایک کامیاب کاروبار بنانے پر توجہ دیں جہاں آپ واقعی آرام کر سکیں۔"
         ],
-        "ending": "قرون وسطی کے تصوراتی دائرے کے دل میں اپنی دکان کھولیں! دوائیاں اور تلواروں سے لے کر پراسرار کرسٹل اور افسانوی نمونوں تک ہر چیز کے ساتھ اپنی شیلف کو اسٹاک کریں۔ اپنی قیمتیں مقرر کریں، اپنے گاہکوں کا اعتماد حاصل کریں اور شہر کے امیر ترین تاجر بنیں!"
+        "ending": "قرون وسطی کے تصوراتی دائرے کے دل میں اپنی دکان کھولیں! دوائیاں اور تلواروں سے لے کر پراسرار کرسٹل اور افسانوی نمونوں تک ہر چیز کے ساتھ اپنی شیلف کو اسٹاک کریں۔ اپنی قیمتیں مقرر کریں، اپنے گاہکوں کا اعتماد حاصل کریں اور شہر کے امیر ترین تاجر بنیں!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "lt": {
         "name": "Lithuanian",
@@ -470,7 +1772,38 @@ const translations = {
             "🏰 Tapkite Turtingiausiu Karalystės Pirkliu\nPradėkite nuo kuklaus prekystalio; laikui bėgant plėskite ir atnaujinkite parduotuvę naujomis ekspozicijų zonomis. Didėjant jūsų šlovei ir turtams, siekite tapti labiausiai gerbiamu ir turtingiausiu pirkliu mieste. Sukurkite savo prekybos imperiją ir perimkite Fantastinių Viduramžių ekonomikos kontrolę!",
             "🌿 Jauki ir Atpalaiduojanti Atmosfera\nAtsipalaiduokite ir auginkite savo parduotuvę šiltame viduramžių fantastiniame pasaulyje. Planuokite sandorius ir raskite savo tempą. Mėgaukitės jaukia nuotaika, spręsdami, ką pirkti, ką parduoti ir kaip paversti savo parduotuvę geriausia mieste. Nėra kur skubėti, bet jūsų pasirinkimai vis tiek svarbūs. Susikoncentruokite į sėkmingo verslo kūrimą erdvėje, kurioje galite tikrai atsipalaiduoti."
         ],
-        "ending": "Atidarykite savo parduotuvę Viduramžių Fantastinės karalystės širdyje! Užpildykite lentynas viskuo – nuo gėrimų ir kardų iki paslaptingų kristalų ir legendinių artefaktų. Nustatykite kainas, pelnykite klientų pasitikėjimą ir tapkite turtingiausiu pirkliu mieste!"
+        "ending": "Atidarykite savo parduotuvę Viduramžių Fantastinės karalystės širdyje! Užpildykite lentynas viskuo – nuo gėrimų ir kardų iki paslaptingų kristalų ir legendinių artefaktų. Nustatykite kainas, pelnykite klientų pasitikėjimą ir tapkite turtingiausiu pirkliu mieste!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "lv": {
         "name": "Latvian",
@@ -481,7 +1814,38 @@ const translations = {
             "🏰 Kļūstiet par Karaļvalsts Bagātāko Tirgotāju\nSāciet ar pieticīgu stendu; laika gaitā paplašiniet un uzlabojiet savu veikalu ar jaunām ekspozīcijas zonām. Pieaugot jūsu slavai un bagātībai, strādājiet, lai kļūtu par cienījamāko un bagātāko tirgotāju pilsētā. Veidojiet savu tirdzniecības impēriju un pārņemiet kontroli pār Fantāzijas Viduslaiku ekonomiku!",
             "🌿 Mājīga un Relaksējoša Atmosfēra\nAtpūtieties un attīstiet savu veikalu siltā viduslaiku fantāzijas pasaulē. Plānojiet darījumus un atrodiet savu tempu. Izbaudiet mājīgo noskaņu, lemjot, ko pirkt, ko pārdot un kā padarīt savu veikalu par labāko pilsētā. Nav jāsteidzas, bet jūsu izvēlēm joprojām ir nozīme. Koncentrējieties uz veiksmīga biznesa veidošanu telpā, kurā varat patiesi atpūsties."
         ],
-        "ending": "Atveriet savu veikalu Viduslaiku Fantāzijas karaļvalsts sirdī! Piepildiet plauktus ar visu, sākot no mikstūrām un zobeniem līdz noslēpumainiem kristāliem un leģendāriem artefaktiem. Nosakiet cenas, iegūstiet klientu uzticību un kļūstiet par bagātāko tirgotāju pilsētā!"
+        "ending": "Atveriet savu veikalu Viduslaiku Fantāzijas karaļvalsts sirdī! Piepildiet plauktus ar visu, sākot no mikstūrām un zobeniem līdz noslēpumainiem kristāliem un leģendāriem artefaktiem. Nosakiet cenas, iegūstiet klientu uzticību un kļūstiet par bagātāko tirgotāju pilsētā!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "et": {
         "name": "Estonian",
@@ -492,7 +1856,38 @@ const translations = {
             "🏰 Saa Kuningriigi Rikkaimaks Kaupmeheks\nAlusta tagasihoidlikust letist; aja jooksul laienda ja uuenda oma poodi uute väljapanekualadega. Kui sinu kuulsus ja varandus kasvavad, tööta selle nimel, et saada linna kõige austatumaks ja rikkamaks kaupmeheks. Ehita oma kaubandusimpeerium ja võta kontroll Fantaasia Keskaegse majanduse üle!",
             "🌿 Hubane ja Lõõgastav Õhkkond\nLõõgastu ja kasvata oma poodi soojas keskaegses fantaasiamaailmas. Planeeri oma tehinguid ja leia oma tempo. Naudi hubast meeleolu, otsustades, mida osta, mida müüa ja kuidas teha oma poest linna parim. Kiiret pole, kuid sinu valikud on siiski olulised. Keskendu eduka ettevõtte ülesehitamisele ruumis, kus saad tõeliselt lõõgastuda."
         ],
-        "ending": "Ava oma pood Keskaegse Fantaasiakuningriigi südames! Täida oma riiulid kõigega alates jookidest ja mõõkadest kuni salapäraste kristallide ja legendaarsete esemeteni. Määra hinnad, võida klientide usaldus ja saa linna rikkaimaks kaupmeheks!"
+        "ending": "Ava oma pood Keskaegse Fantaasiakuningriigi südames! Täida oma riiulid kõigega alates jookidest ja mõõkadest kuni salapäraste kristallide ja legendaarsete esemeteni. Määra hinnad, võida klientide usaldus ja saa linna rikkaimaks kaupmeheks!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "sl": {
         "name": "Slovenian",
@@ -503,7 +1898,38 @@ const translations = {
             "🏰 Postanite Najbogatejši Trgovec v Kraljestvu\nZačnite s skromno stojnico; sčasoma razširite in nadgradite svojo trgovino z novimi razstavnimi prostori. Ko vaša slava in bogastvo rasteta, si prizadevajte postati najbolj spoštovan in najbogatejši trgovec v mestu. Zgradite svoj trgovski imperij in prevzemite nadzor nad gospodarstvom Fantazijskega Srednjega Veka!",
             "🌿 Prijetno in Sproščujoče Vzdušje\nSprostite se in razvijajte svojo trgovino v toplem srednjeveškem fantazijskem svetu. Načrtujte svoje posle in poiščite svoj ritem. Uživajte v prijetnem vzdušju, medtem ko se odločate, kaj kupiti, kaj prodati in kako narediti svojo trgovino najboljšo v mestu. Ni se vam treba muditi, vendar so vaše izbire še vedno pomembne. Osredotočite se na gradnjo uspešnega podjetja v prostoru, kjer se lahko resnično sprostite."
         ],
-        "ending": "Odprite svojo trgovino v srcu Srednjeveškega Fantazijskega kraljestva! Napolnite police z vsem, od napojev in mečev do skrivnostnih kristalov in legendarnih artefaktov. Določite cene, pridobite zaupanje strank in postanite najbogatejši trgovec v mestu!"
+        "ending": "Odprite svojo trgovino v srcu Srednjeveškega Fantazijskega kraljestva! Napolnite police z vsem, od napojev in mečev do skrivnostnih kristalov in legendarnih artefaktov. Določite cene, pridobite zaupanje strank in postanite najbogatejši trgovec v mestu!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "ca": {
         "name": "Catalan",
@@ -514,7 +1940,38 @@ const translations = {
             "🏰 Converteix-te en el Comerciant Més Ric del Regne\nComença des d'una parada humil; amb el temps, amplia i millora la teva botiga amb noves àrees d'exposició. A mesura que la teva fama i fortuna augmentin, treballa per convertir-te en el comerciant més respectat i ric de la ciutat. Construeix el teu imperi comercial i pren el control de l'economia de l'Edat Mitjana de Fantasia!",
             "🌿 Atmosfera Acollidora i Relaxant\nRelaxa't i fes créixer la teva botiga en un món de fantasia medieval càlid. Planifica els teus comerços i troba el teu propi ritme. Gaudeix de l'ambient acollidor mentre decideixes què comprar, què vendre i com fer que la teva botiga sigui la millor de la ciutat. No hi ha pressa, però les teves eleccions encara importen. Centra't en construir un negoci d'èxit en un espai on realment puguis desconnectar."
         ],
-        "ending": "Obre la teva pròpia botiga al cor d'un Regne de Fantasia Medieval! Omple les prestatgeries amb tot, des de pocions i espases fins a cristalls misteriosos i artefactes llegendaris. Fixa els teus preus, guanya't la confiança dels clients i converteix-te en el comerciant més ric de la ciutat!"
+        "ending": "Obre la teva pròpia botiga al cor d'un Regne de Fantasia Medieval! Omple les prestatgeries amb tot, des de pocions i espases fins a cristalls misteriosos i artefactes llegendaris. Fixa els teus preus, guanya't la confiança dels clients i converteix-te en el comerciant més ric de la ciutat!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     },
     "is": {
         "name": "Icelandic",
@@ -525,6 +1982,37 @@ const translations = {
             "🏰 Vertu Ríkasti Kaupmaður Ríkisins\nByrjaðu með hógværan sölubás; með tímanum, stækkaðu og uppfærðu búðina þína með nýjum sýningarsvæðum. Eftir því sem frægð þín og auður eykst, vinndu þig upp í að verða virtasti og ríkasti kaupmaðurinn í bænum. Byggðu viðskiptaveldi þitt og taktu stjórn á hagkerfi Fantasíu Miðalda!",
             "🌿 Notalegt og Slakandi Andrúmsloft\nSlakaðu á og láttu búðina þína vaxa í hlýjum miðalda fantasíuheimi. Skipuleggðu viðskipti þín og finndu þinn eigin takt. Njóttu notalegu stemningarinnar á meðan þú ákveður hvað á að kaupa, hvað á að selja og hvernig á að gera búðina þína að þeirri bestu í bænum. Það liggur ekkert á, en val þitt skiptir samt máli. Einbeittu þér að því að byggja upp farsælt fyrirtæki í rými þar sem þú getur virkilega slakað á."
         ],
-        "ending": "Opnaðu þína eigin búð í hjarta Miðalda Fantasíuríkis! Fylltu hillurnar með öllu frá drykkjum og sverðum til dularfullra kristalla og goðsagnakenndra gripa. Settu verðin, ávinnaðu þér traust viðskiptavina og vertu ríkasti kaupmaðurinn í bænum!"
+        "ending": "Opnaðu þína eigin búð í hjarta Miðalda Fantasíuríkis! Fylltu hillurnar með öllu frá drykkjum og sverðum til dularfullra kristalla og goðsagnakenndra gripa. Settu verðin, ávinnaðu þér traust viðskiptavina og vertu ríkasti kaupmaðurinn í bænum!",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "⚡ Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Master Merchant"
+        },
+        "merchant": {
+            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "quotes": [
+                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
+                "Every artifact on these shelves has a story to tell. Which one calls to you?",
+                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
+                "Listen to the fire crackle... it’s the oldest song in the world.",
+                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
+                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
+                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
+                "A customer is a guest in your home. Offer them warmth, and they will return.",
+                "If you listen closely, you can hear the town settling down for the night."
+            ]
+        }
     }
 };
