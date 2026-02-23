@@ -448,6 +448,127 @@
             transform: rotate(90deg);
         }
 
+        /* --- STORY MODE STYLES --- */
+        .story-container {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            max-height: 800px;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .story-progress {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            gap: 4px;
+            padding: 0 10px;
+            z-index: 20;
+        }
+
+        .story-bar {
+            flex: 1;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .story-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: #fff;
+            transition: width 0.2s linear;
+        }
+        
+        .story-bar.active .story-bar-fill { width: 100%; }
+        .story-bar.seen .story-bar-fill { width: 100%; }
+
+        .story-header {
+            position: absolute;
+            top: 25px;
+            left: 55px; /* Offset for Close Button on Left */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 20;
+        }
+
+        .story-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+        }
+
+        .story-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .story-username {
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .story-time {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.75rem;
+        }
+
+        .story-content {
+            position: relative;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .story-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            filter: blur(20px) brightness(0.5);
+            transform: scale(1.1);
+            z-index: 1;
+        }
+
+        .story-img-main {
+            position: relative;
+            width: 100%;
+            max-width: 400px; /* Square limit */
+            aspect-ratio: 1/1;
+            object-fit: contain;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tap-zone {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 35%;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .tap-zone.left { left: 0; }
+        .tap-zone.right { right: 0; }
+
+        /* --- END STORY --- */
+
         .video-container {
             position: relative;
             width: 100%;
@@ -610,15 +731,38 @@
     </div>
 
     <div id="wares-modal" class="modal">
-        <div class="parchment" style="max-width: 900px; width: 95vw;">
-            <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2 style="font-size: 2.2rem;">Manifest of Wonders</h2>
-            <div class="carousel-container">
-                <button class="carousel-arrow prev" onclick="moveCarousel(-1)">❮</button>
-                <div id="carousel-track" style="width: 100%; height: 100%; position: relative;"></div>
-                <button class="carousel-arrow next" onclick="moveCarousel(1)">❯</button>
+        <div class="parchment" style="max-width: 500px; padding: 0; background: #1a1a1a; overflow: hidden; border: 2px solid #5d2e0a;">
+            <span class="close-modal" onclick="closeModals()" style="z-index: 50; color: #fff; text-shadow: 0 0 5px #000; top: 20px; left: 20px;">&times;</span>
+            
+            <div class="story-container">
+                <!-- Progress Bars -->
+                <div class="story-progress" id="story-progress">
+                    <!-- Bars injected by JS -->
+                </div>
+
+                <!-- Header -->
+                <div class="story-header">
+                    <img src="images/arcane_initial_logo.jpg" class="story-avatar">
+                    <div class="story-info">
+                        <span class="story-username">Arcane Merchant</span>
+                        <span class="story-time">New Arrival</span>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="story-content">
+                    <div class="story-bg" id="story-bg"></div>
+                    <img id="story-image" src="" class="story-img-main">
+                </div>
+
+                <!-- Tap Zones -->
+                <div class="tap-zone left" onclick="moveCarousel(-1)"></div>
+                <div class="tap-zone right" onclick="moveCarousel(1)"></div>
             </div>
-            <p style="text-align: center; font-weight: bold; color: #5d2e0a; text-transform: uppercase; margin-top: 15px;">✧ Magically Discovered ✧</p>
+            
+            <div style="position: absolute; bottom: 30px; width: 100%; text-align: center; z-index: 20;">
+                <p style="font-weight: bold; color: #fff; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">✧ Magically Discovered ✧</p>
+            </div>
         </div>
     </div>
 
@@ -851,15 +995,20 @@
         let currentCarouselIndex = 0, carouselInterval, carouselInitialized = false;
 
         function initCarousel() {
-            const track = document.getElementById('carousel-track');
-            if (carouselInitialized) { startC(); return; }
-            track.innerHTML = '';
-            carouselImages.forEach((src, index) => {
-                const img = document.createElement('img');
-                img.src = src; img.className = 'carousel-image' + (index === 0 ? ' active' : '');
-                track.appendChild(img);
+            // Generate Progress Bars
+            const progressContainer = document.getElementById('story-progress');
+            progressContainer.innerHTML = '';
+            
+            carouselImages.forEach((_, index) => {
+                const bar = document.createElement('div');
+                bar.className = 'story-bar';
+                const fill = document.createElement('div');
+                fill.className = 'story-bar-fill';
+                bar.appendChild(fill);
+                progressContainer.appendChild(bar);
             });
-            carouselInitialized = true; startC();
+            
+            startC();
         }
 
         function startC() {
@@ -870,14 +1019,46 @@
         function stopC() { if (carouselInterval) clearInterval(carouselInterval); }
 
         function showCarouselImage(index) {
-            const images = document.querySelectorAll('.carousel-image');
-            if (images.length === 0) return;
-            images.forEach(img => img.classList.remove('active'));
-            currentCarouselIndex = (index + images.length) % images.length;
-            if (images[currentCarouselIndex]) images[currentCarouselIndex].classList.add('active');
+            // Loop logic
+            if (index >= carouselImages.length) {
+                // Loop to start or close? Stories usually close. But we'll loop.
+                currentCarouselIndex = 0;
+            } else if (index < 0) {
+                currentCarouselIndex = carouselImages.length - 1;
+            } else {
+                currentCarouselIndex = index;
+            }
+
+            const src = carouselImages[currentCarouselIndex];
+            
+            // Update Image
+            const mainImg = document.getElementById('story-image');
+            const bgDiv = document.getElementById('story-bg');
+            
+            if (mainImg) mainImg.src = src;
+            if (bgDiv) bgDiv.style.backgroundImage = `url('${src}')`;
+
+            // Update Progress Bars
+            const bars = document.querySelectorAll('.story-bar-fill');
+            bars.forEach((bar, i) => {
+                if (i < currentCarouselIndex) {
+                    bar.style.width = '100%'; // Past
+                } else if (i === currentCarouselIndex) {
+                    bar.style.width = '100%'; // Current (Should animate? Simple fill for now)
+                    // Ideally we animate this over 4s.
+                    // For now static fill to indicate position.
+                } else {
+                    bar.style.width = '0%'; // Future
+                }
+            });
         }
 
-        function moveCarousel(step) { showCarouselImage(currentCarouselIndex + step); }
+        function moveCarousel(step) { 
+            stopC(); // Stop auto on interaction
+            showCarouselImage(currentCarouselIndex + step);
+            // Restart auto
+            carouselInterval = setInterval(() => { moveCarousel(1); }, 4000);
+        }
 
         window.onload = () => {
             const ui = document.getElementById('game-ui');
