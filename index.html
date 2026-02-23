@@ -1044,11 +1044,19 @@
         }
 
         function startC() {
-            stopC(); showCarouselImage(currentCarouselIndex);
-            carouselInterval = setInterval(() => { moveCarousel(1); }, 4000);
+            stopC(); 
+            showCarouselImage(currentCarouselIndex);
+            // Timer logic moved to showCarouselImage to handle variable durations
         }
 
-        function stopC() { if (carouselInterval) clearInterval(carouselInterval); }
+        function stopC() { 
+            if (carouselInterval) clearTimeout(carouselInterval); // Changed from interval to timeout
+            const video = document.getElementById('story-video');
+            if (video) {
+                video.onended = null; // Clear event listener
+                video.pause();
+            }
+        }
 
         function showCarouselImage(index) {
             // Loop logic
@@ -1067,16 +1075,46 @@
             const mainVideo = document.getElementById('story-video');
             const bgDiv = document.getElementById('story-bg');
             
+            // ANIMATE PROGRESS BAR
+            // Reset all bars
+            const bars = document.querySelectorAll('.story-bar-fill');
+            bars.forEach(b => { b.style.width = '0%'; b.style.transition = 'none'; });
+            
+            // Fill past bars
+            for(let i=0; i<currentCarouselIndex; i++) {
+                bars[i].style.width = '100%';
+            }
+
+            // Setup Current Bar Animation
+            const currentBar = bars[currentCarouselIndex];
+            
             if (item.type === 'video') {
                 // Show Video
                 mainImg.style.display = 'none';
                 mainVideo.style.display = 'block';
                 mainVideo.src = item.src;
-                mainVideo.play().catch(e => console.log("Autoplay blocked", e));
+                mainVideo.currentTime = 0;
                 
-                // Transparent BG for video to show site through bars
+                // Transparent BG
                 bgDiv.style.backgroundImage = 'none';
                 bgDiv.style.backgroundColor = 'transparent';
+
+                // Play & Handle Duration
+                mainVideo.play().then(() => {
+                    // Animate Bar based on duration
+                    const duration = mainVideo.duration || 10; // Fallback
+                    currentBar.style.transition = `width ${duration}s linear`;
+                    // Trigger reflow
+                    void currentBar.offsetWidth; 
+                    currentBar.style.width = '100%';
+                    
+                    mainVideo.onended = () => moveCarousel(1);
+                }).catch(e => {
+                    console.log("Autoplay blocked", e);
+                    // Fallback timer if play fails
+                    carouselInterval = setTimeout(() => moveCarousel(1), 4000);
+                });
+
             } else {
                 // Show Image
                 if (mainVideo) {
@@ -1086,26 +1124,26 @@
                 mainImg.style.display = 'block';
                 mainImg.src = item.src;
                 if (bgDiv) bgDiv.style.backgroundImage = `url('${item.src}')`;
+                
+                // Animate Bar (Fixed 4s)
+                currentBar.style.transition = 'width 4s linear';
+                void currentBar.offsetWidth;
+                currentBar.style.width = '100%';
+                
+                carouselInterval = setTimeout(() => moveCarousel(1), 4000);
             }
-
-            // Update Progress Bars
-            const bars = document.querySelectorAll('.story-bar-fill');
-            bars.forEach((bar, i) => {
-                if (i < currentCarouselIndex) {
-                    bar.style.width = '100%'; // Past
-                } else if (i === currentCarouselIndex) {
-                    bar.style.width = '100%'; // Current
-                } else {
-                    bar.style.width = '0%'; // Future
-                }
-            });
         }
 
         function moveCarousel(step) { 
-            stopC(); // Stop auto on interaction
-            showCarouselImage(currentCarouselIndex + step);
-            // Restart auto
-            carouselInterval = setInterval(() => { moveCarousel(1); }, 4000);
+            stopC(); // Stop current timer/video
+            // Update index immediately for next call
+            // showCarouselImage handles index wrapping, but we need to pass the target index
+            // Actually, showCarouselImage updates currentCarouselIndex internally? 
+            // Yes, let's fix that structure.
+            
+            // Simpler: Just call show with target index
+            let target = currentCarouselIndex + step;
+            showCarouselImage(target);
         }
 
         window.onload = () => {
