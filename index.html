@@ -395,7 +395,7 @@
 
         .community-links {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 15px;
             margin-top: 20px;
         }
@@ -407,17 +407,30 @@
             text-decoration: none;
             color: #2c1e0f;
             font-size: 1.1rem;
-            transition: transform 0.2s ease, color 0.2s ease;
+            transition: all 0.3s ease;
+            padding: 10px;
+            background: rgba(139, 69, 19, 0.05);
+            border-radius: 4px;
         }
 
         .community-item:hover {
-            transform: translateX(5px);
-            color: #8b4513;
+            background: rgba(139, 69, 19, 0.12);
+            transform: translateY(-2px);
         }
 
         .community-icon {
             font-size: 1.4rem;
-            filter: sepia(1) saturate(2);
+        }
+
+        @media (max-width: 768px) {
+            .community-links {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .community-item {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
         }
 
         .close-modal {
@@ -617,33 +630,37 @@
             <p style="font-style: italic; margin-bottom: 20px; text-align: center;">"Where the ravens gather and the scrolls of the world are shared."</p>
             
             <div class="community-links">
+                <a href="https://www.findiestudios.com/" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🏰</span>
+                    <span>Findie Studios</span>
+                </a>
                 <a href="https://discord.gg/findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
-                    <span class="community-icon">🔮</span>
+                    <span class="community-icon">⚔️</span>
                     <span>Discord</span>
                 </a>
-                <a href="https://www.instagram.com/findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
-                    <span class="community-icon">🖼️</span>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://www.linkedin.com/company/findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                <a href="https://x.com/FindieStudios" target="_blank" rel="noopener noreferrer" class="community-item">
                     <span class="community-icon">📜</span>
-                    <span>LinkedIn</span>
+                    <span>X / Twitter</span>
                 </a>
-                <a href="https://www.reddit.com/r/arcanemerchant" target="_blank" rel="noopener noreferrer" class="community-item">
-                    <span class="community-icon">🗣️</span>
-                    <span>Reddit</span>
+                <a href="https://www.youtube.com/@FindieStudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🛡️</span>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://www.instagram.com/findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🏺</span>
+                    <span>Instagram</span>
                 </a>
                 <a href="https://www.tiktok.com/@findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
                     <span class="community-icon">🎭</span>
                     <span>TikTok</span>
                 </a>
-                <a href="https://x.com/FindieStudios" target="_blank" rel="noopener noreferrer" class="community-item">
-                    <span class="community-icon">🐦</span>
-                    <span>X</span>
+                <a href="https://www.reddit.com/r/arcanemerchant" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">⚒️</span>
+                    <span>Reddit</span>
                 </a>
-                <a href="https://www.youtube.com/@FindieStudios" target="_blank" rel="noopener noreferrer" class="community-item">
-                    <span class="community-icon">📽️</span>
-                    <span>YouTube</span>
+                <a href="https://www.linkedin.com/company/findiestudios" target="_blank" rel="noopener noreferrer" class="community-item">
+                    <span class="community-icon">🗝️</span>
+                    <span>LinkedIn</span>
                 </a>
             </div>
         </div>
