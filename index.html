@@ -39,7 +39,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('images/clean-shop-bg.jpg') no-repeat center center;
+            background: url('images/desktop-bg.webp') no-repeat center center;
             background-size: cover;
             z-index: -1;
             filter: brightness(0.7) sepia(0.1);
@@ -206,26 +206,26 @@
 
         .speaker-name {
             position: absolute;
-            top: -18px;
-            left: 40px;
+            top: -14px;
+            left: 30px;
             background: var(--gold);
             color: #000;
-            padding: 4px 25px;
+            padding: 3px 18px;
             font-family: var(--ui-font);
             font-weight: bold;
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             letter-spacing: 1px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
         }
 
         .game-icon-seal {
-            width: 32px;
-            height: 32px;
+            width: 24px;
+            height: 24px;
             object-fit: contain;
-            filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
         }
 
         .dialogue-text {
@@ -353,35 +353,6 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
-        }
-
-        @keyframes magicalPulse {
-            0%, 100% { opacity: 0.7; transform: scale(1); text-shadow: 0 0 5px rgba(212, 175, 55, 0.2); }
-            50% { opacity: 1; transform: scale(1.05); text-shadow: 0 0 20px rgba(212, 175, 55, 0.6); }
-        }
-
-        .inventory-tag {
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            background: var(--gold);
-            color: #000;
-            padding: 5px 15px;
-            font-family: var(--ui-font);
-            font-weight: bold;
-            font-size: 0.85rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-            z-index: 15;
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.6s ease;
-            border: 1px solid #000;
-        }
-
-        .inventory-tag.visible {
-            opacity: 1;
         }
 
         .carousel-arrow {
@@ -584,7 +555,7 @@
         <div class="dialogue-wrapper">
             <div class="dialogue-box">
                 <div class="speaker-name">
-                    <img src="images/game-icon.png" class="game-icon-seal" alt="Seal">
+                    <img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal">
                     Master Merchant
                 </div>
                 <div id="dialogue" class="dialogue-text"></div>
@@ -608,7 +579,6 @@
 
             <div class="carousel-container">
                 <div class="loading-glyph"></div>
-                <div id="inventory-tag" class="inventory-tag">RARE</div>
                 <button class="carousel-arrow prev" onclick="moveCarousel(-1)">❮</button>
                 <div id="carousel-track" style="width: 100%; height: 100%; position: relative;">
                     <!-- Images will be injected here -->
@@ -816,7 +786,6 @@
             showModal('features-modal');
             typeWriter("Being a merchant is more than just counting gold. It is an art of logistics, a dance of pricing, and the crafting of a sanctuary.", dialogueElement, 30);
         }
-        }
 
         function showModal(id) {
             const modal = document.getElementById(id);
@@ -825,7 +794,7 @@
 
         function closeModals() {
             document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
-            stopCarousel();
+            stopC();
             setTimeout(() => {
                 typeWriter("Shall we continue our business, or does the world outside beckon?", dialogueElement);
             }, 400);
@@ -836,8 +805,6 @@
             carouselImages.push(`images/inventory/inventory_${i}.jpg`);
         }
         
-        const tags = ['Rare', 'Epic', 'Legendary', 'Ancient', 'Cursed', 'Blessed', 'Mythical', 'Artifact', 'Relic'];
-
         let currentCarouselIndex = 0;
         let carouselInterval;
         let carouselInitialized = false;
@@ -845,7 +812,7 @@
         function initCarousel() {
             const track = document.getElementById('carousel-track');
             if (!track || carouselInitialized) {
-                if (carouselInitialized) startCarousel();
+                if (carouselInitialized) startC();
                 return;
             }
             
@@ -861,16 +828,13 @@
             });
             
             carouselInitialized = true;
-            updateInventoryTag();
-            startCarousel();
+            startC();
         }
 
-        function startCarousel() {
-            stopCarousel();
-            // Start with a random image
+        function startC() {
+            stopC();
             showCarouselImage(Math.floor(Math.random() * carouselImages.length));
             carouselInterval = setInterval(() => {
-                // Pick a random next index that isn't the current one
                 let nextIndex;
                 do {
                     nextIndex = Math.floor(Math.random() * carouselImages.length);
@@ -879,21 +843,8 @@
             }, 4000);
         }
 
-        function stopCarousel() {
+        function stopC() {
             if (carouselInterval) clearInterval(carouselInterval);
-        }
-
-        function updateInventoryTag() {
-            const tag = document.getElementById('inventory-tag');
-            if (!tag) return;
-            
-            tag.classList.remove('visible');
-            
-            setTimeout(() => {
-                const randomTag = tags[Math.floor(Math.random() * tags.length)];
-                tag.textContent = randomTag;
-                tag.classList.add('visible');
-            }, 300);
         }
 
         function showCarouselImage(index) {
@@ -905,15 +856,12 @@
             if (images[currentCarouselIndex]) {
                 images[currentCarouselIndex].classList.add('active');
             }
-            updateInventoryTag();
         }
 
         function moveCarousel(step) {
-            stopCarousel();
+            stopC();
             showCarouselImage(currentCarouselIndex + step);
-            if (document.getElementById('wares-modal').classList.contains('visible')) {
-                startCarousel();
-            }
+            startC();
         }
 
         window.onload = () => {
@@ -928,7 +876,12 @@
 
         window.onclick = function(event) {
             if (event.target.classList.contains('modal')) {
-                closeModals();
+                closeVideoModal();
+            }
+        }
+        window.ontouchstart = function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeVideoModal();
             }
         }
     </script>
