@@ -64,106 +64,119 @@
             ctx.clearRect(0, 0, width, height);
             
             // Adjust radius based on screen size (responsive)
-            const baseRadius = Math.min(width, height) * 0.15;
+            const baseRadius = Math.min(width, height) * 0.25; // Larger base
             
-            // 1. Vortex Swirls (Inner)
-            // Create multiple rotating arcs to simulate depth
-            const swirlCount = 8;
+            // Slower time
+            const t = time * 0.5;
+
+            // 1. Radiant Outer Glow (Blueish)
+            const glowRadius = baseRadius * 2.5 + Math.sin(t * 0.05) * 20;
+            const outerGlow = ctx.createRadialGradient(centerX, centerY, baseRadius * 0.5, centerX, centerY, glowRadius);
+            outerGlow.addColorStop(0, 'rgba(0, 100, 255, 0.0)');
+            outerGlow.addColorStop(0.4, 'rgba(0, 100, 255, 0.15)');
+            outerGlow.addColorStop(1, 'rgba(0, 0, 50, 0)');
+            
+            ctx.fillStyle = outerGlow;
+            ctx.fillRect(0, 0, width, height);
+
+            // VERTICAL ELLIPSE TRANSFORM
+            // We compress width to 0.6 to make it a tall ellipse
+            ctx.save();
+            ctx.translate(centerX, centerY);
+            ctx.scale(0.6, 1); 
+
+            // 2. Fluid Vortex Swirls (Inner)
+            // More layers, organic movement
+            const swirlCount = 12;
             for (let i = 0; i < swirlCount; i++) {
                 ctx.save();
-                ctx.translate(centerX, centerY);
                 
-                // Variable speed per layer for parallax effect
-                const speed = 0.02 * (i + 1); 
-                const rotation = time * speed + (i * (Math.PI * 2 / swirlCount));
+                // Organic speed: Sine wave based speed fluctuation
+                // Each layer moves at a slightly different, fluctuating speed
+                const layerSpeed = 0.005 * (i + 1) + Math.sin(t * 0.01 + i) * 0.002; 
+                const rotation = t * layerSpeed + (i * (Math.PI * 2 / swirlCount));
                 
                 ctx.rotate(rotation);
                 
-                // Scale pulsation
-                const scale = 1 + Math.sin(time * 0.05 + i) * 0.05;
+                // Fluid Pulsation
+                const scale = 1 + Math.sin(t * 0.03 + i) * 0.08;
                 ctx.scale(scale, scale);
 
                 const grad = ctx.createLinearGradient(-baseRadius, -baseRadius, baseRadius, baseRadius);
                 grad.addColorStop(0, 'rgba(0, 255, 255, 0)');
-                grad.addColorStop(0.5, `rgba(0, 200, 255, ${0.2 - (i * 0.02)})`);
-                grad.addColorStop(1, 'rgba(100, 0, 255, 0)');
+                grad.addColorStop(0.5, `rgba(0, 220, 255, ${0.15 - (i * 0.01)})`); // Cyan/Blue
+                grad.addColorStop(1, 'rgba(50, 100, 255, 0)');
 
                 ctx.beginPath();
-                // Draw tapered arcs
-                ctx.arc(0, 0, baseRadius * (0.8 + i * 0.1), 0, Math.PI * 1.5);
+                // Tapered fluid arcs
+                ctx.arc(0, 0, baseRadius * (0.6 + i * 0.1), 0, Math.PI * 1.5);
                 ctx.strokeStyle = grad;
-                ctx.lineWidth = baseRadius * 0.1;
+                ctx.lineWidth = baseRadius * 0.15; // Thicker, softer lines
                 ctx.lineCap = 'round';
+                
+                // Add blur for fluid look
+                ctx.shadowBlur = 20;
+                ctx.shadowColor = "rgba(0, 200, 255, 0.5)";
+                
                 ctx.stroke();
                 
                 ctx.restore();
             }
 
-            // 2. The Main Ring (Fake 3D Bevel)
+            // 3. The Main Ring (Vertical Ellipse)
             ctx.save();
-            ctx.translate(centerX, centerY);
             
-            // Outer Glow
-            const outerGlow = ctx.createRadialGradient(0, 0, baseRadius, 0, 0, baseRadius * 1.5);
-            outerGlow.addColorStop(0, 'rgba(0, 100, 255, 0.5)');
-            outerGlow.addColorStop(1, 'rgba(0, 0, 0, 0)');
-            ctx.fillStyle = outerGlow;
-            ctx.beginPath();
-            ctx.arc(0, 0, baseRadius * 1.5, 0, Math.PI * 2);
-            ctx.fill();
-
             // Ring Body
             ctx.beginPath();
             ctx.arc(0, 0, baseRadius, 0, Math.PI * 2);
-            ctx.lineWidth = baseRadius * 0.15;
+            ctx.lineWidth = baseRadius * 0.05;
             
-            // Bevel Gradient (Simulating Light from Top-Left)
+            // Bevel Gradient
             const ringGrad = ctx.createLinearGradient(-baseRadius, -baseRadius, baseRadius, baseRadius);
-            ringGrad.addColorStop(0, '#44aaff'); // Light highlight
-            ringGrad.addColorStop(0.5, '#0044aa'); // Midtone
-            ringGrad.addColorStop(1, '#001133'); // Shadow
+            ringGrad.addColorStop(0, '#88ccff'); // Light Blue highlight
+            ringGrad.addColorStop(0.5, '#0044aa'); // Deep Blue
+            ringGrad.addColorStop(1, '#00081a'); // Dark Shadow
             
             ctx.strokeStyle = ringGrad;
+            ctx.shadowBlur = 15;
+            ctx.shadowColor = "#0088ff";
             ctx.stroke();
             
-            // Inner Edge Highlight (Rim Light)
-            ctx.beginPath();
-            ctx.arc(0, 0, baseRadius * 0.92, 0, Math.PI * 2);
-            ctx.lineWidth = 2;
-            ctx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
-            ctx.stroke();
-
             ctx.restore();
 
-            // 3. Core Pulse
+            // 4. Core Pulse (Bright White/Cyan Center)
             ctx.save();
-            ctx.translate(centerX, centerY);
-            const corePulse = Math.sin(time * 0.1) * 0.1 + 0.9;
+            const corePulse = Math.sin(t * 0.05) * 0.05 + 0.8;
             ctx.scale(corePulse, corePulse);
             
-            const coreGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, baseRadius * 0.5);
-            coreGrad.addColorStop(0, 'rgba(255, 255, 255, 0.9)');
-            coreGrad.addColorStop(0.3, 'rgba(0, 255, 255, 0.6)');
+            const coreGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, baseRadius * 0.6);
+            coreGrad.addColorStop(0, 'rgba(255, 255, 255, 0.95)');
+            coreGrad.addColorStop(0.2, 'rgba(200, 255, 255, 0.8)');
+            coreGrad.addColorStop(0.6, 'rgba(0, 100, 255, 0.2)');
             coreGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
             
             ctx.fillStyle = coreGrad;
             ctx.beginPath();
-            ctx.arc(0, 0, baseRadius * 0.5, 0, Math.PI * 2);
+            ctx.arc(0, 0, baseRadius * 0.6, 0, Math.PI * 2);
             ctx.fill();
             ctx.restore();
 
-            // 4. Ground Shadow (Fake Perspective)
+            // Restore from Vertical Ellipse Transform
+            ctx.restore(); 
+
+            // 5. Ground Shadow (Fake Perspective)
+            // Needs to be outside the scale(0.6, 1) to look flat on ground
             ctx.save();
-            ctx.translate(centerX, centerY + baseRadius * 1.8); // Position below
-            ctx.scale(1, 0.2); // Flatten to ellipse
+            ctx.translate(centerX, centerY + baseRadius * 1.2); // Position below
+            ctx.scale(1, 0.15); // Flatten to ellipse
             
-            const shadowGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, baseRadius);
-            shadowGrad.addColorStop(0, 'rgba(0, 0, 0, 0.8)');
+            const shadowGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, baseRadius * 0.8);
+            shadowGrad.addColorStop(0, 'rgba(0, 50, 150, 0.6)'); // Blue shadow
             shadowGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
             
             ctx.fillStyle = shadowGrad;
             ctx.beginPath();
-            ctx.arc(0, 0, baseRadius, 0, Math.PI * 2);
+            ctx.arc(0, 0, baseRadius * 0.8, 0, Math.PI * 2);
             ctx.fill();
             ctx.restore();
 
