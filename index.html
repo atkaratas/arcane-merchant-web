@@ -423,51 +423,8 @@
         }
 
         @media (max-width: 768px) {
-            .community-links {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
-            }
-            .community-item {
-                font-size: 0.9rem;
-                padding: 8px;
-            }
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 20px;
-            right: 25px;
-            font-size: 2.5rem;
-            cursor: pointer;
-            color: #8b4513;
-            line-height: 1;
-            transition: transform 0.3s ease;
-            z-index: 10;
-        }
-
-        .close-modal:hover {
-            transform: rotate(90deg);
-        }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            background: #000;
-            border: 4px solid var(--gold);
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.2), inset 0 0 50px rgba(0,0,0,0.8);
-            overflow: hidden;
-        }
-
-        video {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        @media (max-width: 768px) {
             .background {
-                background-image: url('images/clean-shop-bg.jpg');
+                background-image: url('images/desktop-bg.webp?v=final_fix');
                 animation: slowZoom 40s linear infinite alternate;
                 transform: scale(1);
             }
@@ -553,7 +510,7 @@
         
         <div class="branding-container">
             <img src="images/official_logo.png" alt="Arcane Merchant Logo" class="official-logo">
-            <p>A Magical Shop Simulation • Coming 2026</p>
+            <p>MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026</p>
         </div>
 
         <div class="menu-container">
@@ -562,7 +519,10 @@
             <button class="menu-btn" onclick="handleRumors()">Ask Rumors</button>
             <button class="menu-btn" onclick="handleCommunity()">The Common Room</button>
             <button class="menu-btn" onclick="handleFeatures()">Shop Systems</button>
-            <a href="https://store.steampowered.com/app/3430070/Arcane_Merchant/" target="_blank" class="menu-btn" style="color: #fff; background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%); border-color: #66c0f4;">Add to Wishlist</a>
+            <a href="https://store.steampowered.com/app/4086760/Arcane_Merchant/" target="_blank" class="menu-btn" style="color: #fff; background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%); border-color: #66c0f4; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <img src="images/steam_logo_official.jpg" width="24" height="24" style="border-radius: 50%;">
+                Wishlist on Steam
+            </a>
         </div>
 
         <div class="dialogue-wrapper">
@@ -576,7 +536,7 @@
         </div>
 
         <a href="https://findiestudios.com" target="_blank" class="findie-logo-fixed">
-            <span>© 2025 Findie Studios</span>
+            <span>© 2026 Findie Studios</span>
             <img src="images/findie_logo.webp" class="studio-logo" alt="Findie Studios Logo">
         </a>
     </div>
@@ -587,7 +547,7 @@
             <h2 style="font-size: 2.2rem; text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);">Manifest of Wonders</h2>
             
             <p style="font-style: italic; margin-bottom: 25px; text-align: center; font-size: 1.2rem; color: #5d2e0a; line-height: 1.5; padding: 0 20px;">
-                "Step closer, traveler... Behold my collection of rare artifacts, harvested from the forgotten corners of the realm. Each piece tells a story of a kingdom lost or a hero fallen."
+                "Step closer, traveler... Behold my collection of rare artifacts, harvested from the forgotten corners of the realm."
             </p>
 
             <div class="carousel-container">
@@ -699,8 +659,21 @@
 
     <script>
         const dialogueElement = document.getElementById('dialogue');
-        const welcomeText = "Step into the warmth, traveler. The Void is cold, but my hearth is always lit. I see you have an eye for the extraordinary... and perhaps the coin to match?";
+        const welcomeText = "Step into the warmth, traveler. Every coin traded is a signal. Will you strengthen the town's infrastructure, or seek to redefine the calculus of your own reward?";
         
+        const merchantDialogues = [
+            "Traders from the distant realms arrive without warning and vanish like mist. Timing is the only magic that truly matters here.",
+            "In these lands, Fame is a functional currency—more potent than gold. A high reputation opens doors that keys cannot touch.",
+            "In economic downturns, your reputation is your shield. Social trust is the only armor that softens a market-wide recession.",
+            "The Void is cold, but my hearth is always lit. I see you have an eye for the extraordinary...",
+            "Behold my collection of rare artifacts... each item tells a tale, and some... well, they might just choose you.",
+            "Low fame may relegate you to the shadows, but remember: the greatest arbitrage often hides where no one else dares to look.",
+            "When guilds unite, even the town's policies bend. Will you seek collective action, or let the 'Invisible Hand' guide your fate?",
+            "No two shops are alike. Seek differentiation, find your niche, and hunt for 'hero' artifacts that carry an outsized cachet.",
+            "The market never sleeps. A savvy merchant anticipates the cycle before the first ripple appears on the surface."
+        ];
+
+        let currentDialogueIndex = 0;
         let typeTimeout;
         let isTyping = false;
         let hls;
@@ -809,11 +782,17 @@
             if (modal) modal.classList.add('visible');
         }
 
+        function cycleDialogue() {
+            if (isTyping) return;
+            currentDialogueIndex = (currentDialogueIndex + 1) % merchantDialogues.length;
+            typeWriter(merchantDialogues[currentDialogueIndex], dialogueElement, 35);
+        }
+
         function closeModals() {
             document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
             stopC();
             setTimeout(() => {
-                typeWriter("Shall we continue our business, or does the world outside beckon?", dialogueElement);
+                cycleDialogue();
             }, 400);
         }
 
@@ -887,6 +866,7 @@
                 if (ui) ui.classList.add('ready');
                 setTimeout(() => {
                     typeWriter(welcomeText, dialogueElement, 40);
+                    setInterval(cycleDialogue, 12000);
                 }, 800);
             }, 500);
         };
