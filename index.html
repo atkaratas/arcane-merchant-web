@@ -1109,15 +1109,6 @@
             if (menuContainer) {
                 menuContainer.innerHTML = '';
                 
-                // Define actions map to avoid eval
-                const actions = {
-                    'menu_watch': handleWatch,
-                    'menu_wares': handleWares,
-                    'menu_rumors': handleRumors,
-                    'menu_common': handleCommunity,
-                    'menu_about': handleAbout
-                };
-
                 menuKeys.forEach(item => {
                     let el;
                     let text = "Menu Item";
@@ -1135,10 +1126,14 @@
                     } else {
                         el = document.createElement('button');
                         el.className = 'menu-btn';
-                        // Bind function directly
-                        if (actions[item.key]) {
-                            el.onclick = actions[item.key];
-                        }
+                        
+                        // EXPLICIT HANDLERS
+                        if (item.key === 'menu_watch') el.onclick = handleWatch;
+                        else if (item.key === 'menu_wares') el.onclick = handleWares;
+                        else if (item.key === 'menu_rumors') el.onclick = handleRumors;
+                        else if (item.key === 'menu_common') el.onclick = handleCommunity;
+                        else if (item.key === 'menu_about') el.onclick = handleAbout;
+                        
                         el.innerText = text;
                     }
                     menuContainer.appendChild(el);
