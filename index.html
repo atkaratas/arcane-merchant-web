@@ -1120,12 +1120,12 @@
                         el = document.createElement('button');
                         el.className = 'menu-btn';
                         
-                        // EXPLICIT CLICK HANDLERS
-                        if (item.key === 'menu_watch') el.onclick = handleWatch;
-                        else if (item.key === 'menu_wares') el.onclick = handleWares;
-                        else if (item.key === 'menu_rumors') el.onclick = handleRumors;
-                        else if (item.key === 'menu_common') el.onclick = handleCommunity;
-                        else if (item.key === 'menu_about') el.onclick = handleAbout;
+                        // EXPLICIT CLICK HANDLERS (Attributes)
+                        if (item.key === 'menu_watch') el.setAttribute('onclick', 'handleWatch()');
+                        else if (item.key === 'menu_wares') el.setAttribute('onclick', 'handleWares()');
+                        else if (item.key === 'menu_rumors') el.setAttribute('onclick', 'handleRumors()');
+                        else if (item.key === 'menu_common') el.setAttribute('onclick', 'handleCommunity()');
+                        else if (item.key === 'menu_about') el.setAttribute('onclick', 'handleAbout()');
                         
                         el.innerText = text;
                     }
