@@ -6,6 +6,7 @@
     <title>Arcane Merchant | Shop Management Sim</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
             --gold: #d4af37;
@@ -1265,15 +1266,35 @@
             
             // Visual update
             document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-            // (Re-render grid active state if needed, or simple class toggle loop)
-            
-            // Update "About" text immediately if open, or prep it
-            updateAboutText(code);
-            
             // Close modal if open
             if (document.getElementById('lang-modal').classList.contains('visible')) {
                 closeModals();
             }
+
+            // Update "About" text immediately if open, or prep it
+            updateAboutText(code);
+            
+            // Show Feedback
+            const toast = document.createElement('div');
+            toast.innerText = `Region Set: ${translations[code].name}`;
+            toast.style.position = 'fixed';
+            toast.style.top = '20px';
+            toast.style.left = '50%';
+            toast.style.transform = 'translateX(-50%)';
+            toast.style.background = 'rgba(0,0,0,0.8)';
+            toast.style.color = '#d4af37';
+            toast.style.padding = '10px 20px';
+            toast.style.borderRadius = '4px';
+            toast.style.border = '1px solid #d4af37';
+            toast.style.zIndex = '2000';
+            toast.style.fontFamily = 'var(--ui-font)';
+            document.body.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.style.transition = 'opacity 0.5s';
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 500);
+            }, 2000);
         }
 
         window.onload = () => {
