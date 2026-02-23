@@ -695,17 +695,34 @@
             
             data.features.forEach(feature => {
                 const p = document.createElement('p');
-                // Extract emoji and bold part if possible for styling, but simple text is safer for now
-                // We'll use simple HTML replacement for bolding the start if needed, but textContent is safer.
-                // Let's try to bold the title part before the first space after the emoji?
-                // Actually, the format is "🛍️ Title Description". Let's split by first space after emoji?
-                // Or just display as is for stability.
-                p.innerText = feature;
-                p.style.marginBottom = '15px';
-                p.style.paddingLeft = '10px';
+                // feature string contains "Emoji Headline \n Body"
+                // We want to make Headline Bold.
+                
+                // Split by newline
+                const parts = feature.split('\n');
+                const headline = parts[0];
+                const body = parts[1] || "";
+                
+                p.innerHTML = `<strong>${headline}</strong><br><span style="opacity: 0.9; font-size: 0.95em;">${body}</span>`;
+                
+                p.style.marginBottom = '20px';
+                p.style.paddingLeft = '15px';
                 p.style.borderLeft = '3px solid #d4af37';
                 featuresContainer.appendChild(p);
             });
+            
+            // Handle Ending
+            let endingEl = document.getElementById('about-ending');
+            if (!endingEl) {
+                endingEl = document.createElement('p');
+                endingEl.id = 'about-ending';
+                endingEl.style.marginTop = '30px';
+                endingEl.style.fontWeight = 'bold';
+                endingEl.style.color = '#d4af37';
+                endingEl.style.textAlign = 'center';
+                document.getElementById('about-content').appendChild(endingEl);
+            }
+            endingEl.innerText = data.ending || "";
         }
 
         function showModal(id) {
