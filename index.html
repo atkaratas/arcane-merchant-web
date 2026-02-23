@@ -1047,10 +1047,11 @@
         }
 
         function stopC() { 
-            if (carouselInterval) clearTimeout(carouselInterval); // Changed from interval to timeout
+            if (carouselInterval) clearTimeout(carouselInterval);
             const video = document.getElementById('story-video');
             if (video) {
-                video.onended = null; // Clear event listener
+                video.onended = null;
+                video.ontimeupdate = null; // Stop tracking
                 video.pause();
             }
         }
@@ -1072,7 +1073,6 @@
             const mainVideo = document.getElementById('story-video');
             const bgDiv = document.getElementById('story-bg');
             
-            // ANIMATE PROGRESS BAR
             // Reset all bars
             const bars = document.querySelectorAll('.story-bar-fill');
             bars.forEach(b => { b.style.width = '0%'; b.style.transition = 'none'; });
@@ -1082,7 +1082,7 @@
                 bars[i].style.width = '100%';
             }
 
-            // Setup Current Bar Animation
+            // Setup Current Bar
             const currentBar = bars[currentCarouselIndex];
             
             if (item.type === 'video') {
@@ -1092,23 +1092,24 @@
                 mainVideo.src = item.src;
                 mainVideo.currentTime = 0;
                 
-                // Transparent BG
                 bgDiv.style.backgroundImage = 'none';
                 bgDiv.style.backgroundColor = 'transparent';
 
-                // Play & Handle Duration
+                // REAL-TIME SYNC
+                // Disable CSS transition for direct control
+                currentBar.style.transition = 'none';
+                
+                mainVideo.ontimeupdate = () => {
+                    if (mainVideo.duration) {
+                        const pct = (mainVideo.currentTime / mainVideo.duration) * 100;
+                        currentBar.style.width = `${pct}%`;
+                    }
+                };
+
                 mainVideo.play().then(() => {
-                    // Animate Bar based on duration
-                    const duration = mainVideo.duration || 10; // Fallback
-                    currentBar.style.transition = `width ${duration}s linear`;
-                    // Trigger reflow
-                    void currentBar.offsetWidth; 
-                    currentBar.style.width = '100%';
-                    
                     mainVideo.onended = () => moveCarousel(1);
                 }).catch(e => {
                     console.log("Autoplay blocked", e);
-                    // Fallback timer if play fails
                     carouselInterval = setTimeout(() => moveCarousel(1), 4000);
                 });
 
@@ -1123,9 +1124,11 @@
                 if (bgDiv) bgDiv.style.backgroundImage = `url('${item.src}')`;
                 
                 // Animate Bar (Fixed 4s)
-                currentBar.style.transition = 'width 4s linear';
-                void currentBar.offsetWidth;
-                currentBar.style.width = '100%';
+                // Use a small delay to ensure transition property takes effect after reset
+                setTimeout(() => {
+                    currentBar.style.transition = 'width 4s linear';
+                    currentBar.style.width = '100%';
+                }, 10);
                 
                 carouselInterval = setTimeout(() => moveCarousel(1), 4000);
             }
