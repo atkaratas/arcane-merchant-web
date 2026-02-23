@@ -562,13 +562,15 @@
         .story-img-main {
             position: relative;
             width: 100%;
-            max-width: 400px; /* Square limit */
+            max-width: 400px;
             aspect-ratio: 1/1;
             object-fit: contain;
             z-index: 2;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            /* EDGELESS STYLE */
+            border: none; /* Removed border */
+            box-shadow: 0 0 30px rgba(0,0,0,0.5); /* Soft glow instead of hard shadow */
             border-radius: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: transparent; /* No plating */
         }
 
         .tap-zone {
