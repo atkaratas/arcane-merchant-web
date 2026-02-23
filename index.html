@@ -753,6 +753,7 @@
                 <div class="story-content">
                     <div class="story-bg" id="story-bg"></div>
                     <img id="story-image" src="" class="story-img-main">
+                    <video id="story-video" class="story-img-main" playsinline muted loop style="display: none;"></video>
                 </div>
 
                 <!-- Tap Zones -->
@@ -990,7 +991,18 @@
         }
 
         let carouselImages = [];
-        for (let i = 1; i <= 16; i++) carouselImages.push(`images/inventory/inventory_${i}.jpg?v=force_refresh_${Date.now()}`);
+        // Add Images
+        for (let i = 1; i <= 16; i++) {
+            carouselImages.push({
+                type: 'image',
+                src: `images/inventory/inventory_${i}.jpg?v=force_refresh_${Date.now()}`
+            });
+        }
+        
+        // Inject Videos into the feed
+        carouselImages.splice(2, 0, { type: 'video', src: 'images/inventory/story_clip_1.mp4' });
+        carouselImages.splice(6, 0, { type: 'video', src: 'images/inventory/story_clip_2.mp4' });
+        carouselImages.splice(10, 0, { type: 'video', src: 'images/inventory/story_clip_3.mp4' });
         
         let currentCarouselIndex = 0, carouselInterval, carouselInitialized = false;
 
@@ -1021,7 +1033,6 @@
         function showCarouselImage(index) {
             // Loop logic
             if (index >= carouselImages.length) {
-                // Loop to start or close? Stories usually close. But we'll loop.
                 currentCarouselIndex = 0;
             } else if (index < 0) {
                 currentCarouselIndex = carouselImages.length - 1;
@@ -1029,14 +1040,33 @@
                 currentCarouselIndex = index;
             }
 
-            const src = carouselImages[currentCarouselIndex];
+            const item = carouselImages[currentCarouselIndex];
             
-            // Update Image
+            // DOM Elements
             const mainImg = document.getElementById('story-image');
+            const mainVideo = document.getElementById('story-video');
             const bgDiv = document.getElementById('story-bg');
             
-            if (mainImg) mainImg.src = src;
-            if (bgDiv) bgDiv.style.backgroundImage = `url('${src}')`;
+            if (item.type === 'video') {
+                // Show Video
+                mainImg.style.display = 'none';
+                mainVideo.style.display = 'block';
+                mainVideo.src = item.src;
+                mainVideo.play().catch(e => console.log("Autoplay blocked", e));
+                
+                // Darken BG for video focus
+                bgDiv.style.backgroundImage = 'none';
+                bgDiv.style.backgroundColor = '#0a0a0a';
+            } else {
+                // Show Image
+                if (mainVideo) {
+                    mainVideo.pause();
+                    mainVideo.style.display = 'none';
+                }
+                mainImg.style.display = 'block';
+                mainImg.src = item.src;
+                if (bgDiv) bgDiv.style.backgroundImage = `url('${item.src}')`;
+            }
 
             // Update Progress Bars
             const bars = document.querySelectorAll('.story-bar-fill');
@@ -1044,9 +1074,7 @@
                 if (i < currentCarouselIndex) {
                     bar.style.width = '100%'; // Past
                 } else if (i === currentCarouselIndex) {
-                    bar.style.width = '100%'; // Current (Should animate? Simple fill for now)
-                    // Ideally we animate this over 4s.
-                    // For now static fill to indicate position.
+                    bar.style.width = '100%'; // Current
                 } else {
                     bar.style.width = '0%'; // Future
                 }
