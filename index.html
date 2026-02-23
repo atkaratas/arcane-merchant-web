@@ -424,7 +424,8 @@
         .close-modal {
             position: absolute;
             top: 15px;
-            right: 20px;
+            left: 20px; /* Globally moved to Left */
+            right: auto; /* Clear Right */
             font-size: 2.5rem;
             cursor: pointer;
             color: #8b4513;
@@ -433,10 +434,8 @@
             z-index: 10;
         }
 
-        /* Video Modal Specific Close Button */
+        /* Video Modal Specific Close Button (Just color override now) */
         #video-modal .close-modal {
-            right: auto;
-            left: 15px; /* Move to left to avoid video controls overlap */
             color: var(--gold);
             text-shadow: 0 0 5px #000;
         }
@@ -537,7 +536,7 @@
             }
 
             .parchment { 
-                padding: 25px 15px; 
+                padding: 45px 15px 25px 15px; /* Added top padding for Close Button */
                 width: 92vw;
                 max-height: 80vh;
             }
