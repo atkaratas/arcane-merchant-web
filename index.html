@@ -708,7 +708,7 @@
     <div class="overlay"></div>
     <div class="warm-overlay"></div>
 
-    <!-- Language Map -->
+    <!-- Language Map (Emoji) -->
     <div class="lang-toggle" onclick="showModal('lang-modal')" title="Select Region">
         <span style="font-size: 1.5rem;">🗺️</span>
     </div>
@@ -1103,9 +1103,9 @@
             const menuContainer = document.querySelector('.menu-container');
             if (menuContainer) {
                 menuContainer.innerHTML = '';
-                
                 menuKeys.forEach(item => {
                     let el;
+                    // Safe access
                     let text = "Menu Item";
                     try {
                         text = (data.ui && data.ui[item.key]) ? data.ui[item.key] : (en.ui && en.ui[item.key] ? en.ui[item.key] : item.key);
@@ -1122,7 +1122,7 @@
                         el = document.createElement('button');
                         el.className = 'menu-btn';
                         
-                        // EXPLICIT HANDLERS
+                        // EXPLICIT CLICK HANDLERS
                         if (item.key === 'menu_watch') el.onclick = handleWatch;
                         else if (item.key === 'menu_wares') el.onclick = handleWares;
                         else if (item.key === 'menu_rumors') el.onclick = handleRumors;
@@ -1168,6 +1168,58 @@
             if (!isTyping) typeWriter(welcome, dialogueElement, 40);
 
             if (typeof updateAboutText === 'function') updateAboutText(code);
+            
+            const toast = document.createElement('div');
+            toast.innerText = `Region Set: ${data.name}`;
+            toast.style.position = 'fixed';
+            toast.style.top = '20px';
+            toast.style.left = '50%';
+            toast.style.transform = 'translateX(-50%)';
+            toast.style.background = 'rgba(0,0,0,0.8)';
+            toast.style.color = '#d4af37';
+            toast.style.padding = '10px 20px';
+            toast.style.borderRadius = '4px';
+            toast.style.border = '1px solid #d4af37';
+            toast.style.zIndex = '3000';
+            toast.style.fontFamily = 'var(--ui-font)';
+            document.body.appendChild(toast);
+            setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => toast.remove(), 500); }, 2000);
+        }
+
+        function updateAboutText(langCode) {
+            const data = translations[langCode];
+            if (!data) return;
+            
+            document.getElementById('about-intro').innerText = data.intro;
+            
+            const featuresContainer = document.getElementById('about-features');
+            featuresContainer.innerHTML = '';
+            
+            data.features.forEach(feature => {
+                const p = document.createElement('p');
+                const parts = feature.split('\n');
+                const headline = parts[0];
+                const body = parts[1] || "";
+                
+                p.innerHTML = `<strong>${headline}</strong><br><span style="opacity: 0.9; font-size: 0.95em;">${body}</span>`;
+                
+                p.style.marginBottom = '20px';
+                p.style.paddingLeft = '15px';
+                p.style.borderLeft = '3px solid #d4af37';
+                featuresContainer.appendChild(p);
+            });
+            
+            let endingEl = document.getElementById('about-ending');
+            if (!endingEl) {
+                endingEl = document.createElement('p');
+                endingEl.id = 'about-ending';
+                endingEl.style.marginTop = '30px';
+                endingEl.style.fontWeight = 'bold';
+                endingEl.style.color = '#d4af37';
+                endingEl.style.textAlign = 'center';
+                document.getElementById('about-content').appendChild(endingEl);
+            }
+            endingEl.innerText = data.ending || "";
         }
 
         window.onload = () => {
