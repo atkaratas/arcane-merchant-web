@@ -671,7 +671,7 @@
         }
 
         let carouselImages = [];
-        for (let i = 1; i <= 16; i++) carouselImages.push(`images/inventory/inventory_${i}.jpg?v=new_set`);
+        for (let i = 1; i <= 16; i++) carouselImages.push(`images/inventory/inventory_${i}.jpg?v=force_refresh_${Date.now()}`);
         
         let currentCarouselIndex = 0, carouselInterval, carouselInitialized = false;
 
