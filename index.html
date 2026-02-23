@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Arcane Merchant | Shop Management Sim</title>
+    <title>Arcane Merchant | Medieval Fantasy Shop Simulator</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
@@ -15,20 +15,9 @@
             --dialogue-font: 'Crimson Text', serif;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            -webkit-tap-highlight-color: transparent;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
-        body, html {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            background-color: #050505;
-            color: #fff;
-        }
+        body, html { height: 100%; width: 100%; overflow: hidden; background-color: #050505; color: #fff; }
 
         .background {
             position: fixed;
@@ -36,8 +25,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('images/official-background.jpg?v=final_fix_123') !important; no-repeat center center;
-            background-size: cover;
+            background: #050505 url('images/merchant-anime-final.jpg?v=99') no-repeat center center !important;
+            background-size: cover !important;
             z-index: -1;
             filter: brightness(0.8) sepia(0.1);
             animation: slowZoom 60s linear infinite alternate;
@@ -45,31 +34,13 @@
 
         @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.15); } }
 
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.7) 100%);
-            pointer-events: none;
-            z-index: 0;
-        }
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.7) 100%); pointer-events: none; z-index: 0; }
 
         .game-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 100vw;
-            padding: 20px;
-            padding-bottom: 220px;
-            opacity: 0;
-            transition: opacity 1.5s ease-in;
-            position: relative;
-            z-index: 1;
-            text-align: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            height: 100vh; width: 100vw; padding: 20px; padding-bottom: 220px;
+            opacity: 0; transition: opacity 1.5s ease-in; position: relative; z-index: 1; text-align: center;
+            transform: translateY(-40px);
         }
 
         .game-container.ready { opacity: 1; display: flex !important; }
@@ -79,8 +50,13 @@
         .branding-container p { font-family: var(--ui-font); font-size: 0.9rem; color: #ccc; letter-spacing: 2px; text-transform: uppercase; margin-top: 10px; }
 
         .menu-container { display: flex; flex-direction: column; gap: 12px; width: 350px; max-width: 90%; margin-bottom: 20px; }
-        .menu-btn { background: var(--dark-bg); border: 1px solid rgba(212, 175, 55, 0.3); color: var(--gold); padding: 12px 30px; font-family: var(--ui-font); font-size: 1rem; cursor: pointer; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); text-decoration: none; text-align: center; }
-        .menu-btn:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.1); }
+        .menu-btn { 
+            background: var(--dark-bg); border: 1px solid rgba(212, 175, 55, 0.3); color: var(--gold); 
+            padding: 12px 30px; font-family: var(--ui-font); font-size: 1rem; cursor: pointer; 
+            text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+            text-decoration: none; text-align: center; transition: all 0.3s ease;
+        }
+        .menu-btn:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.1); transform: scale(1.02); }
 
         .dialogue-wrapper { width: 90%; max-width: 900px; position: fixed; bottom: 35px; left: 50%; transform: translateX(-50%); z-index: 3000; }
         .dialogue-box { background: rgba(20, 20, 25, 1); border: 2px solid rgba(212, 175, 55, 0.8); padding: 25px 35px; min-height: 140px; border-radius: 2px; box-shadow: 0 0 30px rgba(0,0,0,1); }
@@ -92,7 +68,7 @@
         .modal.visible { display: flex; opacity: 1; }
         body.modal-open .branding-container, body.modal-open .menu-container { opacity: 0; pointer-events: none; }
 
-        .parchment { background: var(--parchment); background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #2c1e0f; width: 95%; max-width: 750px; padding: 40px; border-radius: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.7), inset 0 0 60px rgba(139, 69, 19, 0.2); position: relative; font-family: var(--dialogue-font); max-height: 65vh; overflow-y: auto; transform: scale(0.9); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .parchment { background: var(--parchment); background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #2c1e0f; width: 95%; max-width: 750px; padding: 40px; border-radius: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.7); position: relative; font-family: var(--dialogue-font); max-height: 65vh; overflow-y: auto; transform: scale(0.9); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         .modal.visible .parchment { transform: scale(1); }
         .parchment h2 { font-family: var(--ui-font); margin-bottom: 30px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 15px; text-align: center; color: #5d2e0a; letter-spacing: 2px; }
 
@@ -117,8 +93,7 @@
             .community-item { font-size: 0.85rem; padding: 8px; }
         }
 
-        .close-modal { position: absolute; top: 10px; right: 10px; font-size: 2rem; cursor: pointer; color: #8b4513; z-index: 10; line-height: 1; transition: transform 0.3s; }
-        .close-modal:hover { transform: rotate(90deg); }
+        .close-modal { position: absolute; top: 10px; right: 15px; font-size: 2.2rem; cursor: pointer; color: #8b4513; z-index: 10; line-height: 1; }
         .carousel-arrow { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(139, 69, 19, 0.2); color: #5d2e0a; font-size: 2rem; cursor: pointer; z-index: 10; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: none; }
         .carousel-arrow.prev { left: 15px; }
         .carousel-arrow.next { right: 15px; }
@@ -127,7 +102,7 @@
         .findie-logo-fixed { position: fixed; top: 15px; right: 15px; display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--gold); font-size: 0.7rem; padding: 8px 12px; background: rgba(0,0,0,0.8); z-index: 1000; border: 1px solid rgba(212, 175, 55, 0.3); }
         .studio-logo { height: 25px; }
     </style>
-<link rel="stylesheet" href="style_fix.css"></head>
+</head>
 <body>
     <div class="background"></div>
     <div class="overlay"></div>
@@ -148,12 +123,11 @@
                 Wishlist on Steam
             </a>
         </div>
-    </div>
-
-    <div class="dialogue-wrapper">
-        <div class="dialogue-box">
-            <div class="speaker-name"><img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="A"> Master Merchant</div>
-            <div id="dialogue" class="dialogue-text"></div>
+        <div class="dialogue-wrapper">
+            <div class="dialogue-box">
+                <div class="speaker-name"><img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="A"> Master Merchant</div>
+                <div id="dialogue" class="dialogue-text"></div>
+            </div>
         </div>
     </div>
 
@@ -203,7 +177,7 @@
         <div class="parchment">
             <span class="close-modal" onclick="closeModals()">&times;</span>
             <h2>Mastering the Arts</h2>
-            <div style="margin-top: 10px;">
+            <div style="margin-top: 20px;">
                 <p style="margin-bottom: 20px;">✧ <strong>Grand Display:</strong> Design a sanctuary for your wares.</p>
                 <p style="margin-bottom: 20px;">✧ <strong>Alchemy:</strong> Transform raw essence into artifacts.</p>
                 <p>✧ <strong>Economy:</strong> Wars and festivals shift value in real-time.</p>
@@ -231,7 +205,7 @@
         ];
         let cIdx = 0, tTimeout, isT = false;
 
-        function tWriter(text, element, speed = 30, callback) {
+        function typeWriter(text, element, speed = 30, callback) {
             if (isT) clearTimeout(tTimeout);
             isT = true; element.innerHTML = ""; let i = 0;
             function type() {
@@ -241,11 +215,11 @@
             type();
         }
 
-        function handleWatch() { showVideoModal(); tWriter("Behold the memories of the trade...", dEl); }
-        function handleWares() { showModal('wares-modal'); initCarousel(); tWriter("Behold my collection of rare artifacts...", dEl); }
-        function handleRumors() { showModal('rumors-modal'); tWriter("The walls have ears...", dEl); }
-        function handleCommunity() { showModal('community-modal'); tWriter("The common rooms are bustling...", dEl); }
-        function handleFeatures() { showModal('features-modal'); tWriter("Merchantry is an art of logistics...", dEl); }
+        function handleWatch() { showVideoModal(); typeWriter("Behold the memories of the trade...", dEl); }
+        function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter("Behold my collection of rare artifacts...", dEl); }
+        function handleRumors() { showModal('rumors-modal'); typeWriter("The walls have ears...", dEl); }
+        function handleCommunity() { showModal('community-modal'); typeWriter("The common rooms are bustling...", dEl); }
+        function handleFeatures() { showModal('features-modal'); typeWriter("Merchantry is an art of logistics...", dEl); }
 
         function showModal(id) { document.getElementById(id).classList.add('visible'); document.body.classList.add('modal-open'); }
         function closeModals() { document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible')); document.body.classList.remove('modal-open'); stopC(); }
@@ -258,7 +232,7 @@
         }
         function closeVideoModal() { document.getElementById('video-player').pause(); closeModals(); }
 
-        let imgs = []; for (let i = 1; i <= 18; i++) imgs.push(`images/inventory/inventory_${i}.jpg?v=final_fix`);
+        let imgs = []; for (let i = 1; i <= 18; i++) imgs.push(`images/inventory/inventory_${i}.jpg?v=final_mühür`);
         let curIdx = 0, cInt, cInit = false;
         function initCarousel() {
             const t = document.getElementById('carousel-track'); if (cInit) { startC(); return; }
@@ -276,13 +250,14 @@
         window.onload = () => {
             document.getElementById('game-ui').classList.add('ready');
             setTimeout(() => { 
-                tWriter(wText, dEl); 
-                setInterval(() => { if (!isT) { cIdx = (cIdx + 1) % mDialogues.length; tWriter(mDialogues[cIdx], dEl); } }, 12000);
+                typeWriter(wText, dEl); 
+                setInterval(() => { if (!isT) { cIdx = (cIdx + 1) % mDialogues.length; typeWriter(mDialogues[cIdx], dEl); } }, 12000);
             }, 800);
         };
 
-        window.onclick = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
-        window.ontouchstart = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
+        function closeAll(e) { if (e.target.classList.contains('modal')) closeVideoModal(); }
+        window.onclick = closeAll;
+        window.ontouchstart = closeAll;
     </script>
 </body>
 </html>
