@@ -536,7 +536,6 @@
             </a>
             <button class="menu-btn" onclick="handleCommunity()">The Common Room</button>
             <button class="menu-btn" onclick="handleAbout()">About the Game</button>
-            <button class="menu-btn" onclick="handleFeatures()">Shop Systems</button>
             <button class="menu-btn" onclick="handleRumors()">Ask Rumors</button>
         </div>
 
@@ -570,18 +569,32 @@
     </div>
 
     <div id="rumors-modal" class="modal">
-        <div class="parchment">
+        <div class="parchment" style="max-width: 600px;">
             <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2>Whispers from the Void</h2>
-            <div style="margin-top: 20px;">
-                <p style="margin-bottom: 20px;">✧ <strong>The Lost Caravan:</strong> Star-Iron was lost in the Whispering Woods.</p>
-                <p style="margin-bottom: 20px;">✧ <strong>The King's Debt:</strong> The crown is looking for a specific relic.</p>
-                <p>✧ <strong>Celestial Alignment:</strong> Moon-blessed artifacts will triple in potency.</p>
+            <h2 style="font-size: 1.8rem; margin-bottom: 25px;">Whispers from the Void</h2>
+            <div style="margin-top: 20px; text-align: left;">
+                <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;">
+                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">📜 The High King's Debt</p>
+                    <p style="font-style: italic; opacity: 0.8;">"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin."</p>
+                </div>
+                
+                <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;">
+                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">🌙 Celestial Alignment</p>
+                    <p style="font-style: italic; opacity: 0.8;">"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now."</p>
+                </div>
+
+                <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;">
+                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">🕸️ The Silk Caravan</p>
+                    <p style="font-style: italic; opacity: 0.8;">"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune."</p>
+                </div>
+
+                <div>
+                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">👁️ The Shadow Market</p>
+                    <p style="font-style: italic; opacity: 0.8;">"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?"</p>
+                </div>
             </div>
         </div>
     </div>
-
-    <div id="community-modal" class="modal">
         <div class="parchment">
             <span class="close-modal" onclick="closeModals()">&times;</span>
             <h2>The Common Room</h2>
@@ -594,18 +607,6 @@
                 <a href="https://www.tiktok.com/@findiestudios" target="_blank" class="community-item"><span class="community-icon">🎭</span> TikTok</a>
                 <a href="https://www.reddit.com/r/arcanemerchant" target="_blank" class="community-item"><span class="community-icon">⚒️</span> Reddit</a>
                 <a href="https://www.linkedin.com/company/findiestudios" target="_blank" class="community-item"><span class="community-icon">🗝️</span> LinkedIn</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="features-modal" class="modal">
-        <div class="parchment">
-            <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2>Mastering the Arts</h2>
-            <div style="margin-top: 20px;">
-                <p style="margin-bottom: 20px;">✧ <strong>Grand Display:</strong> Design a sanctuary for your wares.</p>
-                <p style="margin-bottom: 20px;">✧ <strong>Alchemy:</strong> Transform raw essence into artifacts.</p>
-                <p>✧ <strong>Economy:</strong> Wars and festivals shift value in real-time.</p>
             </div>
         </div>
     </div>
@@ -663,7 +664,6 @@
         function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter("Behold the relics of an age forgotten.", dialogueElement, 30); }
         function handleRumors() { showModal('rumors-modal'); typeWriter("The walls have ears, and the wind has a tongue.", dialogueElement, 30); }
         function handleCommunity() { showModal('community-modal'); typeWriter("The ravens carry our news...", dialogueElement, 30); }
-        function handleFeatures() { showModal('features-modal'); typeWriter("Merchantry is an art of logistics...", dialogueElement, 30); }
         function handleAbout() {
             showModal('about-modal');
             typeWriter("The story of the merchant is written in many tongues...", dialogueElement, 30);
