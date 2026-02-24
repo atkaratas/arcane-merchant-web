@@ -323,16 +323,30 @@
             const mp4Fallback = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/movie480.mp4';
             
             modal.classList.add('visible');
+            video.controls = true;
             
-            if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                video.src = hlsSrc;
-                video.play();
-            } else if (Hls.isSupported()) {
+            if (Hls.isSupported()) {
                 if (hls) hls.destroy();
                 hls = new Hls();
                 hls.loadSource(hlsSrc);
                 hls.attachMedia(video);
-                hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+                hls.on(Hls.Events.MANIFEST_PARSED, () => {
+                    video.play().catch(e => console.log("Hls.js autoplay prevented"));
+                });
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        console.log("Hls.js fatal error, trying native/fallback");
+                        video.src = mp4Fallback;
+                        video.play();
+                    }
+                });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                // Native HLS support (Safari)
+                video.src = hlsSrc;
+                video.play().catch(e => {
+                    video.src = mp4Fallback;
+                    video.play();
+                });
             } else {
                 video.src = mp4Fallback;
                 video.play();
