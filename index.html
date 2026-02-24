@@ -49,8 +49,9 @@
         .branding-container { display: flex; flex-direction: column; align-items: center; margin-bottom: 20px; z-index: 20; }
         .official-logo { max-width: 400px; width: 90%; height: auto; filter: drop-shadow(0 0 20px rgba(212,175,55,0.6)); margin-bottom: 5px; }
         .branding-container p { font-family: var(--ui-font); font-style: italic; font-size: 0.8rem; color: #ccc; letter-spacing: 2px; margin-top: 8px; line-height: 1.6; }
-        #play-demo-link { font-family: var(--ui-font); font-style: italic; font-size: 0.8rem; color: var(--gold); letter-spacing: 2px; text-decoration: none; font-weight: bold; text-shadow: 0 0 10px rgba(212,175,55,0.4); transition: all 0.3s; display: block; margin-top: 2px; }
-        #play-demo-link:hover { color: #fff; text-shadow: 0 0 15px var(--gold); }
+        #play-demo-link { font-family: var(--ui-font); font-style: italic; font-size: 0.8rem; color: #ff8c00; letter-spacing: 2px; text-decoration: none; font-weight: bold; text-shadow: 0 0 10px rgba(255, 140, 0, 0.6), 0 0 20px rgba(255, 140, 0, 0.4); transition: all 0.3s; display: block; margin-top: 2px; animation: radiantGlow 2s ease-in-out infinite alternate; }
+        #play-demo-link:hover { color: #fff; text-shadow: 0 0 20px #ff8c00, 0 0 30px #ff4500; }
+        @keyframes radiantGlow { from { opacity: 0.8; filter: brightness(1); } to { opacity: 1; filter: brightness(1.5); text-shadow: 0 0 15px #ff8c00, 0 0 25px #ff4500; } }
         
         .menu-container { display: flex; flex-direction: column; gap: 6px; z-index: 2000; width: 280px !important; margin: 0 auto 30px auto; position: relative; pointer-events: auto; }
         .menu-btn { background: rgba(10, 10, 15, 0.4); backdrop-filter: blur(5px); border: 2px double rgba(212, 175, 55, 0.6); border-radius: 4px; color: var(--gold); padding: 6px 12px; font-family: var(--ui-font); font-size: 0.8rem; cursor: pointer; transition: all 0.4s ease; text-transform: uppercase; letter-spacing: 1.2px; width: 100%; pointer-events: auto !important; z-index: 2001; height: 38px; display: flex; align-items: center; justify-content: center; text-decoration: none !important; }
