@@ -553,9 +553,20 @@
                 const ember = document.createElement('div'); ember.className = 'ember'; ember.style.left = Math.random() * 100 + 'vw'; ember.style.animationDuration = (Math.random() * 5 + 5) + 's'; ember.style.opacity = Math.random(); document.body.appendChild(ember); setTimeout(() => ember.remove(), 10000);
             }, 300);
         };
-        const closeAll = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
-        window.onclick = () => { resetIdleTimer(); closeAll(); }; 
-        window.ontouchstart = () => { resetIdleTimer(); closeAll(); };
+        window.onclick = (e) => { 
+            resetIdleTimer(); 
+            if (e.target.classList.contains('modal')) {
+                if (e.target.id === 'video-modal') closeVideoModal();
+                else closeModals();
+            }
+        }; 
+        window.ontouchstart = (e) => { 
+            resetIdleTimer(); 
+            if (e.target.classList.contains('modal')) {
+                if (e.target.id === 'video-modal') closeVideoModal();
+                else closeModals();
+            }
+        };
     </script>
 </body>
 </html>
