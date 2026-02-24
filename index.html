@@ -312,34 +312,21 @@
 
         function showVideoModal() {
             const modal = document.getElementById('video-modal'), video = document.getElementById('video-player');
-            // Reverting to HLS with a more robust implementation and a hard fallback to MP4
-            const hlsSrc = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/hls_264_master.m3u8';
-            const mp4Fallback = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/movie480.mp4';
+            // Hardcoding a high-compatibility MP4 link directly to bypass stream issues
+            const mp4Src = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/movie480.mp4';
             
             modal.classList.add('visible');
+            video.src = mp4Src;
+            video.load();
             
-            if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                // Native HLS support (Safari/iOS)
-                video.src = hlsSrc;
-                video.play();
-            } else if (Hls.isSupported()) {
-                // Hls.js support
-                if (hls) hls.destroy();
-                hls = new Hls();
-                hls.loadSource(hlsSrc);
-                hls.attachMedia(video);
-                hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
-                hls.on(Hls.Events.ERROR, (event, data) => {
-                    if (data.fatal) {
-                        console.log("HLS fatal error, falling back to MP4");
-                        video.src = mp4Fallback;
-                        video.play();
-                    }
+            // Attempt autoplay
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log("Autoplay prevented, showing controls.");
+                    video.muted = false;
+                    video.controls = true;
                 });
-            } else {
-                // Fallback to MP4
-                video.src = mp4Fallback;
-                video.play();
             }
         }
 
