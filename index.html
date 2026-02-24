@@ -56,27 +56,36 @@
 
         .dialogue-wrapper { width: 100%; max-width: 900px; position: relative; transform: translateY(0); transition: transform 0.5s ease; text-align: left; }
         .dialogue-box { 
-            background: transparent; /* Removed dark background per request */
-            border: 45px solid transparent; 
+            background: transparent; 
+            border: 55px solid transparent; /* Slightly thicker frame for better visual */
             border-image-source: url('images/dialogue_frame.png');
-            border-image-slice: 90 fill; /* 'fill' keeps center transparent/filled by image logic, but source is transparent */
+            border-image-slice: 90 fill; 
             border-image-repeat: round; 
-            padding: 10px 20px; 
-            min-height: 140px; 
+            padding: 0 40px; /* Horizontal padding for text */
+            height: 240px; /* Fixed height - won't expand */
+            width: 100%;
+            box-sizing: border-box;
             position: relative; 
-            /* Removed box-shadow background glow, kept text glow logic elsewhere */
             box-shadow: none; 
-            overflow: visible; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .dialogue-text { 
             font-family: var(--dialogue-font); 
-            font-size: 1.8rem; 
-            line-height: 1.5; 
+            font-size: 1.6rem; /* Slightly smaller to fit better */
+            line-height: 1.4; 
             color: #fceeb5; 
-            text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(0,0,0,0.8); /* Enhanced glow + shadow for readability */
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(0,0,0,0.9); 
             position: relative; 
             z-index: 60; 
+            width: 100%;
+            max-height: 100%;
+            overflow-y: auto; /* Scroll if text is too long */
+            scrollbar-width: none; /* Hide scrollbar Firefox */
+            text-align: center;
         }
+        .dialogue-text::-webkit-scrollbar { display: none; } /* Hide scrollbar Chrome/Safari */
         .dialogue-text::after { content: "|"; animation: blink 1s step-end infinite; color: var(--gold); margin-left: 5px; }
         
         .speaker-name {
