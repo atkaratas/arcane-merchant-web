@@ -61,19 +61,18 @@
 
         .dialogue-wrapper { width: 100%; max-width: 900px; position: relative; transform: translateY(0); transition: transform 0.5s ease; text-align: left; }
         .dialogue-box { 
-            background: transparent; 
-            border: 45px solid transparent; 
-            border-image-source: url('images/dialogue_frame.png');
-            border-image-slice: 90 fill; 
-            border-image-repeat: stretch; /* Changed to stretch to avoid cuts/residues */
-            padding: 0 40px; 
-            height: 160px; /* Reduced from 240px to keep it tiny */
+            background: rgba(10, 10, 15, 0.4); 
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.4); 
+            border-radius: 12px;
+            padding: 20px 40px; 
+            min-height: 120px;
             width: 100%;
-            max-width: 600px; /* Limit width to keep it tiny under menu */
-            margin: 0 auto; /* Center it */
+            max-width: 600px;
+            margin: 0 auto;
             box-sizing: border-box;
             position: relative; 
-            box-shadow: none; 
+            box-shadow: 0 0 30px rgba(0,0,0,0.5); 
             display: flex;
             align-items: center;
             justify-content: center;
@@ -206,7 +205,6 @@
         <div class="branding-container">
             <img src="images/official_logo.png" alt="Arcane Merchant Logo" class="official-logo">
             <p id="game-subtitle">MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!</p>
-            <a href="https://store.steampowered.com/app/4086760/Arcane_Merchant/" target="_blank" id="play-demo-link">PLAY DEMO NOW!</a>
         </div>
         <div class="menu-container">
             <!-- Buttons injected by JS (ID's important for butterflies) -->
