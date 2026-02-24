@@ -547,8 +547,8 @@
             const ui = document.getElementById('game-ui'); if (ui) ui.classList.add('ready');
             startAutoTalk();
             resetIdleTimer(); // Start idle watch
-            setInterval(spawnButterfly, 3000); // More frequent spawn since they fly faster
-            setInterval(spawnPetal, 800); 
+            // Butterflies removed per request
+            setInterval(spawnPetal, 1600); // Petals reduced to half (slower spawn rate)
             setInterval(() => {
                 const ember = document.createElement('div'); ember.className = 'ember'; ember.style.left = Math.random() * 100 + 'vw'; ember.style.animationDuration = (Math.random() * 5 + 5) + 's'; ember.style.opacity = Math.random(); document.body.appendChild(ember); setTimeout(() => ember.remove(), 10000);
             }, 300);
