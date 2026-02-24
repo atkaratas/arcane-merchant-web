@@ -151,9 +151,14 @@
         .copyright-footer { position: fixed; bottom: 5px; width: 100%; text-align: center; font-family: var(--ui-font); font-size: 0.5rem; color: rgba(255,255,255,0.3); text-transform: uppercase; z-index: 500; }
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 2000; justify-content: center; align-items: center; padding: 20px; opacity: 0; transition: opacity 0.5s; }
         .modal.visible { display: flex; opacity: 1; }
-        .parchment { background: var(--parchment); color: #2c1e0f; width: 95%; max-width: 750px; padding: 40px; border-radius: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.7); position: relative; font-family: var(--dialogue-font); max-height: 90vh; overflow-y: auto; transform: scale(0.9); transition: transform 0.4s; }
+        .parchment { background: var(--parchment); color: #2c1e0f; width: auto; max-width: 750px; display: inline-block; padding: 40px; border-radius: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.7); position: relative; font-family: var(--dialogue-font); max-height: 90vh; overflow-y: auto; transform: scale(0.9); transition: transform 0.4s; }
         .modal.visible .parchment { transform: scale(1); }
         .close-modal { position: absolute; top: 15px; left: 20px; font-size: 2.5rem; cursor: pointer; color: #8b4513; z-index: 10; }
+        
+        .lang-btn { cursor: pointer; padding: 5px 10px; transition: all 0.2s; border-radius: 4px; }
+        .lang-btn:hover { background: rgba(139, 69, 19, 0.1); color: #8b4513; }
+        .lang-btn.active { font-weight: bold; color: #8b4513; text-decoration: underline; }
+        .lang-grid { display: flex; flex-direction: column; gap: 5px; text-align: left; }
         .story-container { position: relative; width: 100%; height: 80vh; max-height: 800px; display: flex; flex-direction: column; }
         .story-progress { position: absolute; top: 10px; left: 0; width: 100%; display: flex; gap: 4px; padding: 0 10px; z-index: 20; }
         .story-bar { flex: 1; height: 3px; background: rgba(255,255,255,0.3); border-radius: 2px; overflow: hidden; }
