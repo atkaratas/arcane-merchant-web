@@ -62,7 +62,7 @@
             padding: 40px 50px; 
             min-height: 160px; 
             position: relative; 
-            box-shadow: 0 10px 50px rgba(0,0,0,1), inset 0 0 60px rgba(0,0,0,0.8); 
+            box-shadow: 0 10px 50px rgba(0,0,0,1), inset 0 0 60px rgba(0,0,0,0.8), 0 0 30px rgba(255, 160, 60, 0.2); 
             border-radius: 10px; 
             overflow: visible; 
         }
@@ -111,7 +111,20 @@
         /* Landed State: Slow Flap */
         .butterfly.landed .wing { animation-duration: 3s; }
         
-        .petal { position: fixed; top: -50px; z-index: 25; pointer-events: none; opacity: 0.9; border-radius: 50% 0 50% 50%; background: linear-gradient(135deg, var(--petal-color), rgba(0,0,0,0.1)); animation: fall linear forwards, sway ease-in-out infinite alternate; }
+        .ember {
+            position: fixed; bottom: -10px; width: 4px; height: 4px; border-radius: 50%;
+            background: rgba(255, 140, 0, 0.8); /* Orange/Gold fire */
+            box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
+            pointer-events: none; z-index: 10;
+            animation: rise 10s linear forwards;
+        }
+        @keyframes rise {
+            0% { bottom: -10px; transform: translateX(0); opacity: 0; }
+            20% { opacity: 1; }
+            100% { bottom: 100vh; transform: translateX(100px); opacity: 0; }
+        }
+
+        .petal { position: fixed; top: -50px; z-index: 25; pointer-events: none; opacity: 1.0; border-radius: 50% 0 50% 50%; background: var(--petal-color); animation: fall linear forwards, sway ease-in-out infinite alternate; box-shadow: 0 0 2px rgba(0,0,0,0.3); }
         .petal.pink { --petal-color: #ffb7c5; } .petal.red { --petal-color: #dc143c; } .petal.maroon { --petal-color: #800020; }
         @keyframes fall { 0% { top: -10vh; } 100% { top: 110vh; } }
         @keyframes sway { 0% { transform: translateX(-40px) rotate(0deg); } 100% { transform: translateX(40px) rotate(45deg); } }
@@ -537,7 +550,7 @@
         function spawnPetal() {
             const p = document.createElement('div'); const colors = ['pink', 'red', 'maroon']; p.classList.add('petal', colors[Math.floor(Math.random() * colors.length)]);
             const startLeft = Math.random() * 100; const fallDuration = 10 + Math.random() * 10; const swayDuration = 3 + Math.random() * 3;
-            p.style.left = startLeft + 'vw'; p.style.width = (10 + Math.random() * 15) + 'px'; p.style.height = p.style.width;
+            p.style.left = startLeft + 'vw'; p.style.width = (6 + Math.random() * 8) + 'px'; p.style.height = p.style.width;
             p.style.animationDuration = `${fallDuration}s, ${swayDuration}s`;
             document.body.appendChild(p); setTimeout(() => { p.remove(); }, fallDuration * 1000);
         }
