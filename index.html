@@ -14,213 +14,129 @@
             --parchment: #f4e4bc;
             --ui-font: 'Cinzel', serif;
             --dialogue-font: 'Crimson Text', serif;
-            --transition-speed: 0.8s;
-            --magical-glow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        body, html {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            background-color: #050505;
-            color: #fff;
-            position: fixed;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        body, html { height: 100%; width: 100%; overflow: hidden; background-color: #050505; color: #fff; position: fixed; }
 
         .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: #050505 url('images/official-background.jpg?v=final_fix') no-repeat center center !important;
-            background-size: cover !important;
-            z-index: -1;
-            filter: brightness(0.8) sepia(0.1);
+            background-size: cover !important; z-index: -1; filter: brightness(0.8) sepia(0.1);
             animation: slowZoom 60s linear infinite alternate;
         }
-
         @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.15); } }
 
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.6) 100%);
-            pointer-events: none;
-            z-index: 0;
-        }
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.6) 100%); pointer-events: none; z-index: 0; }
+        .warm-overlay { position: fixed; bottom: 0; left: 0; width: 100%; height: 60%; background: radial-gradient(ellipse at bottom, rgba(255, 160, 60, 0.15) 0%, rgba(100, 50, 0, 0.05) 40%, transparent 80%); z-index: 0; pointer-events: none; mix-blend-mode: screen; }
 
-        /* --- COZY ATMOSPHERE --- */
-        .warm-overlay {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 60%;
-            background: radial-gradient(ellipse at bottom, rgba(255, 160, 60, 0.15) 0%, rgba(100, 50, 0, 0.05) 40%, transparent 80%);
-            z-index: 0;
-            pointer-events: none;
-            mix-blend-mode: screen;
-        }
-
-        /* --- LANGUAGE SELECTOR --- */
-        .lang-toggle {
-            position: fixed;
-            top: 10px; left: 10px; z-index: 1000;
-            background: transparent; border: none; padding: 5px;
-            cursor: pointer; transition: all 0.3s ease;
-            font-size: 1.5rem; filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.6));
-        }
+        /* UI Elements */
+        .lang-toggle { position: fixed; top: 10px; left: 10px; z-index: 1000; background: transparent; border: none; padding: 5px; cursor: pointer; transition: all 0.3s ease; font-size: 1.5rem; filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.6)); }
         .lang-toggle:hover { transform: scale(1.1) rotate(5deg); }
-
-        #lang-modal .parchment { max-width: 400px; text-align: center; }
-        .lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; max-height: 50vh; overflow-y: auto; margin-top: 15px; padding-right: 5px; }
-        .lang-btn { background: rgba(139, 69, 19, 0.1); border: 1px solid rgba(139, 69, 19, 0.3); padding: 8px; font-family: var(--ui-font); font-size: 0.8rem; color: #2c1e0f; cursor: pointer; border-radius: 4px; }
-        .lang-btn.active { background: rgba(212, 175, 55, 0.2); border-color: #d4af37; font-weight: bold; }
-
-        .game-container {
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            height: 100vh; width: 100vw; padding: 40px; opacity: 0; transition: opacity 1.5s ease-in;
-            position: relative; z-index: 1; text-align: center;
-        }
+        .game-container { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; width: 100vw; padding: 40px; opacity: 0; transition: opacity 1.5s ease-in; position: relative; z-index: 1; text-align: center; }
         .game-container.ready { opacity: 1; display: flex !important; }
-
         .branding-container { display: flex; flex-direction: column; align-items: center; margin-bottom: 25px; z-index: 20; }
         .official-logo { max-width: 450px; width: 95%; height: auto; filter: drop-shadow(0 0 20px rgba(212,175,55,0.6)); margin-bottom: 5px; }
         .branding-container p { font-family: var(--ui-font); font-style: italic; font-size: 0.9rem; color: #ccc; letter-spacing: 2px; margin-top: 10px; }
-
-        .menu-container {
-            display: flex; flex-direction: column; gap: 12px; z-index: 2000;
-            width: 350px !important; margin: 0 auto 40px auto;
-            position: relative; pointer-events: auto;
-        }
-        .menu-btn {
-            background: rgba(10, 10, 15, 0.4); backdrop-filter: blur(5px);
-            border: 3px double rgba(212, 175, 55, 0.6); border-radius: 4px;
-            color: var(--gold); padding: 14px 30px; font-family: var(--ui-font); font-size: 1rem;
-            cursor: pointer; transition: all 0.4s ease; text-transform: uppercase; letter-spacing: 2px;
-            width: 100%; pointer-events: auto !important; z-index: 2001;
-        }
+        .menu-container { display: flex; flex-direction: column; gap: 12px; z-index: 2000; width: 350px !important; margin: 0 auto 40px auto; position: relative; pointer-events: auto; }
+        .menu-btn { background: rgba(10, 10, 15, 0.4); backdrop-filter: blur(5px); border: 3px double rgba(212, 175, 55, 0.6); border-radius: 4px; color: var(--gold); padding: 14px 30px; font-family: var(--ui-font); font-size: 1rem; cursor: pointer; transition: all 0.4s ease; text-transform: uppercase; letter-spacing: 2px; width: 100%; pointer-events: auto !important; z-index: 2001; }
         .menu-btn:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.15); transform: scale(1.02); }
 
-        /* --- THE FRAME (Dialogue Box) --- */
-        .dialogue-wrapper {
-            width: 100%; max-width: 900px; position: relative;
-            transform: translateY(0); transition: transform 0.5s ease; text-align: left;
-        }
+        /* DIALOGUE BOX & FRAME */
+        .dialogue-wrapper { width: 100%; max-width: 900px; position: relative; transform: translateY(0); transition: transform 0.5s ease; text-align: left; }
+        .dialogue-box { background: rgba(10, 10, 15, 0.9); border: 3px double #d4af37; padding: 40px 50px; min-height: 160px; position: relative; box-shadow: 0 10px 50px rgba(0,0,0,1), inset 0 0 60px rgba(0,0,0,0.8); border-radius: 4px; overflow: visible; }
+        .dialogue-text { font-family: var(--dialogue-font); font-size: 1.8rem; line-height: 1.5; color: #fceeb5; text-shadow: 0 2px 4px rgba(0,0,0,1); position: relative; z-index: 60; }
+        .dialogue-text::after { content: "|"; animation: blink 1s step-end infinite; color: var(--gold); margin-left: 5px; }
+        .speaker-name { position: absolute; top: -16px; left: 40px; background: #d4af37; color: #000; padding: 4px 20px; font-family: var(--ui-font); font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.6); z-index: 100; border: 1px solid #fff; }
+        .game-icon-seal { width: 24px; height: 24px; object-fit: contain; }
 
-        .dialogue-box {
-            background: rgba(10, 10, 15, 0.9);
-            /* Double Gold Border like Reference */
-            border: 3px double #d4af37; 
-            padding: 40px 50px;
-            min-height: 160px;
-            position: relative;
-            box-shadow: 0 10px 50px rgba(0,0,0,1), inset 0 0 60px rgba(0,0,0,0.8);
-            border-radius: 4px; /* Sharper corners like reference */
-            overflow: visible; /* Vines MUST hang out */
-        }
-
-        /* --- IVY FRAME SYSTEM (Full Wrap) --- */
-        .vine-frame {
-            position: absolute;
-            pointer-events: none;
-            z-index: 50;
-            /* Drop shadow for depth */
-            filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.8));
-        }
-
-        /* 4 Corners covering sides */
+        /* VINES */
+        .vine-frame { position: absolute; pointer-events: none; z-index: 50; filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.8)); }
         .vine-tl { top: -25px; left: -25px; width: 180px; height: 180px; }
         .vine-tr { top: -25px; right: -25px; width: 180px; height: 180px; transform: scaleX(-1); }
         .vine-bl { bottom: -25px; left: -25px; width: 180px; height: 180px; transform: scaleY(-1); }
         .vine-br { bottom: -25px; right: -25px; width: 180px; height: 180px; transform: scale(-1); }
-
-        /* Animation Classes */
-        .stem-path {
-            stroke-dasharray: 1500; stroke-dashoffset: 1500;
-            animation: growStem 4s ease-out forwards;
-        }
-        .leaf {
-            opacity: 0; transform-origin: center; transform: scale(0);
-            animation: bloom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
-        }
-        .flower {
-            opacity: 0; transform-origin: center; transform: scale(0);
-            animation: bloom 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-        }
-
+        .stem-path { stroke-dasharray: 1500; stroke-dashoffset: 1500; animation: growStem 4s ease-out forwards; }
+        .leaf { opacity: 0; transform-origin: center; transform: scale(0); animation: bloom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+        .flower { opacity: 0; transform-origin: center; transform: scale(0); animation: bloom 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
         @keyframes growStem { to { stroke-dashoffset: 0; } }
         @keyframes bloom { to { opacity: 1; transform: scale(1); } }
+        .d-1 { animation-delay: 0.2s; } .d-2 { animation-delay: 0.6s; } .d-3 { animation-delay: 1.0s; } .d-4 { animation-delay: 1.4s; } .d-5 { animation-delay: 1.8s; } .d-6 { animation-delay: 2.2s; }
 
-        /* Staggered Delays */
-        .d-1 { animation-delay: 0.2s; }
-        .d-2 { animation-delay: 0.6s; }
-        .d-3 { animation-delay: 1.0s; }
-        .d-4 { animation-delay: 1.4s; }
-        .d-5 { animation-delay: 1.8s; }
-        .d-6 { animation-delay: 2.2s; }
-
-        .speaker-name {
+        /* --- REFINED MAJESTIC BUTTERFLY --- */
+        .butterfly {
             position: absolute;
-            top: -16px; /* Overlap border */
-            left: 40px;
-            background: #d4af37; /* Solid gold background */
-            color: #000;
-            padding: 4px 20px;
-            font-family: var(--ui-font); font-weight: bold; text-transform: uppercase;
-            font-size: 0.85rem; letter-spacing: 1px;
-            display: flex; align-items: center; gap: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-            z-index: 100; /* Must be above vines */
-            border: 1px solid #fff; /* Inner highlight */
+            width: 20px; /* Base size */
+            height: 20px;
+            z-index: 70; /* Above vines */
+            pointer-events: none;
+            /* Use 3D transform for realistic wing flap */
+            transform-style: preserve-3d;
+            will-change: transform, top, left;
+            transition: top 4s ease-in-out, left 4s ease-in-out, transform 1s ease-in-out; /* Smooth flight */
         }
 
-        .game-icon-seal { width: 24px; height: 24px; object-fit: contain; }
-
-        .dialogue-text {
-            font-family: var(--dialogue-font);
-            font-size: 1.8rem; /* Big and readable */
-            line-height: 1.5;
-            color: #fceeb5; /* Creamy gold text */
-            text-shadow: 0 2px 4px rgba(0,0,0,1); /* Deep shadow for contrast */
-            position: relative; z-index: 60;
+        .butterfly-body {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 4px; height: 14px;
+            background: #222;
+            border-radius: 5px;
+            transform: translate(-50%, -50%);
         }
-        .dialogue-text::after { content: "|"; animation: blink 1s step-end infinite; color: var(--gold); margin-left: 5px; }
 
-        /* --- BUTTERFLIES & PETALS --- */
-        .butterfly { position: absolute; width: 12px; height: 12px; z-index: 60; pointer-events: none; filter: drop-shadow(0 0 5px rgba(255,255,255,0.6)); opacity: 0; }
-        .wing { position: absolute; width: 50%; height: 100%; background: rgba(255,255,255,0.9); border-radius: 50% 50% 0 50%; transform-origin: right center; animation: flutter 0.8s infinite ease-in-out alternate; }
-        .wing.left { left: 0; transform: scaleX(-1); border-radius: 50% 50% 50% 0; }
-        .wing.right { right: 0; }
-        .bt-gold .wing { background: #ffd700; box-shadow: 0 0 5px #ffd700; }
-        .bt-blue .wing { background: #00bfff; box-shadow: 0 0 5px #00bfff; }
-        .bt-purple .wing { background: #e056fd; box-shadow: 0 0 5px #e056fd; }
-        @keyframes flutter { 0% { transform: rotateY(0deg); } 50% { transform: rotateY(60deg); } 100% { transform: rotateY(0deg); } }
+        .wing {
+            position: absolute;
+            top: 0;
+            width: 14px; height: 22px;
+            border-radius: 50% 50% 10% 50%;
+            opacity: 0.9;
+            filter: drop-shadow(0 0 4px currentColor);
+            /* Correct Pivot Points for realistic flapping */
+        }
 
+        .wing.left {
+            right: 50%; /* Anchor to center */
+            transform-origin: 100% 50%; /* Pivot on right edge (body) */
+            animation: flapLeft 0.15s infinite alternate ease-in-out;
+        }
+
+        .wing.right {
+            left: 50%; /* Anchor to center */
+            transform-origin: 0% 50%; /* Pivot on left edge (body) */
+            transform: scaleX(-1);
+            animation: flapRight 0.15s infinite alternate ease-in-out;
+        }
+
+        /* Butterfly Colors */
+        .bt-gold { color: #ffd700; } .bt-gold .wing { background: radial-gradient(circle at 30% 30%, #ffd700, #ff8c00); }
+        .bt-blue { color: #00bfff; } .bt-blue .wing { background: radial-gradient(circle at 30% 30%, #00bfff, #1e90ff); }
+        .bt-purple { color: #e056fd; } .bt-purple .wing { background: radial-gradient(circle at 30% 30%, #e056fd, #8e44ad); }
+
+        /* Majestic Flapping Animations */
+        @keyframes flapLeft {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(60deg); }
+        }
+        @keyframes flapRight {
+            0% { transform: scaleX(-1) rotateY(0deg); }
+            100% { transform: scaleX(-1) rotateY(60deg); }
+        }
+
+        /* Landed State: Slow Flap */
+        .butterfly.landed .wing {
+            animation-duration: 3s; /* Very slow, majestic breathing */
+        }
+
+        /* --- ROSE PETAL SYSTEM --- */
         .petal { position: fixed; top: -20px; z-index: 25; pointer-events: none; opacity: 0.9; border-radius: 50% 0 50% 50%; background: linear-gradient(135deg, var(--petal-color), rgba(0,0,0,0.1)); animation: fall linear forwards; }
-        .petal.pink { --petal-color: #ffb7c5; }
-        .petal.red { --petal-color: #dc143c; }
-        .petal.maroon { --petal-color: #800020; }
+        .petal.pink { --petal-color: #ffb7c5; } .petal.red { --petal-color: #dc143c; } .petal.maroon { --petal-color: #800020; }
         @keyframes fall { to { top: 110vh; transform: translateY(0) rotate(720deg); } }
 
-        /* Modals & Other UI */
+        /* Modals & Layout */
         .findie-logo-fixed { position: fixed; top: 10px; right: 10px; display: flex; align-items: center; gap: 8px; opacity: 0.95; transition: all 0.4s; text-decoration: none; color: var(--gold); font-family: var(--ui-font); font-size: 0.6rem; padding: 6px 12px; border-radius: 4px; background: rgba(0,0,0,0.85); z-index: 9999; border: 1px solid rgba(212,175,55,0.6); }
         .findie-logo-fixed:hover { opacity: 1; transform: translateY(-2px); border-color: #fff; }
-        .studio-logo { height: 22px; width: auto; }
         .copyright-footer { position: fixed; bottom: 5px; width: 100%; text-align: center; font-family: var(--ui-font); font-size: 0.5rem; color: rgba(255,255,255,0.3); text-transform: uppercase; z-index: 500; }
-        
-        /* Modal Styles (Condensed) */
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 2000; justify-content: center; align-items: center; padding: 20px; opacity: 0; transition: opacity 0.5s; }
         .modal.visible { display: flex; opacity: 1; }
         .parchment { background: var(--parchment); color: #2c1e0f; width: 95%; max-width: 750px; padding: 40px; border-radius: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.7); position: relative; font-family: var(--dialogue-font); max-height: 90vh; overflow-y: auto; transform: scale(0.9); transition: transform 0.4s; }
@@ -239,8 +155,7 @@
         .story-content { position: relative; flex: 1; display: flex; justify-content: center; align-items: center; overflow: hidden; }
         .story-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; filter: blur(20px) brightness(0.6); opacity: 0.6; transform: scale(1.1); }
         .story-img-main { position: relative; width: 100%; max-width: 400px; aspect-ratio: 1/1; object-fit: contain; z-index: 2; box-shadow: 0 0 30px rgba(0,0,0,0.5); border-radius: 8px; }
-        .tap-zone { position: absolute; top: 0; height: 100%; width: 35%; z-index: 10; cursor: pointer; }
-        .tap-zone.left { left: 0; } .tap-zone.right { right: 0; }
+        .tap-zone { position: absolute; top: 0; height: 100%; width: 35%; z-index: 10; cursor: pointer; } .tap-zone.left { left: 0; } .tap-zone.right { right: 0; }
         .video-container { position: relative; width: 100%; padding-top: 56.25%; background: #000; border: 4px solid var(--gold); }
         video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; }
         .community-links { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 20px; }
@@ -260,34 +175,22 @@
     </style>
 </head>
 <body>
-
-    <div class="background"></div>
-    <div class="overlay"></div>
-    <div class="warm-overlay"></div>
-
-    <div class="lang-toggle" onclick="showModal('lang-modal')" title="Select Region">
-        <span style="font-size: 1.5rem;">🗺️</span>
-    </div>
+    <div class="background"></div><div class="overlay"></div><div class="warm-overlay"></div>
+    <div class="lang-toggle" onclick="showModal('lang-modal')" title="Select Region"><span style="font-size: 1.5rem;">🗺️</span></div>
 
     <div id="game-ui" class="game-container">
-        
         <div class="branding-container">
             <img src="images/official_logo.png" alt="Arcane Merchant Logo" class="official-logo">
             <p>MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!</p>
         </div>
-
-        <div class="menu-container">
-            <button class="menu-btn">Loading...</button>
-        </div>
+        <div class="menu-container"><button class="menu-btn">Loading...</button></div>
 
         <div class="dialogue-wrapper">
             <div class="dialogue-box">
                 <!-- 4 CORNER SYSTEM TO CREATE FULL FRAME -->
-                <!-- TOP LEFT (Horizontal Branch + Vertical Branch) -->
                 <svg class="vine-frame vine-tl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="stem-path" d="M0 25 C 20 20 60 30 100 25" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
                     <path class="stem-path" d="M25 0 C 30 20 20 60 25 100" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <!-- Leaves High Density -->
                     <path class="leaf d-1" d="M10 25 Q -5 15 5 5 Z" fill="#6b8c42"/>
                     <path class="leaf d-2" d="M40 25 Q 50 10 30 5 Z" fill="#2d4a22"/>
                     <path class="leaf d-3" d="M70 25 Q 80 40 60 45 Z" fill="#556b2f"/>
@@ -295,8 +198,6 @@
                     <path class="leaf d-5" d="M25 80 Q 10 90 5 70 Z" fill="#6b8c42"/>
                     <g class="flower d-6" transform="translate(15, 15) scale(0.6)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
                 </svg>
-
-                <!-- TOP RIGHT (Horizontal + Vertical) -->
                 <svg class="vine-frame vine-tr" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="stem-path" d="M0 25 C 40 30 80 20 100 25" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
                     <path class="stem-path" d="M75 0 C 80 20 70 60 75 100" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
@@ -306,8 +207,6 @@
                     <path class="leaf d-4" d="M75 50 Q 90 60 95 40 Z" fill="#9acd32"/>
                     <g class="flower d-5" transform="translate(85, 15) scale(0.6)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#d461a6"/></g>
                 </svg>
-
-                <!-- BOTTOM LEFT -->
                 <svg class="vine-frame vine-bl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="stem-path" d="M0 75 C 30 70 70 80 100 75" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
                     <path class="stem-path" d="M25 0 C 20 30 30 70 25 100" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
@@ -317,8 +216,6 @@
                     <path class="leaf d-4" d="M25 60 Q 40 50 45 70 Z" fill="#9acd32"/>
                     <g class="flower d-5" transform="translate(25, 85) scale(0.6)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
                 </svg>
-
-                <!-- BOTTOM RIGHT -->
                 <svg class="vine-frame vine-br" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="stem-path" d="M0 75 C 40 80 80 70 100 75" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
                     <path class="stem-path" d="M75 0 C 70 40 80 80 75 100" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
@@ -336,104 +233,17 @@
             </div>
         </div>
 
-        <a href="https://findiestudios.com" target="_blank" class="findie-logo-fixed">
-            <span>© 2026 Findie</span>
-            <img src="images/findie_logo.webp" class="studio-logo" alt="Findie Studios Logo">
-        </a>
-        
+        <a href="https://findiestudios.com" target="_blank" class="findie-logo-fixed"><span>© 2026 Findie</span><img src="images/findie_logo.webp" class="studio-logo" alt="Findie Studios Logo"></a>
         <div class="copyright-footer">© 2026 Findie Studios. All Rights Reserved.</div>
     </div>
 
-    <div id="lang-modal" class="modal">
-        <div class="parchment">
-            <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2>Select Region</h2>
-            <div class="lang-grid" id="lang-grid"></div>
-        </div>
-    </div>
-
-    <div id="wares-modal" class="modal" style="background: rgba(0,0,0,0.4);">
-        <div class="parchment" style="max-width: 500px; padding: 0; background: transparent; box-shadow: none; border: none;">
-            <span class="close-modal" onclick="closeModals()" style="z-index: 50; color: #fff; text-shadow: 0 0 10px #000; top: 20px; left: 20px;">&times;</span>
-            <div class="story-container">
-                <div class="story-progress" id="story-progress"></div>
-                <div class="story-header">
-                    <img src="images/arcane_initial_logo.jpg" class="story-avatar">
-                    <div class="story-info">
-                        <span class="story-username">Arcane Merchant</span>
-                        <span class="story-time" id="txt-story-subtitle">New Arrival</span>
-                    </div>
-                </div>
-                <div class="story-content">
-                    <div class="story-bg" id="story-bg"></div>
-                    <img id="story-image" src="" class="story-img-main">
-                    <video id="story-video" class="story-img-main" playsinline muted loop style="display: none;"></video>
-                </div>
-                <div class="tap-zone left" onclick="moveCarousel(-1)"></div>
-                <div class="tap-zone right" onclick="moveCarousel(1)"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="rumors-modal" class="modal">
-        <div class="parchment" style="max-width: 600px;">
-            <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2 style="font-size: 1.8rem; margin-bottom: 25px;">Whispers from the Void</h2>
-            <div style="margin-top: 20px; text-align: left;">
-                <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;">
-                    <p id="txt-specs-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 15px;">⚡ Scroll of Summoning</p>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
-                        <div>
-                            <p id="txt-specs-min" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Minimum Invocation</p>
-                            <ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;">
-                                <li><strong>OS:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> i5-4460 / Ryzen 3 1200</li><li><strong>RAM:</strong> 8 GB</li><li><strong>GPU:</strong> GTX 960M / 750 Ti</li><li><strong>Space:</strong> 2 GB available</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p id="txt-specs-rec" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Recommended Ritual</p>
-                            <ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;">
-                                <li><strong>OS:</strong> Windows 10 / 11</li><li><strong>CPU:</strong> i5-9400 / Ryzen 5 3600</li><li><strong>RAM:</strong> 16 GB</li><li><strong>GPU:</strong> GTX 1660 / RTX 2060</li><li><strong>Space:</strong> 2 GB available</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-1-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-1-desc" style="font-style: italic; opacity: 0.8;"></p></div>
-                <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-2-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-2-desc" style="font-style: italic; opacity: 0.8;"></p></div>
-                <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-3-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-3-desc" style="font-style: italic; opacity: 0.8;"></p></div>
-                <div><p id="rumor-4-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-4-desc" style="font-style: italic; opacity: 0.8;"></p></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="community-modal" class="modal">
-        <div class="parchment">
-            <span class="close-modal" onclick="closeModals()">&times;</span>
-            <h2>The Common Room</h2>
-            <div class="community-links">
-                <a href="https://www.findiestudios.com/" target="_blank" class="community-item"><span class="community-icon">🏰</span> Findie</a>
-                <a href="https://discord.gg/findiestudios" target="_blank" class="community-item"><span class="community-icon">⚔️</span> Discord</a>
-                <a href="https://x.com/FindieStudios" target="_blank" class="community-item"><span class="community-icon">📜</span> Twitter</a>
-                <a href="https://www.youtube.com/@FindieStudios" target="_blank" class="community-item"><span class="community-icon">🛡️</span> YouTube</a>
-                <a href="https://www.instagram.com/findiestudios" target="_blank" class="community-item"><span class="community-icon">🏺</span> Instagram</a>
-                <a href="https://www.tiktok.com/@findiestudios" target="_blank" class="community-item"><span class="community-icon">🎭</span> TikTok</a>
-                <a href="https://www.reddit.com/r/arcanemerchant" target="_blank" class="community-item"><span class="community-icon">⚒️</span> Reddit</a>
-                <a href="https://www.linkedin.com/company/findiestudios" target="_blank" class="community-item"><span class="community-icon">🗝️</span> LinkedIn</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="about-modal" class="modal">
-        <div class="parchment" style="max-width: 850px; width: 95vw;">
-            <span class="close-modal" onclick="closeModals()">&times;</span>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 15px;">
-                <h2 style="margin: 0; border: none;">The Merchant's Guide</h2>
-            </div>
-            <div id="about-content" style="margin-top: 20px; line-height: 1.6; font-size: 1.1rem;">
-                <p id="about-intro" style="margin-bottom: 25px; font-style: italic;"></p>
-                <div id="about-features" style="display: grid; grid-template-columns: 1fr; gap: 20px;"></div>
-            </div>
-        </div>
-    </div>
+    <!-- Modals (Common Room, About, etc) kept same as before ... -->
+    <div id="lang-modal" class="modal"><div class="parchment"><span class="close-modal" onclick="closeModals()">&times;</span><h2>Select Region</h2><div class="lang-grid" id="lang-grid"></div></div></div>
+    <div id="wares-modal" class="modal" style="background: rgba(0,0,0,0.4);"><div class="parchment" style="max-width: 500px; padding: 0; background: transparent; box-shadow: none; border: none;"><span class="close-modal" onclick="closeModals()" style="z-index: 50; color: #fff; text-shadow: 0 0 10px #000; top: 20px; left: 20px;">&times;</span><div class="story-container"><div class="story-progress" id="story-progress"></div><div class="story-header"><img src="images/arcane_initial_logo.jpg" class="story-avatar"><div class="story-info"><span class="story-username">Arcane Merchant</span><span class="story-time" id="txt-story-subtitle">New Arrival</span></div></div><div class="story-content"><div class="story-bg" id="story-bg"></div><img id="story-image" src="" class="story-img-main"><video id="story-video" class="story-img-main" playsinline muted loop style="display: none;"></video></div><div class="tap-zone left" onclick="moveCarousel(-1)"></div><div class="tap-zone right" onclick="moveCarousel(1)"></div></div></div></div>
+    <div id="rumors-modal" class="modal"><div class="parchment" style="max-width: 600px;"><span class="close-modal" onclick="closeModals()">&times;</span><h2 style="font-size: 1.8rem; margin-bottom: 25px;">Whispers from the Void</h2><div style="margin-top: 20px; text-align: left;"><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="txt-specs-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 15px;">⚡ Scroll of Summoning</p><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;"><div><p id="txt-specs-min" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Minimum Invocation</p><ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;"><li><strong>OS:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> i5-4460 / Ryzen 3 1200</li><li><strong>RAM:</strong> 8 GB</li><li><strong>GPU:</strong> GTX 960M / 750 Ti</li><li><strong>Space:</strong> 2 GB available</li></ul></div><div><p id="txt-specs-rec" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Recommended Ritual</p><ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;"><li><strong>OS:</strong> Windows 10 / 11</li><li><strong>CPU:</strong> i5-9400 / Ryzen 5 3600</li><li><strong>RAM:</strong> 16 GB</li><li><strong>GPU:</strong> GTX 1660 / RTX 2060</li><li><strong>Space:</strong> 2 GB available</li></ul></div></div></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-1-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-1-desc" style="font-style: italic; opacity: 0.8;"></p></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-2-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-2-desc" style="font-style: italic; opacity: 0.8;"></p></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-3-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-3-desc" style="font-style: italic; opacity: 0.8;"></p></div><div><p id="rumor-4-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-4-desc" style="font-style: italic; opacity: 0.8;"></p></div></div></div></div>
+    <div id="community-modal" class="modal"><div class="parchment"><span class="close-modal" onclick="closeModals()">&times;</span><h2>The Common Room</h2><div class="community-links"><a href="https://www.findiestudios.com/" target="_blank" class="community-item"><span class="community-icon">🏰</span> Findie</a><a href="https://discord.gg/findiestudios" target="_blank" class="community-item"><span class="community-icon">⚔️</span> Discord</a><a href="https://x.com/FindieStudios" target="_blank" class="community-item"><span class="community-icon">📜</span> Twitter</a><a href="https://www.youtube.com/@FindieStudios" target="_blank" class="community-item"><span class="community-icon">🛡️</span> YouTube</a><a href="https://www.instagram.com/findiestudios" target="_blank" class="community-item"><span class="community-icon">🏺</span> Instagram</a><a href="https://www.tiktok.com/@findiestudios" target="_blank" class="community-item"><span class="community-icon">🎭</span> TikTok</a><a href="https://www.reddit.com/r/arcanemerchant" target="_blank" class="community-item"><span class="community-icon">⚒️</span> Reddit</a><a href="https://www.linkedin.com/company/findiestudios" target="_blank" class="community-item"><span class="community-icon">🗝️</span> LinkedIn</a></div></div></div>
+    <div id="about-modal" class="modal"><div class="parchment" style="max-width: 850px; width: 95vw;"><span class="close-modal" onclick="closeModals()">&times;</span><div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 15px;"><h2 style="margin: 0; border: none;">The Merchant's Guide</h2></div><div id="about-content" style="margin-top: 20px; line-height: 1.6; font-size: 1.1rem;"><p id="about-intro" style="margin-bottom: 25px; font-style: italic;"></p><div id="about-features" style="display: grid; grid-template-columns: 1fr; gap: 20px;"></div></div></div></div>
+    <div id="video-modal" class="modal"><div class="parchment" style="max-width: 900px; background: #0a0a0a; border: 2px solid var(--gold); padding: 10px;"><span class="close-modal" onclick="closeVideoModal()">&times;</span><div class="video-container"><video id="video-player" controls muted playsinline></video></div></div></div>
 
     <script src="translations.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -600,10 +410,8 @@
             if (!translations || !translations[code]) code = 'en';
             currentLang = code; localStorage.setItem('arcane_lang', code);
             const data = translations[code]; const en = translations['en'];
-            
             document.querySelectorAll('.lang-btn').forEach(b => { b.classList.remove('active'); if (b.innerText === data.name) b.classList.add('active'); });
             if (document.getElementById('lang-modal').classList.contains('visible')) closeModals();
-
             const menuContainer = document.querySelector('.menu-container');
             if (menuContainer) {
                 menuContainer.innerHTML = '';
@@ -626,18 +434,15 @@
                     menuContainer.appendChild(el);
                 });
             }
-
             const safeText = (selector, key) => { const el = document.querySelector(selector); if (el) try { el.innerText = (data.ui && data.ui[key]) ? data.ui[key] : (en.ui ? en.ui[key] : ""); } catch(e) {} };
             safeText('#wares-modal .story-username', 'merchant_name');
             safeText('#rumors-modal h2', 'modal_rumors_title');
             safeText('#community-modal h2', 'modal_common_title');
             safeText('#about-modal h2', 'modal_about_title');
             safeText('.copyright-footer', 'footer_rights');
-            
             const specsTitle = (data.ui && data.ui['specs_title']) ? data.ui['specs_title'] : (en.ui ? en.ui['specs_title'] : "Scroll of Summoning");
             const elSpecs = document.getElementById('txt-specs-title'); if(elSpecs) elSpecs.innerText = "⚡ " + specsTitle;
             safeText('#txt-specs-min', 'specs_min'); safeText('#txt-specs-rec', 'specs_rec');
-            
             if (data.rumors && Array.isArray(data.rumors)) {
                 for(let i=0; i<4; i++) {
                     if (data.rumors[i]) {
@@ -651,20 +456,16 @@
                     if (rTitle) rTitle.innerText = en.rumors[i].title; if (rDesc) rDesc.innerText = en.rumors[i].desc;
                 }
             }
-            
             const subtitleMap = { 'tr': 'Yeni Gelen', 'de': 'Neuankömmling', 'fr-FR': 'Nouvel Arrivant', 'es-ES': 'Recién Llegado', 'ru-RU': 'Новое Поступление', 'zh': '新到货', 'zh-TW': '新到貨', 'ja-JP': '新入荷', 'ko': '신상품', 'pt-BR': 'Recém Chegado', 'it': 'Nuovo Arrivo', 'pl-PL': 'Nowa Dostawa' };
             const subText = subtitleMap[code] || "New Arrival";
             const elSub = document.getElementById('txt-story-subtitle'); if(elSub) elSub.innerText = subText;
-            
             const mName = (data.ui && data.ui['merchant_name']) ? data.ui['merchant_name'] : (en.ui ? en.ui['merchant_name'] : "Merchant");
             const seal = document.querySelector('.speaker-name'); if (seal) seal.innerHTML = `<img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal"> ${mName}`;
-            
             if (data.merchant && data.merchant.quotes) merchantDialogues = data.merchant.quotes; else if (en.merchant && en.merchant.quotes) merchantDialogues = en.merchant.quotes;
             const welcome = (data.merchant && data.merchant.welcome) ? data.merchant.welcome : (en.merchant ? en.merchant.welcome : "Welcome.");
             if (!isTyping) typeWriter(welcome, dialogueElement, 40);
             resetAutoTalk();
             if (typeof updateAboutText === 'function') updateAboutText(code);
-            
             const toast = document.createElement('div'); toast.innerText = `Region Set: ${data.name}`;
             toast.style.position = 'fixed'; toast.style.top = '20px'; toast.style.left = '50%'; toast.style.transform = 'translateX(-50%)'; toast.style.background = 'rgba(0,0,0,0.8)'; toast.style.color = '#d4af37'; toast.style.padding = '10px 20px'; toast.style.borderRadius = '4px'; toast.style.border = '1px solid #d4af37'; toast.style.zIndex = '3000'; toast.style.fontFamily = 'var(--ui-font)';
             document.body.appendChild(toast);
@@ -685,27 +486,68 @@
             endingEl.innerText = data.ending || "";
         }
 
+        // --- MAJESTIC BUTTERFLY LOGIC ---
         function spawnButterfly() {
             const dialogueBox = document.querySelector('.dialogue-box'); if (!dialogueBox) return;
-            const b = document.createElement('div'); const colorClass = ['bt-gold', 'bt-blue', 'bt-purple'][Math.floor(Math.random() * 3)];
-            b.className = `butterfly ${colorClass}`; b.innerHTML = '<div class="wing left"></div><div class="wing right"></div>';
-            const vineArea = Math.random() > 0.5 ? 'tr' : 'bl';
-            let startX, startY;
-            if (vineArea === 'tr') { startX = dialogueBox.offsetWidth - 50 - Math.random() * 100; startY = -30 + Math.random() * 80; } else { startX = -30 + Math.random() * 80; startY = dialogueBox.offsetHeight - 50 - Math.random() * 100; }
-            b.style.left = startX + 'px'; b.style.top = startY + 'px';
-            const sizeScale = 0.6 + Math.random() * 0.7; b.style.transform = `scale(${sizeScale})`; 
-            const willLand = Math.random() > 0.4;
-            if (willLand) {
-                const landX = (Math.random() - 0.5) * 40; const landY = (Math.random() - 0.5) * 40;
-                b.style.transition = 'all 3s ease-out, opacity 1s ease-in'; b.style.opacity = '0'; dialogueBox.appendChild(b);
-                setTimeout(() => { b.style.opacity = '1'; b.style.transform = `translate(${landX}px, ${landY}px) rotate(${Math.random()*360}deg) scale(${sizeScale})`; }, 50);
-                setTimeout(() => { const wings = b.querySelectorAll('.wing'); wings.forEach(w => w.style.animationDuration = '3s'); }, 3000);
-                setTimeout(() => { b.style.opacity = '0'; setTimeout(() => b.remove(), 1000); }, 8000 + Math.random() * 5000);
-            } else {
-                b.style.transition = 'all 5s linear, opacity 1s ease-in-out'; b.style.opacity = '0'; dialogueBox.appendChild(b);
-                setTimeout(() => { b.style.opacity = '1'; const destX = startX + (Math.random() - 0.5) * 200; const destY = startY - 100 - Math.random() * 100; b.style.transform = `translate(${destX - startX}px, ${destY - startY}px) scale(${sizeScale * 0.5})`; }, 50);
-                setTimeout(() => { b.style.opacity = '0'; setTimeout(() => b.remove(), 1000); }, 4000);
-            }
+            // Limit population
+            if (document.querySelectorAll('.butterfly').length >= 4) return;
+
+            const b = document.createElement('div'); 
+            const colorClass = ['bt-gold', 'bt-blue', 'bt-purple'][Math.floor(Math.random() * 3)];
+            b.className = `butterfly ${colorClass}`; 
+            b.innerHTML = '<div class="butterfly-body"></div><div class="wing left"></div><div class="wing right"></div>';
+
+            // Random Corner Target (TL, TR, BL, BR) for landing
+            const corners = [
+                { id: 'tl', x: 20, y: 20 },
+                { id: 'tr', x: dialogueBox.offsetWidth - 40, y: 20 },
+                { id: 'bl', x: 20, y: dialogueBox.offsetHeight - 40 },
+                { id: 'br', x: dialogueBox.offsetWidth - 40, y: dialogueBox.offsetHeight - 40 }
+            ];
+            const targetCorner = corners[Math.floor(Math.random() * corners.length)];
+
+            // Spawn off-screen or far away
+            const startX = Math.random() * window.innerWidth;
+            const startY = Math.random() * window.innerHeight;
+            b.style.left = startX + 'px';
+            b.style.top = startY + 'px';
+            
+            document.body.appendChild(b); // Append to body to fly freely
+
+            // 1. Fly to Target
+            // Calculate relative position to dialogue box
+            const boxRect = dialogueBox.getBoundingClientRect();
+            const destX = boxRect.left + targetCorner.x + (Math.random() * 40 - 20);
+            const destY = boxRect.top + targetCorner.y + (Math.random() * 40 - 20);
+
+            // Trigger Fly
+            requestAnimationFrame(() => {
+                b.style.left = destX + 'px';
+                b.style.top = destY + 'px';
+                // Calculate rotation angle
+                const angle = Math.atan2(destY - startY, destX - startX) * 180 / Math.PI;
+                b.style.transform = `rotate(${angle + 90}deg) scale(0.8)`;
+            });
+
+            // 2. Land
+            setTimeout(() => {
+                b.classList.add('landed');
+                // Adjust rotation to "sit"
+                b.style.transform = `rotate(${Math.random() * 360}deg) scale(0.8)`;
+                
+                // 3. Wait & Take off
+                setTimeout(() => {
+                    b.classList.remove('landed');
+                    const exitX = destX + (Math.random() - 0.5) * 500;
+                    const exitY = destY - 500;
+                    b.style.left = exitX + 'px';
+                    b.style.top = exitY + 'px';
+                    b.style.opacity = '0';
+                    
+                    setTimeout(() => b.remove(), 4000);
+                }, 5000 + Math.random() * 5000); // Sit for 5-10s
+
+            }, 4000); // Flight duration
         }
 
         function spawnPetal() {
@@ -719,7 +561,7 @@
             initLanguage(); 
             const ui = document.getElementById('game-ui'); if (ui) ui.classList.add('ready');
             startAutoTalk();
-            setInterval(spawnButterfly, 2000); 
+            setInterval(spawnButterfly, 6000); // Slower spawn rate
             setInterval(spawnPetal, 800); 
             setInterval(() => {
                 const ember = document.createElement('div'); ember.className = 'ember'; ember.style.left = Math.random() * 100 + 'vw'; ember.style.animationDuration = (Math.random() * 5 + 5) + 's'; ember.style.opacity = Math.random(); document.body.appendChild(ember); setTimeout(() => ember.remove(), 10000);
