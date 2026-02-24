@@ -56,14 +56,16 @@
 
         .dialogue-wrapper { width: 100%; max-width: 900px; position: relative; transform: translateY(0); transition: transform 0.5s ease; text-align: left; }
         .dialogue-box { 
-            background: rgba(10, 10, 15, 0.85); /* Slightly more transparent to blend */
-            border: 25px solid transparent; /* Increased from 15px for better visibility */
-            border-image: url('images/dialogue_frame.png') 90 stretch; /* Sliced at 90px to capture floral corners, stretched to fit */
-            padding: 30px 40px; 
-            min-height: 160px; 
+            background: rgba(10, 10, 15, 0.9); /* Dark background */
+            border: 45px solid transparent; /* Increased width for the floral frame */
+            border-image-source: url('images/dialogue_frame.png');
+            border-image-slice: 90 fill; /* Preserve corners, fill center */
+            border-image-repeat: round; /* 'round' tiles the sides to avoid stretching distortion */
+            padding: 10px 20px; /* Reduced padding since border takes up space */
+            min-height: 140px; 
             position: relative; 
-            box-shadow: 0 10px 50px rgba(0,0,0,1), inset 0 0 60px rgba(0,0,0,0.8), 0 0 30px rgba(255, 160, 60, 0.1); 
-            border-radius: 5px; /* Reduced radius as frame handles shape */
+            box-shadow: 0 10px 50px rgba(0,0,0,1), inset 0 0 60px rgba(0,0,0,0.8), 0 0 30px rgba(255, 160, 60, 0.2); 
+            border-radius: 10px; /* Fallback */
             overflow: visible; 
         }
         .dialogue-text { font-family: var(--dialogue-font); font-size: 1.8rem; line-height: 1.5; color: #fceeb5; text-shadow: 0 2px 4px rgba(0,0,0,1); position: relative; z-index: 60; }
