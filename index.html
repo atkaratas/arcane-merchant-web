@@ -42,7 +42,7 @@
         @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.15); } }
         .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.6) 100%); pointer-events: none; z-index: 0; }
         .warm-overlay { position: fixed; bottom: 0; left: 0; width: 100%; height: 60%; background: radial-gradient(ellipse at bottom, rgba(255, 160, 60, 0.15) 0%, rgba(100, 50, 0, 0.05) 40%, transparent 80%); z-index: 0; pointer-events: none; mix-blend-mode: screen; }
-        .lang-toggle { position: fixed; top: 10px; left: 10px; z-index: 1000; background: transparent; border: none; padding: 5px; cursor: pointer; transition: all 0.3s ease; font-size: 1.5rem; filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.6)); }
+        .lang-toggle { position: fixed; top: 10px; left: 10px; z-index: 1000; background: transparent; border: none; padding: 5px; cursor: pointer; transition: all 0.3s ease; font-size: 1.5rem; filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.6)); line-height: 1; }
         .lang-toggle:hover { transform: scale(1.1) rotate(5deg); }
         .game-container { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; width: 100vw; padding: 40px; opacity: 0; transition: opacity 1.5s ease-in; position: relative; z-index: 1; text-align: center; }
         .game-container.ready { opacity: 1; display: flex !important; }
@@ -145,7 +145,7 @@
         @keyframes fall { 0% { top: -10vh; } 100% { top: 110vh; } }
         @keyframes sway { 0% { transform: translateX(-40px) rotate(0deg); } 100% { transform: translateX(40px) rotate(45deg); } }
 
-        .findie-logo-fixed { position: fixed; top: 10px; right: 10px; display: flex !important; align-items: center !important; gap: 8px !important; opacity: 0.95; transition: all 0.4s; text-decoration: none; color: var(--gold); font-family: var(--ui-font); font-size: 0.6rem; padding: 6px 12px; border-radius: 4px; background: rgba(0,0,0,0.85); z-index: 9999; border: 1px solid rgba(212,175,55,0.6); width: auto !important; height: auto !important; max-width: 150px !important; max-height: 40px !important; }
+        .findie-logo-fixed { position: fixed; top: 15px; right: 10px; display: flex !important; align-items: center !important; gap: 8px !important; opacity: 0.95; transition: all 0.4s; text-decoration: none; color: var(--gold); font-family: var(--ui-font); font-size: 0.6rem; padding: 6px 12px; border-radius: 4px; background: rgba(0,0,0,0.85); z-index: 9999; border: 1px solid rgba(212,175,55,0.6); width: auto !important; height: auto !important; max-width: 150px !important; max-height: 40px !important; }
         .findie-logo-fixed img { width: 20px !important; height: 20px !important; object-fit: contain !important; display: block !important; max-width: 20px !important; max-height: 20px !important; }
         .findie-logo-fixed:hover { opacity: 1; transform: translateY(-2px); border-color: #fff; }
         .copyright-footer { position: fixed; bottom: 5px; width: 100%; text-align: center; font-family: var(--ui-font); font-size: 0.5rem; color: rgba(255,255,255,0.3); text-transform: uppercase; z-index: 500; }
