@@ -69,17 +69,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, hoş geldin! İçeri gel, yorgun yolcu. Ocak sıcak, çaydanlık tıslamaya başladı bile. Kendini evinde hisset.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Burada aceleye gerek yok dostum. Bir nefes al. Dışarıdaki fırtına bekleyebilir.",
+                "Bu raflardaki her eserin anlatacak bir hikayesi var. Hangisi seni çağırıyor?",
+                "Altın faydalıdır elbet, ama asıl mutluluk kayıp bir hazineye yuva bulmaktır.",
+                "Ateşin çıtırtısını dinle... Dünyanın en eski şarkısıdır bu.",
+                "Bu gece ayın çok parlak olduğunu söylüyorlar. Yeni yolculuklar için mükemmel bir akşam.",
+                "Dükkanın kedisiyle tanıştın mı? Buranın gerçek sahibi o; ben sadece faturaları ödüyorum.",
+                "Bu kadar hızlı dönen bir dünyada, huzuru eski bir lambayı parlatmakta buluyorum.",
+                "Müşteri evine gelen bir misafirdir. Onlara sıcaklık sunarsan, geri döneceklerdir.",
+                "Dikkatli dinlersen, kasabanın yavaşça uykuya dalışını duyabilirsin."
             ]
         }
     },
@@ -111,17 +111,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "啊，欢迎！进来吧，疲惫的旅人。炉火正旺，水壶刚开始歌唱。就把这里当成自己家吧。",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "这里不急，朋友。花点时间呼吸一下。外面的风暴可以等等。",
+                "这些架子上的每一件神器都有一个故事。哪一件在呼唤你？",
+                "金子固然有用，但真正的快乐是为丢失的宝藏找到完美的家。",
+                "听听火焰的噼啪声……这是世界上最古老的歌。",
+                "据说今晚的月亮格外明亮。这是一个适合新旅程的完美夜晚。",
+                "你见过店里的猫了吗？她才是这里真正的主人；我只是负责付账单。",
+                "在这个瞬息万变的世界里，我在擦拭灯具这个简单的动作中找到了平静。",
+                "顾客是你家里的客人。给他们温暖，他们就会回来。",
+                "如果你仔细听，你能听到小镇正在入睡的声音。"
             ]
         }
     },
@@ -153,17 +153,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "啊，歡迎！進來吧，疲憊的旅人。爐火正旺，水壺剛開始歌唱。就把這裡當成自己家吧。",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "這裡不急，朋友。花點時間呼吸一下。外面的風暴可以等等。",
+                "這些架子上的每一件神器都有一個故事。哪一件在呼喚你？",
+                "金子固然有用，但真正的快樂是為丟失的寶藏找到完美的家。",
+                "聽聽火焰的劈啪聲……這是世界上最古老的歌。",
+                "據說今晚的月亮格外明亮。這是一個適合新旅程的完美夜晚。",
+                "你見過店裡的貓了嗎？她才是這裡真正的主人；我只是負責付帳單。",
+                "在這個瞬息萬變的世界裡，我在擦拭燈具這個簡單的動作中找到了平靜。",
+                "顧客是你家裡的客人。給他們溫暖，他們就會回來。",
+                "如果你仔細聽，你能聽到小鎮正在入睡的聲音。"
             ]
         }
     },
@@ -195,17 +195,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, bienvenue ! Entrez, voyageur fatigué. Le foyer est chaud et la bouilloire commence tout juste à chanter. Faites comme chez vous.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Il n'y a pas d'urgence ici, mon ami. Prenez un moment pour respirer. La tempête dehors peut attendre.",
+                "Chaque artefact sur ces étagères a une histoire à raconter. Lequel vous appelle ?",
+                "L'or est utile, certes, mais la vraie joie est de trouver le foyer parfait pour un trésor perdu.",
+                "Écoutez le crépitement du feu... c'est la plus vieille chanson du monde.",
+                "On dit que la lune est exceptionnellement brillante ce soir. Une soirée parfaite pour de nouveaux voyages.",
+                "Avez-vous rencontré le chat du magasin ? C'est la vraie propriétaire des lieux ; je ne fais que payer les factures.",
+                "Dans un monde qui va si vite, je trouve la paix dans le simple acte de polir une lampe.",
+                "Un client est un invité dans votre maison. Offrez-lui de la chaleur, et il reviendra.",
+                "Si vous écoutez attentivement, vous pouvez entendre la ville s'endormir pour la nuit."
             ]
         }
     },
@@ -237,17 +237,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, willkommen! Tritt ein, müder Reisender. Das Feuer ist warm und der Kessel fängt gerade an zu singen. Fühl dich wie zu Hause.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Hier gibt es keine Eile, Freund. Atme erst einmal durch. Der Sturm draußen kann warten.",
+                "Jedes Artefakt in diesen Regalen hat eine Geschichte. Welches ruft nach dir?",
+                "Gold ist nützlich, sicher, aber die wahre Freude ist es, das perfekte Zuhause für einen verlorenen Schatz zu finden.",
+                "Hör dem Knistern des Feuers zu... es ist das älteste Lied der Welt.",
+                "Man sagt, der Mond sei heute Nacht besonders hell. Ein perfekter Abend für neue Reisen.",
+                "Hast du die Ladenkatze getroffen? Sie ist die wahre Besitzerin hier; ich bezahle nur die Rechnungen.",
+                "In einer Welt, die sich so schnell dreht, finde ich Frieden im einfachen Polieren einer Lampe.",
+                "Ein Kunde ist ein Gast in deinem Haus. Biete ihm Wärme an, und er wird wiederkommen.",
+                "Wenn du genau hinhörst, kannst du hören, wie sich die Stadt zur Nachtruhe begibt."
             ]
         }
     },
@@ -279,17 +279,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "ああ、ようこそ！入ってくれ、疲れた旅人よ。暖炉は暖かく、やかんが歌い始めたところだ。自分の家だと思ってくつろいでくれ。",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "ここでは急ぐ必要はない、友よ。一息ついてくれ。外の嵐は待っていてくれるさ。",
+                "この棚にあるすべてのアーティファクトには物語がある。どれが君を呼んでいるんだい？",
+                "金はもちろん役に立つが、本当の喜びは失われた宝物に完璧な家を見つけることだ。",
+                "火の爆ぜる音を聞いてごらん…それは世界で最も古い歌だ。",
+                "今夜の月は格別に明るいそうだ。新しい旅立ちには完璧な夜だね。",
+                "店の猫には会ったかい？彼女こそがここの本当の主人さ。私はただ請求書を払っているだけだ。",
+                "これほど速く動く世界の中で、私はランプを磨くという単純な行為に安らぎを見出すんだ。",
+                "客は家の客人だ。温かさを提供すれば、彼らは戻ってくる。",
+                "耳を澄ませば、町が夜の眠りにつく音が聞こえるよ。"
             ]
         }
     },
@@ -321,17 +321,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "아, 어서 오세요! 들어오세요, 지친 여행자여. 난로가 따뜻하고 주전자가 막 노래를 시작했습니다. 집처럼 편히 계세요.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "여기선 서두를 필요 없네, 친구. 잠시 숨 좀 돌리게나. 밖의 폭풍우는 기다려 줄 걸세.",
+                "이 선반 위의 모든 유물에는 이야기가 있지. 어떤 것이 자네를 부르고 있나?",
+                "금은 물론 유용하지만, 진정한 기쁨은 잃어버린 보물을 위한 완벽한 집을 찾아주는 것이라네.",
+                "타닥거리는 불소리를 들어보게... 세상에서 가장 오래된 노래지.",
+                "오늘 밤 달이 유난히 밝다고 하더군. 새로운 여행을 떠나기에 완벽한 저녁이야.",
+                "가게 고양이는 보았나? 그 녀석이 이곳의 진짜 주인이라네. 난 그저 청구서를 낼 뿐이지.",
+                "이렇게 빠르게 변하는 세상 속에서, 난 램프를 닦는 단순한 행동에서 평화를 찾는다네.",
+                "손님은 집에 온 귀빈이라네. 따뜻하게 대하면 다시 돌아올 걸세.",
+                "귀를 기울이면, 마을이 밤을 맞이해 잠드는 소리를 들을 수 있을 거야."
             ]
         }
     },
@@ -363,17 +363,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, witaj! Wejdź, zmęczony podróżniku. Palenisko jest ciepłe, a czajnik właśnie zaczyna gwizdać. Rozgość się.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Nie ma tu pośpiechu, przyjacielu. Weź głęboki oddech. Burza na zewnątrz może poczekać.",
+                "Każdy artefakt na tych półkach ma swoją historię. Który cię wzywa?",
+                "Złoto jest z pewnością przydatne, ale prawdziwą radością jest znalezienie idealnego domu dla zagubionego skarbu.",
+                "Posłuchaj trzaskania ognia... to najstarsza pieśń na świecie.",
+                "Mówią, że księżyc jest dziś wyjątkowo jasny. Idealny wieczór na nowe podróże.",
+                "Spotkałeś już sklepowego kota? To ona jest prawdziwą właścicielką tego miejsca; ja tylko płacę rachunki.",
+                "W świecie, który pędzi tak szybko, znajduję spokój w prostej czynności polerowania lampy.",
+                "Klient jest gościem w twoim domu. Zaoferuj mu ciepło, a wróci.",
+                "Jeśli będziesz słuchać uważnie, usłyszysz, jak miasto układa się do snu."
             ]
         }
     },
@@ -405,17 +405,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, bem-vindo! Entre, viajante cansado. A lareira está quente e a chaleira acabou de começar a cantar. Sinta-se em casa.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Não há pressa aqui, amigo. Tire um momento para respirar. A tempestade lá fora pode esperar.",
+                "Cada artefato nessas prateleiras tem uma história para contar. Qual deles te chama?",
+                "O ouro é útil, certamente, mas a verdadeira alegria é encontrar o lar perfeito para um tesouro perdido.",
+                "Ouça o estalar do fogo... é a canção mais antiga do mundo.",
+                "Dizem que a lua está excepcionalmente brilhante esta noite. Uma noite perfeita para novas jornadas.",
+                "Você conheceu o gato da loja? Ela é a verdadeira dona deste lugar; eu apenas pago as contas.",
+                "Em um mundo que se move tão rápido, encontro paz no simples ato de polir uma lâmpada.",
+                "Um cliente é um convidado em sua casa. Ofereça-lhes calor e eles voltarão.",
+                "Se você ouvir com atenção, pode ouvir a cidade se acomodando para dormir."
             ]
         }
     },
@@ -447,17 +447,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ах, добро пожаловать! Входи, усталый путник. Очаг горяч, а чайник только начинает закипать. Чувствуй себя как дома.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Здесь некуда спешить, друг мой. Переведи дух. Буря снаружи подождет.",
+                "У каждого артефакта на этих полках есть своя история. Какой из них зовет тебя?",
+                "Золото полезно, безусловно, но истинная радость — найти идеальный дом для потерянного сокровища.",
+                "Послушай, как трещит огонь... это самая старая песня в мире.",
+                "Говорят, луна сегодня необычайно яркая. Идеальный вечер для новых путешествий.",
+                "Ты уже знаком с магазинной кошкой? Она здесь настоящая хозяйка, я просто оплачиваю счета.",
+                "В мире, который несется так быстро, я нахожу покой в простом полировании лампы.",
+                "Клиент — это гость в твоем доме. Подари ему тепло, и он вернется.",
+                "Если прислушаться, можно услышать, как город затихает перед сном."
             ]
         }
     },
@@ -489,17 +489,17 @@ const translations = {
             "merchant_name": "Master Merchant"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "¡Ah, bienvenido! Entra, viajero cansado. La chimenea está encendida y la tetera empieza a silbar. Siéntete como en casa.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Aquí no hay prisa, amigo. Tómate un momento para respirar. La tormenta de fuera puede esperar.",
+                "Cada artefacto en estas estanterías tiene una historia que contar. ¿Cuál te llama?",
+                "El oro es útil, sin duda, pero la verdadera alegría es encontrar el hogar perfecto para un tesoro perdido.",
+                "Escucha el crepitar del fuego... es la canción más antigua del mundo.",
+                "Dicen que la luna brilla excepcionalmente esta noche. Una velada perfecta para nuevos viajes.",
+                "¿Has conocido al gato de la tienda? Ella es la verdadera dueña de este lugar; yo solo pago las facturas.",
+                "En un mundo que se mueve tan rápido, encuentro la paz en el simple acto de pulir una lámpara.",
+                "Un cliente es un invitado en tu casa. Ofrécele calidez y volverá.",
+                "Si escuchas con atención, puedes oír cómo la ciudad se prepara para dormir."
             ]
         }
     },
