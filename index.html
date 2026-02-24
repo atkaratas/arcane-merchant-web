@@ -200,7 +200,7 @@
     <div id="game-ui" class="game-container">
         <div class="branding-container">
             <img src="images/official_logo.png" alt="Arcane Merchant Logo" class="official-logo">
-            <p>MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!</p>
+            <p id="game-subtitle">MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!</p>
         </div>
         <div class="menu-container">
             <!-- Buttons injected by JS (ID's important for butterflies) -->
@@ -239,6 +239,7 @@
         let currentLang = 'en'; 
         
         const menuKeys = [
+            { key: 'menu_demo', link: 'https://store.steampowered.com/app/4086760/Arcane_Merchant/' },
             { key: 'menu_watch', action: 'handleWatch()' },
             { key: 'menu_wares', action: 'handleWares()' },
             { key: 'menu_rumors', action: 'handleRumors()' },
@@ -423,9 +424,16 @@
                     let el; let text = "Menu Item";
                     try { text = (data.ui && data.ui[item.key]) ? data.ui[item.key] : (en.ui && en.ui[item.key] ? en.ui[item.key] : item.key); } catch(e) { text = item.key; }
                     if (item.link) {
-                        el = document.createElement('a'); el.href = item.link; el.target = "_blank"; el.className = 'menu-btn btn-steam'; // Added class for targeting
-                        el.style = "color: #fff; background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%); border-color: #66c0f4; display: flex; align-items: center; justify-content: center; gap: 10px;";
-                        el.innerHTML = `<img src="images/steam_logo_official.jpg" width="20" height="20" style="border-radius: 50%;"> ${text}`;
+                        el = document.createElement('a'); el.href = item.link; el.target = "_blank"; 
+                        if (item.key === 'menu_demo') {
+                            el.className = 'menu-btn btn-demo';
+                            el.style = "color: #000; background: var(--gold); border-color: #fff; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);";
+                            el.innerHTML = `🎮 ${text}`;
+                        } else {
+                            el.className = 'menu-btn btn-steam';
+                            el.style = "color: #fff; background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%); border-color: #66c0f4; display: flex; align-items: center; justify-content: center; gap: 10px;";
+                            el.innerHTML = `<img src="images/steam_logo_official.jpg" width="20" height="20" style="border-radius: 50%;"> ${text}`;
+                        }
                     } else {
                         el = document.createElement('button'); el.className = 'menu-btn';
                         if (item.key === 'menu_watch') el.setAttribute('onclick', 'window.handleWatch()');
@@ -465,6 +473,10 @@
             const elSub = document.getElementById('txt-story-subtitle'); if(elSub) elSub.innerText = subText;
             const mName = (data.ui && data.ui['merchant_name']) ? data.ui['merchant_name'] : (en.ui ? en.ui['merchant_name'] : "Merchant");
             const seal = document.querySelector('.speaker-name'); if (seal) seal.innerHTML = `<img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal"> ${mName}`;
+            
+            const gSubtitle = (data.ui && data.ui['game_subtitle']) ? data.ui['game_subtitle'] : (en.ui ? en.ui['game_subtitle'] : "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!");
+            const elSubtitle = document.getElementById('game-subtitle'); if (elSubtitle) elSubtitle.innerText = gSubtitle;
+
             if (data.merchant && data.merchant.quotes) merchantDialogues = data.merchant.quotes; else if (en.merchant && en.merchant.quotes) merchantDialogues = en.merchant.quotes;
             const welcome = (data.merchant && data.merchant.welcome) ? data.merchant.welcome : (en.merchant ? en.merchant.welcome : "Welcome.");
             if (!isTyping) typeWriter(welcome, dialogueElement, 40);
