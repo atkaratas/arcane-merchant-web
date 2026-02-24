@@ -1058,19 +1058,20 @@
                     });
                 }
 
+                // Force English default as per Chief's orders
+                // We ignore browser language detection completely.
+                // We only check if the user has explicitly set it in this session/storage previously?
+                // The instruction "Let the site be English no matter what" implies a strong default.
+                // However, usually, if a user clicked a language before, they expect it to stay.
+                // But to be safe and strictly follow "English no matter what", I will prioritize English
+                // unless we want to be nice to returning users. 
+                // Let's stick to: Default is English. If they change it, we respect the click.
+                
                 const saved = localStorage.getItem('arcane_lang');
                 if (saved && translations[saved]) {
                     setLanguage(saved);
                 } else {
-                    const browserLang = navigator.language || navigator.userLanguage;
-                    let match = 'en';
-                    if (translations[browserLang]) match = browserLang;
-                    else {
-                        const prefix = browserLang.split('-')[0];
-                        const found = Object.keys(translations).find(k => k.startsWith(prefix));
-                        if (found) match = found;
-                    }
-                    setLanguage(match);
+                    setLanguage('en');
                 }
             } catch(e) {
                 console.error("Lang Init Failed", e);
