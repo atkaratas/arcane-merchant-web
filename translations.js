@@ -1441,25 +1441,25 @@ const translations = {
     },
     "it": {
         "name": "Italian",
-        "intro": "Arcane Merchant è un gioco di simulazione di gestione di negozi ambientato nel cuore di un regno fantasy medievale. Esplora la città, cogli le opportunità commerciali e inizia il tuo viaggio verso la ricchezza. Goditi l'atmosfera accogliente mentre commerci, cresci e costruisci il negozio dei tuoi sogni.",
+        "intro": "Arcane Merchant è un simulatore di gestione di una bottega nel cuore di un regno fantasy medievale. Esplora la città, cogli le opportunità commerciali e inizia il tuo viaggio verso la ricchezza. Goditi un'atmosfera accogliente mentre commerci, cresci e costruisci il negozio dei tuoi sogni. Ogni decisione plasmerà la tua fortuna.",
         "features": [
-            "🛍️ Gestisci il Tuo Negozio...",
-            "💰 Padroneggia l'Arte del Commercio...",
-            "🏰 Diventa il Mercante più Ricco...",
-            "🌿 Atmosfera Accogliente..."
+            "🛍️ Gestisci la Tua Bottega\nFonda e organizza il tuo negozio magico, gestisci l'inventario e riempi gli scaffali con pozioni, armi incantate, cristalli misteriosi e artefatti fantastici. Pianifica le esposizioni per attirare i clienti e massimizzare i profitti.",
+            "💰 Padroneggia l'Arte del Commercio\nAdatta i prezzi dinamicamente in base alla domanda e all'offerta e gestisci le vendite. Con ogni affare concluso, la tua ricchezza crescerà e la tua fama si diffonderà nel regno. Guadagna la fiducia dei clienti e adatta le strategie ai loro bisogni.",
+            "🏰 Diventa il Mercante più Ricco del Regno\nInizia da una bancarella umile; col tempo, espandi e migliora il negozio con nuove aree. Mentre la tua fama cresce, lavora per diventare il mercante più rispettato e ricco della città. Costruisci il tuo impero e controlla l'economia del Medioevo Fantasy!",
+            "🌿 Atmosfera Accogliente e Rilassante\nRilassati e fai crescere il tuo negozio in un caldo mondo fantasy. Pianifica gli scambi e trova il tuo ritmo. Goditi le vibrazioni accoglienti mentre decidi cosa comprare e vendere. Non c'è fretta, ma le tue scelte contano. Costruisci un'attività di successo dove puoi davvero rilassarti."
         ],
-        "ending": "Apri il tuo negozio nel cuore di un regno Fantasy Medievale!",
+        "ending": "Apri la tua bottega nel cuore di un regno Fantasy Medievale! Riempi gli scaffali di tutto, dalle pozioni alle spade leggendarie. Fissa i prezzi, guadagna la fiducia e diventa il mercante più ricco!",
         "ui": {
             "menu_watch": "Guarda le Cronache",
-            "menu_wares": "Sfoglia Merci",
+            "menu_wares": "Sfoglia le Merci",
             "menu_rumors": "Chiedi Voci",
             "menu_common": "Sala Comune",
-            "menu_about": "Informazioni",
-            "menu_steam": "Lista dei Desideri Steam",
+            "menu_about": "Il Grimorio del Gioco",
+            "menu_steam": "Lista dei Desideri",
             "footer_rights": "© 2026 Findie Studios. Tutti i diritti riservati.",
             "modal_wares_title": "Manifesto delle Meraviglie",
             "modal_rumors_title": "Sussurri dal Vuoto",
-            "modal_common_title": "Sala Comune",
+            "modal_common_title": "La Sala Comune",
             "modal_about_title": "Guida del Mercante",
             "specs_title": "Pergamena di Evocazione",
             "specs_min": "Invocazione Minima",
@@ -1495,14 +1495,14 @@ const translations = {
     },
     "nl": {
         "name": "Dutch",
-        "intro": "Arcane Merchant is een winkelmanagementsimulatiespel in het hart van een middeleeuws fantasierijk.",
+        "intro": "Arcane Merchant is een winkelmanagementsimulatie in het hart van een middeleeuws fantasierijk. Verken de stad, grijp handelskansen en begin je reis naar rijkdom. Geniet van de gezellige sfeer terwijl je handelt, groeit en de winkel van je dromen bouwt. Elke beslissing vormt je fortuin.",
         "features": [
-            "🛍️ Beheer je Winkel...",
-            "💰 Beheers de Kunst van Handel...",
-            "🏰 Word de Rijkste Handelaar...",
-            "🌿 Gezellige Sfeer..."
+            "🛍️ Beheer je Magische Winkel\nRicht je eigen magische winkel in, beheer je voorraad en vul de planken met drankjes, betoverde wapens en mysterieuze kristallen. Bepaal je strategie om klanten aan te trekken en maximale winst te behalen.",
+            "💰 Meester de Kunst van Handel\nPas prijzen dynamisch aan op basis van vraag en aanbod. Met elke succesvolle deal groeit je rijkdom en verspreidt je reputatie zich door het rijk. Win het vertrouwen van klanten en pas je aan hun behoeften aan.",
+            "🏰 Word de Rijkste Handelaar\nBegin met een bescheiden kraampje; breid na verloop van tijd uit met nieuwe toonbanken. Terwijl je roem groeit, werk je je op tot de meest gerespecteerde handelaar van de stad. Bouw je imperium en beheers de economie van de Fantasy Middeleeuwen!",
+            "🌿 Gezellige en Ontspannen Sfeer\nOntspan en laat je winkel groeien in een warme fantasiewereld. Plan je handel en vind je eigen tempo. Geniet van de 'cozy vibes' terwijl je beslist wat je koopt en verkoopt. Er is geen haast, maar je keuzes tellen. Bouw een succesvol bedrijf waar je echt tot rust komt."
         ],
-        "ending": "Open je eigen winkel in een Middeleeuws Fantasierijk!",
+        "ending": "Open je eigen winkel in een Middeleeuws Fantasierijk! Vul je planken met alles van drankjes tot legendarische zwaarden. Bepaal prijzen, win vertrouwen en word de rijkste!",
         "ui": {
             "menu_watch": "Bekijk Kronieken",
             "menu_wares": "Bekijk Waren",
@@ -1513,7 +1513,7 @@ const translations = {
             "footer_rights": "© 2026 Findie Studios. Alle rechten voorbehouden.",
             "modal_wares_title": "Manifest van Wonderen",
             "modal_rumors_title": "Fluisteringen uit de Leegte",
-            "modal_common_title": "Gemeenschappelijke Ruimte",
+            "modal_common_title": "De Herberg",
             "modal_about_title": "Handelaarsgids",
             "specs_title": "Rol van Oproeping",
             "specs_min": "Minimale Invocatie",
@@ -1549,35 +1549,35 @@ const translations = {
     },
     "ar": {
         "name": "Arabic",
-        "intro": "التاجر الغامض هي لعبة محاكاة لإدارة المتاجر تقع في قلب مملكة خيالية من العصور الوسطى. استكشف المدينة، واغتنم الفرص التجارية وابدأ رحلتك نحو الثروة.",
+        "intro": "التاجر الغامض (Arcane Merchant) هي لعبة محاكاة لإدارة متجر تقع في قلب مملكة خيالية من العصور الوسطى. استكشف المدينة، واغتنم الفرص التجارية وابدأ رحلتك نحو الثروة. استمتع بالأجواء المريحة بينما تتاجر وتنمو وتبني متجر أحلامك.",
         "features": [
-            "🛍️ أدر متجرك...",
-            "💰 أتقن فن التجارة...",
-            "🏰 كن أغنى تاجر...",
-            "🌿 أجواء مريحة..."
+            "🛍️ أدر متجرك السحري\nأسس ونظم متجرك الخاص، وأدر مخزونك واملأ الأرفف بالجرعات والأسلحة السحرية والكريستالات الغامضة. ضع استراتيجيات لعرض بضائعك لجذب الزبائن وضمان أقصى ربح.",
+            "💰 أتقن فن التجارة\nعدّل أسعارك ديناميكياً بناءً على العرض والطلب. مع كل صفقة ناجحة، ستنمو ثروتك وتنتشر سمعتك في جميع أنحاء المملكة. اكسب ثقة زبائنك وتكيف مع احتياجاتهم المتغيرة.",
+            "🏰 كن أغنى تاجر في المملكة\nابدأ من كشك متواضع؛ ومع مرور الوقت، وسّع متجرك بمناطق عرض جديدة. مع ازدياد شهرتك وثروتك، اعمل لتصبح التاجر الأكثر احتراماً وثراءً في المدينة. ابنِ إمبراطوريتك التجارية وسيطر على اقتصاد العصور الوسطى الخيالية!",
+            "🌿 أجواء مريحة ومسترخية\nاسترخِ وطوّر متجرك في عالم خيالي دافئ. خطط لتجارتك وجد إيقاعك الخاص. استمتع بالأجواء المريحة بينما تقرر ما تشتري وما تبيع. لا داعي للعجلة، لكن خياراتك مهمة. ركز على بناء عمل ناجح في مكان يمكنك فيه الاسترخاء حقاً."
         ],
-        "ending": "افتح متجرك الخاص في قلب مملكة الخيال في العصور الوسطى!",
+        "ending": "افتح متجرك الخاص في قلب مملكة الخيال! املأ أرففك بكل شيء من الجرعات والسيوف إلى الكريستالات الغامضة. حدد أسعارك، واكسب الثقة وكن الأغنى!",
         "ui": {
             "menu_watch": "شاهد السجلات",
             "menu_wares": "تصفح البضائع",
             "menu_rumors": "اسأل عن الشائعات",
-            "menu_common": "الغرفة المشتركة",
+            "menu_common": "القاعة المشتركة",
             "menu_about": "عن اللعبة",
             "menu_steam": "قائمة أمنيات ستيم",
             "footer_rights": "© 2026 Findie Studios. جميع الحقوق محفوظة.",
             "modal_wares_title": "بيان العجائب",
             "modal_rumors_title": "همسات من الفراغ",
-            "modal_common_title": "الغرفة المشتركة",
+            "modal_common_title": "القاعة المشتركة",
             "modal_about_title": "دليل التاجر",
             "specs_title": "لفيفة الاستدعاء",
-            "specs_min": "الحد الأدنى",
+            "specs_min": "الحد الأدنى للاستدعاء",
             "specs_rec": "الطقوس الموصى بها",
             "merchant_name": "كبير التجار"
         },
         "merchant": {
-            "welcome": "آه، أهلاً بك! تفضل بالدخول أيها المسافر المتعب.",
+            "welcome": "آه، أهلاً بك! تفضل بالدخول أيها المسافر.",
             "quotes": [
-                "لا داعي للعجلة هنا يا صديقي.",
+                "لا داعي للعجلة هنا.",
                 "كل قطعة أثرية لها قصة.",
                 "استمع لطرقعة النار..."
             ]
@@ -1603,37 +1603,37 @@ const translations = {
     },
     "vi": {
         "name": "Vietnamese",
-        "intro": "Arcane Merchant là một trò chơi mô phỏng quản lý cửa hàng lấy bối cảnh trung tâm của một vương quốc giả tưởng thời trung cổ.",
+        "intro": "Arcane Merchant là trò chơi mô phỏng quản lý cửa hàng giữa lòng vương quốc giả tưởng thời trung cổ. Khám phá thị trấn, nắm bắt cơ hội buôn bán và bắt đầu hành trình làm giàu. Tận hưởng bầu không khí ấm cúng khi bạn giao thương, phát triển và xây dựng cửa hàng mơ ước.",
         "features": [
-            "🛍️ Quản Lý Cửa Hàng...",
-            "💰 Làm Chủ Nghệ Thuật Buôn Bán...",
-            "🏰 Trở Thành Thương Nhân Giàu Nhất...",
-            "🌿 Bầu Không Khí Ấm Cúng..."
+            "🛍️ Quản Lý Cửa Hàng Phép Thuật\nThành lập và sắp xếp cửa hàng của riêng bạn, quản lý kho và lấp đầy kệ với thuốc độc dược, vũ khí phép thuật và tinh thể bí ẩn. Lên chiến lược trưng bày để thu hút khách hàng và tối đa hóa lợi nhuận.",
+            "💰 Làm Chủ Nghệ Thuật Buôn Bán\nĐiều chỉnh giá linh hoạt dựa trên cung cầu. Với mỗi giao dịch thành công, sự giàu có của bạn sẽ tăng nhanh và danh tiếng vang xa khắp vương quốc. Giành được lòng tin của khách hàng và thích nghi với nhu cầu của họ.",
+            "🏰 Trở Thành Thương Nhân Giàu Nhất\nBắt đầu từ một quầy hàng khiêm tốn; theo thời gian, mở rộng cửa hàng với các khu vực trưng bày mới. Khi danh tiếng và tài sản tăng lên, hãy trở thành thương nhân được kính trọng nhất thị trấn. Xây dựng đế chế thương mại của bạn!",
+            "🌿 Bầu Không Khí Ấm Cúng Thư Giãn\nThư giãn và phát triển cửa hàng trong một thế giới giả tưởng ấm áp. Lên kế hoạch giao dịch và tìm nhịp điệu riêng. Tận hưởng cảm giác 'cozy' khi quyết định mua gì, bán gì. Không cần vội vã, nhưng lựa chọn của bạn vẫn quan trọng."
         ],
-        "ending": "Mở cửa hàng của riêng bạn ngay giữa lòng vương quốc Giả tưởng Trung cổ!",
+        "ending": "Mở cửa hàng riêng giữa vương quốc Giả tưởng! Lấp đầy kệ với mọi thứ từ thuốc đến kiếm huyền thoại. Định giá, giành lòng tin và trở thành người giàu nhất!",
         "ui": {
             "menu_watch": "Xem Biên Niên Sử",
             "menu_wares": "Xem Hàng Hóa",
             "menu_rumors": "Hỏi Tin Đồn",
-            "menu_common": "Phòng Sinh Hoạt Chung",
+            "menu_common": "Sảnh Chung",
             "menu_about": "Về Trò Chơi",
-            "menu_steam": "Danh Sách Mong Ước Steam",
+            "menu_steam": "Thêm vào Wishlist",
             "footer_rights": "© 2026 Findie Studios. Đã đăng ký bản quyền.",
             "modal_wares_title": "Tuyên Ngôn Kỳ Quan",
             "modal_rumors_title": "Lời Thì Thầm từ Hư Không",
-            "modal_common_title": "Phòng Sinh Hoạt Chung",
+            "modal_common_title": "Sảnh Chung",
             "modal_about_title": "Hướng Dẫn Thương Nhân",
             "specs_title": "Cuộn Giấy Triệu Hồi",
             "specs_min": "Triệu Hồi Tối Thiểu",
             "specs_rec": "Nghi Thức Khuyên Dùng",
-            "merchant_name": "Thương Nhân Bậc Thầy"
+            "merchant_name": "Đại Thương Nhân"
         },
         "merchant": {
             "welcome": "À, chào mừng! Vào đi, lữ khách mệt mỏi.",
             "quotes": [
-                "Ở đây không cần vội đâu, bạn hiền.",
-                "Mỗi cổ vật đều có câu chuyện riêng.",
-                "Hãy lắng nghe tiếng lửa tí tách..."
+                "Ở đây không cần vội đâu.",
+                "Mỗi cổ vật đều có câu chuyện.",
+                "Lắng nghe tiếng lửa tí tách..."
             ]
         },
         "rumors": [
@@ -1657,25 +1657,25 @@ const translations = {
     },
     "th": {
         "name": "Thai",
-        "intro": "Arcane Merchant เป็นเกมจำลองการจัดการร้านค้าที่ตั้งอยู่ในใจกลางอาณาจักรแฟนตาซียุคกลาง สำรวจเมือง คว้าโอกาสทางการค้า และเริ่มต้นการเดินทางสู่ความมั่งคั่ง",
+        "intro": "Arcane Merchant คือเกมจำลองการจัดการร้านค้าในใจกลางอาณาจักรแฟนตาซียุคกลาง สำรวจเมือง คว้าโอกาสทางการค้า และเริ่มการเดินทางสู่ความมั่งคั่ง เพลิดเพลินกับบรรยากาศที่อบอุ่นในขณะที่คุณค้าขาย เติบโต และสร้างร้านค้าในฝันของคุณ",
         "features": [
-            "🛍️ จัดการร้านค้าของคุณ...",
-            "💰 เชี่ยวชาญศิลปะการค้า...",
-            "🏰 เป็นพ่อค้าที่ร่ำรวยที่สุด...",
-            "🌿 บรรยากาศสบายๆ..."
+            "🛍️ จัดการร้านค้าเวทมนตร์ของคุณ\nก่อตั้งและจัดระเบียบร้านค้า จัดการสินค้าคงคลัง และเติมชั้นวางด้วยยาวิเศษ อาวุธเวทมนตร์ และคริสตัลลึกลับ วางกลยุทธ์การจัดแสดงเพื่อดึงดูดลูกค้าและทำกำไรสูงสุด",
+            "💰 เชี่ยวชาญศิลปะการค้า\nปรับราคาตามอุปสงค์และอุปทานของตลาด ในทุกการขายที่ประสบความสำเร็จ ความมั่งคั่งของคุณจะเติบโตอย่างรวดเร็วและชื่อเสียงจะขจรขจาย ได้รับความไว้วางใจจากลูกค้าและปรับตัวตามความต้องการของพวกเขา",
+            "🏰 เป็นพ่อค้าที่ร่ำรวยที่สุดในอาณาจักร\nเริ่มจากแผงลอยเล็กๆ; เมื่อเวลาผ่านไป ขยายและอัปเกรดร้านค้าของคุณ เมื่อชื่อเสียงและโชคลาภเพิ่มขึ้น จงมุ่งมั่นเป็นพ่อค้าที่น่านับถือและร่ำรวยที่สุดในเมือง สร้างจักรวรรดิการค้าของคุณ!",
+            "🌿 บรรยากาศสบายๆ และผ่อนคลาย\nผ่อนคลายและพัฒนาร้านค้าในโลกแฟนตาซีที่อบอุ่น วางแผนการค้าและจังหวะของคุณเอง เพลิดเพลินกับบรรยากาศ 'cozy' ในขณะที่ตัดสินใจว่าจะซื้ออะไร ขายอะไร ไม่ต้องรีบร้อน แต่ทางเลือกของคุณยังคงสำคัญ"
         ],
-        "ending": "เปิดร้านค้าของคุณเองในใจกลางอาณาจักรแฟนตาซียุคกลาง!",
+        "ending": "เปิดร้านค้าของคุณเองในใจกลางอาณาจักรแฟนตาซี! เติมชั้นวางด้วยทุกสิ่งตั้งแต่น้ำยาไปจนถึงดาบในตำนาน กำหนดราคา ได้รับความไว้วางใจ และกลายเป็นเศรษฐี!",
         "ui": {
             "menu_watch": "ดูพงศาวดาร",
-            "menu_wares": "เลือกดูสินค้า",
+            "menu_wares": "ดูสินค้า",
             "menu_rumors": "ถามข่าวลือ",
-            "menu_common": "ห้องส่วนกลาง",
+            "menu_common": "ห้องโถงกลาง",
             "menu_about": "เกี่ยวกับเกม",
             "menu_steam": "สิ่งที่อยากได้ใน Steam",
             "footer_rights": "© 2026 Findie Studios. สงวนลิขสิทธิ์.",
             "modal_wares_title": "รายการสิ่งมหัศจรรย์",
             "modal_rumors_title": "เสียงกระซิบจากความว่างเปล่า",
-            "modal_common_title": "ห้องส่วนกลาง",
+            "modal_common_title": "ห้องโถงกลาง",
             "modal_about_title": "คู่มือพ่อค้า",
             "specs_title": "ม้วนคัมภีร์อัญเชิญ",
             "specs_min": "การอัญเชิญขั้นต่ำ",
@@ -1683,9 +1683,9 @@ const translations = {
             "merchant_name": "ยอดพ่อค้า"
         },
         "merchant": {
-            "welcome": "อ่า ยินดีต้อนรับ! เข้ามาสิ นักเดินทางผู้เหนื่อยล้า",
+            "welcome": "อ่า ยินดีต้อนรับ! เข้ามาสิ นักเดินทาง.",
             "quotes": [
-                "ที่นี่ไม่ต้องรีบร้อนนะเพื่อน",
+                "ไม่ต้องรีบร้อนนะเพื่อน",
                 "วัตถุโบราณทุกชิ้นมีเรื่องเล่า",
                 "ฟังเสียงไฟปะทุสิ..."
             ]
@@ -1711,25 +1711,25 @@ const translations = {
     },
     "id": {
         "name": "Indonesian",
-        "intro": "Arcane Merchant adalah game simulasi manajemen toko yang berlatar di jantung kerajaan fantasi abad pertengahan.",
+        "intro": "Arcane Merchant adalah game simulasi manajemen toko yang berlatar di jantung kerajaan fantasi abad pertengahan. Jelajahi kota, raih peluang dagang, dan mulai perjalanan menuju kekayaan. Nikmati suasana nyaman (cozy) saat Anda berdagang, tumbuh, dan membangun toko impian.",
         "features": [
-            "🛍️ Kelola Tokomu...",
-            "💰 Kuasai Seni Berdagang...",
-            "🏰 Jadilah Pedagang Terkaya...",
-            "🌿 Suasana Nyaman..."
+            "🛍️ Kelola Toko Ajaibmu\nDirikan dan atur tokomu sendiri, kelola inventaris, dan isi rak dengan ramuan, senjata sihir, dan kristal misterius. Atur strategi tampilan untuk menarik pelanggan dan memastikan keuntungan maksimal.",
+            "💰 Kuasai Seni Berdagang\nSesuaikan harga secara dinamis berdasarkan penawaran dan permintaan. Dengan setiap kesepakatan sukses, kekayaanmu akan tumbuh dan reputasimu menyebar. Dapatkan kepercayaan pelanggan.",
+            "🏰 Jadilah Pedagang Terkaya di Kerajaan\nMulai dari kios sederhana; seiring waktu, perluas toko dengan area baru. Saat ketenaranmu meningkat, jadilah pedagang paling dihormati dan terkaya di kota. Bangun kerajaan dagangmu dan kuasai ekonomi Fantasi!",
+            "🌿 Suasana Nyaman dan Santai\nBersantai dan kembangkan tokomu di dunia fantasi yang hangat. Rencanakan perdagangan dan temukan ritmemu sendiri. Nikmati suasana 'cozy' saat memutuskan apa yang harus dibeli dan dijual. Tidak perlu terburu-buru, tapi pilihanmu tetap penting."
         ],
-        "ending": "Buka tokomu sendiri di jantung kerajaan Fantasi Abad Pertengahan!",
+        "ending": "Buka tokomu sendiri di jantung kerajaan Fantasi! Isi rak dengan segalanya mulai dari ramuan hingga pedang legendaris. Tetapkan harga, menangkan kepercayaan, dan jadi yang terkaya!",
         "ui": {
-            "menu_watch": "Tonton Kronik",
+            "menu_watch": "Lihat Kronik",
             "menu_wares": "Jelajahi Barang",
             "menu_rumors": "Tanya Rumor",
-            "menu_common": "Ruang Bersama",
+            "menu_common": "Aula Bersama",
             "menu_about": "Tentang Game",
             "menu_steam": "Wishlist Steam",
-            "footer_rights": "© 2026 Findie Studios. Hak cipta dilindungi undang-undang.",
+            "footer_rights": "© 2026 Findie Studios. Hak cipta dilindungi.",
             "modal_wares_title": "Manifestasi Keajaiban",
             "modal_rumors_title": "Bisikan dari Kehampaan",
-            "modal_common_title": "Ruang Bersama",
+            "modal_common_title": "Aula Bersama",
             "modal_about_title": "Panduan Pedagang",
             "specs_title": "Gulungan Pemanggilan",
             "specs_min": "Pemanggilan Minimum",
@@ -1737,9 +1737,9 @@ const translations = {
             "merchant_name": "Master Pedagang"
         },
         "merchant": {
-            "welcome": "Ah, selamat datang! Masuklah, pengelana yang lelah.",
+            "welcome": "Ah, selamat datang! Masuklah, kawan.",
             "quotes": [
-                "Tidak perlu terburu-buru di sini, kawan.",
+                "Tidak perlu terburu-buru.",
                 "Setiap artefak punya cerita.",
                 "Dengarkan api yang berderak..."
             ]
@@ -1765,36 +1765,37 @@ const translations = {
     },
     "uk": {
         "name": "Ukrainian",
-        "intro": "Arcane Merchant — це симулятор управління магазином у серці середньовічного фентезійного королівства.",
+        "intro": "Arcane Merchant — це симулятор управління крамницею в серці середньовічного фентезійного королівства. Досліджуйте місто, ловіть торгові можливості та почніть шлях до багатства. Насолоджуйтесь затишною атмосферою, торгуючи та будуючи крамницю своєї мрії.",
         "features": [
-            "🛍️ Керуйте Магазином",
-            "💰 Опануйте Торгівлю",
-            "🏰 Станьте Найбагатшим",
-            "🌿 Затишна Атмосфера"
+            "🛍️ Керуйте Своєю Чарівною Крамницею\nЗаснуйте та організуйте власну крамницю, керуйте інвентарем і наповнюйте полиці зіллям, магічною зброєю та таємничими кристалами. Плануйте вітрини, щоб залучити клієнтів і отримати максимальний прибуток.",
+            "💰 Опануйте Мистецтво Торгівлі\nДинамічно змінюйте ціни залежно від попиту та пропозиції. З кожною успішною угодою ваше багатство зростатиме, а репутація ширитиметься королівством. Завоюйте довіру клієнтів.",
+            "🏰 Станьте Найбагатшим Купцем\nПочніть зі скромного прилавка; з часом розширюйте крамницю. Станьте найбільш шанованим і багатим торговцем у місті. Побудуйте свою торгову імперію та контролюйте економіку Фентезі!",
+            "🌿 Затишна та Розслаблююча Атмосфера\nРозслабтеся та розвивайте свій бізнес у теплому фентезійному світі. Плануйте угоди та знайдіть власний ритм. Насолоджуйтесь затишком, вирішуючи, що купувати та продавати. Поспішати нікуди, але ваш вибір має значення."
         ],
-        "ending": "Відкрийте свій магазин!",
+        "ending": "Відкрийте власну крамницю в серці Фентезі-королівства! Заповніть полиці всім: від зілля до легендарних мечів. Встановлюйте ціни, здобувайте довіру та станьте найбагатшим!",
         "ui": {
             "menu_watch": "Дивитися Хроніки",
             "menu_wares": "Товари",
-            "menu_rumors": "Чутки",
-            "menu_common": "Загальна Кімната",
+            "menu_rumors": "Запитати Чутки",
+            "menu_common": "Загальна Зала",
             "menu_about": "Про Гру",
             "menu_steam": "Список Бажаного",
             "footer_rights": "© 2026 Findie Studios.",
             "modal_wares_title": "Маніфест Чудес",
             "modal_rumors_title": "Шепіт з Пустоти",
-            "modal_common_title": "Загальна Кімната",
-            "modal_about_title": "Гід Торговця",
+            "modal_common_title": "Загальна Зала",
+            "modal_about_title": "Довідник Торговця",
             "specs_title": "Сувій Виклику",
             "specs_min": "Мін. Виклик",
             "specs_rec": "Рек. Ритуал",
             "merchant_name": "Майстер-Торговець"
         },
         "merchant": {
-            "welcome": "Ах, ласкаво просимо!",
+            "welcome": "Ах, ласкаво просимо! Заходь, подорожній.",
             "quotes": [
                 "Немає куди поспішати.",
-                "Кожен артефакт має історію."
+                "Кожен артефакт має історію.",
+                "Слухай, як тріщить вогонь..."
             ]
         },
         "rumors": [
@@ -1818,14 +1819,14 @@ const translations = {
     },
     "cs": {
         "name": "Czech",
-        "intro": "Arcane Merchant je simulace obchodu v srdci středověkého fantasy království.",
+        "intro": "Arcane Merchant je simulace správy obchodu v srdci středověkého fantasy království. Prozkoumejte město, chopte se obchodních příležitostí a vydejte se na cestu k bohatství. Užijte si útulnou atmosféru při obchodování a budování obchodu svých snů.",
         "features": [
-            "🛍️ Spravuj Obchod",
-            "💰 Ovládni Obchod",
-            "🏰 Staň se Boháčem",
-            "🌿 Útulná Atmosféra"
+            "🛍️ Spravujte Svůj Magický Obchod\nZaložte a zorganizujte vlastní obchod, spravujte zásoby a plňte regály lektvary, magickými zbraněmi a tajemnými krystaly. Strategizujte své výlohy, abyste přilákali zákazníky a zajistili maximální zisk.",
+            "💰 Ovládněte Umění Obchodu\nDynamicky upravujte ceny na základě nabídky a poptávky. S každým úspěšným obchodem vaše bohatství poroste a vaše pověst se bude šířit královstvím. Získejte důvěru zákazníků.",
+            "🏰 Staňte se Nejbohatším Kupcem\nZačněte u skromného stánku; časem obchod rozšiřte. Vypracujte se na nejuznávanějšího a nejbohatšího obchodníka ve městě. Vybudujte své obchodní impérium a ovládněte ekonomiku!",
+            "🌿 Útulná a Relaxační Atmosféra\nOdpočiňte si a rozvíjejte svůj obchod v hřejivém fantasy světě. Naplánujte si obchody a najděte své vlastní tempo. Užijte si 'cozy' náladu při rozhodování, co koupit a prodat. Není kam spěchat, ale na vašich volbách záleží."
         ],
-        "ending": "Otevři si svůj vlastní obchod!",
+        "ending": "Otevři si vlastní obchod v srdci Fantasy království! Naplň regály vším od lektvarů po legendární meče. Určuj ceny, získej důvěru a staň se boháčem!",
         "ui": {
             "menu_watch": "Sledovat Kroniky",
             "menu_wares": "Procházet Zboží",
@@ -1833,7 +1834,7 @@ const translations = {
             "menu_common": "Společenská Místnost",
             "menu_about": "O Hře",
             "menu_steam": "Seznam Přání",
-            "footer_rights": "© 2026 Findie Studios.",
+            "footer_rights": "© 2026 Findie Studios. Všechna práva vyhrazena.",
             "modal_wares_title": "Manifest Zázraků",
             "modal_rumors_title": "Šepot z Prázdnoty",
             "modal_common_title": "Společenská Místnost",
@@ -1844,10 +1845,11 @@ const translations = {
             "merchant_name": "Mistr Obchodník"
         },
         "merchant": {
-            "welcome": "Ah, vítejte!",
+            "welcome": "Ah, vítejte! Pojďte dál.",
             "quotes": [
-                "Není kam spěchat.",
-                "Každý artefakt má příběh."
+                "Není kam spěchat, příteli.",
+                "Každý artefakt má příběh.",
+                "Poslouchej praskání ohně..."
             ]
         },
         "rumors": [
@@ -1871,34 +1873,39 @@ const translations = {
     },
     "hu": {
         "name": "Hungarian",
+        "intro": "Az Arcane Merchant egy boltmenedzsment szimulációs játék egy középkori fantáziabirodalom szívében. Fedezd fel a várost, ragadd meg a kereskedelmi lehetőségeket, és indulj el a gazdagság felé vezető úton. Élvezd a hangulatos légkört, miközben kereskedsz és építed álmaid boltját.",
+        "features": [
+            "🛍️ Vezesd a Varázsboltodat\nAlapítsd meg és rendezd be saját boltodat, kezeld a készletet, és töltsd meg a polcokat bájitalokkal, mágikus fegyverekkel és titokzatos kristályokkal. Tervezd meg a kirakatot a maximális profit érdekében.",
+            "💰 Sajátítsd el a Kereskedés Művészetét\nÁllítsd be az árakat dinamikusan a kereslet és kínálat alapján. Minden sikeres üzlettel nő a vagyonod és a hírneved. Nyerd el a vevők bizalmát.",
+            "🏰 Légy a Királyság Leggazdagabb Kereskedője\nKezdd egy szerény standdal; idővel bővítsd az üzletet. Küzdd fel magad a város legtiszteltebb és leggazdagabb kereskedőjévé. Építsd ki kereskedelmi birodalmadat!",
+            "🌿 Hangulatos és Relaxáló Légkör\nLazíts és fejleszd boltodat egy meleg fantáziavilágban. Tervezd meg az üzleteket a saját tempódban. Élvezd a 'cozy' hangulatot, miközben döntesz a vételről és eladásról. Nem kell sietni, de a döntéseid számítanak."
+        ],
+        "ending": "Nyisd meg saját boltodat a Fantasy Királyság szívében! Töltsd meg a polcokat bájitalokkal és legendás kardokkal. Szabj árakat, nyerd el a bizalmat és légy te a leggazdagabb!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
+            "menu_watch": "Krónikák Megtekintése",
+            "menu_wares": "Áruk Böngészése",
+            "menu_rumors": "Pletykák Kérdezése",
+            "menu_common": "Közös Helyiség",
+            "menu_about": "A Játékról",
+            "menu_steam": "Steam Kívánságlista",
+            "footer_rights": "© 2026 Findie Studios. Minden jog fenntartva.",
+            "modal_wares_title": "Csodák Jegyzéke",
+            "modal_rumors_title": "Suttogások az Ürességből",
+            "modal_common_title": "Közös Helyiség",
+            "modal_about_title": "Kereskedői Útmutató",
+            "specs_title": "Idéző Tekercs",
+            "specs_min": "Minimális Idézés",
+            "specs_rec": "Ajánlott Rituálé",
             "merchant_name": "Mesterkereskedő"
         },
         "merchant": {
-            "welcome": "Ah, üdvözöllek!"
+            "welcome": "Ah, üdvözöllek! Gyere be, fáradt utazó.",
+            "quotes": [
+                "Itt nem kell sietni.",
+                "Minden ereklyének története van.",
+                "Hallgasd a tűz ropogását..."
+            ]
         },
-        "intro": "Arcane Merchant...",
-        "features": [
-            "Feature 1...",
-            "Feature 2...",
-            "Feature 3...",
-            "Feature 4..."
-        ],
-        "ending": "Open your own shop!",
         "rumors": [
             {
                 "title": "📜 The High King's Debt",
@@ -1920,34 +1927,39 @@ const translations = {
     },
     "ro": {
         "name": "Romanian",
+        "intro": "Arcane Merchant este un joc de simulare a gestionării unui magazin situat în inima unui regat fantastic medieval. Explorează orașul, profită de oportunitățile comerciale și începe călătoria spre bogăție. Bucură-te de atmosfera primitoare în timp ce faci comerț, crești și îți construiești magazinul de vis.",
+        "features": [
+            "🛍️ Gestionează-ți Magazinul Magic\nÎnființează și organizează propriul magazin, gestionează inventarul și umple rafturile cu poțiuni, arme magice și cristale misterioase. Strategizează expunerile pentru a atrage clienți.",
+            "💰 Stăpânește Arta Comerțului\nAjustează prețurile dinamic în funcție de cerere și ofertă. Cu fiecare afacere reușită, bogăția ta va crește și reputația se va răspândi. Câștigă încrederea clienților.",
+            "🏰 Devino Cel Mai Bogat Negustor\nÎncepe de la o tarabă modestă; în timp, extinde magazinul. Urcă în rang pentru a deveni cel mai respectat și bogat negustor din oraș. Construiește-ți imperiul comercial!",
+            "🌿 Atmosferă Primitoare și Relaxantă\nRelaxează-te și dezvoltă-ți magazinul într-o lume fantastică caldă. Planifică-ți tranzacțiile în propriul ritm. Bucură-te de vibrațiile 'cozy' în timp ce decizi ce să cumperi și să vinzi."
+        ],
+        "ending": "Deschide-ți propriul magazin în inima unui regat Fantastic! Umple rafturile cu orice, de la poțiuni la săbii legendare. Stabilește prețuri, câștigă încredere și devino cel mai bogat!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
+            "menu_watch": "Vezi Cronicile",
+            "menu_wares": "Răsfoiește Mărfuri",
+            "menu_rumors": "Întreabă Zvonuri",
+            "menu_common": "Sala Comună",
+            "menu_about": "Despre Joc",
+            "menu_steam": "Lista de Dorințe Steam",
+            "footer_rights": "© 2026 Findie Studios. Toate drepturile rezervate.",
+            "modal_wares_title": "Manifestul Minunilor",
+            "modal_rumors_title": "Șoapte din Vid",
+            "modal_common_title": "Sala Comună",
+            "modal_about_title": "Ghidul Negustorului",
+            "specs_title": "Pergament de Invocare",
+            "specs_min": "Invocare Minimă",
+            "specs_rec": "Ritual Recomandat",
             "merchant_name": "Maestru Negustor"
         },
         "merchant": {
-            "welcome": "Ah, bun venit!"
+            "welcome": "Ah, bun venit! Intră.",
+            "quotes": [
+                "Nu e grabă aici, prietene.",
+                "Fiecare artefact are o poveste.",
+                "Ascultă focul trosnind..."
+            ]
         },
-        "intro": "Arcane Merchant...",
-        "features": [
-            "Feature 1...",
-            "Feature 2...",
-            "Feature 3...",
-            "Feature 4..."
-        ],
-        "ending": "Open your own shop!",
         "rumors": [
             {
                 "title": "📜 The High King's Debt",
@@ -1969,34 +1981,39 @@ const translations = {
     },
     "el": {
         "name": "Greek",
+        "intro": "Το Arcane Merchant είναι ένα παιχνίδι προσομοίωσης διαχείρισης καταστήματος στην καρδιά ενός μεσαιωνικού βασιλείου φαντασίας. Εξερευνήστε την πόλη, αρπάξτε εμπορικές ευκαιρίες και ξεκινήστε το ταξίδι σας προς τον πλούτο. Απολαύστε τη ζεστή ατμόσφαιρα καθώς εμπορεύεστε και χτίζετε το κατάστημα των ονείρων σας.",
+        "features": [
+            "🛍️ Διαχειριστείτε το Μαγικό Κατάστημά σας\nΙδρύστε και οργανώστε το δικό σας κατάστημα, διαχειριστείτε το απόθεμα και γεμίστε τα ράφια με φίλτρα, μαγικά όπλα και μυστηριώδεις κρυστάλλους. Σχεδιάστε τη στρατηγική σας για να προσελκύσετε πελάτες.",
+            "💰 Κατακτήστε την Τέχνη του Εμπορίου\nΠροσαρμόστε τις τιμές δυναμικά με βάση την προσφορά και τη ζήτηση. Με κάθε επιτυχημένη συμφωνία, ο πλούτος σας θα αυξάνεται και η φήμη σας θα εξαπλώνεται. Κερδίστε την εμπιστοσύνη των πελατών.",
+            "🏰 Γίνετε ο Πλουσιότερος Έμπορος\nΞεκινήστε από έναν ταπεινό πάγκο· με τον καιρό, επεκτείνετε το κατάστημα. Ανεβείτε για να γίνετε ο πιο σεβαστός και πλούσιος έμπορος της πόλης. Χτίστε την εμπορική σας αυτοκρατορία!",
+            "🌿 Ζεστή και Χαλαρωτική Ατμόσφαιρα\nΧαλαρώστε και αναπτύξτε το κατάστημά σας σε έναν ζεστό κόσμο φαντασίας. Σχεδιάστε τις συναλλαγές σας με τον δικό σας ρυθμό. Απολαύστε τη 'cozy' διάθεση καθώς αποφασίζετε τι να αγοράσετε και να πουλήσετε."
+        ],
+        "ending": "Ανοίξτε το δικό σας κατάστημα στην καρδιά ενός Βασιλείου Φαντασίας! Γεμίστε τα ράφια με τα πάντα, από φίλτρα μέχρι θρυλικά σπαθιά. Ορίστε τιμές, κερδίστε εμπιστοσύνη και γίνετε ο πλουσιότερος!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
+            "menu_watch": "Δείτε Χρονικά",
+            "menu_wares": "Περιήγηση Εμπορευμάτων",
+            "menu_rumors": "Ρωτήστε Φήμες",
+            "menu_common": "Κοινή Αίθουσα",
+            "menu_about": "Σχετικά με το Παιχνίδι",
+            "menu_steam": "Λίστα Επιθυμιών Steam",
+            "footer_rights": "© 2026 Findie Studios. Με επιφύλαξη παντός δικαιώματος.",
+            "modal_wares_title": "Μανιφέστο Θαυμάτων",
+            "modal_rumors_title": "Ψίθυροι από το Κενό",
+            "modal_common_title": "Κοινή Αίθουσα",
+            "modal_about_title": "Οδηγός Εμπόρου",
+            "specs_title": "Πάπυρος Επίκλησης",
+            "specs_min": "Ελάχιστη Επίκληση",
+            "specs_rec": "Προτεινόμενη Τελετή",
             "merchant_name": "Αρχιέμπορος"
         },
         "merchant": {
-            "welcome": "Α, καλώς ήρθες!"
+            "welcome": "Α, καλώς ήρθες! Πέρνα μέσα.",
+            "quotes": [
+                "Δεν υπάρχει βιασύνη εδώ.",
+                "Κάθε τεχνούργημα έχει μια ιστορία.",
+                "Άκου τη φωτιά που τρίζει..."
+            ]
         },
-        "intro": "Arcane Merchant...",
-        "features": [
-            "Feature 1...",
-            "Feature 2...",
-            "Feature 3...",
-            "Feature 4..."
-        ],
-        "ending": "Open your own shop!",
         "rumors": [
             {
                 "title": "📜 The High King's Debt",
@@ -2018,34 +2035,39 @@ const translations = {
     },
     "sv": {
         "name": "Swedish",
+        "intro": "Arcane Merchant är ett butikssimuleringsspel i hjärtat av ett medeltida fantasirike. Utforska staden, ta vara på handelsmöjligheter och börja din resa mot rikedom. Njut av den mysiga atmosfären medan du handlar, växer och bygger din drömbutik.",
+        "features": [
+            "🛍️ Hantera din Magiska Butik\nStarta och organisera din egen butik, hantera lagret och fyll hyllorna med drycker, magiska vapen och mystiska kristaller. Strategisera dina skyltfönster för att locka kunder och maximera vinsten.",
+            "💰 Bemästra Handelns Konst\nJustera priser dynamiskt baserat på tillgång och efterfrågan. Med varje lyckad affär växer din rikedom och ditt rykte sprids i riket. Vinn kundernas förtroende.",
+            "🏰 Bli Rikets Rikaste Handlare\nBörja med ett enkelt stånd; med tiden expanderar du butiken. Arbeta dig upp till att bli stadens mest respekterade och rikaste handlare. Bygg ditt handelsimperium!",
+            "🌿 Mysig och Avkopplande Atmosfär\nKoppla av och utveckla din butik i en varm fantasivärld. Planera dina affärer i din egen takt. Njut av den mysiga stämningen medan du bestämmer vad du ska köpa och sälja. Ingen stress, men dina val spelar roll."
+        ],
+        "ending": "Öppna din egen butik i hjärtat av ett Fantasyrike! Fyll hyllorna med allt från drycker till legendariska svärd. Sätt priser, vinn förtroende och bli rikast!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
+            "menu_watch": "Se Krönikor",
+            "menu_wares": "Bläddra bland Varor",
+            "menu_rumors": "Fråga om Rykten",
+            "menu_common": "Gemensamt Rum",
+            "menu_about": "Om Spelet",
+            "menu_steam": "Önskelista på Steam",
+            "footer_rights": "© 2026 Findie Studios. Alla rättigheter förbehållna.",
+            "modal_wares_title": "Underverkens Manifest",
+            "modal_rumors_title": "Viskningar från Tomheten",
+            "modal_common_title": "Gemensamt Rum",
+            "modal_about_title": "Handlarens Guide",
+            "specs_title": "Framkallningsrulle",
+            "specs_min": "Minsta Åkallan",
+            "specs_rec": "Rekommenderad Ritual",
             "merchant_name": "Mästerhandlare"
         },
         "merchant": {
-            "welcome": "Ah, välkommen!"
+            "welcome": "Ah, välkommen! Kom in, trötte vandrare.",
+            "quotes": [
+                "Ingen brådska här, vännen.",
+                "Varje artefakt har en historia.",
+                "Lyssna på eldens sprakande..."
+            ]
         },
-        "intro": "Arcane Merchant...",
-        "features": [
-            "Feature 1...",
-            "Feature 2...",
-            "Feature 3...",
-            "Feature 4..."
-        ],
-        "ending": "Open your own shop!",
         "rumors": [
             {
                 "title": "📜 The High King's Debt",
@@ -2067,34 +2089,39 @@ const translations = {
     },
     "da": {
         "name": "Danish",
+        "intro": "Arcane Merchant er et butikssimulationsspil sat i hjertet af et middelalderligt fantasirige. Udforsk byen, grib handelsmuligheder og start din rejse mod rigdom. Nyd den hyggelige atmosfære mens du handler, vokser og bygger din drømmebutik.",
+        "features": [
+            "🛍️ Bestyr Din Magiske Butik\nEtabler og organiser din egen butik, styr lageret og fyld hylderne med eliksirer, magiske våben og mystiske krystaller. Læg en strategi for dine udstillinger for at tiltrække kunder.",
+            "💰 Mestre Handelens Kunst\nJuster priser dynamisk baseret på udbud og efterspørgsel. Med hver succesfuld handel vokser din rigdom og dit ry spredes. Vind kundernes tillid.",
+            "🏰 Bliv Rigets Rigeste Købmand\nStart fra en simpel bod; over tid kan du udvide butikken. Arbejd dig op til at blive byens mest respekterede og rige købmand. Byg dit handelsimperium!",
+            "🌿 Hyggelig og Afslappende Atmosfære\nSlap af og dyrk din butik i en varm fantasiverden. Planlæg dine handler i dit eget tempo. Nyd den hyggelige stemning mens du beslutter hvad du skal købe og sælge. Ingen hastværk, men dine valg tæller."
+        ],
+        "ending": "Åbn din egen butik i hjertet af et Fantasirige! Fyld hylderne med alt fra eliksirer til legendariske sværd. Sæt priser, vind tillid og bliv rigest!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
+            "menu_watch": "Se Krøniker",
+            "menu_wares": "Gennemse Varer",
+            "menu_rumors": "Spørg om Rygtet",
+            "menu_common": "Fællesrum",
+            "menu_about": "Om Spillet",
+            "menu_steam": "Ønskeliste på Steam",
+            "footer_rights": "© 2026 Findie Studios. Alle rettigheder forbeholdes.",
+            "modal_wares_title": "Manifest over Undere",
+            "modal_rumors_title": "Hvisken fra Tomrummet",
+            "modal_common_title": "Fællesrum",
+            "modal_about_title": "Købmandens Guide",
+            "specs_title": "Hidkaldelsesrulle",
+            "specs_min": "Minimum Hidkaldelse",
+            "specs_rec": "Anbefalet Ritual",
             "merchant_name": "Mesterkøbmand"
         },
         "merchant": {
-            "welcome": "Ah, velkommen!"
+            "welcome": "Ah, velkommen! Kom indenfor.",
+            "quotes": [
+                "Ingen hast her, ven.",
+                "Hver genstand har en historie.",
+                "Lyt til ilden der knitrer..."
+            ]
         },
-        "intro": "Arcane Merchant...",
-        "features": [
-            "Feature 1...",
-            "Feature 2...",
-            "Feature 3...",
-            "Feature 4..."
-        ],
-        "ending": "Open your own shop!",
         "rumors": [
             {
                 "title": "📜 The High King's Debt",
@@ -2116,34 +2143,39 @@ const translations = {
     },
     "fi": {
         "name": "Finnish",
+        "intro": "Arcane Merchant on kaupanhallintasimulaattori, joka sijoittuu keskiaikaisen fantasiakuningaskunnan sydämeen. Tutki kaupunkia, tartu kauppamahdollisuuksiin ja aloita matkasi kohti rikkauksia. Nauti kodikkaasta tunnelmasta samalla kun käyt kauppaa ja rakennat unelmiesi puotia.",
+        "features": [
+            "🛍️ Hallitse Taikapuotiasi\nPerusta ja järjestä oma kauppasi, hallitse varastoa ja täytä hyllyt taikajuomilla, maagisilla aseilla ja mystisillä kristalleilla. Suunnittele esillepanot houkutellaksesi asiakkaita ja maksimoidaksesi voiton.",
+            "💰 Hallitse Kaupankäynnin Taito\nSäädä hintoja dynaamisesti kysynnän ja tarjonnan mukaan. Jokaisen onnistuneen kaupan myötä varallisuutesi kasvaa ja maineesi leviää. Voita asiakkaiden luottamus.",
+            "🏰 Tule Kuningaskunnan Rikkaimmaksi\nAloita vaatimattomasta kojusta; ajan myötä laajenna kauppaasi. Tule kaupungin arvostetuimmaksi ja rikkaimmaksi kauppiaaksi. Rakenna kauppaimperiumisi!",
+            "🌿 Kodikas ja Rentouttava Ilmapiiri\nRentoudu ja kasvata kauppaasi lämpimässä fantasiamaailmassa. Suunnittele kaupat omaan tahtiisi. Nauti tunnelmasta päättäessäsi mitä ostat ja myyt. Ei kiirettä, mutta valinnoillasi on väliä."
+        ],
+        "ending": "Avaa oma puotisi Fantasiakuningaskunnan sydämessä! Täytä hyllyt kaikella taikajuomista legendaarisiin miekkoihin. Aseta hinnat, voita luottamus ja rikastu!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
+            "menu_watch": "Katso Kronikat",
+            "menu_wares": "Selaa Tuotteita",
+            "menu_rumors": "Kysy Huhuja",
+            "menu_common": "Yhteishuone",
+            "menu_about": "Tietoa Pelistä",
+            "menu_steam": "Steam-toivelista",
+            "footer_rights": "© 2026 Findie Studios. Kaikki oikeudet pidätetään.",
+            "modal_wares_title": "Ihmeiden Luettelo",
+            "modal_rumors_title": "Kuiskauksia Tyhjyydestä",
+            "modal_common_title": "Yhteishuone",
+            "modal_about_title": "Kauppiaan Opas",
+            "specs_title": "Kutsukäärö",
+            "specs_min": "Vähimmäisloitsu",
+            "specs_rec": "Suositeltu Rituaali",
             "merchant_name": "Mestarikauppias"
         },
         "merchant": {
-            "welcome": "Ah, tervetuloa!"
+            "welcome": "Ah, tervetuloa! Astu sisään.",
+            "quotes": [
+                "Ei kiirettä täällä, ystävä.",
+                "Jokaisella esineellä on tarina.",
+                "Kuuntele tulen rätinää..."
+            ]
         },
-        "intro": "Arcane Merchant...",
-        "features": [
-            "Feature 1...",
-            "Feature 2...",
-            "Feature 3...",
-            "Feature 4..."
-        ],
-        "ending": "Open your own shop!",
         "rumors": [
             {
                 "title": "📜 The High King's Debt",
@@ -2165,34 +2197,39 @@ const translations = {
     },
     "no": {
         "name": "Norwegian",
+        "intro": "Arcane Merchant er et butikksimuleringsspill satt i hjertet av et middelaldersk fantasyrike. Utforsk byen, grip handelsmuligheter og start reisen mot rikdom. Nyt den koselige atmosfæren mens du handler, vokser og bygger drømmebutikken din.",
+        "features": [
+            "🛍️ Administrer Din Magiske Butikk\nEtabler og organiser din egen butikk, styr varelageret og fyll hyllene med eliksirer, magiske våpen og mystiske krystaller. Legg en strategi for utstillingene dine for å tiltrekke kunder.",
+            "💰 Mestre Handelens Kunst\nJuster priser dynamisk basert på tilbud og etterspørsel. Med hver vellykket handel vokser rikdommen din og ryktet ditt spres. Vinn kundenes tillit.",
+            "🏰 Bli Rikets Rikeste Kjøpmann\nStart fra en enkel bod; over tid kan du utvide butikken. Jobb deg opp til å bli byens mest respekterte og rike kjøpmann. Bygg ditt handelsimperium!",
+            "🌿 Koselig og Avslappende Atmosfære\nSlapp av og dyrk butikken din i en varm fantasiverden. Planlegg handlene i ditt eget tempo. Nyt den koselige stemningen mens du bestemmer hva du skal kjøpe og selge. Ingen hastverk, men valgene dine teller."
+        ],
+        "ending": "Åpne din egen butikk i hjertet av et Fantasyrike! Fyll hyllene med alt fra eliksirer til legendariske sverd. Sett priser, vinn tillit og bli rikest!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
+            "menu_watch": "Se Krøniker",
+            "menu_wares": "Bla i Varer",
+            "menu_rumors": "Spør om Rykter",
+            "menu_common": "Fellesrom",
+            "menu_about": "Om Spillet",
+            "menu_steam": "Ønskeliste på Steam",
+            "footer_rights": "© 2026 Findie Studios. Alle rettigheter forbeholdt.",
+            "modal_wares_title": "Manifest over Undere",
+            "modal_rumors_title": "Hvisking fra Tomrommet",
+            "modal_common_title": "Fellesrom",
+            "modal_about_title": "Kjøpmannens Guide",
+            "specs_title": "Påkallelsesrull",
+            "specs_min": "Minimum Påkallelse",
+            "specs_rec": "Anbefalt Rituale",
             "merchant_name": "Mesterkjøpmann"
         },
         "merchant": {
-            "welcome": "Ah, velkommen!"
+            "welcome": "Ah, velkommen! Kom inn.",
+            "quotes": [
+                "Ingen hast her, venn.",
+                "Hver gjenstand har en historie.",
+                "Hør på ilden som knitrer..."
+            ]
         },
-        "intro": "Arcane Merchant...",
-        "features": [
-            "Feature 1...",
-            "Feature 2...",
-            "Feature 3...",
-            "Feature 4..."
-        ],
-        "ending": "Open your own shop!",
         "rumors": [
             {
                 "title": "📜 The High King's Debt",
