@@ -312,20 +312,25 @@
 
         function showVideoModal() {
             const modal = document.getElementById('video-modal'), video = document.getElementById('video-player');
-            // Hardcoding a high-compatibility MP4 link directly to bypass stream issues
+            // Using a high-compatibility direct Steam MP4 link
             const mp4Src = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/movie480.mp4';
             
             modal.classList.add('visible');
-            video.src = mp4Src;
+            
+            // Set basic video attributes
+            video.setAttribute('src', mp4Src);
+            video.setAttribute('playsinline', '');
+            video.setAttribute('webkit-playsinline', '');
+            video.controls = true; // Show controls by default to ensure user can play
+            video.muted = false; // Let it have sound if they click
+            
             video.load();
             
-            // Attempt autoplay
+            // Critical fix for mobile: try to play, if fails, just let user hit the big play button
             const playPromise = video.play();
             if (playPromise !== undefined) {
                 playPromise.catch(error => {
-                    console.log("Autoplay prevented, showing controls.");
-                    video.muted = false;
-                    video.controls = true;
+                    console.log("Autoplay blocked, user interaction required.");
                 });
             }
         }
