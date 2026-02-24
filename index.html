@@ -312,17 +312,35 @@
 
         function showVideoModal() {
             const modal = document.getElementById('video-modal'), video = document.getElementById('video-player');
-            // Using direct MP4 link instead of HLS as fallback or primary
-            const src = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/movie480_vp9.webm';
+            // Reverting to HLS with a more robust implementation and a hard fallback to MP4
+            const hlsSrc = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/hls_264_master.m3u8';
+            const mp4Fallback = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/movie480.mp4';
+            
             modal.classList.add('visible');
-            video.src = src;
-            video.type = 'video/webm';
-            video.play().catch(err => {
-                console.log("WebM play failed, trying fallback...");
-                video.src = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/movie480.mp4';
-                video.type = 'video/mp4';
+            
+            if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                // Native HLS support (Safari/iOS)
+                video.src = hlsSrc;
                 video.play();
-            });
+            } else if (Hls.isSupported()) {
+                // Hls.js support
+                if (hls) hls.destroy();
+                hls = new Hls();
+                hls.loadSource(hlsSrc);
+                hls.attachMedia(video);
+                hls.on(Hls.Events.MANIFEST_PARSED, () => video.play());
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        console.log("HLS fatal error, falling back to MP4");
+                        video.src = mp4Fallback;
+                        video.play();
+                    }
+                });
+            } else {
+                // Fallback to MP4
+                video.src = mp4Fallback;
+                video.play();
+            }
         }
 
         function closeVideoModal() { document.getElementById('video-player').pause(); closeModals(); }
