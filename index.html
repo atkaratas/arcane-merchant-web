@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Arcane Merchant | Shop Management Sim</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FONTS: Latin + CJK + Arabic + Thai Support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
             --gold: #d4af37;
             --dark-bg: rgba(15, 15, 20, 0.98);
             --parchment: #f4e4bc;
-            --ui-font: 'Cinzel', serif;
-            --dialogue-font: 'Crimson Text', serif;
+            --ui-font: 'Cinzel', serif; /* Default Latin */
+            --dialogue-font: 'Crimson Text', serif; /* Default Latin */
+            --magical-glow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
+
+        /* Language Specific Font Overrides via Classes */
+        body.lang-zh, body.lang-zh-TW { --ui-font: 'Noto Sans SC', sans-serif; --dialogue-font: 'Noto Sans SC', sans-serif; }
+        body.lang-ja-JP { --ui-font: 'Noto Sans JP', sans-serif; --dialogue-font: 'Noto Sans JP', sans-serif; }
+        body.lang-ko { --ui-font: 'Noto Sans KR', sans-serif; --dialogue-font: 'Noto Sans KR', sans-serif; }
+        body.lang-ar { --ui-font: 'Noto Sans Arabic', sans-serif; --dialogue-font: 'Noto Sans Arabic', sans-serif; direction: rtl; }
+        body.lang-th { --ui-font: 'Noto Sans Thai', sans-serif; --dialogue-font: 'Noto Sans Thai', sans-serif; }
+
+        /* RTL Adjustments for Arabic */
+        body.lang-ar .dialogue-text { text-align: right; }
+        body.lang-ar .menu-container { direction: rtl; }
+        body.lang-ar .speaker-name { left: auto; right: 40px; flex-direction: row-reverse; }
 
         * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
         body, html { height: 100%; width: 100%; overflow: hidden; background-color: #050505; color: #fff; position: fixed; }
@@ -372,6 +390,10 @@
             if (!translations || !translations[code]) code = 'en';
             currentLang = code; localStorage.setItem('arcane_lang', code);
             const data = translations[code]; const en = translations['en'];
+            
+            // Set Body Class for Font Override
+            document.body.className = `lang-${code}`;
+
             document.querySelectorAll('.lang-btn').forEach(b => { b.classList.remove('active'); if (b.innerText === data.name) b.classList.add('active'); });
             if (document.getElementById('lang-modal').classList.contains('visible')) closeModals();
             const menuContainer = document.querySelector('.menu-container');
