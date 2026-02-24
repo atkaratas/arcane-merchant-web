@@ -261,16 +261,47 @@
         }
 
         .dialogue-box {
-            background: var(--dark-bg);
+            background: rgba(15, 15, 20, 0.95);
             border: 2px solid rgba(212, 175, 55, 0.5);
             padding: 30px 40px;
             min-height: 150px;
             position: relative;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.9);
-            border-radius: 2px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.9), inset 0 0 50px rgba(0,0,0,0.5);
+            border-radius: 8px; /* Softer corners */
+            overflow: hidden; /* Keep vines inside if needed, or let them hang out */
+            overflow: visible; /* Let vines hang out! */
         }
 
-        .findie-logo-fixed {
+        /* --- VINE DECORATIONS (Sarmaşık) --- */
+        .vine-corner {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            pointer-events: none;
+            z-index: 5;
+            opacity: 0.9;
+            filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
+        }
+
+        .vine-tl { top: -15px; left: -15px; transform: rotate(0deg); }
+        .vine-tr { top: -15px; right: -15px; transform: scaleX(-1); }
+        .vine-bl { bottom: -15px; left: -15px; transform: scaleY(-1); }
+        .vine-br { bottom: -15px; right: -15px; transform: scale(-1); }
+
+        .dialogue-text {
+            font-family: var(--dialogue-font);
+            font-size: 1.7rem; /* Slightly larger */
+            line-height: 1.6;
+            color: #fffaf0; /* Warmer white */
+            min-height: 1.5em;
+            /* COZY GLOW EFFECT */
+            text-shadow: 
+                0 0 10px rgba(255, 200, 100, 0.5), 
+                0 0 20px rgba(212, 175, 55, 0.3),
+                2px 2px 2px rgba(0,0,0,0.8);
+            position: relative;
+            z-index: 6;
+        }
             position: fixed;
             top: 10px;
             right: 10px;
@@ -729,6 +760,36 @@
 
         <div class="dialogue-wrapper">
             <div class="dialogue-box">
+                <!-- Decorative Vines (Inline SVG for quality & speed) -->
+                <svg class="vine-corner vine-tl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10 Q 40 10 50 40 T 90 90" stroke="#4a6741" stroke-width="3" fill="none"/>
+                    <path d="M10 10 Q 10 40 40 50 T 90 90" stroke="#3a5a31" stroke-width="2" fill="none"/>
+                    <!-- Leaves -->
+                    <path d="M20 20 Q 5 20 5 35 Q 20 50 35 35 Q 35 20 20 20 Z" fill="#6b8c42" stroke="#2e4221" stroke-width="1"/>
+                    <path d="M40 15 Q 55 5 65 20 Q 55 35 40 25 Q 35 20 40 15 Z" fill="#557538" stroke="#2e4221" stroke-width="1"/>
+                    <path d="M15 40 Q 5 55 20 65 Q 35 55 25 40 Q 20 35 15 40 Z" fill="#7da354" stroke="#2e4221" stroke-width="1"/>
+                    <path d="M50 50 Q 70 40 80 60 Q 60 80 50 60 Q 45 55 50 50 Z" fill="#6b8c42" stroke="#2e4221" stroke-width="1"/>
+                </svg>
+                <svg class="vine-corner vine-tr" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10 Q 40 10 50 40 T 90 90" stroke="#4a6741" stroke-width="3" fill="none"/>
+                    <path d="M10 10 Q 10 40 40 50 T 90 90" stroke="#3a5a31" stroke-width="2" fill="none"/>
+                    <path d="M20 20 Q 5 20 5 35 Q 20 50 35 35 Q 35 20 20 20 Z" fill="#6b8c42" stroke="#2e4221" stroke-width="1"/>
+                    <path d="M40 15 Q 55 5 65 20 Q 55 35 40 25 Q 35 20 40 15 Z" fill="#557538" stroke="#2e4221" stroke-width="1"/>
+                    <path d="M15 40 Q 5 55 20 65 Q 35 55 25 40 Q 20 35 15 40 Z" fill="#7da354" stroke="#2e4221" stroke-width="1"/>
+                </svg>
+                <svg class="vine-corner vine-bl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10 Q 40 10 50 40 T 90 90" stroke="#4a6741" stroke-width="3" fill="none"/>
+                    <path d="M10 10 Q 10 40 40 50 T 90 90" stroke="#3a5a31" stroke-width="2" fill="none"/>
+                    <path d="M20 20 Q 5 20 5 35 Q 20 50 35 35 Q 35 20 20 20 Z" fill="#6b8c42" stroke="#2e4221" stroke-width="1"/>
+                    <path d="M40 15 Q 55 5 65 20 Q 55 35 40 25 Q 35 20 40 15 Z" fill="#557538" stroke="#2e4221" stroke-width="1"/>
+                </svg>
+                <svg class="vine-corner vine-br" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10 Q 40 10 50 40 T 90 90" stroke="#4a6741" stroke-width="3" fill="none"/>
+                    <path d="M10 10 Q 10 40 40 50 T 90 90" stroke="#3a5a31" stroke-width="2" fill="none"/>
+                    <path d="M20 20 Q 5 20 5 35 Q 20 50 35 35 Q 35 20 20 20 Z" fill="#6b8c42" stroke="#2e4221" stroke-width="1"/>
+                    <path d="M15 40 Q 5 55 20 65 Q 35 55 25 40 Q 20 35 15 40 Z" fill="#7da354" stroke="#2e4221" stroke-width="1"/>
+                </svg>
+
                 <div class="speaker-name">
                     <img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal">
                     Master Merchant
@@ -904,6 +965,7 @@
 
         let currentDialogueIndex = 0;
         let typeTimeout;
+        let autoTalkInterval; // New Interval for auto-talk
         let isTyping = false;
         let hls;
 
@@ -913,11 +975,32 @@
         }
 
         // Global Bindings for robustness
-        window.handleWatch = function() { showVideoModal(); typeWriter(getQuotes()[0], dialogueElement, 30); }
-        window.handleWares = function() { showModal('wares-modal'); initCarousel(); typeWriter(getQuotes()[1], dialogueElement, 30); }
-        window.handleRumors = function() { showModal('rumors-modal'); typeWriter(getQuotes()[4], dialogueElement, 30); }
-        window.handleCommunity = function() { showModal('community-modal'); typeWriter(getQuotes()[8], dialogueElement, 30); }
-        window.handleAbout = function() { showModal('about-modal'); typeWriter(getQuotes()[2], dialogueElement, 30); }
+        window.handleWatch = function() { resetAutoTalk(); showVideoModal(); typeWriter(getQuotes()[0], dialogueElement, 30); }
+        window.handleWares = function() { resetAutoTalk(); showModal('wares-modal'); initCarousel(); typeWriter(getQuotes()[1], dialogueElement, 30); }
+        window.handleRumors = function() { resetAutoTalk(); showModal('rumors-modal'); typeWriter(getQuotes()[4], dialogueElement, 30); }
+        window.handleCommunity = function() { resetAutoTalk(); showModal('community-modal'); typeWriter(getQuotes()[8], dialogueElement, 30); }
+        window.handleAbout = function() { resetAutoTalk(); showModal('about-modal'); typeWriter(getQuotes()[2], dialogueElement, 30); }
+
+        // --- AUTO TALK LOGIC ---
+        function startAutoTalk() {
+            if (autoTalkInterval) clearInterval(autoTalkInterval);
+            autoTalkInterval = setInterval(() => {
+                if (isTyping) return; // Don't interrupt typing
+                const quotes = getQuotes();
+                // Pick random quote, avoid same twice if possible
+                let nextIndex = Math.floor(Math.random() * quotes.length);
+                if (nextIndex === currentDialogueIndex && quotes.length > 1) {
+                    nextIndex = (nextIndex + 1) % quotes.length;
+                }
+                currentDialogueIndex = nextIndex;
+                typeWriter(quotes[currentDialogueIndex], dialogueElement, 40);
+            }, 12000); // Talk every 12 seconds
+        }
+
+        function resetAutoTalk() {
+            // Restart the timer when user interacts manually
+            startAutoTalk();
+        }
 
         function closeModals() {
             document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
@@ -1217,6 +1300,9 @@
 
             const welcome = (data.merchant && data.merchant.welcome) ? data.merchant.welcome : (en.merchant ? en.merchant.welcome : "Welcome.");
             if (!isTyping) typeWriter(welcome, dialogueElement, 40);
+            
+            // Restart auto-talk in new language
+            resetAutoTalk();
 
             if (typeof updateAboutText === 'function') updateAboutText(code);
             
@@ -1277,6 +1363,9 @@
             initLanguage(); 
             const ui = document.getElementById('game-ui');
             if (ui) ui.classList.add('ready');
+            
+            // Start the merchant chatter
+            startAutoTalk();
             
             setInterval(() => {
                 const ember = document.createElement('div');
