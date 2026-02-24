@@ -1006,5 +1006,508 @@ const translations = {
                 "Ef þú hlustar vel, geturðu heyrt bæinn gera sig kláran fyrir svefninn."
             ]
         }
+    },
+    "it": {
+        "name": "Italian",
+        "intro": "Arcane Merchant è un gioco di simulazione di gestione di negozi ambientato nel cuore di un regno fantasy medievale. Esplora la città, cogli le opportunità commerciali e inizia il tuo viaggio verso la ricchezza. Goditi l'atmosfera accogliente mentre commerci, cresci e costruisci il negozio dei tuoi sogni.",
+        "features": [
+            "🛍️ Gestisci il Tuo Negozio...",
+            "💰 Padroneggia l'Arte del Commercio...",
+            "🏰 Diventa il Mercante più Ricco...",
+            "🌿 Atmosfera Accogliente..."
+        ],
+        "ending": "Apri il tuo negozio nel cuore di un regno Fantasy Medievale!",
+        "ui": {
+            "menu_watch": "Guarda le Cronache",
+            "menu_wares": "Sfoglia Merci",
+            "menu_rumors": "Chiedi Voci",
+            "menu_common": "Sala Comune",
+            "menu_about": "Informazioni",
+            "menu_steam": "Lista dei Desideri Steam",
+            "footer_rights": "© 2026 Findie Studios. Tutti i diritti riservati.",
+            "modal_wares_title": "Manifesto delle Meraviglie",
+            "modal_rumors_title": "Sussurri dal Vuoto",
+            "modal_common_title": "Sala Comune",
+            "modal_about_title": "Guida del Mercante",
+            "specs_title": "Pergamena di Evocazione",
+            "specs_min": "Invocazione Minima",
+            "specs_rec": "Rituale Raccomandato",
+            "merchant_name": "Mastro Mercante"
+        },
+        "merchant": {
+            "welcome": "Ah, benvenuto! Entra, viaggiatore stanco. Il focolare è caldo.",
+            "quotes": [
+                "Non c'è fretta qui, amico.",
+                "Ogni artefatto ha una storia.",
+                "L'oro è utile, ma la gioia vera è un'altra."
+            ]
+        }
+    },
+    "nl": {
+        "name": "Dutch",
+        "intro": "Arcane Merchant is een winkelmanagementsimulatiespel in het hart van een middeleeuws fantasierijk.",
+        "features": [
+            "🛍️ Beheer je Winkel...",
+            "💰 Beheers de Kunst van Handel...",
+            "🏰 Word de Rijkste Handelaar...",
+            "🌿 Gezellige Sfeer..."
+        ],
+        "ending": "Open je eigen winkel in een Middeleeuws Fantasierijk!",
+        "ui": {
+            "menu_watch": "Bekijk Kronieken",
+            "menu_wares": "Bekijk Waren",
+            "menu_rumors": "Vraag Geruchten",
+            "menu_common": "Gemeenschappelijke Ruimte",
+            "menu_about": "Over het Spel",
+            "menu_steam": "Steam Verlanglijst",
+            "footer_rights": "© 2026 Findie Studios. Alle rechten voorbehouden.",
+            "modal_wares_title": "Manifest van Wonderen",
+            "modal_rumors_title": "Fluisteringen uit de Leegte",
+            "modal_common_title": "Gemeenschappelijke Ruimte",
+            "modal_about_title": "Handelaarsgids",
+            "specs_title": "Rol van Oproeping",
+            "specs_min": "Minimale Invocatie",
+            "specs_rec": "Aanbevolen Ritueel",
+            "merchant_name": "Meester Handelaar"
+        },
+        "merchant": {
+            "welcome": "Ah, welkom! Kom binnen, vermoeide reiziger.",
+            "quotes": [
+                "Geen haast hier, vriend.",
+                "Elk artefact heeft een verhaal.",
+                "Luister naar het vuur..."
+            ]
+        }
+    },
+    "ar": {
+        "name": "Arabic",
+        "intro": "التاجر الغامض هي لعبة محاكاة لإدارة المتاجر تقع في قلب مملكة خيالية من العصور الوسطى. استكشف المدينة، واغتنم الفرص التجارية وابدأ رحلتك نحو الثروة.",
+        "features": [
+            "🛍️ أدر متجرك...",
+            "💰 أتقن فن التجارة...",
+            "🏰 كن أغنى تاجر...",
+            "🌿 أجواء مريحة..."
+        ],
+        "ending": "افتح متجرك الخاص في قلب مملكة الخيال في العصور الوسطى!",
+        "ui": {
+            "menu_watch": "شاهد السجلات",
+            "menu_wares": "تصفح البضائع",
+            "menu_rumors": "اسأل عن الشائعات",
+            "menu_common": "الغرفة المشتركة",
+            "menu_about": "عن اللعبة",
+            "menu_steam": "قائمة أمنيات ستيم",
+            "footer_rights": "© 2026 Findie Studios. جميع الحقوق محفوظة.",
+            "modal_wares_title": "بيان العجائب",
+            "modal_rumors_title": "همسات من الفراغ",
+            "modal_common_title": "الغرفة المشتركة",
+            "modal_about_title": "دليل التاجر",
+            "specs_title": "لفيفة الاستدعاء",
+            "specs_min": "الحد الأدنى",
+            "specs_rec": "الطقوس الموصى بها",
+            "merchant_name": "كبير التجار"
+        },
+        "merchant": {
+            "welcome": "آه، أهلاً بك! تفضل بالدخول أيها المسافر المتعب.",
+            "quotes": [
+                "لا داعي للعجلة هنا يا صديقي.",
+                "كل قطعة أثرية لها قصة.",
+                "استمع لطرقعة النار..."
+            ]
+        }
+    },
+    "vi": {
+        "name": "Vietnamese",
+        "intro": "Arcane Merchant là một trò chơi mô phỏng quản lý cửa hàng lấy bối cảnh trung tâm của một vương quốc giả tưởng thời trung cổ.",
+        "features": [
+            "🛍️ Quản Lý Cửa Hàng...",
+            "💰 Làm Chủ Nghệ Thuật Buôn Bán...",
+            "🏰 Trở Thành Thương Nhân Giàu Nhất...",
+            "🌿 Bầu Không Khí Ấm Cúng..."
+        ],
+        "ending": "Mở cửa hàng của riêng bạn ngay giữa lòng vương quốc Giả tưởng Trung cổ!",
+        "ui": {
+            "menu_watch": "Xem Biên Niên Sử",
+            "menu_wares": "Xem Hàng Hóa",
+            "menu_rumors": "Hỏi Tin Đồn",
+            "menu_common": "Phòng Sinh Hoạt Chung",
+            "menu_about": "Về Trò Chơi",
+            "menu_steam": "Danh Sách Mong Ước Steam",
+            "footer_rights": "© 2026 Findie Studios. Đã đăng ký bản quyền.",
+            "modal_wares_title": "Tuyên Ngôn Kỳ Quan",
+            "modal_rumors_title": "Lời Thì Thầm từ Hư Không",
+            "modal_common_title": "Phòng Sinh Hoạt Chung",
+            "modal_about_title": "Hướng Dẫn Thương Nhân",
+            "specs_title": "Cuộn Giấy Triệu Hồi",
+            "specs_min": "Triệu Hồi Tối Thiểu",
+            "specs_rec": "Nghi Thức Khuyên Dùng",
+            "merchant_name": "Thương Nhân Bậc Thầy"
+        },
+        "merchant": {
+            "welcome": "À, chào mừng! Vào đi, lữ khách mệt mỏi.",
+            "quotes": [
+                "Ở đây không cần vội đâu, bạn hiền.",
+                "Mỗi cổ vật đều có câu chuyện riêng.",
+                "Hãy lắng nghe tiếng lửa tí tách..."
+            ]
+        }
+    },
+    "th": {
+        "name": "Thai",
+        "intro": "Arcane Merchant เป็นเกมจำลองการจัดการร้านค้าที่ตั้งอยู่ในใจกลางอาณาจักรแฟนตาซียุคกลาง สำรวจเมือง คว้าโอกาสทางการค้า และเริ่มต้นการเดินทางสู่ความมั่งคั่ง",
+        "features": [
+            "🛍️ จัดการร้านค้าของคุณ...",
+            "💰 เชี่ยวชาญศิลปะการค้า...",
+            "🏰 เป็นพ่อค้าที่ร่ำรวยที่สุด...",
+            "🌿 บรรยากาศสบายๆ..."
+        ],
+        "ending": "เปิดร้านค้าของคุณเองในใจกลางอาณาจักรแฟนตาซียุคกลาง!",
+        "ui": {
+            "menu_watch": "ดูพงศาวดาร",
+            "menu_wares": "เลือกดูสินค้า",
+            "menu_rumors": "ถามข่าวลือ",
+            "menu_common": "ห้องส่วนกลาง",
+            "menu_about": "เกี่ยวกับเกม",
+            "menu_steam": "สิ่งที่อยากได้ใน Steam",
+            "footer_rights": "© 2026 Findie Studios. สงวนลิขสิทธิ์.",
+            "modal_wares_title": "รายการสิ่งมหัศจรรย์",
+            "modal_rumors_title": "เสียงกระซิบจากความว่างเปล่า",
+            "modal_common_title": "ห้องส่วนกลาง",
+            "modal_about_title": "คู่มือพ่อค้า",
+            "specs_title": "ม้วนคัมภีร์อัญเชิญ",
+            "specs_min": "การอัญเชิญขั้นต่ำ",
+            "specs_rec": "พิธีกรรมที่แนะนำ",
+            "merchant_name": "ยอดพ่อค้า"
+        },
+        "merchant": {
+            "welcome": "อ่า ยินดีต้อนรับ! เข้ามาสิ นักเดินทางผู้เหนื่อยล้า",
+            "quotes": [
+                "ที่นี่ไม่ต้องรีบร้อนนะเพื่อน",
+                "วัตถุโบราณทุกชิ้นมีเรื่องเล่า",
+                "ฟังเสียงไฟปะทุสิ..."
+            ]
+        }
+    },
+    "id": {
+        "name": "Indonesian",
+        "intro": "Arcane Merchant adalah game simulasi manajemen toko yang berlatar di jantung kerajaan fantasi abad pertengahan.",
+        "features": [
+            "🛍️ Kelola Tokomu...",
+            "💰 Kuasai Seni Berdagang...",
+            "🏰 Jadilah Pedagang Terkaya...",
+            "🌿 Suasana Nyaman..."
+        ],
+        "ending": "Buka tokomu sendiri di jantung kerajaan Fantasi Abad Pertengahan!",
+        "ui": {
+            "menu_watch": "Tonton Kronik",
+            "menu_wares": "Jelajahi Barang",
+            "menu_rumors": "Tanya Rumor",
+            "menu_common": "Ruang Bersama",
+            "menu_about": "Tentang Game",
+            "menu_steam": "Wishlist Steam",
+            "footer_rights": "© 2026 Findie Studios. Hak cipta dilindungi undang-undang.",
+            "modal_wares_title": "Manifestasi Keajaiban",
+            "modal_rumors_title": "Bisikan dari Kehampaan",
+            "modal_common_title": "Ruang Bersama",
+            "modal_about_title": "Panduan Pedagang",
+            "specs_title": "Gulungan Pemanggilan",
+            "specs_min": "Pemanggilan Minimum",
+            "specs_rec": "Ritual yang Disarankan",
+            "merchant_name": "Master Pedagang"
+        },
+        "merchant": {
+            "welcome": "Ah, selamat datang! Masuklah, pengelana yang lelah.",
+            "quotes": [
+                "Tidak perlu terburu-buru di sini, kawan.",
+                "Setiap artefak punya cerita.",
+                "Dengarkan api yang berderak..."
+            ]
+        }
+    },
+    "uk": {
+        "name": "Ukrainian",
+        "intro": "Arcane Merchant — це симулятор управління магазином у серці середньовічного фентезійного королівства.",
+        "features": [
+            "🛍️ Керуйте Магазином",
+            "💰 Опануйте Торгівлю",
+            "🏰 Станьте Найбагатшим",
+            "🌿 Затишна Атмосфера"
+        ],
+        "ending": "Відкрийте свій магазин!",
+        "ui": {
+            "menu_watch": "Дивитися Хроніки",
+            "menu_wares": "Товари",
+            "menu_rumors": "Чутки",
+            "menu_common": "Загальна Кімната",
+            "menu_about": "Про Гру",
+            "menu_steam": "Список Бажаного",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Маніфест Чудес",
+            "modal_rumors_title": "Шепіт з Пустоти",
+            "modal_common_title": "Загальна Кімната",
+            "modal_about_title": "Гід Торговця",
+            "specs_title": "Сувій Виклику",
+            "specs_min": "Мін. Виклик",
+            "specs_rec": "Рек. Ритуал",
+            "merchant_name": "Майстер-Торговець"
+        },
+        "merchant": {
+            "welcome": "Ах, ласкаво просимо!",
+            "quotes": [
+                "Немає куди поспішати.",
+                "Кожен артефакт має історію."
+            ]
+        }
+    },
+    "cs": {
+        "name": "Czech",
+        "intro": "Arcane Merchant je simulace obchodu v srdci středověkého fantasy království.",
+        "features": [
+            "🛍️ Spravuj Obchod",
+            "💰 Ovládni Obchod",
+            "🏰 Staň se Boháčem",
+            "🌿 Útulná Atmosféra"
+        ],
+        "ending": "Otevři si svůj vlastní obchod!",
+        "ui": {
+            "menu_watch": "Sledovat Kroniky",
+            "menu_wares": "Procházet Zboží",
+            "menu_rumors": "Ptát se na Drby",
+            "menu_common": "Společenská Místnost",
+            "menu_about": "O Hře",
+            "menu_steam": "Seznam Přání",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Manifest Zázraků",
+            "modal_rumors_title": "Šepot z Prázdnoty",
+            "modal_common_title": "Společenská Místnost",
+            "modal_about_title": "Průvodce Obchodníka",
+            "specs_title": "Svitek Vyvolávání",
+            "specs_min": "Minimální Vyvolání",
+            "specs_rec": "Doporučený Rituál",
+            "merchant_name": "Mistr Obchodník"
+        },
+        "merchant": {
+            "welcome": "Ah, vítejte!",
+            "quotes": [
+                "Není kam spěchat.",
+                "Každý artefakt má příběh."
+            ]
+        }
+    },
+    "hu": {
+        "name": "Hungarian",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Mesterkereskedő"
+        },
+        "merchant": {
+            "welcome": "Ah, üdvözöllek!"
+        },
+        "intro": "Arcane Merchant...",
+        "features": [
+            "Feature 1...",
+            "Feature 2...",
+            "Feature 3...",
+            "Feature 4..."
+        ],
+        "ending": "Open your own shop!"
+    },
+    "ro": {
+        "name": "Romanian",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Maestru Negustor"
+        },
+        "merchant": {
+            "welcome": "Ah, bun venit!"
+        },
+        "intro": "Arcane Merchant...",
+        "features": [
+            "Feature 1...",
+            "Feature 2...",
+            "Feature 3...",
+            "Feature 4..."
+        ],
+        "ending": "Open your own shop!"
+    },
+    "el": {
+        "name": "Greek",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Αρχιέμπορος"
+        },
+        "merchant": {
+            "welcome": "Α, καλώς ήρθες!"
+        },
+        "intro": "Arcane Merchant...",
+        "features": [
+            "Feature 1...",
+            "Feature 2...",
+            "Feature 3...",
+            "Feature 4..."
+        ],
+        "ending": "Open your own shop!"
+    },
+    "sv": {
+        "name": "Swedish",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Mästerhandlare"
+        },
+        "merchant": {
+            "welcome": "Ah, välkommen!"
+        },
+        "intro": "Arcane Merchant...",
+        "features": [
+            "Feature 1...",
+            "Feature 2...",
+            "Feature 3...",
+            "Feature 4..."
+        ],
+        "ending": "Open your own shop!"
+    },
+    "da": {
+        "name": "Danish",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Mesterkøbmand"
+        },
+        "merchant": {
+            "welcome": "Ah, velkommen!"
+        },
+        "intro": "Arcane Merchant...",
+        "features": [
+            "Feature 1...",
+            "Feature 2...",
+            "Feature 3...",
+            "Feature 4..."
+        ],
+        "ending": "Open your own shop!"
+    },
+    "fi": {
+        "name": "Finnish",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Mestarikauppias"
+        },
+        "merchant": {
+            "welcome": "Ah, tervetuloa!"
+        },
+        "intro": "Arcane Merchant...",
+        "features": [
+            "Feature 1...",
+            "Feature 2...",
+            "Feature 3...",
+            "Feature 4..."
+        ],
+        "ending": "Open your own shop!"
+    },
+    "no": {
+        "name": "Norwegian",
+        "ui": {
+            "menu_watch": "Watch Chronicles",
+            "menu_wares": "Browse Wares",
+            "menu_rumors": "Ask Rumors",
+            "menu_common": "The Common Room",
+            "menu_about": "About the Game",
+            "menu_steam": "Wishlist on Steam",
+            "footer_rights": "© 2026 Findie Studios.",
+            "modal_wares_title": "Manifest of Wonders",
+            "modal_rumors_title": "Whispers from the Void",
+            "modal_common_title": "The Common Room",
+            "modal_about_title": "The Merchant's Guide",
+            "specs_title": "Scroll of Summoning",
+            "specs_min": "Minimum Invocation",
+            "specs_rec": "Recommended Ritual",
+            "merchant_name": "Mesterkjøpmann"
+        },
+        "merchant": {
+            "welcome": "Ah, velkommen!"
+        },
+        "intro": "Arcane Merchant...",
+        "features": [
+            "Feature 1...",
+            "Feature 2...",
+            "Feature 3...",
+            "Feature 4..."
+        ],
+        "ending": "Open your own shop!"
     }
 };
