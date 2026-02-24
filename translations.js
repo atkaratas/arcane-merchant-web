@@ -503,1140 +503,6 @@ const translations = {
             ]
         }
     },
-    "it-IT": {
-        "name": "Italian (Italy)",
-        "intro": "Arcane Merchant è un gioco di simulazione gestionale ambientato nel cuore di un regno fantasy medievale. Esplora la città, cogli le opportunità commerciali e inizia il tuo viaggio verso la ricchezza. Goditi un'atmosfera accogliente mentre commerci, cresci e costruisci il negozio dei tuoi sogni. Ogni decisione che prenderai plasmerà la tua fortuna e il futuro della tua attività.",
-        "features": [
-            "🛍 ️ Gestisci il Tuo Negozio\nFonda e organizza il tuo negozio magico, gestisci il tuo inventario e riempi gli scaffali con pozioni, armi magiche, cristalli misteriosi e una varietà di artefatti fantastici. Strategizza le tue esposizioni per attirare i clienti e garantire il massimo profitto.",
-            "💰 Padroneggia l'Arte del Commercio\nRegola i tuoi prezzi dinamicamente in base alla domanda e all'offerta nel mercato e gestisci le tue vendite. Con ogni affare di successo, la tua ricchezza crescerà rapidamente e la tua reputazione si diffonderà in tutto il regno. Guadagna la fiducia dei tuoi clienti e adatta le tue strategie commerciali alle loro mutevoli esigenze.",
-            "🏰 Diventa il Mercante Più Ricco del Regno\nInizia da un'umile bancarella; col tempo, espandi e migliora il tuo negozio con nuove aree espositive. Man mano che la tua fama e la tua fortuna aumentano, lavora per diventare il mercante più rispettato e ricco della città. Costruisci il tuo impero commerciale e prendi il controllo dell'economia del Medioevo Fantasy!",
-            "🌿 Atmosfera Accogliente e Rilassante\nRilassati e fai crescere il tuo negozio in un caldo mondo fantasy medievale. Pianifica i tuoi scambi e trova il tuo ritmo. Goditi le vibrazioni accoglienti mentre decidi cosa comprare, cosa vendere e come rendere il tuo negozio il migliore della città. Non c'è fretta, ma le tue scelte contano comunque. Concentrati sulla costruzione di un'attività di successo in uno spazio in cui puoi davvero rilassarti."
-        ],
-        "ending": "Apri il tuo negozio nel cuore di un regno fantasy medievale! Riempi i tuoi scaffali con tutto, da pozioni e spade a cristalli misteriosi e artefatti leggendari. Imposta i tuoi prezzi, guadagna la fiducia dei tuoi clienti e diventa il mercante più ricco della città!",
-        "ui": {
-            "menu_watch": "Guarda Cronache",
-            "menu_wares": "Sfoglia Merci",
-            "menu_rumors": "Chiedi Voci",
-            "menu_common": "Sala Comune",
-            "menu_about": "Sul Gioco",
-            "menu_steam": "Desideri Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "id-ID": {
-        "name": "Indonesian (Indonesia)",
-        "intro": "Arcane Merchant adalah game simulasi manajemen toko yang berlatar di jantung kerajaan fantasi abad pertengahan. Jelajahi kota, raih peluang dagang, dan mulailah perjalanan Anda menuju kekayaan. Nikmati suasana nyaman saat Anda berdagang, tumbuh, dan membangun toko impian Anda. Setiap keputusan yang Anda buat akan membentuk nasib Anda dan masa depan bisnis Anda.",
-        "features": [
-            "🛍 ️ Kelola Toko Anda\nDirikan dan atur toko ajaib Anda sendiri, kelola inventaris, dan isi rak Anda dengan ramuan, senjata ajaib, kristal misterius, dan berbagai artefak fantastis. Atur strategi tampilan Anda untuk menarik pelanggan dan memastikan keuntungan maksimal.",
-            "💰 Kuasai Seni Berdagang\nSesuaikan harga Anda secara dinamis berdasarkan penawaran dan permintaan di pasar dan kelola penjualan Anda. Dengan setiap kesepakatan yang sukses, kekayaan Anda akan tumbuh pesat dan reputasi Anda akan menyebar ke seluruh kerajaan. Dapatkan kepercayaan pelanggan Anda dan sesuaikan strategi perdagangan Anda dengan kebutuhan mereka yang berubah.",
-            "🏰 Menjadi Pedagang Terkaya di Kerajaan\nMulailah dari kios sederhana; seiring waktu, perluas dan tingkatkan toko Anda dengan area tampilan baru. Seiring ketenaran dan kekayaan Anda meningkat, berusahalah untuk menjadi pedagang yang paling dihormati dan terkaya di kota. Bangun kerajaan dagang Anda dan ambil kendali ekonomi Abad Pertengahan Fantasi!",
-            "🌿 Suasana Nyaman dan Santai\nBersantai dan kembangkan toko Anda di dunia fantasi abad pertengahan yang hangat. Rencanakan perdagangan Anda dan temukan ritme Anda sendiri. Nikmati suasana nyaman saat Anda memutuskan apa yang akan dibeli, apa yang akan dijual, dan bagaimana menjadikan toko Anda yang terbaik di kota. Tidak perlu terburu-buru, tetapi pilihan Anda tetap penting. Fokuslah untuk membangun bisnis yang sukses di ruang di mana Anda dapat benar-benar bersantai."
-        ],
-        "ending": "Buka toko Anda sendiri di jantung kerajaan Fantasi Abad Pertengahan! Isi rak Anda dengan segala sesuatu mulai dari ramuan dan pedang hingga kristal misterius dan artefak legendaris. Tetapkan harga Anda, dapatkan kepercayaan pelanggan Anda, dan jadilah pedagang terkaya di kota!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "vi-VN": {
-        "name": "Vietnamese (Vietnam)",
-        "intro": "Arcane Merchant là một trò chơi mô phỏng quản lý cửa hàng lấy bối cảnh tại trung tâm của một vương quốc giả tưởng thời trung cổ. Khám phá thị trấn, nắm bắt cơ hội giao thương và bắt đầu hành trình làm giàu của bạn. Tận hưởng bầu không khí ấm cúng khi bạn buôn bán, phát triển và xây dựng cửa hàng mơ ước của mình. Mọi quyết định bạn đưa ra sẽ định hình vận mệnh và tương lai doanh nghiệp của bạn.",
-        "features": [
-            "🛍 ️ Quản Lý Cửa Hàng Của Bạn\nThiết lập và tổ chức cửa hàng ma thuật của riêng bạn, quản lý kho hàng và lấp đầy các kệ hàng bằng thuốc độc, vũ khí ma thuật, tinh thể bí ẩn và nhiều loại hiện vật tuyệt vời. Lên chiến lược trưng bày để thu hút khách hàng và đảm bảo lợi nhuận tối đa.",
-            "💰 Nắm Vững Nghệ Thuật Buôn Bán\nĐiều chỉnh giá cả một cách linh hoạt dựa trên cung và cầu trên thị trường và quản lý doanh số bán hàng của bạn. Với mỗi giao dịch thành công, sự giàu có của bạn sẽ tăng lên nhanh chóng và danh tiếng của bạn sẽ lan rộng khắp vương quốc. Giành được lòng tin của khách hàng và điều chỉnh chiến lược buôn bán của bạn theo nhu cầu thay đổi của họ.",
-            "🏰 Trở Thành Thương Nhân Giàu Có Nhất Vương Quốc\nBắt đầu từ một gian hàng khiêm tốn; theo thời gian, hãy mở rộng và nâng cấp cửa hàng của bạn với các khu vực trưng bày mới. Khi danh tiếng và tài sản của bạn tăng lên, hãy nỗ lực để trở thành thương nhân được kính trọng và giàu có nhất trong thị trấn. Xây dựng đế chế thương mại của bạn và nắm quyền kiểm soát nền kinh tế của Thời Trung Cổ Giả Tưởng!",
-            "🌿 Bầu Không Khí Ấm Cúng và Thư Giãn\nThư giãn và phát triển cửa hàng của bạn trong một thế giới giả tưởng thời trung cổ ấm áp. Lên kế hoạch cho các giao dịch và tìm ra nhịp độ của riêng bạn. Tận hưởng những rung cảm ấm cúng trong khi bạn quyết định mua gì, bán gì và làm thế nào để biến cửa hàng của mình trở thành cửa hàng tốt nhất trong thị trấn. Không cần phải vội vã, nhưng những lựa chọn của bạn vẫn rất quan trọng. Tập trung vào việc xây dựng một doanh nghiệp thành công trong một không gian mà bạn có thể thực sự thư giãn."
-        ],
-        "ending": "Mở cửa hàng của riêng bạn tại trung tâm của một vương quốc Giả tưởng Thời trung cổ! Lấp đầy các kệ hàng của bạn với mọi thứ từ thuốc độc và kiếm cho đến những tinh thể bí ẩn và hiện vật huyền thoại. Đặt giá, giành được lòng tin của khách hàng và trở thành thương nhân giàu có nhất trong thị trấn!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "th-TH": {
-        "name": "Thai (Thailand)",
-        "intro": "Arcane Merchant เป็นเกมจำลองการบริหารจัดการร้านค้าที่ตั้งอยู่ในใจกลางของอาณาจักรแฟนตาซียุคกลาง สำรวจเมือง คว้าโอกาสทางการค้า และเริ่มต้นการเดินทางสู่ความมั่งคั่ง เพลิดเพลินไปกับบรรยากาศที่แสนอบอุ่นในขณะที่คุณทำการค้า เติบโต และสร้างร้านค้าในฝันของคุณ ทุกการตัดสินใจของคุณจะกำหนดโชคชะตาและอนาคตของธุรกิจคุณ",
-        "features": [
-            "🛍 ️ จัดการร้านค้าของคุณ\nก่อตั้งและจัดระเบียบร้านเวทมนตร์ของคุณเอง จัดการสินค้าคงคลัง และเติมเต็มชั้นวางของคุณด้วยน้ำยา อาวุธเวทมนตร์ คริสตัลลึกลับ และสิ่งประดิษฐ์มหัศจรรย์หลากหลายชนิด วางกลยุทธ์การจัดแสดงสินค้าเพื่อดึงดูดลูกค้าและรับประกันผลกำไรสูงสุด",
-            "💰 เชี่ยวชาญศิลปะการค้า\nปรับราคาของคุณแบบไดนามิกตามอุปสงค์และอุปทานในตลาดและจัดการการขายของคุณ ด้วยทุกข้อตกลงที่ประสบความสำเร็จ ความมั่งคั่งของคุณจะเติบโตอย่างรวดเร็วและชื่อเสียงของคุณจะแพร่กระจายไปทั่วอาณาจักร ได้รับความไว้วางใจจากลูกค้าและปรับกลยุทธ์การค้าของคุณให้เข้ากับความต้องการที่เปลี่ยนแปลงไปของพวกเขา",
-            "🏰 ก้าวเป็นพ่อค้าที่ร่ำรวยที่สุดในอาณาจักร\nเริ่มต้นจากแผงขายของเล็กๆ เมื่อเวลาผ่านไป ขยายและอัปเกรดร้านค้าของคุณด้วยพื้นที่จัดแสดงใหม่ๆ เมื่อชื่อเสียงและความมั่งคั่งของคุณเพิ่มขึ้น จงมุ่งมั่นที่จะเป็นพ่อค้าที่ได้รับการเคารพและร่ำรวยที่สุดในเมือง สร้างจักรวรรดิการค้าของคุณและเข้าควบคุมเศรษฐกิจของยุคกลางแฟนตาซี!",
-            "🌿 บรรยากาศที่อบอุ่นและผ่อนคลาย\nผ่อนคลายและพัฒนาร้านค้าของคุณในโลกแฟนตาซียุคกลางที่อบอุ่น วางแผนการค้าของคุณและค้นหาจังหวะของตัวเอง เพลิดเพลินไปกับบรรยากาศที่แสนสบายในขณะที่คุณตัดสินใจว่าจะซื้ออะไร ขายอะไร และจะทำให้ร้านของคุณเป็นร้านที่ดีที่สุดในเมืองได้อย่างไร ไม่มีความรีบร้อน แต่ทางเลือกของคุณยังคงมีความสำคัญ มุ่งเน้นไปที่การสร้างธุรกิจที่ประสบความสำเร็จในพื้นที่ที่คุณสามารถผ่อนคลายได้อย่างแท้จริง"
-        ],
-        "ending": "เปิดร้านค้าของคุณเองในใจกลางอาณาจักรแฟนตาซียุคกลาง! เติมเต็มชั้นวางของคุณด้วยทุกสิ่งตั้งแต่น้ำยาและดาบไปจนถึงคริสตัลลึกลับและสิ่งประดิษฐ์ในตำนาน กำหนดราคาของคุณ ได้รับความไว้วางใจจากลูกค้า และกลายเป็นพ่อค้าที่ร่ำรวยที่สุดในเมือง!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "ar-SA": {
-        "name": "Arabic (Saudi Arabia)",
-        "intro": "Arcane Merchant هي لعبة محاكاة لإدارة المتاجر تدور أحداثها في قلب مملكة خيالية من العصور الوسطى. استكشف المدينة، واغتنم الفرص التجارية وابدأ رحلتك نحو الثراء. استمتع بالأجواء المريحة بينما تتاجر وتنمو وتبني متجر أحلامك. كل قرار تتخذه سيشكل ثروتك ومستقبل عملك.",
-        "features": [
-            "🛍 ️ أدر متجرك\nأنشئ ونظم متجرك السحري الخاص، وأدر مخزونك واملأ أرففك بالجرعات والأسلحة السحرية والبلورات الغامضة ومجموعة متنوعة من القطع الأثرية الرائعة. ضع استراتيجية لعروضك لجذب العملاء وضمان أقصى ربح.",
-            "💰 أتقن فن التجارة\nعدل أسعارك ديناميكيًا بناءً على العرض والطلب في السوق وأدر مبيعاتك. مع كل صفقة ناجحة، ستنمو ثروتك بسرعة وستنتشر سمعتك في جميع أنحاء المملكة. اكسب ثقة عملائك وقم بتكييف استراتيجيات التجارة الخاصة بك مع احتياجاتهم المتغيرة.",
-            "🏰 كن أغنى تاجر في المملكة\nابدأ من كشك متواضع؛ بمرور الوقت، قم بتوسيع وتحديث متجرك بمناطق عرض جديدة. مع ارتفاع شهرتك وثروتك، شق طريقك لتصبح التاجر الأكثر احترامًا وثراءً في المدينة. ابن إمبراطوريتك التجارية وسيطر على اقتصاد العصور الوسطى الخيالية!",
-            "🌿 جو مريح ومريح\nاسترخ وقم بتنمية متجرك في عالم خيالي دافئ من العصور الوسطى. خطط لتداولاتك واعثر على وتيرتك الخاصة. استمتع بالأجواء المريحة بينما تقرر ما ستشتريه وما ستبيعه وكيف تجعل متجرك الأفضل في المدينة. ليس هناك عجلة من أمرك، لكن خياراتك لا تزال مهمة. ركز على بناء عمل ناجح في مساحة يمكنك فيها الاسترخاء حقًا."
-        ],
-        "ending": "افتح متجرك الخاص في قلب مملكة خيالية من العصور الوسطى! املأ أرففك بكل شيء من الجرعات والسيوف إلى البلورات الغامضة والتحف الأسطورية. حدد أسعارك، واكسب ثقة عملائك وكن أغنى تاجر في المدينة!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "hi-IN": {
-        "name": "Hindi (India)",
-        "intro": "Arcane Merchant मध्ययुगीन फंतासी साम्राज्य के केंद्र में स्थित एक दुकान प्रबंधन सिमुलेशन गेम है। शहर का पता लगाएं, व्यापार के अवसरों को भुनाएं और धन की ओर अपनी यात्रा शुरू करें। व्यापार करते समय, बढ़ते हुए और अपने सपनों की दुकान बनाते समय आरामदायक वाइब्स का आनंद लें। आपके द्वारा लिया गया हर निर्णय आपके भाग्य और आपके व्यवसाय के भविष्य को आकार देगा।",
-        "features": [
-            "🛍 ️ अपनी दुकान का प्रबंधन करें\nअपनी खुद की जादुई दुकान स्थापित करें और व्यवस्थित करें, अपनी इन्वेंट्री का प्रबंधन करें और अपनी अलमारियों को औषधि, जादुई हथियार, रहस्यमय क्रिस्टल और विभिन्न प्रकार की शानदार कलाकृतियों से भरें। ग्राहकों को आकर्षित करने और अधिकतम लाभ सुनिश्चित करने के लिए अपने प्रदर्शन की रणनीति बनाएं।",
-            "💰 व्यापार की कला में महारत हासिल करें\nबाजार में आपूर्ति और मांग के आधार पर अपनी कीमतों को गतिशील रूप से समायोजित करें और अपनी बिक्री का प्रबंधन करें। हर सफल सौदे के साथ, आपकी संपत्ति तेजी से बढ़ेगी और आपकी प्रतिष्ठा पूरे राज्य में फैल जाएगी। अपने ग्राहकों का विश्वास जीतें और अपनी व्यापार रणनीतियों को उनकी बदलती जरूरतों के अनुसार अपनाएं।",
-            "🏰 राज्य के सबसे अमीर व्यापारी बनें\nएक विनम्र स्टाल से शुरू करें; समय के साथ, नए प्रदर्शन क्षेत्रों के साथ अपनी दुकान का विस्तार और उन्नयन करें। जैसे-जैसे आपकी प्रसिद्धि और भाग्य बढ़ता है, शहर में सबसे सम्मानित और सबसे अमीर व्यापारी बनने की दिशा में काम करें। अपना व्यापारिक साम्राज्य बनाएं और काल्पनिक मध्य युग की अर्थव्यवस्था पर नियंत्रण रखें!",
-            "🌿 आरामदायक और आरामदेह माहौल\nएक गर्म मध्ययुगीन फंतासी दुनिया में आराम करें और अपनी दुकान बढ़ाएं। अपने व्यापार की योजना बनाएं और अपनी गति पाएं। आरामदायक वाइब्स का आनंद लें जब आप तय करते हैं कि क्या खरीदना है, क्या बेचना है और अपनी दुकान को शहर में सबसे अच्छा कैसे बनाना है। कोई जल्दबाजी नहीं है, लेकिन आपकी पसंद अभी भी मायने रखती है। एक ऐसी जगह में एक सफल व्यवसाय बनाने पर ध्यान केंद्रित करें जहां आप वास्तव में आराम कर सकें।"
-        ],
-        "ending": "मध्ययुगीन फंतासी साम्राज्य के केंद्र में अपनी खुद की दुकान खोलें! अपनी अलमारियों को औषधि और तलवारों से लेकर रहस्यमय क्रिस्टल और पौराणिक कलाकृतियों तक सब कुछ से भर दें। अपनी कीमतें निर्धारित करें, अपने ग्राहकों का विश्वास जीतें और शहर के सबसे अमीर व्यापारी बनें!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "nl-NL": {
-        "name": "Dutch (Netherlands)",
-        "intro": "Arcane Merchant is een simulatiespel voor winkelbeheer dat zich afspeelt in het hart van een middeleeuws fantasierijk. Verken de stad, grijp handelsmogelijkheden en begin je reis naar rijkdom. Geniet van de gezellige sfeer terwijl je handelt, groeit en je droomwinkel bouwt. Elke beslissing die je neemt, zal je fortuin en de toekomst van je bedrijf bepalen.",
-        "features": [
-            "🛍 ️ Beheer Je Winkel\nVestig en organiseer je eigen magische winkel, beheer je voorraad en vul je planken met drankjes, magische wapens, mysterieuze kristallen en een verscheidenheid aan fantastische artefacten. Bepaal de strategie voor je displays om klanten aan te trekken en maximale winst te garanderen.",
-            "💰 Beheers de Kunst van het Handelen\nPas je prijzen dynamisch aan op basis van vraag en aanbod op de markt en beheer je verkopen. Bij elke succesvolle deal zal je rijkdom snel groeien en je reputatie zich door het hele rijk verspreiden. Win het vertrouwen van je klanten en pas je handelsstrategieën aan hun veranderende behoeften aan.",
-            "🏰 Word de Rijkste Koopman van het Koninkrijk\nBegin met een bescheiden kraampje; breid na verloop van tijd je winkel uit en upgrade deze met nieuwe displayruimtes. Naarmate je roem en fortuin stijgen, werk je je omhoog om de meest gerespecteerde en rijkste koopman in de stad te worden. Bouw je handelsimperium op en neem de controle over de economie van de Fantasy Middeleeuwen!",
-            "🌿 Gezellige en Ontspannende Sfeer\nOntspan en laat je winkel groeien in een warme middeleeuwse fantasiewereld. Plan je transacties en vind je eigen tempo. Geniet van de gezellige vibes terwijl je beslist wat je wilt kopen, wat je wilt verkopen en hoe je je winkel de beste van de stad kunt maken. Er is geen haast, maar je keuzes doen er nog steeds toe. Richt je op het opbouwen van een succesvol bedrijf in een ruimte waar je echt tot rust kunt komen."
-        ],
-        "ending": "Open je eigen winkel in het hart van een middeleeuws fantasierijk! Vul je planken met alles van drankjes en zwaarden tot mysterieuze kristallen en legendarische artefacten. Bepaal je prijzen, win het vertrouwen van je klanten en word de rijkste koopman van de stad!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "cs-CZ": {
-        "name": "Czech (Czech Republic)",
-        "intro": "Arcane Merchant je simulační hra pro správu obchodu zasazená do srdce středověké fantasy říše. Prozkoumejte město, využijte obchodní příležitosti a vydejte se na cestu k bohatství. Užijte si útulnou atmosféru, zatímco obchodujete, rostete a budujete svůj vysněný obchod. Každé vaše rozhodnutí bude formovat vaše jmění a budoucnost vašeho podnikání.",
-        "features": [
-            "🛍 ️ Spravujte Svůj Obchod\nZaložte a zorganizujte svůj vlastní magický obchod, spravujte své zásoby a naplňte své regály lektvary, magickými zbraněmi, tajemnými krystaly a řadou fantastických artefaktů. Strategicky plánujte své výlohy, abyste přilákali zákazníky a zajistili maximální zisk.",
-            "💰 Ovládněte Umění Obchodu\nDynamicky upravujte své ceny na základě nabídky a poptávky na trhu a řiďte své prodeje. S každým úspěšným obchodem bude vaše bohatství rychle růst a vaše pověst se rozšíří po celé říši. Získejte důvěru svých zákazníků a přizpůsobte své obchodní strategie jejich měnícím se potřebám.",
-            "🏰 Staňte se Nejbohatším Obchodníkem Království\nZačněte od skromného stánku; postupem času rozšiřujte a vylepšujte svůj obchod o nové výstavní prostory. Jak vaše sláva a jmění porostou, pracujte na tom, abyste se stali nejuznávanějším a nejbohatším obchodníkem ve městě. Vybudujte své obchodní impérium a převezměte kontrolu nad ekonomikou Fantasy Středověku!",
-            "🌿 Útulná a Relaxační Atmosféra\nOdpočiňte si a rozvíjejte svůj obchod v teplém středověkém fantasy světě. Plánujte své obchody a najděte si své vlastní tempo. Užijte si útulnou atmosféru, zatímco se rozhodujete, co koupit, co prodat a jak udělat svůj obchod nejlepším ve městě. Není kam spěchat, ale na vašich volbách stále záleží. Zaměřte se na budování úspěšného podnikání v prostoru, kde si můžete skutečně odpočinout."
-        ],
-        "ending": "Otevřete si vlastní obchod v srdci středověké fantasy říše! Naplňte své regály vším od lektvarů a mečů po tajemné krystaly a legendární artefakty. Nastavte si ceny, získejte důvěru svých zákazníků a staňte se nejbohatším obchodníkem ve městě!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "uk-UA": {
-        "name": "Ukrainian (Ukraine)",
-        "intro": "Arcane Merchant — це гра-симулятор управління магазином, дія якої розгортається в серці середньовічного фентезійного королівства. Досліджуйте місто, використовуйте торгові можливості та почніть свою подорож до багатства. Насолоджуйтесь затишною атмосферою, торгуючи, розвиваючись і будуючи магазин своєї мрії. Кожне ваше рішення формуватиме ваші статки та майбутнє вашого бізнесу.",
-        "features": [
-            "🛍 ️ Керуйте Своїм Магазином\nСтворіть та організуйте свій власний магічний магазин, керуйте інвентарем і заповнюйте полиці зіллям, магічною зброєю, таємничими кристалами та різноманітними фантастичними артефактами. Продумуйте стратегію розміщення товарів, щоб залучити клієнтів і забезпечити максимальний прибуток.",
-            "💰 Опануйте Мистецтво Торгівлі\nДинамічно регулюйте ціни залежно від попиту та пропозиції на ринку та керуйте своїми продажами. З кожною успішною угодою ваше багатство швидко зростатиме, а ваша репутація поширюватиметься по всьому королівству. Завоюйте довіру клієнтів і адаптуйте свої торгові стратегії до їхніх потреб, що змінюються.",
-            "🏰 Станьте Найбагатшим Купцем Королівства\nПочніть зі скромного прилавка; з часом розширюйте та покращуйте свій магазин новими торговими зонами. У міру зростання вашої слави та статків прагніть стати найбільш шанованим і найбагатшим торговцем у місті. Побудуйте свою торгову імперію та візьміть під контроль економіку Фентезійного Середньовіччя!",
-            "🌿 Затишна та Розслаблююча Атмосфера\nРозслабтеся та розвивайте свій магазин у теплому світі середньовічного фентезі. Плануйте свої угоди та знайдіть свій власний темп. Насолоджуйтесь затишною атмосферою, вирішуючи, що купувати, що продавати та як зробити свій магазин найкращим у місті. Поспішати нікуди, але ваш вибір все одно має значення. Зосередьтеся на побудові успішного бізнесу в просторі, де ви можете по-справжньому відпочити."
-        ],
-        "ending": "Відкрийте власний магазин у серці середньовічного фентезійного королівства! Заповніть свої полиці всім: від зілля та мечів до таємничих кристалів і легендарних артефактів. Встановлюйте ціни, завойовуйте довіру клієнтів і станьте найбагатшим торговцем у місті!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "sv-SE": {
-        "name": "Swedish (Sweden)",
-        "intro": "Arcane Merchant är ett butikshanteringssimuleringsspel som utspelar sig i hjärtat av ett medeltida fantasyrike. Utforska staden, ta vara på handelsmöjligheter och påbörja din resa mot rikedom. Njut av mysiga vibbar medan du handlar, växer och bygger din drömbutik. Varje beslut du fattar kommer att forma din förmögenhet och framtiden för ditt företag.",
-        "features": [
-            "🛍 ️ Hantera Din Butik\nEtablera och organisera din egen magiska butik, hantera ditt lager och fyll dina hyllor med drycker, magiska vapen, mystiska kristaller och en mängd fantastiska artefakter. Strategisera dina skyltningar för att locka kunder och säkerställa maximal vinst.",
-            "💰 Bemästra Handelns Konst\nJustera dina priser dynamiskt baserat på tillgång och efterfrågan på marknaden och hantera din försäljning. Med varje framgångsrik affär kommer din rikedom att växa snabbt och ditt rykte kommer att spridas över hela riket. Förtjäna dina kunders förtroende och anpassa dina handelsstrategier efter deras föränderliga behov.",
-            "🏰 Bli Kungarikets Rikaste Köpman\nBörja från ett ödmjukt stånd; med tiden, expandera och uppgradera din butik med nya visningsområden. I takt med att din berömmelse och förmögenhet ökar, arbeta dig uppåt för att bli den mest respekterade och rikaste köpmannen i staden. Bygg ditt handelsimperium och ta kontroll över ekonomin i Fantasy-medeltiden!",
-            "🌿 Mysig och Avkopplande Atmosfär\nKoppla av och få din butik att växa i en varm medeltida fantasyvärld. Planera dina affärer och hitta din egen takt. Njut av den mysiga stämningen medan du bestämmer vad du ska köpa, vad du ska sälja och hur du ska göra din butik till den bästa i staden. Det är ingen brådska, men dina val spelar fortfarande roll. Fokusera på att bygga ett framgångsrikt företag i ett utrymme där du verkligen kan varva ner."
-        ],
-        "ending": "Öppna din egen butik i hjärtat av ett medeltida fantasyrike! Fyll dina hyllor med allt från drycker och svärd till mystiska kristaller och legendariska artefakter. Sätt dina priser, förtjäna dina kunders förtroende och bli den rikaste köpmannen i staden!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "el-GR": {
-        "name": "Greek (Greece)",
-        "intro": "Το Arcane Merchant είναι un παιχνίδι προσομοίωσης διαχείρισης καταστήματος που διαδραματίζεται στην καρδιά ενός μεσαιωνικού βασιλείου φαντασίας. Εξερευνήστε την πόλη, αρπάξτε εμπορικές ευκαιρίες και ξεκινήστε το ταξίδι σας προς τον πλούτο. Απολαύστε τη ζεστή ατμόσφαιρα καθώς κάνετε εμπόριο, αναπτύσσεστε και χτίζετε το κατάστημα των ονείρων σας. Κάθε απόφαση που παίρνετε θα διαμορφώσει την περιουσία σας και το μέλλον της επιχείρησής σας.",
-        "features": [
-            "🛍 ️ Διαχειριστείτε το Κατάστημά Σας\nΙδρύστε και οργανώστε το δικό σας μαγικό κατάστημα, διαχειριστείτε το απόθεμά σας και γεμίστε τα ράφια σας με φίλτρα, μαγικά όπλα, μυστηριώδεις κρυστάλλους και μια ποικιλία φανταστικών αντικειμένων. Σχεδιάστε στρατηγικά τις βιτρίνες σας για να προσελκύσετε πελάτες και να εξασφαλίσετε το μέγιστο κέρδος.",
-            "💰 Κατακτήστε την Τέχνη του Εμπορίου\nΠροσαρμόστε τις τιμές σας δυναμικά με βάση την προσφορά και τη ζήτηση στην αγορά και διαχειριστείτε τις πωλήσεις σας. Με κάθε επιτυχημένη συμφωνία, ο πλούτος σας θα αυξάνεται γρήγορα και η φήμη σας θα εξαπλώνεται σε όλο το βασίλειο. Κερδίστε την εμπιστοσύνη των πελατών σας και προσαρμόστε τις εμπορικές στρατηγικές σας στις μεταβαλλόμενες ανάγκες τους.",
-            "🏰 Γίνετε ο Πλουσιότερος Έμπορος του Βασιλείου\nΞεκινήστε από έναν ταπεινό πάγκο. με την πάροδο του χρόνου, επεκτείνετε και αναβαθμίστε το κατάστημά σας με νέους χώρους έκθεσης. Καθώς η φήμη και η περιουσία σας αυξάνονται, εργαστείτε για να γίνετε ο πιο σεβαστός και πλούσιος έμπορος στην πόλη. Χτίστε την εμπορική σας αυτοκρατορία και πάρτε τον έλεγχο της οικονομίας του Μεσαίωνα Φαντασίας!",
-            "🌿 Ζεστή και Χαλαρωτική Ατμόσφαιρα\nΧαλαρώστε και αναπτύξτε το κατάστημά σας σε έναν ζεστό μεσαιωνικό κόσμο φαντασίας. Σχεδιάστε τις συναλλαγές σας και βρείτε τον δικό σας ρυθμό. Απολαύστε τη ζεστή ατμόσφαιρα καθώς αποφασίζετε τι θα αγοράσετε, τι θα πουλήσετε και πώς θα κάνετε το κατάστημά σας το καλύτερο στην πόλη. Δεν υπάρχει βιασύνη, αλλά οι επιλογές σας εξακολουθούν να έχουν σημασία. Εστιάστε στο χτίσιμο μιας επιτυχημένης επιχείρησης σε έναν χώρο όπου μπορείτε πραγματικά να χαλαρώσετε."
-        ],
-        "ending": "Ανοίξτε το δικό σας κατάστημα στην καρδιά ενός μεσαιωνικού βασιλείου φαντασίας! Γεμίστε τα ράφια σας με τα πάντα, από φίλτρα και σπαθιά μέχρι μυστηριώδεις κρυστάλλους και θρυλικά αντικείμενα. Καθορίστε τις τιμές σας, κερδίστε την εμπιστοσύνη των πελατών σας και γίνετε ο πλουσιότερος έμπορος στην πόλη!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "ro-RO": {
-        "name": "Romanian (Romania)",
-        "intro": "Arcane Merchant este un joc de simulare a gestionării magazinului, amplasat în inima unui tărâm fantastic medieval. Explorează orașul, profită de oportunitățile comerciale și începe-ți călătoria către bogăție. Bucură-te de atmosfera confortabilă în timp ce faci comerț, crești și îți construiești magazinul de vis. Fiecare decizie pe care o iei îți va modela averea și viitorul afacerii tale.",
-        "features": [
-            "🛍 ️ Gestionează-ți Magazinul\nÎnființează și organizează propriul tău magazin magic, gestionează-ți inventarul și umple-ți rafturile cu poțiuni, arme magice, cristale misterioase și o varietate de artefacte fantastice. Elaborează strategii pentru expunerile tale pentru a atrage clienți și a asigura profit maxim.",
-            "💰 Stăpânește Arta Comerțului\nAjustează-ți prețurile dinamic în funcție de cererea și oferta de pe piață și gestionează-ți vânzările. Cu fiecare afacere de succes, averea ta va crește rapid, iar reputația ta se va răspândi în tot regatul. Câștigă încrederea clienților tăi și adaptează-ți strategiile comerciale la nevoile lor în schimbare.",
-            "🏰 Devino Cel Mai Bogat Comerciant al Regatului\nÎncepe de la o tarabă modestă; în timp, extinde și modernizează-ți magazinul cu noi zone de expunere. Pe măsură ce faima și averea ta cresc, lucrează pentru a deveni cel mai respectat și bogat comerciant din oraș. Construiește-ți imperiul comercial și preia controlul asupra economiei Evului Mediu Fantastic!",
-            "🌿 Atmosferă Confortabilă și Relaxantă\nRelaxează-te și dezvoltă-ți magazinul într-o lume fantastică medievală caldă. Planifică-ți tranzacțiile și găsește-ți propriul ritm. Bucură-te de vibrațiile confortabile în timp ce decizi ce să cumperi, ce să vinzi și cum să faci magazinul tău cel mai bun din oraș. Nu e nicio grabă, dar alegerile tale contează totuși. Concentrează-te pe construirea unei afaceri de succes într-un spațiu în care te poți relaxa cu adevărat."
-        ],
-        "ending": "Deschide-ți propriul magazin în inima unui tărâm fantastic medieval! Umple-ți rafturile cu de toate, de la poțiuni și săbii la cristale misterioase și artefacte legendare. Stabilește-ți prețurile, câștigă încrederea clienților și devino cel mai bogat comerciant din oraș!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "fi-FI": {
-        "name": "Finnish (Finland)",
-        "intro": "Arcane Merchant on kaupanhallintasimulaatiopeli, joka sijoittuu keskiaikaisen fantasiavaltakunnan sydämeen. Tutki kaupunkia, tartu kauppamahdollisuuksiin ja aloita matkasi kohti vaurautta. Nauti kodikkaasta tunnelmasta samalla kun käyt kauppaa, kasvat ja rakennat unelmiesi kauppaa. Jokainen tekemäsi päätös muokkaa omaisuuttasi ja yrityksesi tulevaisuutta.",
-        "features": [
-            "🛍 ️ Hallitse Kauppaasi\nPerusta ja järjestä oma taikakauppasi, hallitse varastoasi ja täytä hyllysi taikajuomilla, taika-aseilla, salaperäisillä kristalleilla ja erilaisilla fantastisilla esineillä. Suunnittele esillepanosi houkutellaksesi asiakkaita ja varmistaaksesi maksimaalisen voiton.",
-            "💰 Hallitse Kaupankäynnin Taito\nSäädä hintojasi dynaamisesti markkinoiden kysynnän ja tarjonnan perusteella ja hallitse myyntiäsi. Jokaisen onnistuneen kaupan myötä varallisuutesi kasvaa nopeasti ja maineesi leviää koko valtakuntaan. Ansaitse asiakkaidesi luottamus ja mukauta kauppastrategiasi heidän muuttuviin tarpeisiinsa.",
-            "🏰 Tule Valtakunnan Rikkaimmaksi Kauppiaaksi\nAloita vaatimattomasta kojusta; ajan myötä laajenna ja päivitä kauppaasi uusilla esittelyalueilla. Kun maineesi ja omaisuutesi kasvavat, pyri tulemaan kaupungin arvostetuimmaksi ja rikkaimmaksi kauppiaaksi. Rakenna kauppaimperiumisi ja ota fantasia-keskiajan talous hallintaasi!",
-            "🌿 Kodikas ja Rentouttava Ilmapiiri\nRentoudu ja kasvata kauppaasi lämpimässä keskiaikaisessa fantasiamaailmassa. Suunnittele kauppasi ja löydä oma tahtisi. Nauti kodikkaasta tunnelmasta päättäessäsi, mitä ostat, mitä myyt ja miten teet kaupastasi kaupungin parhaan. Ei ole kiirettä, mutta valinnoillasi on silti merkitystä. Keskity rakentamaan menestyvä yritys tilassa, jossa voit todella rentoutua."
-        ],
-        "ending": "Avaa oma kauppasi keskiaikaisen fantasiavaltakunnan sydämessä! Täytä hyllysi kaikella taikajuomista ja miekoista salaperäisiin kristalleihin ja legendaarisiin esineisiin. Aseta hintasi, ansaitse asiakkaidesi luottamus ja tule kaupungin rikkaimmaksi kauppiaaksi!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "tl-PH": {
-        "name": "Filipino (Philippines)",
-        "intro": "Ang Arcane Merchant ay isang shop management simulation game na itinakda sa puso ng isang medieval fantasy realm. Galugarin ang bayan, samantalahin ang mga pagkakataon sa kalakalan at simulan ang iyong paglalakbay patungo sa kayamanan. Tangkilikin ang maaliwalas na vibes habang nakikipagkalakalan, lumalago at itinatayo ang iyong pangarap na tindahan. Ang bawat desisyong gagawin mo ay huhubog sa iyong kapalaran at sa kinabukasan ng iyong negosyo.",
-        "features": [
-            "🛍 ️ Pamahalaan ang Iyong Tindahan\nItatag at ayusin ang iyong sariling mahiwagang tindahan, pamahalaan ang iyong imbentaryo at punuin ang iyong mga istante ng mga gayuma, mahiwagang sandata, mahiwagang kristal at iba't ibang kamangha-manghang artifact. Istratehiya ang iyong mga display upang makaakit ng mga customer at matiyak ang maximum na kita.",
-            "💰 Kabisaduhin ang Sining ng Kalakalan\nAyusin ang iyong mga presyo nang dinamiko batay sa supply at demand sa pamilihan at pamahalaan ang iyong mga benta. Sa bawat matagumpay na deal, ang iyong yaman ay mabilis na lalago at ang iyong reputasyon ay kakalat sa buong kaharian. Makuha ang tiwala ng iyong mga customer at iangkop ang iyong mga diskarte sa kalakalan sa kanilang nagbabagong pangangailangan.",
-            "🏰 Maging Pinakamayamang Mangangalakal ng Kaharian\nMagsimula sa isang hamak na stall; sa paglipas ng panahon, palawakin at i-upgrade ang iyong tindahan gamit ang mga bagong display area. Habang tumataas ang iyong katanyagan at kapalaran, gawin ang iyong paraan upang maging pinaka-respetado at pinakamayamang mangangalakal sa bayan. Buuin ang iyong trading empire at kontrolin ang ekonomiya ng Fantasy Middle Ages!",
-            "🌿 Maaliwalas at Nakakarelaks na Kapaligiran\nMag-relax at palaguin ang iyong tindahan sa isang mainit na medieval na mundo ng pantasiya. Planuhin ang iyong mga pangangalakal at hanapin ang sarili mong bilis. Tangkilikin ang maaliwalas na vibes habang nagpapasya ka kung ano ang bibilhin, kung ano ang ibebenta at kung paano gagawin ang iyong tindahan na pinakamahusay sa bayan. Walang pagmamadali, ngunit mahalaga pa rin ang iyong mga pagpipilian. Tumutok sa pagbuo ng isang matagumpay na negosyo sa isang puwang kung saan maaari kang tunay na makapagpahinga."
-        ],
-        "ending": "Buksan ang sarili mong tindahan sa puso ng isang Medieval Fantasy realm! I-stock ang iyong mga istante ng lahat mula sa mga gayuma at espada hanggang sa mga mahiwagang kristal at maalamat na artifact. Itakda ang iyong mga presyo, kunin ang tiwala ng iyong mga customer at maging pinakamayamang mangangalakal sa bayan!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "ms-MY": {
-        "name": "Malay (Malaysia)",
-        "intro": "Arcane Merchant ialah permainan simulasi pengurusan kedai yang berlatarkan di tengah-tengah alam fantasi zaman pertengahan. Terokai bandar, rebut peluang perdagangan dan mulakan perjalanan anda menuju kekayaan. Nikmati suasana yang selesa sambil anda berdagang, berkembang dan membina kedai impian anda. Setiap keputusan yang anda buat akan membentuk nasib anda dan masa depan perniagaan anda.",
-        "features": [
-            "🛍 ️ Urus Kedai Anda\nTubuhkan dan atur kedai ajaib anda sendiri, urus inventori anda dan isi rak anda dengan ramuan, senjata ajaib, kristal misteri dan pelbagai artifak hebat. Susun strategi paparan anda untuk menarik pelanggan dan memastikan keuntungan maksimum.",
-            "💰 Kuasai Seni Perdagangan\nLaraskan harga anda secara dinamik berdasarkan penawaran dan permintaan di pasaran dan uruskan jualan anda. Dengan setiap perjanjian yang berjaya, kekayaan anda akan berkembang pesat dan reputasi anda akan tersebar di seluruh alam. Dapatkan kepercayaan pelanggan anda dan sesuaikan strategi perdagangan anda dengan keperluan mereka yang berubah-ubah.",
-            "🏰 Jadilah Saudagar Terkaya di Kerajaan\nMulakan dari gerai yang sederhana; dari masa ke masa, kembangkan dan naik taraf kedai anda dengan kawasan paparan baharu. Apabila kemasyhuran dan kekayaan anda meningkat, berusaha untuk menjadi pedagang yang paling dihormati dan terkaya di bandar. Bina empayar perdagangan anda dan mengawal ekonomi Zaman Pertengahan Fantasi!",
-            "🌿 Suasana Selesa dan Santai\nBersantai dan kembangkan kedai anda dalam dunia fantasi zaman pertengahan yang hangat. Rancang dagangan anda dan cari rentak anda sendiri. Nikmati suasana yang selesa sambil anda memutuskan perkara yang hendak dibeli, perkara yang hendak dijual dan cara menjadikan kedai anda yang terbaik di bandar. Tidak perlu tergesa-gesa, tetapi pilihan anda tetap penting. Fokus pada membina perniagaan yang berjaya dalam ruang di mana anda benar-benar boleh berehat."
-        ],
-        "ending": "Buka kedai anda sendiri di tengah-tengah alam Fantasi Abad Pertengahan! Penuhi rak anda dengan segala-galanya daripada ramuan dan pedang kepada kristal misteri dan artifak legenda. Tetapkan harga anda, dapatkan kepercayaan pelanggan anda dan jadilah saudagar terkaya di bandar!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "kk-KZ": {
-        "name": "Kazakh (Kazakhstan)",
-        "intro": "Arcane Merchant — ортағасырлық қиял әлемінің қақ ортасында орнатылған дүкенді басқару симуляциялық ойыны. Қаланы зерттеңіз, сауда мүмкіндіктерін пайдаланыңыз және байлыққа саяхатыңызды бастаңыз. Сауда жасап, өсіп, арманыңыздағы дүкенді құру кезінде жайлы атмосферадан ләззат алыңыз. Сіз қабылдаған әрбір шешім сіздің байлығыңыз бен бизнесіңіздің болашағын қалыптастырады.",
-        "features": [
-            "🛍 ️ Дүкеніңізді басқарыңыз\nӨзіңіздің сиқырлы дүкеніңізді құрыңыз және ұйымдастырыңыз, түгендеуіңізді басқарыңыз және сөрелеріңізді сусындармен, сиқырлы қарулармен, жұмбақ кристалдармен және түрлі ғажайып жәдігерлермен толтырыңыз. Клиенттерді тарту және максималды пайданы қамтамасыз ету үшін дисплейлеріңіздің стратегиясын жасаңыз.",
-            "💰 Сауда өнерін меңгеріңіз\nНарықтағы сұраныс пен ұсынысқа негізделген бағаларыңызды динамикалық түрде реттеңіз және сатылымдарыңызды басқарыңыз. Әрбір сәтті мәміле арқылы сіздің байлығыңыз тез өседі және сіздің беделіңіз бүкіл әлемге тарайды. Клиенттеріңіздің сеніміне ие болыңыз және сауда стратегияларыңызды олардың өзгермелі қажеттіліктеріне бейімдеңіз.",
-            "🏰 Патшалықтың ең бай көпесі болыңыз\nҚарапайым дүңгіршектен бастаңыз; уақыт өте келе дүкеніңізді жаңа көрсету аймақтарымен кеңейтіңіз және жаңартыңыз. Сіздің атағыңыз бен байлығыңыз артқан сайын, қаладағы ең құрметті және ең бай саудагер болу жолында еңбек етіңіз. Сауда империяңызды құрыңыз және Фантастикалық орта ғасырлар экономикасын бақылауға алыңыз!",
-            "🌿 Жайлы және тыныштандыратын атмосфера\nЖылы ортағасырлық қиял әлемінде демалыңыз және дүкеніңізді өсіріңіз. Сауда-саттықты жоспарлаңыз және өз қарқыныңызды табыңыз. Не сатып алу керектігін, не сату керектігін және дүкеніңізді қаладағы ең жақсы дүкенге қалай айналдыру керектігін шешкен кезде жайлы дірілден ләззат алыңыз. Асығыс жоқ, бірақ сіздің таңдауыңыз әлі де маңызды. Шынымен демалуға болатын кеңістікте табысты бизнес құруға назар аударыңыз."
-        ],
-        "ending": "Ортағасырлық қиял әлемінің қақ ортасында өз дүкеніңізді ашыңыз! Сөрелеріңізді сусындар мен қылыштардан бастап жұмбақ кристалдар мен аңызға айналған жәдігерлерге дейін толтырыңыз. Бағаларыңызды белгілеңіз, тұтынушыларыңыздың сеніміне ие болыңыз және қаладағы ең бай көпес болыңыз!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "az-AZ": {
-        "name": "Azerbaijani (Azerbaijan)",
-        "intro": "Arcane Merchant, orta əsr fantaziya səltənətinin mərkəzində qurulmuş bir dükan idarəetmə simulyasiya oyunudur. Şəhəri kəşf edin, ticarət imkanlarından istifadə edin və sərvətə doğru səyahətinizə başlayın. Ticarət edərkən, böyüyərkən və xəyalınızdakı mağazanı qurarkən rahat ab-havadan həzz alın. Verdiyiniz hər qərar sərvətinizi və işinizin gələcəyini formalaşdıracaq.",
-        "features": [
-            "🛍 ️ Mağazanızı İdarə Edin\nÖz sehrli mağazanızı qurun və təşkil edin, inventarınızı idarə edin və rəflərinizi iksirlər, sehrli silahlar, sirli kristallar və müxtəlif fantastik artefaktlarla doldurun. Müştəriləri cəlb etmək və maksimum qazanc əldə etmək üçün vitrinlərinizin strategiyasını qurun.",
-            "💰 Ticarət Sənətinə Yiyələnin\nQiymətlərinizi bazardakı tələb və təklifə əsasən dinamik olaraq tənzimləyin və satışlarınızı idarə edin. Hər uğurlu sövdələşmə ilə sərvətiniz sürətlə artacaq və nüfuzunuz bütün səltənətə yayılacaq. Müştərilərinizin etibarını qazanın və ticarət strategiyalarınızı onların dəyişən ehtiyaclarına uyğunlaşdırın.",
-            "🏰 Krallığın Ən Zəngin Taciri Olun\nTəvazökar bir piştaxtadan başlayın; zaman keçdikcə mağazanızı yeni nümayiş sahələri ilə genişləndirin və təkmilləşdirin. Şöhrətiniz və sərvətiniz artdıqca, şəhərin ən hörmətli və ən zəngin taciri olmaq yolunda çalışın. Ticarət imperiyanızı qurun və Fantaziya Orta Əsrlərinin iqtisadiyyatını nəzarətə götürün!",
-            "🌿 Rahat və Rahatlaşdırıcı Atmosfer\nİsti orta əsr fantaziya dünyasında dincəlin və mağazanızı böyüdün. Ticarətinizi planlaşdırın və öz tempinizi tapın. Nə alacağınıza, nə satacağınıza və mağazanızı şəhərin ən yaxşısı halına necə gətirəcəyinizə qərar verərkən rahat ab-havadan həzz alın. Tələsmək yoxdur, amma seçimləriniz yenə də önəmlidir. Həqiqətən dincələ biləcəyiniz bir məkanda uğurlu bir iş qurmağa diqqət yetirin."
-        ],
-        "ending": "Orta Əsr Fantaziya səltənətinin mərkəzində öz mağazanızı açın! Rəflərinizi iksirlərdən və qılınclardan tutmuş sirli kristallara və əfsanəvi artefaktlara qədər hər şeylə doldurun. Qiymətlərinizi təyin edin, müştərilərinizin etibarını qazanın və şəhərin ən zəngin taciri olun!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "af-ZA": {
-        "name": "Afrikaans (South Africa)",
-        "intro": "Arcane Merchant is 'n winkelbestuursimulasiespeletjie wat in die hart van 'n middeleeuse fantasieryk afspeel. Verken die dorp, gryp handelsgeleenthede aan en begin jou reis na rykdom. Geniet die gesellige atmosfeer terwyl jy handel dryf, groei en jou droomwinkel bou. Elke besluit wat jy neem sal jou fortuin en die toekoms van je besigheid vorm.",
-        "features": [
-            "🛍 ️ Bestuur Jou Winkel\nVestig en organiseer jou eie magiese winkel, bestuur jou voorraad en vul jou rakke met drankies, magiese wapens, geheimsinnige kristalle en 'n verskeidenheid fantastiese artefakte. Strategiseer jou uitstallings om kliënte te lok en maksimum wins te verseker.",
-            "💰 Meester die Kuns van Handel\nPas jou pryse dinamies aan op grond van vraag en aanbod in die mark en bestuur jou verkopen. Met elke suksesvolle transaksie sal jou rykdom vinnig groei en jou reputasie sal deur die hele ryk versprei. Verdien die vertroue van jou kliënte en pas jou handelstrategieë aan by hul veranderende behoeftes.",
-            "🏰 Word die Rykste Handelaar van die Koninkryk\nBegin by 'n nederige stalletjie; met verloop van tyd, brei uit en gradeer jou winkel op met nuwe vertoonareas. Soos jou roem en fortuin styg, werk jou pad op om die mees gerespekteerde en rykste handelaar in die dorp te word. Bou jou handelsryk en neem beheer oor die ekonomie van die Fantasie Middeleeue!",
-            "🌿 Gesellige en Ontspannende Atmosfeer\nOntspan en laat jou winkel groei in 'n warm middeleeuse fantasiewêreld. Beplan jou ambagte en vind jou eie pas. Geniet die gesellige atmosfeer terwyl jy besluit wat om te koop, wat om te verkoop en hoe om jou winkel die beste in die dorp te maak. Daar is geen haas nie, maar jou keuses maak steeds saak. Fokus daarop om 'n suksesvolle besigheid te bou in 'n ruimte waar jy werklik kan ontspan."
-        ],
-        "ending": "Maak jou eie winkel oop in die hart van 'n Middeleeuse Fantasieryk! Vul jou rakke met alles van drankies en swaarde tot geheimsinnige kristalle en legendariese artefakte. Stel jou pryse, verdien jou kliënte se vertroue en word die rykste handelaar in die dorp!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "da": {
-        "name": "Danish",
-        "intro": "Arcane Merchant er et butiksstyringssimuleringsspil sat i hjertet af et middelalderligt fantasirige. Udforsk byen, grib handelsmuligheder og begynd din rejse mod rigdom. Nyd hyggelige vibes, mens du handler, vokser og bygger din drømmebutik. Hver beslutning, du træffer, vil forme din formue og din virksomheds fremtid.",
-        "features": [
-            "🛍️ Administrer Din Butik\nEtabler og organiser din egen magiske butik, administrer dit lager og fyld dine hylder med alt fra trylledrikke og magiske våben til mystiske krystaller og fantastiske artefakter. Læg en strategi for dine udstillinger for at tiltrække kunder og sikre maksimal profit.",
-            "💰 Mestrer Handelens Kunst\nJuster dine priser dynamisk baseret på udbud og efterspørgsel på markedspladsen og administrer dit salg. Med hver succesfuld handel vil din rigdom vokse hurtigt, og dit ry vil sprede sig i hele riget. Gør dig fortjent til dine kunders tillid og tilpas dine handelsstrategier til deres skiftende behov.",
-            "🏰 Bliv Rigets Rigeste Købmand\nStart fra en beskeden bod; med tiden udvid og opgrader din butik med nye udstillingsområder. Efterhånden som din berømmelse og formue stiger, arbejd dig op til at blive den mest respekterede og rigeste købmand i byen. Byg dit handelsimperium og tag kontrol over økonomien i Fantasiens Middelalder!",
-            "🌿 Hyggelig og Afslappende Atmosfære\nSlap af og få din butik til at vokse i en varm middelalderlig fantasiverden. Planlæg dine handler og find dit eget tempo. Nyd den hyggelige stemning, mens du beslutter, hvad du skal købe, hvad du skal sælge, og hvordan du gør din butik til den bedste i byen. Der er intet hastværk, men dine valg betyder stadig noget. Fokuser på at opbygge en succesfuld forretning i et rum, hvor du virkelig kan slappe af."
-        ],
-        "ending": "Åbn din egen butik i hjertet af et Middelalderligt Fantasirige! Fyld dine hylder med alt fra trylledrikke og sværd til mystiske krystaller og legendariske artefakter. Sæt dine priser, gør dig fortjent til dine kunders tillid og bliv den rigeste købmand i byen!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "no": {
-        "name": "Norwegian",
-        "intro": "Arcane Merchant er et butikkstyringssimuleringsspill satt i hjertet av et middelaldersk fantasirike. Utforsk byen, grip handelsmuligheter og begynn reisen mot rikdom. Nyt koselige vibber mens du handler, vokser og bygger din drømmebutikk. Hver avgjørelse du tar vil forme din formue og fremtiden til din bedrift.",
-        "features": [
-            "🛍️ Administrer Butikken Din\nEtabler og organiser din egen magiske butikk, administrer lageret ditt og fyll hyllene med alt fra trylledrikker og magiske våben til mystiske krystaller og fantastiske gjenstander. Legg en strategi for utstillingene dine for å tiltrekke kunder og sikre maksimal fortjeneste.",
-            "💰 Mestre Handelens Kunst\nJuster prisene dine dynamisk basert på tilbud og etterspørsel på markedsplassen og administrer salget ditt. Med hver vellykket handel vil rikdommen din vokse raskt, og ryktet ditt vil spre seg i hele riket. Gjør deg fortjent til kundenes tillit og tilpass handelsstrategiene dine til deres skiftende behov.",
-            "🏰 Bli Rikets Rikeste Kjøpmann\nStart fra en beskjeden bod; over tid utvid og oppgrader butikken din med nye utstillingsområder. Etter hvert som berømmelsen og formuen din stiger, jobb deg opp til å bli den mest respekterte og rikeste kjøpmannen i byen. Bygg ditt handelsimperium og ta kontroll over økonomien i Fantasiens Middelalder!",
-            "🌿 Koselig og Avslappende Atmosfære\nSlapp av og få butikken din til å vokse i en varm middelaldersk fantasiverden. Planlegg handlene dine og finn ditt eget tempo. Nyt den koselige stemningen mens du bestemmer hva du skal kjøpe, hva du skal selge, og hvordan du gjør butikken din til den beste i byen. Det er ingen hast, men valgene dine betyr fortsatt noe. Fokuser på å bygge en vellykket bedrift i et rom hvor du virkelig kan slappe av."
-        ],
-        "ending": "Åpne din egen butikk i hjertet av et Middelaldersk Fantasirike! Fyll hyllene dine med alt fra trylledrikker og sverd til mystiske krystaller og legendariske gjenstander. Sett prisene dine, gjør deg fortjent til kundenes tillit og bli den rikeste kjøpmannen i byen!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "hu": {
-        "name": "Hungarian",
-        "intro": "Az Arcane Merchant egy boltvezetői szimulációs játék, amely egy középkori fantáziavilág szívében játszódik. Fedezd fel a várost, ragadd meg a kereskedelmi lehetőségeket, és kezdd el utazásodat a gazdagság felé. Élvezd a hangulatos légkört, miközben kereskedsz, növekszel és építed álmaid boltját. Minden döntésed alakítja vagyonodat és vállalkozásod jövőjét.",
-        "features": [
-            "🛍️ Kezeld a Boltodat\nAlapítsd meg és szervezd meg saját mágikus boltodat, kezeld a készletedet, és töltsd meg polcaidat bájitalokkal, mágikus fegyverekkel, rejtélyes kristályokkal és különféle fantasztikus ereklyékkel. Tervezd meg kiállításaidat, hogy vonzhasd a vevőket és biztosítsd a maximális profitot.",
-            "💰 Sajátítsd el a Kereskedelem Művészetét\nÁllítsd be áraidat dinamikusan a piaci kereslet és kínálat alapján, és kezeld eladásaidat. Minden sikeres üzlettel vagyonod gyorsan növekszik, és hírneved elterjed az egész birodalomban. Érdemeld ki vevőid bizalmát, és igazítsd kereskedelmi stratégiáidat változó igényeikhez.",
-            "🏰 Légy a Királyság Leggazdagabb Kereskedője\nKezdd egy szerény bódéval; idővel bővítsd és fejleszd boltodat új kiállítóterekkel. Ahogy hírneved és vagyonod nő, küzdd fel magad, hogy a város legtiszteltebb és leggazdagabb kereskedőjévé válj. Építsd ki kereskedelmi birodalmadat, és vedd át az irányítást a Fantázia Középkor gazdasága felett!",
-            "🌿 Hangulatos és Pihentető Légkör\nLazíts és növeld boltodat egy meleg középkori fantáziavilágban. Tervezd meg kereskedelmedet, és találd meg saját tempódat. Élvezd a hangulatos légkört, miközben eldöntöd, mit vegyél, mit adj el, és hogyan tedd boltodat a város legjobbjává. Nincs rohanás, de döntéseidnek súlya van. Koncentrálj egy sikeres vállalkozás felépítésére egy olyan helyen, ahol igazán kikapcsolódhatsz."
-        ],
-        "ending": "Nyisd meg saját boltodat egy Középkori Fantáziavilág szívében! Töltsd meg polcaidat mindennel a bájitaloktól és kardoktól a rejtélyes kristályokig és legendás ereklyékig. Állítsd be áraidat, érdemeld ki vevőid bizalmát, és légy a város leggazdagabb kereskedője!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "pt-PT": {
-        "name": "Portuguese (Portugal)",
-        "intro": "Arcane Merchant é um jogo de simulação de gestão de loja situado no coração de um reino de fantasia medieval. Explore a cidade, aproveite as oportunidades comerciais e comece a sua jornada rumo à riqueza. Desfrute de uma atmosfera acolhedora enquanto negoceia, cresce e constrói a loja dos seus sonhos. Cada decisão que tomar moldará a sua fortuna e o futuro do seu negócio.",
-        "features": [
-            "🛍️ Gerencie a Sua Loja\nEstabeleça e organize a sua própria loja mágica, gerencie o seu inventário e encha as suas prateleiras com poções, armas mágicas, cristais misteriosos e uma variedade de artefactos fantásticos. Crie estratégias para as suas exposições para atrair clientes e garantir o lucro máximo.",
-            "💰 Domine a Arte do Comércio\nAjuste os seus preços dinamicamente com base na oferta e procura do mercado e gerencie as suas vendas. Com cada negócio bem-sucedido, a sua riqueza crescerá rapidamente e a sua reputação espalhar-se-á por todo o reino. Ganhe a confiança dos seus clientes e adapte as suas estratégias comerciais às necessidades em constante mudança deles.",
-            "🏰 Torne-se o Comerciante Mais Rico do Reino\nComece numa banca humilde; com o tempo, expanda e melhore a sua loja com novas áreas de exposição. À medida que a sua fama e fortuna aumentam, trabalhe para se tornar o comerciante mais respeitado e rico da cidade. Construa o seu império comercial e assuma o controlo da economia da Idade Média de Fantasia!",
-            "🌿 Atmosfera Acolhedora e Relaxante\nRelaxe e faça a sua loja crescer num mundo de fantasia medieval acolhedor. Planeie as suas negociações e encontre o seu próprio ritmo. Aproveite a atmosfera acolhedora enquanto decide o que comprar, o que vender e como tornar a sua loja a melhor da cidade. Não há pressa, mas as suas escolhas ainda importam. Concentre-se em construir um negócio de sucesso num espaço onde pode realmente relaxar."
-        ],
-        "ending": "Abra a sua própria loja no coração de um Reino de Fantasia Medieval! Encha as suas prateleiras com tudo, desde poções e espadas até cristais misteriosos e artefactos lendários. Defina os seus preços, ganhe a confiança dos seus clientes e torne-se o comerciante mais rico da cidade!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "bg": {
-        "name": "Bulgarian",
-        "intro": "Arcane Merchant е симулационна игра за управление на магазин, разположена в сърцето на средновековно фентъзи кралство. Изследвайте града, възползвайте се от търговските възможности и започнете пътуването си към богатството. Насладете се на уютна атмосфера, докато търгувате, развивате се и изграждате магазина на мечтите си. Всяко решение, което вземете, ще оформи вашето състояние и бъдещето на вашия бизнес.",
-        "features": [
-            "🛍️ Управлявайте Своя Магазин\nСъздайте и организирайте свой собствен магически магазин, управлявайте инвентара си и напълнете рафтовете си с отвари, магически оръжия, мистериозни кристали и разнообразни фантастични артефакти. Стратегизирайте дисплеите си, за да привлечете клиенти и да осигурите максимална печалба.",
-            "💰 Овладейте Изкуството на Търговията\nРегулирайте цените си динамично въз основа на търсенето и предлагането на пазара и управлявайте продажбите си. С всяка успешна сделка богатството ви ще расте бързо, а репутацията ви ще се разпространи из цялото кралство. Спечелете доверието на клиентите си и адаптирайте търговските си стратегии към променящите се нужди.",
-            "🏰 Станете Най-Богатият Търговец в Кралството\nЗапочнете от скромна сергия; с времето разширете и надстройте магазина си с нови зони за излагане. С нарастването на славата и състоянието ви, работете, за да станете най-уважаваният и най-богатият търговец в града. Изградете своята търговска империя и поемете контрола над икономиката на Фентъзи Средновековието!",
-            "🌿 Уютна и Релаксираща Атмосфера\nОтпуснете се и развивайте магазина си в топъл средновековен фентъзи свят. Планирайте сделките си и намерете своя собствен ритъм. Насладете се на уютната атмосфера, докато решавате какво да купите, какво да продадете и как да направите магазина си най-добрия в града. Няма бързане, но изборите ви все пак имат значение. Фокусирайте се върху изграждането на успешен бизнес в пространство, където наистина можете да си починете."
-        ],
-        "ending": "Отворете свой собствен магазин в сърцето на Средновековно Фентъзи кралство! Напълнете рафтовете си с всичко от отвари и мечове до мистериозни кристали и легендарни артефакти. Определете цените си, спечелете доверието на клиентите си и станете най-богатият търговец в града!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "he": {
-        "name": "Hebrew",
-        "intro": "Arcane Merchant הוא משחק סימולציה לניהול חנות המתרחש בלב ממלכת פנטזיה מימי הביניים. חקרו את העיר, נצלו הזדמנויות מסחר והתחילו את המסע שלכם אל העושר. תיהנו מאווירה נעימה בזמן שאתם סוחרים, צומחים ובונים את חנות החלומות שלכם. כל החלטה שתקבלו תעצב את הונכם ואת עתיד העסק שלכם.",
-        "features": [
-            "🛍️ נהלו את החנות שלכם\nהקימו וארגנו חנות קסומה משלכם, נהלו את המלאי ומלאו את המדפים בשיקויים, כלי נשק קסומים, קריסטלים מסתוריים ומגוון חפצים פנטסטיים. תכננו את התצוגות שלכם כדי למשוך לקוחות ולהבטיח רווח מקסימלי.",
-            "💰 שלטו באומנות המסחר\nהתאימו את המחירים שלכם באופן דינמי בהתבסס על היצע וביקוש בשוק ונהלו את המכירות שלכם. עם כל עסקה מוצלחת, העושר שלכם יגדל במהירות והמוניטין שלכם יתפשט ברחבי הממלכה. הרוויחו את אמון הלקוחות שלכם והתאימו את אסטרטגיות המסחר שלכם לצרכים המשתנים שלהם.",
-            "🏰 הפכו לסוחר העשיר ביותר בממלכה\nהתחילו מדוכן צנוע; עם הזמן, הרחיבו ושדרגו את החנות שלכם עם אזורי תצוגה חדשים. ככל שהתהילה וההון שלכם גדלים, פלסו את דרככם להפוך לסוחר המכובד והעשיר ביותר בעיר. בנו את אימפריית המסחר שלכם וקחו שליטה על כלכלת ימי הביניים הפנטסטיים!",
-            "🌿 אווירה נעימה ומרגיעה\nהירגעו והצמיחו את החנות שלכם בעולם פנטזיה חמים מימי הביניים. תכננו את העסקאות שלכם ומצאו את הקצב שלכם. תיהנו מהאווירה הנעימה בזמן שאתם מחליטים מה לקנות, מה למכור וכיצד להפוך את החנות שלכם לטובה ביותר בעיר. אין לאן למהר, אבל לבחירות שלכם עדיין יש חשיבות. התמקדו בבניית עסק מצליח במרחב שבו תוכלו באמת להירגע."
-        ],
-        "ending": "פתחו חנות משלכם בלב ממלכת פנטזיה מימי הביניים! מלאו את המדפים שלכם בכל דבר, משיקויים וחרבות ועד קריסטלים מסתוריים וחפצים אגדיים. קבעו את המחירים, הרוויחו את אמון הלקוחות והפכו לסוחר העשיר ביותר בעיר!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "fa": {
-        "name": "Persian (Farsi)",
-        "intro": "Arcane Merchant یک بازی شبیه‌سازی مدیریت فروشگاه است که در قلب یک قلمرو فانتزی قرون وسطایی تنظیم شده است. شهر را کاوش کنید، فرصت‌های تجاری را غنیمت بشمارید و سفر خود را به سوی ثروت آغاز کنید. از فضای دنج لذت ببرید در حالی که تجارت می‌کنید، رشد می‌کنید و فروشگاه رویایی خود را می‌سازید. هر تصمیمی که می‌گیرید ثروت و آینده کسب‌وکار شما را شکل می‌دهد.",
-        "features": [
-            "🛍️ فروشگاه خود را مدیریت کنید\nفروشگاه جادویی خود را تأسیس و سازماندهی کنید، موجودی خود را مدیریت کنید و قفسه‌های خود را با معجون‌ها، سلاح‌های جادویی، کریستال‌های مرموز و انواع مصنوعات فوق‌العاده پر کنید. نمایش‌های خود را برای جذب مشتریان و تضمین حداکثر سود استراتژی‌بندی کنید.",
-            "💰 در هنر تجارت استاد شوید\nقیمت‌های خود را به صورت پویا بر اساس عرضه و تقاضا در بازار تنظیم کنید و فروش خود را مدیریت کنید. با هر معامله موفق، ثروت شما به سرعت رشد می‌کند و شهرت شما در سراسر قلمرو پخش می‌شود. اعتماد مشتریان خود را جلب کنید و استراتژی‌های تجاری خود را با نیازهای در حال تغییر آن‌ها تطبیق دهید.",
-            "🏰 به ثروتمندترین تاجر پادشاهی تبدیل شوید\nاز یک غرفه ساده شروع کنید؛ با گذشت زمان، فروشگاه خود را با مناطق نمایش جدید گسترش دهید و ارتقا دهید. با افزایش شهرت و ثروت شما، تلاش کنید تا به محترم‌ترین و ثروتمندترین تاجر شهر تبدیل شوید. امپراتوری تجاری خود را بسازید و کنترل اقتصاد قرون وسطای فانتزی را در دست بگیرید!",
-            "🌿 فضای دنج و آرام‌بخش\nدر یک دنیای فانتزی گرم قرون وسطایی استراحت کنید و فروشگاه خود را رشد دهید. معاملات خود را برنامه‌ریزی کنید و سرعت خود را پیدا کنید. از حال و هوای دنج لذت ببرید در حالی که تصمیم می‌گیرید چه چیزی بخرید، چه چیزی بفروشید و چگونه فروشگاه خود را به بهترین فروشگاه شهر تبدیل کنید. عجله‌ای نیست، اما انتخاب‌های شما هنوز هم اهمیت دارند. روی ساختن یک کسب‌وکار موفق در فضایی تمرکز کنید که واقعاً می‌توانید در آن آرامش پیدا کنید."
-        ],
-        "ending": "فروشگاه خود را در قلب یک قلمرو فانتزی قرون وسطایی باز کنید! قفسه‌های خود را با همه چیز از معجون‌ها و شمشیرها تا کریستال‌های مرموز و مصنوعات افسانه‌ای پر کنید. قیمت‌های خود را تعیین کنید، اعتماد مشتریان خود را جلب کنید و به ثروتمندترین تاجر شهر تبدیل شوید!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "sk": {
-        "name": "Slovak",
-        "intro": "Arcane Merchant je simulačná hra na správu obchodu zasadená do srdca stredovekého fantasy kráľovstva. Preskúmajte mesto, využite obchodné príležitosti a začnite svoju cestu k bohatstvu. Užite si útulnú atmosféru, zatiaľ čo obchodujete, rastiete a budujete svoj vysnívaný obchod. Každé rozhodnutie, ktoré urobíte, bude formovať váš majetok a budúcnosť vášho podnikania.",
-        "features": [
-            "🛍️ Spravujte Svoj Obchod\nZaložte a zorganizujte svoj vlastný magický obchod, spravujte svoje zásoby a naplňte svoje regály elixírmi, magickými zbraňami, tajomnými kryštálmi a rôznymi fantastickými artefaktmi. Strategizujte svoje výklady, aby ste prilákali zákazníkov a zabezpečili maximálny zisk.",
-            "💰 Ovládnite Umenie Obchodu\nDynamicky upravujte svoje ceny na základe ponuky a dopytu na trhu a spravujte svoj predaj. S každým úspešným obchodom bude vaše bohatstvo rýchlo rásť a vaša povesť sa rozšíri po celom kráľovstve. Získajte dôveru svojich zákazníkov a prispôsobte svoje obchodné stratégie ich meniacim sa potrebám.",
-            "🏰 Staňte sa Najbohatším Obchodníkom Kráľovstva\nZačnite od skromného stánku; časom rozšírte a vylepšite svoj obchod o nové výstavné priestory. Ako vaša sláva a majetok rastú, pracujte na tom, aby ste sa stali najuznávanejším a najbohatším obchodníkom v meste. Vybudujte svoje obchodné impérium a prevezmite kontrolu nad ekonomikou Fantasy Stredoveku!",
-            "🌿 Útulná a Relaxačná Atmosféra\nOddýchnite si a rozvíjajte svoj obchod v teplom stredovekom fantasy svete. Naplánujte si svoje obchody a nájdite si svoje vlastné tempo. Užite si útulnú atmosféru, zatiaľ čo sa rozhodujete, čo kúpiť, čo predať a ako urobiť svoj obchod najlepším v meste. Nie je kam sa ponáhľať, ale na vašich voľbách stále záleží. Zamerajte sa na budovanie úspešného podnikania v priestore, kde si môžete skutočne oddýchnuť."
-        ],
-        "ending": "Otvorte si vlastný obchod v srdci stredovekého Fantasy kráľovstva! Naplňte svoje regály všetkým od elixírov a mečov po tajomné kryštály a legendárne artefakty. Nastavte si ceny, získajte dôveru svojich zákazníkov a staňte sa najbohatším obchodníkom v meste!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
-    "hr": {
-        "name": "Croatian",
-        "intro": "Arcane Merchant je simulacijska igra upravljanja trgovinom smještena u srce srednjovjekovnog fantastičnog kraljevstva. Istražite grad, iskoristite trgovinske prilike i započnite svoje putovanje prema bogatstvu. Uživajte u ugodnoj atmosferi dok trgujete, rastete i gradite svoju trgovinu iz snova. Svaka odluka koju donesete oblikovat će vaše bogatstvo i budućnost vašeg poslovanja.",
-        "features": [
-            "🛍️ Upravljajte Svojom Trgovinom\nOsnovajte i organizirajte vlastitu čarobnu trgovinu, upravljajte svojim inventarom i napunite police napitcima, čarobnim oružjem, tajanstvenim kristalima i raznim fantastičnim artefaktima. Osmislite strategiju za svoje izloge kako biste privukli kupce i osigurali maksimalnu dobit.",
-            "💰 Ovladajte Umjetnošću Trgovine\nDinamički prilagođavajte svoje cijene na temelju ponude i potražnje na tržištu i upravljajte svojom prodajom. Svakim uspješnim poslom vaše će bogatstvo brzo rasti, a vaš ugled proširit će se cijelim kraljevstvom. Zaradite povjerenje svojih kupaca i prilagodite svoje trgovinske strategije njihovim promjenjivim potrebama.",
-            "🏰 Postanite Najbogatiji Trgovac Kraljevstva\nPočnite od skromnog štanda; s vremenom proširite i nadogradite svoju trgovinu novim izložbenim prostorima. Kako vaša slava i bogatstvo rastu, probijajte se do toga da postanete najpoštovaniji i najbogatiji trgovac u gradu. Izgradite svoje trgovačko carstvo i preuzmite kontrolu nad ekonomijom Fantastičnog Srednjeg Vijeka!",
-            "🌿 Ugodna i Opuštajuća Atmosfera\nOpustite se i razvijajte svoju trgovinu u toplom srednjovjekovnom svijetu mašte. Planirajte svoje trgovine i pronađite vlastiti ritam. Uživajte u ugodnoj atmosferi dok odlučujete što kupiti, što prodati i kako učiniti svoju trgovinu najboljom u gradu. Nema žurbe, ali vaši izbori su i dalje važni. Usredotočite se na izgradnju uspješnog poslovanja u prostoru gdje se stvarno možete opustiti."
-        ],
-        "ending": "Otvorite vlastitu trgovinu u srcu Srednjovjekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cijene, zaradite povjerenje svojih kupaca i postanite najbogatiji trgovac u gradu!",
-        "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
-        },
-        "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
-            "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
-            ]
-        }
-    },
     "sr": {
         "name": "Serbian",
         "intro": "Arcane Merchant je simulaciona igra upravljanja prodavnicom smeštena u srce srednjovekovnog fantastičnog kraljevstva. Istražite grad, iskoristite trgovinske prilike i započnite svoje putovanje ka bogatstvu. Uživajte u prijatnoj atmosferi dok trgujete, rastete i gradite svoju prodavnicu iz snova. Svaka odluka koju donesete oblikovaće vaše bogatstvo i budućnost vašeg poslovanja.",
@@ -1648,34 +514,118 @@ const translations = {
         ],
         "ending": "Otvorite sopstvenu prodavnicu u srcu Srednjovekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cene, zaradite poverenje svojih kupaca i postanite najbogatiji trgovac u gradu!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "Gledaj Hronike",
+            "menu_wares": "Pregledaj Robu",
+            "menu_rumors": "Pitaj za Glasine",
+            "menu_common": "Zajednička Soba",
+            "menu_about": "O Igri",
+            "menu_steam": "Lista Želja na Steamu",
+            "footer_rights": "© 2026 Findie Studios. Sva prava zadržana.",
+            "modal_wares_title": "Manifest Čuda",
+            "modal_rumors_title": "Šapat iz Praznine",
+            "modal_common_title": "Zajednička Soba",
+            "modal_about_title": "Vodič za Trgovce",
+            "specs_title": "⚡ Svitak Prizivanja",
+            "specs_min": "Minimalna Invokacija",
+            "specs_rec": "Preporučeni Ritual",
+            "merchant_name": "Majstor Trgovac"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, dobrodošao! Uđi, umorni putniče. Ognjište je toplo, a kotlić tek počinje da peva. Osećaj se kao kod kuće.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Ovde nema žurbe, prijatelju. Odvoji trenutak da udahneš. Oluja napolju može da čeka.",
+                "Svaki artefakt na ovim policama ima svoju priču. Koji te doziva?",
+                "Zlato je korisno, svakako, ali prava radost je pronaći savršen dom za izgubljeno blago.",
+                "Slušaj pucketanje vatre... to je najstarija pesma na svetu.",
+                "Kažu da je mesec noćas izuzetno svetao. Savršeno veče za nova putovanja.",
+                "Jesi li upoznao mačku iz prodavnice? Ona je prava vlasnica ovog mesta; ja samo plaćam račune.",
+                "U svetu koji se kreće tako brzo, pronalazim mir u jednostavnom činu poliranja lampe.",
+                "Kupac je gost u tvom domu. Ponudi im toplinu i vratiće se.",
+                "Ako pažljivo slušaš, možeš čuti kako se grad sprema za spavanje."
+            ]
+        }
+    },
+    "hr": {
+        "name": "Croatian",
+        "intro": "Arcane Merchant je simulacijska igra upravljanja trgovinom smještena u srce srednjovjekovnog fantastičnog kraljevstva. Istražite grad, iskoristite trgovinske prilike i započnite svoje putovanje prema bogatstvu. Uživajte u ugodnoj atmosferi dok trgujete, rastete i gradite svoju trgovinu iz snova. Svaka odluka koju donesete oblikovat će vaše bogatstvo i budućnost vašeg poslovanja.",
+        "features": [
+            "🛍️ Upravljajte Svojom Trgovinom\nOsnovajte i organizirajte vlastitu čarobnu trgovinu, upravljajte svojim inventarom i napunite police napitcima, čarobnim oružjem, tajanstvenim kristalima i raznim fantastičnim artefaktima. Osmislite strategiju za svoje izloge kako biste privukli kupce i osigurali maksimalnu dobit.",
+            "💰 Ovladajte Umjetnošću Trgovine\nDinamički prilagođavajte svoje cijene na temelju ponude i potražnje na tržištu i upravljajte svojom prodajom. Svakim uspješnim poslom vaše bogatstvo će brzo rasti, a vaš ugled proširit će se cijelim kraljevstvom. Zaradite povjerenje svojih kupaca i prilagodite svoje trgovinske strategije njihovim promjenjivim potrebama.",
+            "🏰 Postanite Najbogatiji Trgovac Kraljevstva\nPočnite od skromnog štanda; s vremenom proširite i nadogradite svoju trgovinu novim izložbenim prostorima. Kako vaša slava i bogatstvo rastu, probijajte se do toga da postanete najpoštovaniji i najbogatiji trgovac u gradu. Izgradite svoje trgovačko carstvo i preuzmite kontrolu nad ekonomijom Fantastičnog Srednjeg Vijeka!",
+            "🌿 Ugodna i Opuštajuća Atmosfera\nOpustite se i razvijajte svoju trgovinu u toplom srednjovjekovnom svijetu mašte. Planirajte svoje trgovine i pronađite vlastiti ritam. Uživajte u ugodnoj atmosferi dok odlučujete što kupiti, što prodati i kako učiniti svoju trgovinu najboljom u gradu. Nema žurbe, ali vaši izbori su i dalje važni. Usredotočite se na izgradnju uspješnog poslovanja u prostoru gdje se stvarno možete opustiti."
+        ],
+        "ending": "Otvorite vlastitu trgovinu u srcu Srednjovjekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cijene, zaradite povjerenje svojih kupaca i postanite najbogatiji trgovac u gradu!",
+        "ui": {
+            "menu_watch": "Gledaj Kronike",
+            "menu_wares": "Pregledaj Robu",
+            "menu_rumors": "Pitaj za Glasine",
+            "menu_common": "Zajednička Soba",
+            "menu_about": "O Igri",
+            "menu_steam": "Lista Želja na Steamu",
+            "footer_rights": "© 2026 Findie Studios. Sva prava pridržana.",
+            "modal_wares_title": "Manifest Čuda",
+            "modal_rumors_title": "Šapat iz Praznine",
+            "modal_common_title": "Zajednička Soba",
+            "modal_about_title": "Vodič za Trgovce",
+            "specs_title": "⚡ Svitak Prizivanja",
+            "specs_min": "Minimalna Invokacija",
+            "specs_rec": "Preporučeni Ritual",
+            "merchant_name": "Majstor Trgovac"
+        },
+        "merchant": {
+            "welcome": "Ah, dobrodošao! Uđi, umorni putniče. Ognjište je toplo, a kotlić tek počinje pjevati. Osjećaj se kao kod kuće.",
+            "quotes": [
+                "Ovdje nema žurbe, prijatelju. Odvoji trenutak da udahneš. Oluja vani može čekati.",
+                "Svaki artefakt na ovim policama ima svoju priču. Koji te doziva?",
+                "Zlato je korisno, svakako, ali prava radost je pronaći savršen dom za izgubljeno blago.",
+                "Slušaj pucketanje vatre... to je najstarija pjesma na svijetu.",
+                "Kažu da je mjesec noćas izuzetno svijetao. Savršena večer za nova putovanja.",
+                "Jesi li upoznao mačku iz trgovine? Ona je prava vlasnica ovog mjesta; ja samo plaćam račune.",
+                "U svijetu koji se kreće tako brzo, pronalazim mir u jednostavnom činu poliranja lampe.",
+                "Kupac je gost u tvom domu. Ponudi im toplinu i vratit će se.",
+                "Ako pažljivo slušaš, možeš čuti kako se grad sprema za spavanje."
+            ]
+        }
+    },
+    "sk": {
+        "name": "Slovak",
+        "intro": "Arcane Merchant je simulačná hra na správu obchodu zasadená do srdca stredovekého fantasy kráľovstva. Preskúmajte mesto, využite obchodné príležitosti a začnite svoju cestu k bohatstvu. Užite si útulnú atmosféru, zatiaľ čo obchodujete, rastiete a budujete svoj vysnívaný obchod. Každé rozhodnutie, ktoré urobíte, bude formovať váš majetok a budúcnosť vašho podnikania.",
+        "features": [
+            "🛍️ Spravujte Svoj Obchod\nZaložte a zorganizujte svoj vlastný magický obchod, spravujte svoje zásoby a naplňte svoje regály elixírmi, magickými zbraňami, tajomnými kryštálmi a rôznymi fantastickými artefaktiem. Strategizujte svoje výklady, aby ste prilákali zákazníkov a zabezpečili maximálny zisk.",
+            "💰 Ovládnite Umenie Obchodu\nDynamicky upravujte svoje ceny na základe ponuky a dopytu na trhu a spravujte svoj predaj. S každým úspešným obchodom bude vaše bohatstvo rýchlo rásť a vaša povesť sa rozšíri po celom kráľovstve. Získajte dôveru svojich zákazníkov a prispôsobte svoje obchodné stratégie ich meniacim sa potrebám.",
+            "🏰 Staňte sa Najbohatším Obchodníkom Kráľovstva\nZačnite od skromného stánku; časom rozšírte a vylepšite svoj obchod o nové výstavné priestory. Ako vaša slava a majetok rastú, pracujte na tom, aby ste sa stali najuznávanejším a najbohatším obchodníkom v meste. Vybudujte svoje obchodné impérium a prevezmite kontrolu nad ekonomikou Fantasy Stredoveku!",
+            "🌿 Útulná a Relaxačná Atmosféra\nOddýchnite si a rozvíjajte svoj obchod v teplom stredovekom fantasy svete. Naplánujte si svoje obchody a nájdite si svoje vlastné tempo. Užite si útulnú atmosféru, zatiaľ čo sa rozhodujete, čo kúpiť, čo predať a ako urobiť svoj obchod najlepším v meste. Nie je kam sa ponáhľať, ale na vašich voľbách stále záleží. Zamerajte sa na budovanie úspešného podnikania v priestore, kde si môžete skutočne oddýchnuť."
+        ],
+        "ending": "Otvorte si vlastný obchod v srdci stredovekého Fantasy kráľovstva! Naplňte svoje regály všetkým od elixírov a mečov po tajomné kryštály a legendárne artefakty. Nastavte si ceny, získajte dôveru svojich zákazníkov a staňte sa najbohatším obchodníkom v meste!",
+        "ui": {
+            "menu_watch": "Sledovať Kroniky",
+            "menu_wares": "Prehliadať Tovar",
+            "menu_rumors": "Opýtať sa na Klebety",
+            "menu_common": "Spoločenská Miestnosť",
+            "menu_about": "O Hre",
+            "menu_steam": "Zoznam Želaní na Steame",
+            "footer_rights": "© 2026 Findie Studios. Všetky práva vyhradené.",
+            "modal_wares_title": "Manifest Zázrakov",
+            "modal_rumors_title": "Šepot z Prázdnoty",
+            "modal_common_title": "Spoločenská Miestnosť",
+            "modal_about_title": "Sprievodca Obchodníka",
+            "specs_title": "⚡ Zvitok Vyvolávania",
+            "specs_min": "Minimálne Zaklínadlo",
+            "specs_rec": "Odporúčaný Rituál",
+            "merchant_name": "Majster Obchodník"
+        },
+        "merchant": {
+            "welcome": "Ah, vitaj! Poď ďalej, unavený cestovateľ. Ohnisko je teplé a kanvica práve začína spievať. Cíť sa tu ako doma.",
+            "quotes": [
+                "Niet sa kam ponáhľať, priateľu. Na chvíľu si vydýchni. Búrka vonku počká.",
+                "Každý artefakt na týchto policiach má svoj príbeh. Ktorý ťa volá?",
+                "Zlato je užitočné, určite, ale skutočnou radosťou je nájsť dokonalý domov pre stratený poklad.",
+                "Počúvaj praskanie ohňa... je to najstaršia pieseň na svete.",
+                "Hovorí sa, že mesiac je dnes v noci výnimočne jasný. Ideálny večer na nové cesty.",
+                "Už si stretol obchodnú mačku? Ona je skutočnou majiteľkou tohto miesta; ja len platím účty.",
+                "Vo svete, ktorý sa pohybuje tak rýchlo, nachádzam pokoj v jednoduchej činnosti leštenia lampy.",
+                "Zákazník je hosťom vo vašom dome. Ponúknite im teplo a oni sa vrátia.",
+                "Ak pozorne počúvaš, môžeš počuť, ako sa mesto ukladá na spánok."
             ]
         }
     },
@@ -1690,34 +640,34 @@ const translations = {
         ],
         "ending": "মধ্যযুগীয় ফ্যান্টাসি রাজ্যের হৃদয়ে আপনার নিজস্ব দোকান খুলুন! ওষুধ এবং তলোয়ার থেকে শুরু করে রহস্যময় স্ফটিক এবং কিংবদন্তি নিদর্শন পর্যন্ত সবকিছু দিয়ে আপনার তাকগুলি পূরণ করুন। আপনার দাম নির্ধারণ করুন, আপনার গ্রাহকদের বিশ্বাস অর্জন করুন এবং শহরের সবচেয়ে ধনী বণিক হয়ে উঠুন!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "ক্রনিকলস দেখুন",
+            "menu_wares": "পণ্য ব্রাউজ করুন",
+            "menu_rumors": "গুজব জিজ্ঞাসা করুন",
+            "menu_common": "সাধারণ কক্ষ",
+            "menu_about": "গেম সম্পর্কে",
+            "menu_steam": "স্টিম উইশলিস্ট",
+            "footer_rights": "© 2026 Findie Studios. সর্বস্বত্ব সংরক্ষিত।",
+            "modal_wares_title": "বিস্ময়ের ইশতেহার",
+            "modal_rumors_title": "শূন্য থেকে ফিসফিস",
+            "modal_common_title": "সাধারণ কক্ষ",
+            "modal_about_title": "বণিকের নির্দেশিকা",
+            "specs_title": "⚡ তলব করার স্ক্রোল",
+            "specs_min": "ন্যূনতম আবাহন",
+            "specs_rec": "প্রস্তাবিত আচার",
+            "merchant_name": "মাস্টার মার্চেন্ট"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "আহ, স্বাগতম! ভিতরে আসুন, ক্লান্ত ভ্রমণকারী। চুলা গরম, এবং কেটলি সবে গান গাইতে শুরু করেছে। নিজেকে নিজের বাড়িতেই মনে করুন।",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "এখানে কোন তাড়া নেই, বন্ধু। শ্বাস নিতে এক মুহূর্ত সময় নিন। বাইরের ঝড় অপেক্ষা করতে পারে।",
+                "এই তাকগুলির প্রতিটি নিদর্শনের একটি গল্প বলার আছে। কোনটি আপনাকে ডাকছে?",
+                "সোনা অবশ্যই দরকারী, তবে আসল আনন্দ হল হারানো গুপ্তধনের জন্য নিখুঁত বাড়ি খুঁজে পাওয়া।",
+                "আগুনের কর্কশ শব্দ শুনুন... এটি বিশ্বের প্রাচীনতম গান।",
+                "তারা বলে চাঁদ আজ রাতে অসাধারণভাবে উজ্জ্বল। নতুন যাত্রার জন্য একটি নিখুঁত সন্ধ্যা।",
+                "আপনি কি দোকানের বিড়ালের সাথে দেখা করেছেন? সে এই জায়গার আসল মালিক; আমি শুধু বিল পরিশোধ করি।",
+                "এত দ্রুত চলমান বিশ্বে, আমি একটি প্রদীপ পালিশ করার সাধারণ কাজে শান্তি পাই।",
+                "একজন গ্রাহক আপনার বাড়িতে অতিথি। তাদের উষ্ণতা অফার করুন, এবং তারা ফিরে আসবে।",
+                "আপনি যদি মনোযোগ দিয়ে শোনেন তবে আপনি শুনতে পাবেন শহরটি রাতের জন্য স্থির হচ্ছে।"
             ]
         }
     },
@@ -1732,34 +682,76 @@ const translations = {
         ],
         "ending": "قرون وسطی کے تصوراتی دائرے کے دل میں اپنی دکان کھولیں! دوائیاں اور تلواروں سے لے کر پراسرار کرسٹل اور افسانوی نمونوں تک ہر چیز کے ساتھ اپنی شیلف کو اسٹاک کریں۔ اپنی قیمتیں مقرر کریں، اپنے گاہکوں کا اعتماد حاصل کریں اور شہر کے امیر ترین تاجر بنیں!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "تاریخ دیکھیں",
+            "menu_wares": "سامان براؤز کریں",
+            "menu_rumors": "افواہیں پوچھیں",
+            "menu_common": "کامن روم",
+            "menu_about": "گیم کے بارے میں",
+            "menu_steam": "اسٹیم وش لسٹ",
+            "footer_rights": "© 2026 Findie Studios. تمام حقوق محفوظ ہیں.",
+            "modal_wares_title": "عجائبات کا منشور",
+            "modal_rumors_title": "خلا سے سرگوشیاں",
+            "modal_common_title": "کامن روم",
+            "modal_about_title": "تاجر کی گائیڈ",
+            "specs_title": "⚡ طلبی کا طومار",
+            "specs_min": "کم از کم طلبی",
+            "specs_rec": "تجویز کردہ رسم",
+            "merchant_name": "ماسٹر مرچنٹ"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "آہ، خوش آمدید! اندر آجاؤ، تھکے ہوئے مسافر۔ چولہا گرم ہے، اور کیتلی نے ابھی گانا شروع کیا ہے۔ اسے اپنا گھر سمجھیں۔",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "یہاں کوئی جلدی نہیں ہے، دوست۔ سانس لینے کے لیے ایک لمحہ نکالیں۔ باہر طوفان انتظار کر سکتا ہے۔",
+                "ان شیلفوں پر موجود ہر نمونے کی ایک کہانی ہے۔ کون سا آپ کو پکار رہا ہے؟",
+                "سونا یقیناً مفید ہے، لیکن حقیقی خوشی کھوئے ہوئے خزانے کے لیے بہترین گھر تلاش کرنا ہے۔",
+                "آگ کی کڑکڑاہٹ کو سنیں... یہ دنیا کا قدیم ترین گانا ہے۔",
+                "وہ کہتے ہیں کہ آج رات چاند غیر معمولی طور پر روشن ہے۔ نئے سفر کے لیے ایک بہترین شام۔",
+                "کیا آپ دکان کی بلی سے ملے ہیں؟ وہ اس جگہ کی اصل مالکن ہے؛ میں صرف بل ادا کرتا ہوں۔",
+                "اتنی تیزی سے چلنے والی دنیا میں، مجھے چراغ کو پالش کرنے کے سادہ عمل میں سکون ملتا ہے۔",
+                "گاہک آپ کے گھر میں مہمان ہے۔ انہیں گرم جوشی پیش کریں، اور وہ واپس آئیں گے۔",
+                "اگر آپ غور سے سنیں، تو آپ شہر کو رات کے لیے پرسکون ہوتے ہوئے سن سکتے ہیں۔"
+            ]
+        }
+    },
+    "fa": {
+        "name": "Persian (Farsi)",
+        "intro": "Arcane Merchant یک بازی شبیه‌سازی مدیریت فروشگاه است که در قلب یک قلمرو فانتزی قرون وسطایی تنظیم شده است. شهر را کاوش کنید، فرصت‌های تجاری را غنیمت بشمارید و سفر خود را به سوی ثروت آغاز کنید. از فضای دنج لذت ببرید در حالی که تجارت می‌کنید، رشد می‌کنید و فروشگاه رویایی خود را می‌سازید. هر تصمیمی که می‌گیرید ثروت و آینده کسب‌وکار شما را شکل می‌دهد.",
+        "features": [
+            "🛍️ فروشگاه خود را مدیریت کنید\nفروشگاه جادویی خود را تأسیس و سازماندهی کنید، موجودی خود را مدیریت کنید و قفسه‌های خود را با معجون‌ها، سلاح‌های جادویی، کریستال‌های مرموز و انواع مصنوعات فوق‌العاده پر کنید. نمایش‌های خود را برای جذب مشتریان و تضمین حداکثر سود استراتژی‌بندی کنید.",
+            "💰 در هنر تجارت استاد شوید\nقیمت‌های خود را به صورت پویا بر اساس عرضه و تقاضا در بازار تنظیم کنید و فروش خود را مدیریت کنید. با هر معامله موفق، ثروت شما به سرعت رشد می‌کند و شهرت شما در سراسر قلمرو پخش می‌شود. اعتماد مشتریان خود را جلب کنید و استراتژی‌های تجاری خود را با نیازهای در حال تغییر آن‌ها تطبیق دهید.",
+            "🏰 به ثروتمندترین تاجر پادشاهی تبدیل شوید\nاز یک غرفه ساده شروع کنید؛ با گذشت زمان، فروشگاه خود را با مناطق نمایش جدید گسترش دهید و ارتقا دهید. با افزایش شهرت و ثروت شما، تلاش کنید تا به محترم‌ترین و ثروتمندترین تاجر شهر تبدیل شوید. امپراتوری تجاری خود را بسازید و کنترل اقتصاد قرون وسطای فانتزی را در دست بگیرید!",
+            "🌿 فضای دنج و آرام‌بخش\nدر یک دنیای فانتزی گرم قرون وسطایی استراحت کنید و فروشگاه خود را رشد دهید. معاملات خود را برنامه‌ریزی کنید و سرعت خود را پیدا کنید. از حال و هوای دنج لذت ببرید در حالی که تصمیم می‌گیرید چه چیزی بخرید، چه چیزی بفروشید و چگونه فروشگاه خود را به بهترین فروشگاه شهر تبدیل کنید. عجله‌ای نیست، اما انتخاب‌های شما هنوز هم اهمیت دارند. روی ساختن یک کسب‌وکار موفق در فضایی تمرکز کنید که واقعاً می‌توانید در آن آرامش پیدا کنید."
+        ],
+        "ending": "فروشگاه خود را در قلب یک قلمرو فانتزی قرون وسطایی باز کنید! قفسه‌های خود را با همه چیز از معجون‌ها و شمشیرها تا کریستال‌های مرموز و مصنوعات افسانه‌ای پر کنید. قیمت‌های خود را تعیین کنید، اعتماد مشتریان خود را جلب کنید و به ثروتمندترین تاجر شهر تبدیل شوید!",
+        "ui": {
+            "menu_watch": "تماشای وقایع",
+            "menu_wares": "مرور کالاها",
+            "menu_rumors": "پرسیدن شایعات",
+            "menu_common": "اتاق مشترک",
+            "menu_about": "درباره بازی",
+            "menu_steam": "لیست آرزوها در استیم",
+            "footer_rights": "© ۲۰۲۶ استودیو فایندی. تمامی حقوق محفوظ است.",
+            "modal_wares_title": "فهرست عجایب",
+            "modal_rumors_title": "زمزمه‌هایی از پوچی",
+            "modal_common_title": "اتاق مشترک",
+            "modal_about_title": "راهنمای تاجر",
+            "specs_title": "⚡ طومار احضار",
+            "specs_min": "حداقل نیازها",
+            "specs_rec": "سیستم پیشنهادی",
+            "merchant_name": "تاجر بزرگ"
+        },
+        "merchant": {
+            "welcome": "آه، خوش آمدی! بیا تو، مسافر خسته. اجاق گرم است و کتری تازه دارد شروع به خواندن می‌کند. اینجا را خانه خودت بدان.",
+            "quotes": [
+                "اینجا عجله‌ای نیست، دوست من. لحظه‌ای نفس بکش. طوفان بیرون می‌تواند صبر کند.",
+                "هر مصنوعی در این قفسه‌ها داستانی برای گفتن دارد. کدام یک تو را صدا می‌زند؟",
+                "طلا مطمئناً مفید است، اما لذت واقعی پیدا کردن خانه کامل برای یک گنج گمشده است.",
+                "به صدای ترق و تروق آتش گوش کن... این قدیمی‌ترین آواز جهان است.",
+                "می‌گویند ماه امشب به طرز استثنایی روشن است. شبی عالی برای سفرهای جدید.",
+                "گربه فروشگاه را دیده‌ای؟ او صاحب واقعی اینجاست؛ من فقط قبض‌ها را پرداخت می‌کنم.",
+                "در دنیایی که با سرعت حرکت می‌کند، من آرامش را در عمل ساده صیقل دادن یک چراغ پیدا می‌کنم.",
+                "مشتری مهمان خانه توست. به آن‌ها گرما ببخش و آن‌ها باز خواهند گشت.",
+                "اگر با دقت گوش کنی، می‌توانی صدای آرام گرفتن شهر برای شب را بشنوی."
             ]
         }
     },
@@ -1774,34 +766,34 @@ const translations = {
         ],
         "ending": "Atidarykite savo parduotuvę Viduramžių Fantastinės karalystės širdyje! Užpildykite lentynas viskuo – nuo gėrimų ir kardų iki paslaptingų kristalų ir legendinių artefaktų. Nustatykite kainas, pelnykite klientų pasitikėjimą ir tapkite turtingiausiu pirkliu mieste!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "Žiūrėti Kronikas",
+            "menu_wares": "Naršyti Prekes",
+            "menu_rumors": "Klausti Gandų",
+            "menu_common": "Bendrasis Kambarys",
+            "menu_about": "Apie Žaidimą",
+            "menu_steam": "Steam Norų Sąrašas",
+            "footer_rights": "© 2026 Findie Studios. Visos teisės saugomos.",
+            "modal_wares_title": "Stebuklų Manifestas",
+            "modal_rumors_title": "Šnabždesiai iš Tuštumos",
+            "modal_common_title": "Bendrasis Kambarys",
+            "modal_about_title": "Pirklio Vadovas",
+            "specs_title": "⚡ Šaukimo Ritinys",
+            "specs_min": "Minimalus Iškvietimas",
+            "specs_rec": "Rekomenduojamas Ritualas",
+            "merchant_name": "Meistras Pirklys"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ak, sveikas atvykęs! Užeik, pavargęs keliautojau. Židinys šiltas, o virdulys kaip tik pradeda dainuoti. Jauskis kaip namie.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Čia nėra kur skubėti, drauge. Skirk akimirką įkvėpti. Audra lauke gali palaukti.",
+                "Kiekvienas artefaktas šiose lentynose turi savo istoriją. Kuris tave šaukia?",
+                "Auksas naudingas, be abejo, bet tikrasis džiaugsmas yra rasti tobulus namus prarastam lobiui.",
+                "Klausyk ugnies traškėjimo... tai seniausia daina pasaulyje.",
+                "Sako, kad mėnulis šiąnakt ypatingai ryškus. Puikus vakaras naujoms kelionėms.",
+                "Ar sutikai parduotuvės katę? Ji yra tikroji šios vietos šeimininkė; aš tik apmoku sąskaitas.",
+                "Pasaulyje, kuris juda taip greitai, aš randu ramybę paprastame veiksme – lempos poliravime.",
+                "Klientas yra svečias tavo namuose. Pasiūlyk jiems šilumą, ir jie sugrįš.",
+                "Jei atidžiai klausysi, gali išgirsti, kaip miestas ruošiasi nakčiai."
             ]
         }
     },
@@ -1816,34 +808,34 @@ const translations = {
         ],
         "ending": "Atveriet savu veikalu Viduslaiku Fantāzijas karaļvalsts sirdī! Piepildiet plauktus ar visu, sākot no mikstūrām un zobeniem līdz noslēpumainiem kristāliem un leģendāriem artefaktiem. Nosakiet cenas, iegūstiet klientu uzticību un kļūstiet par bagātāko tirgotāju pilsētā!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "Skatīties Hronikas",
+            "menu_wares": "Pārlūkot Preces",
+            "menu_rumors": "Jautāt Baumas",
+            "menu_common": "Kopīgā Telpa",
+            "menu_about": "Par Spēli",
+            "menu_steam": "Steam Vēlmju Saraksts",
+            "footer_rights": "© 2026 Findie Studios. Visas tiesības aizsargātas.",
+            "modal_wares_title": "Brīnumu Manifests",
+            "modal_rumors_title": "Čuksti no Tukšuma",
+            "modal_common_title": "Kopīgā Telpa",
+            "modal_about_title": "Tirgotāja Ceļvedis",
+            "specs_title": "⚡ Izsaukšanas Tīstoklis",
+            "specs_min": "Minimālā Invokācija",
+            "specs_rec": "Ieteicamais Rituāls",
+            "merchant_name": "Meistars Tirgotājs"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, laipni lūgts! Nāc iekšā, nogurušais ceļiniek. Pavards ir silts, un tējkanna tikko sāk dziedāt. Jūties kā mājās.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Šeit nav jāsteidzas, draugs. Velti brīdi, lai ieelpotu. Vētra ārā var pagaidīt.",
+                "Katram artefaktam šajos plauktos ir savs stāsts. Kuris tevi uzrunā?",
+                "Zelts noteikti ir noderīgs, bet patiess prieks ir atrast ideālas mājas pazudušam dārgumam.",
+                "Klausies uguns sprakšķēšanu... tā ir vecākā dziesma pasaulē.",
+                "Runā, ka mēness šonakt ir īpaši spilgts. Ideāls vakars jauniem ceļojumiem.",
+                "Vai esi saticis veikala kaķi? Viņa ir šīs vietas īstā saimniece; es tikai apmaksāju rēķinus.",
+                "Pasaulē, kas tik ātri steidzas, es atrodu mieru vienkāršā lampas pulēšanā.",
+                "Klients ir viesis tavās mājās. Piedāvā viņiem siltumu, un viņi atgriezīsies.",
+                "Ja uzmanīgi klausies, vari dzirdēt, kā pilsēta gatavojas naktsmieram."
             ]
         }
     },
@@ -1858,34 +850,34 @@ const translations = {
         ],
         "ending": "Ava oma pood Keskaegse Fantaasiakuningriigi südames! Täida oma riiulid kõigega alates jookidest ja mõõkadest kuni salapäraste kristallide ja legendaarsete esemeteni. Määra hinnad, võida klientide usaldus ja saa linna rikkaimaks kaupmeheks!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "Vaata Kroonikaid",
+            "menu_wares": "Sirvi Kaupu",
+            "menu_rumors": "Küsi Kuulujutte",
+            "menu_common": "Ühisruum",
+            "menu_about": "Mängust",
+            "menu_steam": "Steami Sooviloend",
+            "footer_rights": "© 2026 Findie Studios. Kõik õigused kaitstud.",
+            "modal_wares_title": "Imede Manifest",
+            "modal_rumors_title": "Sosistused Tühjusest",
+            "modal_common_title": "Ühisruum",
+            "modal_about_title": "Kaupmehe Teejuht",
+            "specs_title": "⚡ Kutsumise Rullraamat",
+            "specs_min": "Minimaalne Loits",
+            "specs_rec": "Soovitatav Rituaal",
+            "merchant_name": "Meisterkaupmees"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, tere tulemast! Astu sisse, väsinud rändur. Kolle on soe ja teekann hakkab just laulma. Tunde end nagu kodus.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Siin pole kiiret, sõber. Võta hetk hingamiseks. Torm väljas võib oodata.",
+                "Igal esemel neil riiulitel on oma lugu rääkida. Milline neist sind kutsub?",
+                "Kuld on kindlasti kasulik, kuid tõeline rõõm on leida kadunud aardele täiuslik kodu.",
+                "Kuula tule praksumist... see on maailma vanim laul.",
+                "Räägitakse, et kuu on täna öösel erakordselt ere. Täiuslik õhtu uuteks rännakuteks.",
+                "Kas oled poe kassi kohanud? Tema on selle koha tõeline omanik; mina maksan vaid arveid.",
+                "Maailmas, mis liigub nii kiiresti, leian rahu lihtsas lambi poleerimises.",
+                "Klient on külaline sinu kodus. Paku neile soojust ja nad tulevad tagasi.",
+                "Kui kuulad tähelepanelikult, võid kuulda, kuidas linn ööunne suigub."
             ]
         }
     },
@@ -1895,39 +887,39 @@ const translations = {
         "features": [
             "🛍️ Upravljajte Svojo Trgovino\nUstanovite in organizirajte svojo čarobno trgovino, upravljajte svojo zalogo in napolnite police z napoji, čarobnim orožjem, skrivnostnimi kristali in različnimi fantastičnimi artefakti. Načrtujte svoje razstave, da pritegnete stranke in zagotovite največji dobiček.",
             "💰 Obvladajte Umetnost Trgovanja\nDinamično prilagajajte svoje cene glede na ponudbo in povpraševanje na trgu ter upravljajte svojo prodajo. Z vsakim uspešnim poslom bo vaše bogastvo hitro raslo, vaš ugled pa se bo razširil po vsem kraljestvu. Prislužite si zaupanje svojih strank in prilagodite svoje trgovske strategije njihovim spreminjajočim se potrebam.",
-            "🏰 Postanite Najbogatejši Trgovec v Kraljestvu\nZačnite s skromno stojnico; sčasoma razširite in nadgradite svojo trgovino z novimi razstavnimi prostori. Ko vaša slava in bogastvo rasteta, si prizadevajte postati najbolj spoštovan in najbogatejši trgovec v mestu. Zgradite svoj trgovski imperij in prevzemite nadzor nad gospodarstvom Fantazijskega Srednjega Veka!",
+            "🏰 Postanite Najbogatejši Trgovec v Kraljestvu\nZačnite s skromno stojnico; sčasoma razširite in nadgradite svojo trgovino z novimi razstavnimi prostori. Ko vaša slava in bogatstvo rasteta, si prizadevajte postati najbolj spoštovan in najbogatejši trgovec v mestu. Zgradite svoj trgovski imperij in prevzemite nadzor nad gospodarstvom Fantazijskega Srednjega Veka!",
             "🌿 Prijetno in Sproščujoče Vzdušje\nSprostite se in razvijajte svojo trgovino v toplem srednjeveškem fantazijskem svetu. Načrtujte svoje posle in poiščite svoj ritem. Uživajte v prijetnem vzdušju, medtem ko se odločate, kaj kupiti, kaj prodati in kako narediti svojo trgovino najboljšo v mestu. Ni se vam treba muditi, vendar so vaše izbire še vedno pomembne. Osredotočite se na gradnjo uspešnega podjetja v prostoru, kjer se lahko resnično sprostite."
         ],
         "ending": "Odprite svojo trgovino v srcu Srednjeveškega Fantazijskega kraljestva! Napolnite police z vsem, od napojev in mečev do skrivnostnih kristalov in legendarnih artefaktov. Določite cene, pridobite zaupanje strank in postanite najbogatejši trgovec v mestu!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "Glej Kronike",
+            "menu_wares": "Brskaj po Blagu",
+            "menu_rumors": "Vprašaj za Govorice",
+            "menu_common": "Skupni Prostor",
+            "menu_about": "O Igri",
+            "menu_steam": "Seznam Želja na Steamu",
+            "footer_rights": "© 2026 Findie Studios. Vse pravice pridržane.",
+            "modal_wares_title": "Manifest Čudes",
+            "modal_rumors_title": "Šepet iz Praznine",
+            "modal_common_title": "Skupni Prostor",
+            "modal_about_title": "Trgovčev Vodnik",
+            "specs_title": "⚡ Zvitek Priklica",
+            "specs_min": "Minimalni Priklic",
+            "specs_rec": "Priporočeni Obred",
+            "merchant_name": "Mojster Trgovec"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, dobrodošel! Vstopi, utrujeni popotnik. Ognjišče je toplo in kotliček ravno začenja peti. Počuti se kot doma.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Tukaj se ne mudi, prijatelj. Vzemi si trenutek za vdih. Nevihta zunaj lahko počaka.",
+                "Vsak artefakt na teh policah ima svojo zgodbo. Kateri te kliče?",
+                "Zlato je vsekakor koristno, a pravo veselje je najti popoln dom za izgubljeni zaklad.",
+                "Poslušaj prasketanje ognja... to je najstarejša pesem na svetu.",
+                "Pravijo, da je luna nocoj izjemno svetla. Popoln večer za nova potovanja.",
+                "Si spoznal trgovsko mačko? Ona je prava lastnica tega kraja; jaz samo plačujem račune.",
+                "V svetu, ki se premika tako hitro, najdem mir v preprostem dejanju loščenja svetilke.",
+                "Stranka je gost v tvojem domu. Ponudi jim toplinu in vrnili se bodo.",
+                "Če pozorno poslušaš, lahko slišiš, kako se mesto pripravlja na spanje."
             ]
         }
     },
@@ -1937,39 +929,39 @@ const translations = {
         "features": [
             "🛍️ Gestiona la Teva Botiga\nEstableix i organitza la teva pròpia botiga màgica, gestiona el teu inventari i omple les prestatgeries amb pocions, armes màgiques, cristalls misteriosos i una varietat d'artefactes fantàstics. Planifica les teves exposicions per atreure clients i garantir el màxim benefici.",
             "💰 Domina l'Art del Comerç\nAjusta els teus preus dinàmicament basant-te en l'oferta i la demanda del mercat i gestiona les teves vendes. Amb cada tracte exitós, la teva riquesa creixerà ràpidament i la teva reputació s'escamparà per tot el regne. Guanya't la confiança dels teus clients i adapta les teves estratègies comercials a les seves necessitats canviants.",
-            "🏰 Converteix-te en el Comerciant Més Ric del Regne\nComença des d'una parada humil; amb el temps, amplia i millora la teva botiga amb noves àrees d'exposició. A mesura que la teva fama i fortuna augmentin, treballa per convertir-te en el comerciant més respectat i ric de la ciutat. Construeix el teu imperi comercial i pren el control de l'economia de l'Edat Mitjana de Fantasia!",
-            "🌿 Atmosfera Acollidora i Relaxant\nRelaxa't i fes créixer la teva botiga en un món de fantasia medieval càlid. Planifica els teus comerços i troba el teu propi ritme. Gaudeix de l'ambient acollidor mentre decideixes què comprar, què vendre i com fer que la teva botiga sigui la millor de la ciutat. No hi ha pressa, però les teves eleccions encara importen. Centra't en construir un negoci d'èxit en un espai on realment puguis desconnectar."
+            "🏰 Converteix-te en el Comerciant Més Ric del Regne\nComença des d'una parada humil; amb el temps, expandeix i millora la teva botiga amb noves àrees d'exposició. A mesura que la teva fama i fortuna augmentin, treballa per convertir-te en el comerciant més respectat i ric de la ciutat. Construeix el teu imperi comercial i pren el control de l'economia de l'Edat Mitjana de Fantasia!",
+            "🌿 Atmosfera Acollidora i Relaxant\nRelaxa't i fes créixer la teva botiga en un càlid món de fantasia medieval. Planifica els teus comerços i troba el teu propi ritme. Gaudeix de l'ambient acollidor mentre decideixes què comprar, què vendre i com fer que la teva botiga sigui la millor de la ciutat. No hi ha pressa, però les teves eleccions segueixen important. Concentra't en construir un negoci d'èxit en un espai on realment puguis desconnectar."
         ],
-        "ending": "Obre la teva pròpia botiga al cor d'un Regne de Fantasia Medieval! Omple les prestatgeries amb tot, des de pocions i espases fins a cristalls misteriosos i artefactes llegendaris. Fixa els teus preus, guanya't la confiança dels clients i converteix-te en el comerciant més ric de la ciutat!",
+        "ending": "Obre la teva pròpia botiga al cor d'un regne de fantasia medieval! Omple les teves prestatgeries amb tot, des de pocions i espases fins a cristalls misteriosos i artefactes llegendaris. Fixa els teus preus, guanya't la confiança dels teus clients i converteix-te en el comerciant més ric de la ciutat!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "Veure Cròniques",
+            "menu_wares": "Explorar Mercaderies",
+            "menu_rumors": "Preguntar Rumors",
+            "menu_common": "Sala Comuna",
+            "menu_about": "Sobre el Joc",
+            "menu_steam": "Llista de Desitjos a Steam",
+            "footer_rights": "© 2026 Findie Studios. Tots els drets reservats.",
+            "modal_wares_title": "Manifest de Meravelles",
+            "modal_rumors_title": "Xiuxiueigs del Buit",
+            "modal_common_title": "Sala Comuna",
+            "modal_about_title": "Guia del Mercader",
+            "specs_title": "⚡ Pergamí d'Invocació",
+            "specs_min": "Invocació Mínima",
+            "specs_rec": "Ritual Recomanat",
+            "merchant_name": "Mestre Mercader"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, benvingut! Entra, viatger cansat. La llar de foc és calenta i la tetera tot just comença a cantar. Fes com si fossis a casa.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Aquí no hi ha pressa, amic. Pren-te un moment per respirar. La tempesta de fora pot esperar.",
+                "Cada artefacte en aquestes prestatgeries té una història per explicar. Quin et crida?",
+                "L'or és útil, sens dubte, però la veritable alegria és trobar la llar perfecta per a un tresor perdut.",
+                "Escolta el crepitar del foc... és la cançó més antiga del món.",
+                "Diuen que la lluna és excepcionalment brillant aquesta nit. Una vetllada perfecta per a nous viatges.",
+                "Has conegut el gat de la botiga? Ella és la veritable mestressa d'aquest lloc; jo només pago les factures.",
+                "En un món que es mou tan ràpid, trobo la pau en el simple acte de polir un llum.",
+                "Un client és un convidat a casa teva. Ofereix-los calidesa i tornaran.",
+                "Si escoltes atentament, pots sentir com la ciutat es prepara per dormir."
             ]
         }
     },
@@ -1984,34 +976,34 @@ const translations = {
         ],
         "ending": "Opnaðu þína eigin búð í hjarta Miðalda Fantasíuríkis! Fylltu hillurnar með öllu frá drykkjum og sverðum til dularfullra kristalla og goðsagnakenndra gripa. Settu verðin, ávinnaðu þér traust viðskiptavina og vertu ríkasti kaupmaðurinn í bænum!",
         "ui": {
-            "menu_watch": "Watch Chronicles",
-            "menu_wares": "Browse Wares",
-            "menu_rumors": "Ask Rumors",
-            "menu_common": "The Common Room",
-            "menu_about": "About the Game",
-            "menu_steam": "Wishlist on Steam",
-            "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
-            "modal_wares_title": "Manifest of Wonders",
-            "modal_rumors_title": "Whispers from the Void",
-            "modal_common_title": "The Common Room",
-            "modal_about_title": "The Merchant's Guide",
-            "specs_title": "⚡ Scroll of Summoning",
-            "specs_min": "Minimum Invocation",
-            "specs_rec": "Recommended Ritual",
-            "merchant_name": "Master Merchant"
+            "menu_watch": "Horfa á Annála",
+            "menu_wares": "Skoða Varning",
+            "menu_rumors": "Spyrja um Orðróm",
+            "menu_common": "Almenningsherbergið",
+            "menu_about": "Um Leikinn",
+            "menu_steam": "Óskalisti á Steam",
+            "footer_rights": "© 2026 Findie Studios. Öll réttindi áskilin.",
+            "modal_wares_title": "Skrá yfir Undur",
+            "modal_rumors_title": "Hvíslað úr Tóminu",
+            "modal_common_title": "Almenningsherbergið",
+            "modal_about_title": "Handbók Kaupmanns",
+            "specs_title": "⚡ Kallirolla",
+            "specs_min": "Lágmarks Ákall",
+            "specs_rec": "Ráðlögð Athöfn",
+            "merchant_name": "Meistarakaupmaður"
         },
         "merchant": {
-            "welcome": "Ah, welcome! Come in, weary traveler. The hearth is warm, and the kettle is just starting to sing. Make yourself at home.",
+            "welcome": "Ah, velkominn! Komdu inn, þreytti ferðalangur. Eldstæðið er hlýtt og ketillinn er rétt að byrja að syngja. Láttu fara vel um þig.",
             "quotes": [
-                "There is no rush here, friend. Take a moment to breathe. The storm outside can wait.",
-                "Every artifact on these shelves has a story to tell. Which one calls to you?",
-                "Gold is useful, certainly, but the true joy is finding the perfect home for a lost treasure.",
-                "Listen to the fire crackle... it’s the oldest song in the world.",
-                "They say the moon is exceptionally bright tonight. A perfect evening for new journeys.",
-                "Have you met the shop cat? She is the true owner of this place; I just pay the bills.",
-                "In a world that moves so fast, I find peace in the simple act of polishing a lamp.",
-                "A customer is a guest in your home. Offer them warmth, and they will return.",
-                "If you listen closely, you can hear the town settling down for the night."
+                "Hér liggur ekkert á, vinur. Taktu þér augnablik til að anda. Stormurinn úti getur beðið.",
+                "Hver gripur á þessum hillum hefur sögu að segja. Hver kallar á þig?",
+                "Gull er vissulega gagnlegt, en sönn gleði er að finna fullkomið heimili fyrir týndan fjársjóð.",
+                "Hlustaðu á eldinn braka... það er elsta lag í heimi.",
+                "Þeir segja að tunglið sé einstaklega bjart í kvöld. Fullkomið kvöld fyrir nýjar ferðir.",
+                "Hefurðu hitt búðarköttinn? Hún er hinn sanni eigandi þessa staðar; ég borga bara reikningana.",
+                "Í heimi sem hreyfist svona hratt, finn ég frið í þeirri einföldu athöfn að fægja lampa.",
+                "Viðskiptavinur er gestur á heimili þínu. Bjóddu þeim hlýju og þeir munu koma aftur.",
+                "Ef þú hlustar vel, geturðu heyrt bæinn gera sig kláran fyrir svefninn."
             ]
         }
     }
