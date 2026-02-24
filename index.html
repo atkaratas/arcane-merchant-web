@@ -909,11 +909,12 @@
             return translations[currentLang].merchant.quotes;
         }
 
-        function handleWatch() { showVideoModal(); typeWriter(getQuotes()[0], dialogueElement, 30); }
-        function handleWares() { showModal('wares-modal'); initCarousel(); typeWriter(getQuotes()[1], dialogueElement, 30); }
-        function handleRumors() { showModal('rumors-modal'); typeWriter(getQuotes()[4], dialogueElement, 30); }
-        function handleCommunity() { showModal('community-modal'); typeWriter(getQuotes()[8], dialogueElement, 30); }
-        function handleAbout() { showModal('about-modal'); typeWriter(getQuotes()[2], dialogueElement, 30); }
+        // Global Bindings for robustness
+        window.handleWatch = function() { showVideoModal(); typeWriter(getQuotes()[0], dialogueElement, 30); }
+        window.handleWares = function() { showModal('wares-modal'); initCarousel(); typeWriter(getQuotes()[1], dialogueElement, 30); }
+        window.handleRumors = function() { showModal('rumors-modal'); typeWriter(getQuotes()[4], dialogueElement, 30); }
+        window.handleCommunity = function() { showModal('community-modal'); typeWriter(getQuotes()[8], dialogueElement, 30); }
+        window.handleAbout = function() { showModal('about-modal'); typeWriter(getQuotes()[2], dialogueElement, 30); }
 
         function closeModals() {
             document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
@@ -1121,12 +1122,12 @@
                         el = document.createElement('button');
                         el.className = 'menu-btn';
                         
-                        // EXPLICIT CLICK HANDLERS (Attributes)
-                        if (item.key === 'menu_watch') el.setAttribute('onclick', 'handleWatch()');
-                        else if (item.key === 'menu_wares') el.setAttribute('onclick', 'handleWares()');
-                        else if (item.key === 'menu_rumors') el.setAttribute('onclick', 'handleRumors()');
-                        else if (item.key === 'menu_common') el.setAttribute('onclick', 'handleCommunity()');
-                        else if (item.key === 'menu_about') el.setAttribute('onclick', 'handleAbout()');
+                        // EXPLICIT CLICK HANDLERS (Direct Event Listener)
+                        if (item.key === 'menu_watch') el.addEventListener('click', handleWatch);
+                        else if (item.key === 'menu_wares') el.addEventListener('click', handleWares);
+                        else if (item.key === 'menu_rumors') el.addEventListener('click', handleRumors);
+                        else if (item.key === 'menu_common') el.addEventListener('click', handleCommunity);
+                        else if (item.key === 'menu_about') el.addEventListener('click', handleAbout);
                         
                         el.innerText = text;
                     }
