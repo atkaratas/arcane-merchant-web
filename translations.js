@@ -39,7 +39,25 @@ const translations = {
                 "A customer is a guest in your home. Offer them warmth, and they will return.",
                 "If you listen closely, you can hear the town settling down for the night."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "tr": {
         "name": "Turkish",
@@ -81,7 +99,25 @@ const translations = {
                 "Müşteri evine gelen bir misafirdir. Onlara sıcaklık sunarsan, geri döneceklerdir.",
                 "Dikkatli dinlersen, kasabanın yavaşça uykuya dalışını duyabilirsin."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 Yüce Kral'ın Borcu",
+                "desc": "\"Kraliyet hazinesi bomboş. Kralın Kraliyet Mücevherlerini rehin verdiği... ya da zengin tüccarların altınlarına el koyduğu söyleniyor. Paranı sakla.\""
+            },
+            {
+                "title": "🌙 Göksel Hizalanma",
+                "desc": "\"İkiz Aylar bu gece hizalanıyor. Büyücüler Aytaşı parçaları için çaresiz ve piyasa fiyatının üç katını ödeyecekler. Şimdi stok yap.\""
+            },
+            {
+                "title": "🕸️ İpek Kervanı",
+                "desc": "\"İpek Kumulları'ndan gelen bir kervan Fısıldayan Ormanlar'da kayboldu. Eğer onu kurtarmak için maceracılar kiralayabilirsen, egzotik kumaşlar bir servet değerinde olur.\""
+            },
+            {
+                "title": "👁️ Gölge Pazarı",
+                "desc": "\"Gece yarısı kanalizasyonda bir karaborsanın açıldığı söyleniyor. Eserler yasadışı... ve güçlü. Orada ticaret yapmaya cesaretin var mı?\""
+            }
+        ]
     },
     "zh": {
         "name": "Chinese (Simplified)",
@@ -123,7 +159,25 @@ const translations = {
                 "顾客是你家里的客人。给他们温暖，他们就会回来。",
                 "如果你仔细听，你能听到小镇正在入睡的声音。"
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 至高王的债务",
+                "desc": "“皇家国库空虚。据说国王正在典当王冠珠宝……或者没收富商的黄金。把你的钱藏好。”"
+            },
+            {
+                "title": "🌙 天体连珠",
+                "desc": "“双月今晚连珠。附魔师急需月光石碎片，愿意支付三倍的市场价格。现在就囤货。”"
+            },
+            {
+                "title": "🕸️ 丝绸商队",
+                "desc": "“一支来自丝绸沙丘的商队在低语森林消失了。如果你能雇佣冒险者找回它，那些异国情调的布料将价值连城。”"
+            },
+            {
+                "title": "👁️ 暗影市场",
+                "desc": "“据说午夜时分下水道里会开启黑市。那些神器是非法的……而且很强大。你敢在那里交易吗？”"
+            }
+        ]
     },
     "zh-TW": {
         "name": "Chinese (Traditional)",
@@ -165,7 +219,25 @@ const translations = {
                 "顧客是你家裡的客人。給他們溫暖，他們就會回來。",
                 "如果你仔細聽，你能聽到小鎮正在入睡的聲音。"
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 至高王的債務",
+                "desc": "「皇家國庫空虛。據說國王正在典當王冠珠寶……或者沒收富商的黃金。把你的錢藏好。」"
+            },
+            {
+                "title": "🌙 天體連珠",
+                "desc": "「雙月今晚連珠。附魔師急需月光石碎片，願意支付三倍的市場價格。現在就囤貨。」"
+            },
+            {
+                "title": "🕸️ 絲綢商隊",
+                "desc": "「一支來自絲綢沙丘的商隊在低語森林消失了。如果你能僱傭冒險者找回它，那些異國情調的布料將價值連城。」"
+            },
+            {
+                "title": "👁️ 暗影市場",
+                "desc": "「據說午夜時分下水道裡會開啟黑市。那些神器是非法的……而且很強大。你敢在那裡交易嗎？」"
+            }
+        ]
     },
     "fr-FR": {
         "name": "French (France)",
@@ -207,7 +279,25 @@ const translations = {
                 "Un client est un invité dans votre maison. Offrez-lui de la chaleur, et il reviendra.",
                 "Si vous écoutez attentivement, vous pouvez entendre la ville s'endormir pour la nuit."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 La Dette du Haut Roi",
+                "desc": "\"Le trésor royal est vide. On dit que le Roi met en gage les Joyaux de la Couronne... ou confisque l'or des riches marchands. Cachez votre argent.\""
+            },
+            {
+                "title": "🌙 Alignement Céleste",
+                "desc": "\"Les Lunes Jumelles s'alignent ce soir. Les enchanteurs cherchent désespérément des éclats de Pierre de Lune et paieront le triple du prix. Faites des stocks maintenant.\""
+            },
+            {
+                "title": "🕸️ La Caravane de Soie",
+                "desc": "\"Une caravane des Dunes de Soie a disparu dans les Bois Murmurants. Si vous pouvez engager des aventuriers pour la récupérer, les tissus exotiques vaudront une fortune.\""
+            },
+            {
+                "title": "👁️ Le Marché de l'Ombre",
+                "desc": "\"On dit qu'un marché noir ouvre dans les égouts à minuit. Les artefacts sont illégaux... et puissants. Oserez-vous y commercer ?\""
+            }
+        ]
     },
     "de": {
         "name": "German",
@@ -249,7 +339,25 @@ const translations = {
                 "Ein Kunde ist ein Gast in deinem Haus. Biete ihm Wärme an, und er wird wiederkommen.",
                 "Wenn du genau hinhörst, kannst du hören, wie sich die Stadt zur Nachtruhe begibt."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 Die Schulden des Hochkönigs",
+                "desc": "\"Die königliche Schatzkammer ist leer. Man sagt, der König verpfändet die Kronjuwelen... oder konfisziert Gold von reichen Kaufleuten. Versteck dein Geld.\""
+            },
+            {
+                "title": "🌙 Himmlische Ausrichtung",
+                "desc": "\"Die Zwillingsmonde stehen heute Nacht in einer Linie. Verzauberer suchen verzweifelt nach Mondsteinsplittern und zahlen den dreifachen Marktpreis. Deck dich jetzt ein.\""
+            },
+            {
+                "title": "🕸️ Die Seidenkarawane",
+                "desc": "\"Eine Karawane aus den Seidendünen ist im Flüsterwald verschwunden. Wenn du Abenteurer anheuern kannst, um sie zu bergen, wären die exotischen Stoffe ein Vermögen wert.\""
+            },
+            {
+                "title": "👁️ Der Schattenmarkt",
+                "desc": "\"Man sagt, um Mitternacht öffnet ein Schwarzmarkt in der Kanalisation. Die Artefakte sind illegal... und mächtig. Wagst du es, dort zu handeln?\""
+            }
+        ]
     },
     "ja-JP": {
         "name": "Japanese (Japan)",
@@ -291,7 +399,25 @@ const translations = {
                 "客は家の客人だ。温かさを提供すれば、彼らは戻ってくる。",
                 "耳を澄ませば、町が夜の眠りにつく音が聞こえるよ。"
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 上級王の借金",
+                "desc": "「王室の宝物庫は空だ。王は王冠の宝石を質に入れているとか…裕福な商人から金を没収しているとも言われている。金貨を隠せ。」"
+            },
+            {
+                "title": "🌙 天体の整列",
+                "desc": "「今夜、双子の月が整列する。エンチャンターたちはムーンストーンの欠片を求めて必死で、市場価格の3倍を払うだろう。今のうちに仕入れておけ。」"
+            },
+            {
+                "title": "🕸️ 絹のキャラバン",
+                "desc": "「絹の砂丘からのキャラバンが囁きの森で消息を絶った。冒険者を雇って回収できれば、そのエキゾチックな布地は莫大な価値になるだろう。」"
+            },
+            {
+                "title": "👁️ 影の市場",
+                "desc": "「真夜中に下水道で闇市が開かれるという噂だ。アーティファクトは違法で…強力だ。そこで取引する勇気はあるか？」"
+            }
+        ]
     },
     "ko": {
         "name": "Korean",
@@ -333,7 +459,25 @@ const translations = {
                 "손님은 집에 온 귀빈이라네. 따뜻하게 대하면 다시 돌아올 걸세.",
                 "귀를 기울이면, 마을이 밤을 맞이해 잠드는 소리를 들을 수 있을 거야."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 대왕의 부채",
+                "desc": "“왕실 보물창고가 비었어. 왕이 왕관 보석을 저당 잡히거나... 부유한 상인들의 금을 몰수하고 있다는 소문이야. 돈을 숨겨.”"
+            },
+            {
+                "title": "🌙 천체 정렬",
+                "desc": "“오늘 밤 쌍둥이 달이 정렬한다네. 마법 부여사들이 월석 조각을 구하러 혈안이 되어 시장 가격의 세 배를 지불할 거야. 지금 비축해 둬.”"
+            },
+            {
+                "title": "🕸️ 비단 대상",
+                "desc": "“비단 사구에서 온 대상이 속삭이는 숲에서 사라졌어. 모험가들을 고용해 되찾을 수 있다면, 그 이국적인 직물들은 엄청난 가치가 있을 거야.”"
+            },
+            {
+                "title": "👁️ 그림자 시장",
+                "desc": "“자정에 하수구에서 암시장이 열린다고 해. 유물들은 불법이고... 강력하지. 거기서 거래할 용기가 있나?”"
+            }
+        ]
     },
     "pl-PL": {
         "name": "Polish (Poland)",
@@ -375,7 +519,25 @@ const translations = {
                 "Klient jest gościem w twoim domu. Zaoferuj mu ciepło, a wróci.",
                 "Jeśli będziesz słuchać uważnie, usłyszysz, jak miasto układa się do snu."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 Dług Wielkiego Króla",
+                "desc": "\"Królewski skarbiec jest pusty. Mówią, że Król zastawia Klejnoty Koronne... lub konfiskuje złoto bogatym kupcom. Ukryj swoje monety.\""
+            },
+            {
+                "title": "🌙 Niebiańskie Wyrównanie",
+                "desc": "\"Bliźniacze Księżyce ustawiają się dziś w jednej linii. Zaklinacze desperacko szukają odłamków Kamienia Księżycowego i zapłacą potrójną cenę rynkową. Zrób zapasy teraz.\""
+            },
+            {
+                "title": "🕸️ Jedwabna Karawana",
+                "desc": "\"Karawana z Jedwabnych Wydm zniknęła w Szepczącym Lesie. Jeśli zdołasz wynająć poszukiwaczy przygód, by ją odzyskać, egzotyczne tkaniny będą warte fortunę.\""
+            },
+            {
+                "title": "👁️ Cienisty Rynek",
+                "desc": "\"Mówią, że o północy w kanałach otwiera się czarny rynek. Artefakty są nielegalne... i potężne. Odważysz się tam handlować?\""
+            }
+        ]
     },
     "pt-BR": {
         "name": "Portuguese (Brazil)",
@@ -417,7 +579,25 @@ const translations = {
                 "Um cliente é um convidado em sua casa. Ofereça-lhes calor e eles voltarão.",
                 "Se você ouvir com atenção, pode ouvir a cidade se acomodando para dormir."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 A Dívida do Grande Rei",
+                "desc": "\"O tesouro real está vazio. Dizem que o Rei está penhorando as Joias da Coroa... ou confiscando ouro de mercadores ricos. Esconda sua moeda.\""
+            },
+            {
+                "title": "🌙 Alinhamento Celestial",
+                "desc": "\"As Luas Gêmeas estão se alinhando esta noite. Encantadores estão desesperados por fragmentos de Pedra da Lua e pagarão o triplo do preço de mercado. Estoque agora.\""
+            },
+            {
+                "title": "🕸️ A Caravana de Seda",
+                "desc": "\"Uma caravana das Dunas de Seda desapareceu na Floresta Sussurrante. Se você puder contratar aventureiros para recuperá-la, os tecidos exóticos valeriam uma fortuna.\""
+            },
+            {
+                "title": "👁️ O Mercado das Sombras",
+                "desc": "\"Dizem que um mercado negro abre nos esgotos à meia-noite. Os artefatos são ilegais... e poderosos. Você ousa negociar lá?\""
+            }
+        ]
     },
     "ru-RU": {
         "name": "Russian (Russia)",
@@ -459,7 +639,25 @@ const translations = {
                 "Клиент — это гость в твоем доме. Подари ему тепло, и он вернется.",
                 "Если прислушаться, можно услышать, как город затихает перед сном."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 Долг Верховного Короля",
+                "desc": "«Королевская казна пуста. Говорят, Король закладывает Драгоценности Короны... или конфискует золото у богатых торговцев. Спрячь свои монеты.»"
+            },
+            {
+                "title": "🌙 Небесное Выравнивание",
+                "desc": "«Две Луны сегодня выстраиваются в ряд. Чародеи отчаянно ищут осколки Лунного камня и заплатят тройную цену. Закупайся сейчас.»"
+            },
+            {
+                "title": "🕸️ Шелковый Караван",
+                "desc": "«Караван из Шелковых Дюн исчез в Шепчущем Лесу. Если ты сможешь нанять авантюристов, чтобы вернуть его, экзотические ткани будут стоить целое состояние.»"
+            },
+            {
+                "title": "👁️ Теневой Рынок",
+                "desc": "«Говорят, в полночь в канализации открывается черный рынок. Артефакты незаконны... и могущественны. Осмелишься ли ты торговать там?»"
+            }
+        ]
     },
     "es-ES": {
         "name": "Spanish (Spain)",
@@ -501,7 +699,25 @@ const translations = {
                 "Un cliente es un invitado en tu casa. Ofrécele calidez y volverá.",
                 "Si escuchas con atención, puedes oír cómo la ciudad se prepara para dormir."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 La Deuda del Gran Rey",
+                "desc": "\"El tesoro real está vacío. Dicen que el Rey está empeñando las Joyas de la Corona... o confiscando oro a los mercaderes ricos. Esconde tu dinero.\""
+            },
+            {
+                "title": "🌙 Alineación Celestial",
+                "desc": "\"Las Lunas Gemelas se alinean esta noche. Los encantadores están desesperados por fragmentos de Piedra Lunar y pagarán el triple del precio de mercado. Abastécete ahora.\""
+            },
+            {
+                "title": "🕸️ La Caravana de Seda",
+                "desc": "\"Una caravana de las Dunas de Seda desapareció en el Bosque Susurrante. Si puedes contratar aventureros para recuperarla, las telas exóticas valdrán una fortuna.\""
+            },
+            {
+                "title": "👁️ El Mercado de las Sombras",
+                "desc": "\"Dicen que un mercado negro abre en las alcantarillas a medianoche. Los artefactos son ilegales... y poderosos. ¿Te atreves a comerciar allí?\""
+            }
+        ]
     },
     "sr": {
         "name": "Serbian",
@@ -543,7 +759,25 @@ const translations = {
                 "Kupac je gost u tvom domu. Ponudi im toplinu i vratiće se.",
                 "Ako pažljivo slušaš, možeš čuti kako se grad sprema za spavanje."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "hr": {
         "name": "Croatian",
@@ -585,7 +819,25 @@ const translations = {
                 "Kupac je gost u tvom domu. Ponudi im toplinu i vratit će se.",
                 "Ako pažljivo slušaš, možeš čuti kako se grad sprema za spavanje."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "sk": {
         "name": "Slovak",
@@ -627,7 +879,25 @@ const translations = {
                 "Zákazník je hosťom vo vašom dome. Ponúknite im teplo a oni sa vrátia.",
                 "Ak pozorne počúvaš, môžeš počuť, ako sa mesto ukladá na spánok."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "fa": {
         "name": "Persian (Farsi)",
@@ -669,7 +939,25 @@ const translations = {
                 "مشتری مهمان خانه توست. به آن‌ها گرما ببخش و آن‌ها باز خواهند گشت.",
                 "اگر با دقت گوش کنی، می‌توانی صدای آرام گرفتن شهر برای شب را بشنوی."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "bn": {
         "name": "Bengali",
@@ -711,7 +999,25 @@ const translations = {
                 "একজন গ্রাহক আপনার বাড়িতে অতিথি। তাদের উষ্ণতা অফার করুন, এবং তারা ফিরে আসবে।",
                 "আপনি যদি মনোযোগ দিয়ে শোনেন তবে আপনি শুনতে পাবেন শহরটি রাতের জন্য স্থির হচ্ছে।"
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 উচ্চ রাজার ঋণ",
+                "desc": "\"রাজকীয় কোষাগার খালি। তারা বলছে রাজা মুকুটের রত্নগুলি বন্ধক রাখছেন... বা ধনী বণিকদের সোনা বাজেয়াপ্ত করছেন। আপনার মুদ্রা লুকান।\""
+            },
+            {
+                "title": "🌙 মহাজাগতিক প্রান্তিককরণ",
+                "desc": "\"আজ রাতে যমজ চাঁদ এক সারিতে আসছে। জাদুকররা মুনস্টোন টুকরোগুলির জন্য মরিয়া এবং বাজারের দামের তিনগুণ দিতে রাজি। এখনই মজুদ করুন।\""
+            },
+            {
+                "title": "🕸️ রেশম ক্যারাভান",
+                "desc": "\"সিল্ক ডুনস থেকে একটি ক্যারাভান ফিসফিস করা বনে অদৃশ্য হয়ে গেছে। আপনি যদি এটি উদ্ধার করতে অ্যাডভেঞ্চারারদের ভাড়া করতে পারেন তবে সেই বিদেশী কাপড়গুলির মূল্য একটি ভাগ্য হবে।\""
+            },
+            {
+                "title": "👁️ ছায়া বাজার",
+                "desc": "\"তারা বলে মধ্যরাতে নর্দমায় একটি কালো বাজার খোলে। শিল্পকলাগুলি অবৈধ... এবং শক্তিশালী। আপনি কি সেখানে ব্যবসা করার সাহস করেন?\""
+            }
+        ]
     },
     "ur": {
         "name": "Urdu",
@@ -753,7 +1059,25 @@ const translations = {
                 "گاہک آپ کے گھر میں مہمان ہے۔ انہیں گرم جوشی پیش کریں، اور وہ واپس آئیں گے۔",
                 "اگر آپ غور سے سنیں، تو آپ شہر کو رات کے لیے پرسکون ہوتے ہوئے سن سکتے ہیں۔"
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "lt": {
         "name": "Lithuanian",
@@ -795,7 +1119,25 @@ const translations = {
                 "Klientas yra svečias tavo namuose. Pasiūlyk jiems šilumą, ir jie sugrįš.",
                 "Jei atidžiai klausysi, gali išgirsti, kaip miestas ruošiasi nakčiai."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "lv": {
         "name": "Latvian",
@@ -837,7 +1179,25 @@ const translations = {
                 "Klients ir viesis tavās mājās. Piedāvā viņiem siltumu, un viņi atgriezīsies.",
                 "Ja uzmanīgi klausies, vari dzirdēt, kā pilsēta gatavojas naktsmieram."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "et": {
         "name": "Estonian",
@@ -879,7 +1239,25 @@ const translations = {
                 "Klient on külaline sinu kodus. Paku neile soojust ja nad tulevad tagasi.",
                 "Kui kuulad tähelepanelikult, võid kuulda, kuidas linn ööunne suigub."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "sl": {
         "name": "Slovenian",
@@ -921,7 +1299,25 @@ const translations = {
                 "Stranka je gost v tvojem domu. Ponudi jim toplinu in vrnili se bodo.",
                 "Če pozorno poslušaš, lahko slišiš, kako se mesto pripravlja na spanje."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "ca": {
         "name": "Catalan",
@@ -963,7 +1359,25 @@ const translations = {
                 "Un client és un convidat a casa teva. Ofereix-los calidesa i tornaran.",
                 "Si escoltes atentament, pots sentir com la ciutat es prepara per dormir."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "is": {
         "name": "Icelandic",
@@ -1005,7 +1419,25 @@ const translations = {
                 "Viðskiptavinur er gestur á heimili þínu. Bjóddu þeim hlýju og þeir munu koma aftur.",
                 "Ef þú hlustar vel, geturðu heyrt bæinn gera sig kláran fyrir svefninn."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "it": {
         "name": "Italian",
@@ -1041,7 +1473,25 @@ const translations = {
                 "Ogni artefatto ha una storia.",
                 "L'oro è utile, ma la gioia vera è un'altra."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 Il Debito dell'Alto Re",
+                "desc": "\"Il tesoro reale è vuoto. Dicono che il Re stia impegnando i Gioielli della Corona... o confiscando l'oro ai ricchi mercanti. Nascondi le tue monete.\""
+            },
+            {
+                "title": "🌙 Allineamento Celeste",
+                "desc": "\"Le Lune Gemelle si allineano stanotte. Gli incantatori cercano disperatamente frammenti di Pietra di Luna e pagheranno il triplo del prezzo di mercato. Fai scorta ora.\""
+            },
+            {
+                "title": "🕸️ La Carovana della Seta",
+                "desc": "\"Una carovana dalle Dune di Seta è scomparsa nel Bosco dei Sussurri. Se riesci a ingaggiare avventurieri per recuperarla, i tessuti esotici varrebbero una fortuna.\""
+            },
+            {
+                "title": "👁️ Il Mercato delle Ombre",
+                "desc": "\"Dicono che un mercato nero apra nelle fogne a mezzanotte. Gli artefatti sono illegali... e potenti. Oserai commerciare lì?\""
+            }
+        ]
     },
     "nl": {
         "name": "Dutch",
@@ -1077,7 +1527,25 @@ const translations = {
                 "Elk artefact heeft een verhaal.",
                 "Luister naar het vuur..."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "ar": {
         "name": "Arabic",
@@ -1113,7 +1581,25 @@ const translations = {
                 "كل قطعة أثرية لها قصة.",
                 "استمع لطرقعة النار..."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "vi": {
         "name": "Vietnamese",
@@ -1149,7 +1635,25 @@ const translations = {
                 "Mỗi cổ vật đều có câu chuyện riêng.",
                 "Hãy lắng nghe tiếng lửa tí tách..."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "th": {
         "name": "Thai",
@@ -1185,7 +1689,25 @@ const translations = {
                 "วัตถุโบราณทุกชิ้นมีเรื่องเล่า",
                 "ฟังเสียงไฟปะทุสิ..."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "id": {
         "name": "Indonesian",
@@ -1221,7 +1743,25 @@ const translations = {
                 "Setiap artefak punya cerita.",
                 "Dengarkan api yang berderak..."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "uk": {
         "name": "Ukrainian",
@@ -1256,7 +1796,25 @@ const translations = {
                 "Немає куди поспішати.",
                 "Кожен артефакт має історію."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "cs": {
         "name": "Czech",
@@ -1291,7 +1849,25 @@ const translations = {
                 "Není kam spěchat.",
                 "Každý artefakt má příběh."
             ]
-        }
+        },
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "hu": {
         "name": "Hungarian",
@@ -1322,7 +1898,25 @@ const translations = {
             "Feature 3...",
             "Feature 4..."
         ],
-        "ending": "Open your own shop!"
+        "ending": "Open your own shop!",
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "ro": {
         "name": "Romanian",
@@ -1353,7 +1947,25 @@ const translations = {
             "Feature 3...",
             "Feature 4..."
         ],
-        "ending": "Open your own shop!"
+        "ending": "Open your own shop!",
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "el": {
         "name": "Greek",
@@ -1384,7 +1996,25 @@ const translations = {
             "Feature 3...",
             "Feature 4..."
         ],
-        "ending": "Open your own shop!"
+        "ending": "Open your own shop!",
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "sv": {
         "name": "Swedish",
@@ -1415,7 +2045,25 @@ const translations = {
             "Feature 3...",
             "Feature 4..."
         ],
-        "ending": "Open your own shop!"
+        "ending": "Open your own shop!",
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "da": {
         "name": "Danish",
@@ -1446,7 +2094,25 @@ const translations = {
             "Feature 3...",
             "Feature 4..."
         ],
-        "ending": "Open your own shop!"
+        "ending": "Open your own shop!",
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "fi": {
         "name": "Finnish",
@@ -1477,7 +2143,25 @@ const translations = {
             "Feature 3...",
             "Feature 4..."
         ],
-        "ending": "Open your own shop!"
+        "ending": "Open your own shop!",
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     },
     "no": {
         "name": "Norwegian",
@@ -1508,6 +2192,24 @@ const translations = {
             "Feature 3...",
             "Feature 4..."
         ],
-        "ending": "Open your own shop!"
+        "ending": "Open your own shop!",
+        "rumors": [
+            {
+                "title": "📜 The High King's Debt",
+                "desc": "\"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin.\""
+            },
+            {
+                "title": "🌙 Celestial Alignment",
+                "desc": "\"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now.\""
+            },
+            {
+                "title": "🕸️ The Silk Caravan",
+                "desc": "\"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune.\""
+            },
+            {
+                "title": "👁️ The Shadow Market",
+                "desc": "\"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?\""
+            }
+        ]
     }
 };

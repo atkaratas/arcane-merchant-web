@@ -822,24 +822,25 @@
                     </div>
                 </div>
 
+                <!-- DYNAMIC RUMORS -->
                 <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;">
-                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">📜 The High King's Debt</p>
-                    <p style="font-style: italic; opacity: 0.8;">"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin."</p>
+                    <p id="rumor-1-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">📜 The High King's Debt</p>
+                    <p id="rumor-1-desc" style="font-style: italic; opacity: 0.8;">"The royal treasury is empty. They say the King is pawning the Crown Jewels... or confiscating gold from wealthy merchants. Hide your coin."</p>
                 </div>
                 
                 <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;">
-                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">🌙 Celestial Alignment</p>
-                    <p style="font-style: italic; opacity: 0.8;">"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now."</p>
+                    <p id="rumor-2-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">🌙 Celestial Alignment</p>
+                    <p id="rumor-2-desc" style="font-style: italic; opacity: 0.8;">"The Twin Moons are aligning tonight. Enchanters are desperate for Moonstone shards and will pay triple the market price. Stock up now."</p>
                 </div>
 
                 <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;">
-                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">🕸️ The Silk Caravan</p>
-                    <p style="font-style: italic; opacity: 0.8;">"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune."</p>
+                    <p id="rumor-3-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">🕸️ The Silk Caravan</p>
+                    <p id="rumor-3-desc" style="font-style: italic; opacity: 0.8;">"A caravan from the Silk Dunes vanished in the Whispering Woods. If you can hire adventurers to recover it, the exotic fabrics would be worth a fortune."</p>
                 </div>
 
                 <div>
-                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">👁️ The Shadow Market</p>
-                    <p style="font-style: italic; opacity: 0.8;">"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?"</p>
+                    <p id="rumor-4-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;">👁️ The Shadow Market</p>
+                    <p id="rumor-4-desc" style="font-style: italic; opacity: 0.8;">"They say a black market opens in the sewers at midnight. The artifacts are illegal... and powerful. Do you dare trade there?"</p>
                 </div>
             </div>
         </div>
@@ -1172,6 +1173,30 @@
 
             safeText('#txt-specs-min', 'specs_min');
             safeText('#txt-specs-rec', 'specs_rec');
+            
+            // DYNAMIC RUMORS UPDATE
+            if (data.rumors && Array.isArray(data.rumors)) {
+                for(let i=0; i<4; i++) {
+                    if (data.rumors[i]) {
+                        const rTitle = document.getElementById(`rumor-${i+1}-title`);
+                        const rDesc = document.getElementById(`rumor-${i+1}-desc`);
+                        // Keep the emoji prefix if present in original, assume translation has full text
+                        // Or just replace text. The translation should include emoji ideally, or we prepend here.
+                        // Let's assume translation is pure text and we keep emojis from HTML? 
+                        // No, easier to replace full content. I will include emojis in translation data.
+                        if (rTitle) rTitle.innerText = data.rumors[i].title;
+                        if (rDesc) rDesc.innerText = data.rumors[i].desc;
+                    }
+                }
+            } else if (en.rumors) {
+                // Fallback to English rumors if current lang missing them
+                for(let i=0; i<4; i++) {
+                    const rTitle = document.getElementById(`rumor-${i+1}-title`);
+                    const rDesc = document.getElementById(`rumor-${i+1}-desc`);
+                    if (rTitle) rTitle.innerText = en.rumors[i].title;
+                    if (rDesc) rDesc.innerText = en.rumors[i].desc;
+                }
+            }
             
             // New Arrival Subtitle (Manual translation map if missing in JS, or default EN)
             const subtitleMap = {
