@@ -1475,6 +1475,10 @@
             b.style.left = startX + 'px';
             b.style.top = startY + 'px';
 
+            // Decide size (Random 0.6 to 1.3)
+            const sizeScale = 0.6 + Math.random() * 0.7;
+            b.style.transform = `scale(${sizeScale})`; 
+
             // Decide fate: Fly away or Land
             const willLand = Math.random() > 0.4; // 60% chance to land
 
@@ -1489,7 +1493,8 @@
                 // Appear and move to land
                 setTimeout(() => {
                     b.style.opacity = '1';
-                    b.style.transform = `translate(${landX}px, ${landY}px) rotate(${Math.random()*360}deg)`;
+                    // Combine scale with translation and rotation
+                    b.style.transform = `translate(${landX}px, ${landY}px) rotate(${Math.random()*360}deg) scale(${sizeScale})`;
                 }, 50);
 
                 // Slow flutter after landing
@@ -1506,8 +1511,6 @@
 
             } else {
                 // Flying Animation
-                // Just use CSS animation for flight path? 
-                // Let's use simple JS transition for random flight
                 b.style.transition = 'all 5s linear, opacity 1s ease-in-out';
                 b.style.opacity = '0';
                 dialogueBox.appendChild(b);
@@ -1516,7 +1519,8 @@
                     b.style.opacity = '1';
                     const destX = startX + (Math.random() - 0.5) * 200;
                     const destY = startY - 100 - Math.random() * 100;
-                    b.style.transform = `translate(${destX - startX}px, ${destY - startY}px) scale(0.5)`;
+                    // Flying away also shrinks slightly
+                    b.style.transform = `translate(${destX - startX}px, ${destY - startY}px) scale(${sizeScale * 0.5})`;
                 }, 50);
 
                 setTimeout(() => {
