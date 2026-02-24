@@ -6,30 +6,27 @@
     <title>Arcane Merchant | Shop Management Sim</title>
     <link rel="icon" type="image/png" href="favicon.png">
     
-    <!-- FONTS: Latin + CJK + Arabic + Thai Support -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
-    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
     <style>
         :root {
             --gold: #d4af37;
             --dark-bg: rgba(15, 15, 20, 0.98);
             --parchment: #f4e4bc;
-            --ui-font: 'Cinzel', serif; /* Default Latin */
-            --dialogue-font: 'Crimson Text', serif; /* Default Latin */
+            --ui-font: 'Cinzel', serif;
+            --dialogue-font: 'Crimson Text', serif;
             --magical-glow: 0 0 20px rgba(212, 175, 55, 0.4);
         }
 
-        /* Language Specific Font Overrides via Classes */
+        /* Language Overrides */
         body.lang-zh, body.lang-zh-TW { --ui-font: 'Noto Sans SC', sans-serif; --dialogue-font: 'Noto Sans SC', sans-serif; }
         body.lang-ja-JP { --ui-font: 'Noto Sans JP', sans-serif; --dialogue-font: 'Noto Sans JP', sans-serif; }
         body.lang-ko { --ui-font: 'Noto Sans KR', sans-serif; --dialogue-font: 'Noto Sans KR', sans-serif; }
         body.lang-ar { --ui-font: 'Noto Sans Arabic', sans-serif; --dialogue-font: 'Noto Sans Arabic', sans-serif; direction: rtl; }
         body.lang-th { --ui-font: 'Noto Sans Thai', sans-serif; --dialogue-font: 'Noto Sans Thai', sans-serif; }
-
-        /* RTL Adjustments for Arabic */
         body.lang-ar .dialogue-text { text-align: right; }
         body.lang-ar .menu-container { direction: rtl; }
         body.lang-ar .speaker-name { left: auto; right: 40px; flex-direction: row-reverse; }
@@ -44,11 +41,8 @@
             animation: slowZoom 60s linear infinite alternate;
         }
         @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.15); } }
-
         .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.6) 100%); pointer-events: none; z-index: 0; }
         .warm-overlay { position: fixed; bottom: 0; left: 0; width: 100%; height: 60%; background: radial-gradient(ellipse at bottom, rgba(255, 160, 60, 0.15) 0%, rgba(100, 50, 0, 0.05) 40%, transparent 80%); z-index: 0; pointer-events: none; mix-blend-mode: screen; }
-
-        /* UI Elements */
         .lang-toggle { position: fixed; top: 10px; left: 10px; z-index: 1000; background: transparent; border: none; padding: 5px; cursor: pointer; transition: all 0.3s ease; font-size: 1.5rem; filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.6)); }
         .lang-toggle:hover { transform: scale(1.1) rotate(5deg); }
         .game-container { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; width: 100vw; padding: 40px; opacity: 0; transition: opacity 1.5s ease-in; position: relative; z-index: 1; text-align: center; }
@@ -57,44 +51,39 @@
         .official-logo { max-width: 400px; width: 90%; height: auto; filter: drop-shadow(0 0 20px rgba(212,175,55,0.6)); margin-bottom: 5px; }
         .branding-container p { font-family: var(--ui-font); font-style: italic; font-size: 0.8rem; color: #ccc; letter-spacing: 2px; margin-top: 8px; }
         
-        /* MENU FIX: Smaller & Fixed */
-        .menu-container { 
-            display: flex; flex-direction: column; gap: 8px; z-index: 2000; 
-            width: 300px !important; margin: 0 auto 30px auto; 
-            position: relative; pointer-events: auto; 
-        }
-        .menu-btn { 
-            background: rgba(10, 10, 15, 0.4); backdrop-filter: blur(5px); 
-            border: 2px double rgba(212, 175, 55, 0.6); border-radius: 4px; 
-            color: var(--gold); padding: 8px 15px; font-family: var(--ui-font); font-size: 0.9rem; 
-            cursor: pointer; transition: all 0.4s ease; text-transform: uppercase; letter-spacing: 1.5px; 
-            width: 100%; pointer-events: auto !important; z-index: 2001; 
-            height: 42px; display: flex; align-items: center; justify-content: center;
-        }
+        .menu-container { display: flex; flex-direction: column; gap: 8px; z-index: 2000; width: 300px !important; margin: 0 auto 30px auto; position: relative; pointer-events: auto; }
+        .menu-btn { background: rgba(10, 10, 15, 0.4); backdrop-filter: blur(5px); border: 2px double rgba(212, 175, 55, 0.6); border-radius: 4px; color: var(--gold); padding: 8px 15px; font-family: var(--ui-font); font-size: 0.9rem; cursor: pointer; transition: all 0.4s ease; text-transform: uppercase; letter-spacing: 1.5px; width: 100%; pointer-events: auto !important; z-index: 2001; height: 42px; display: flex; align-items: center; justify-content: center; }
         .menu-btn:hover { border-color: var(--gold); background: rgba(212, 175, 55, 0.15); transform: scale(1.02); }
 
-        /* DIALOGUE BOX & FRAME */
         .dialogue-wrapper { width: 100%; max-width: 900px; position: relative; transform: translateY(0); transition: transform 0.5s ease; text-align: left; }
         .dialogue-box { background: rgba(10, 10, 15, 0.9); border: 3px double #d4af37; padding: 40px 50px; min-height: 160px; position: relative; box-shadow: 0 10px 50px rgba(0,0,0,1), inset 0 0 60px rgba(0,0,0,0.8); border-radius: 4px; overflow: visible; }
         .dialogue-text { font-family: var(--dialogue-font); font-size: 1.8rem; line-height: 1.5; color: #fceeb5; text-shadow: 0 2px 4px rgba(0,0,0,1); position: relative; z-index: 60; }
         .dialogue-text::after { content: "|"; animation: blink 1s step-end infinite; color: var(--gold); margin-left: 5px; }
-        .speaker-name { position: absolute; top: -16px; left: 40px; background: #d4af37; color: #000; padding: 4px 20px; font-family: var(--ui-font); font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.6); z-index: 100; border: 1px solid #fff; }
+        
+        .speaker-name {
+            position: absolute; top: -16px; left: 60px; /* Moved right to clear intense vines */
+            background: #d4af37; color: #000; padding: 4px 20px;
+            font-family: var(--ui-font); font-weight: bold; text-transform: uppercase;
+            font-size: 0.85rem; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.6); z-index: 100; border: 1px solid #fff;
+        }
         .game-icon-seal { width: 24px; height: 24px; object-fit: contain; }
 
-        /* VINES */
-        .vine-frame { position: absolute; pointer-events: none; z-index: 50; filter: drop-shadow(2px 4px 4px rgba(0,0,0,0.8)); }
-        .vine-tl { top: -25px; left: -25px; width: 180px; height: 180px; }
-        .vine-tr { top: -25px; right: -25px; width: 180px; height: 180px; transform: scaleX(-1); }
-        .vine-bl { bottom: -25px; left: -25px; width: 180px; height: 180px; transform: scaleY(-1); }
-        .vine-br { bottom: -25px; right: -25px; width: 180px; height: 180px; transform: scale(-1); }
-        .stem-path { stroke-dasharray: 1500; stroke-dashoffset: 1500; animation: growStem 4s ease-out forwards; }
-        .leaf { opacity: 0; transform-origin: center; transform: scale(0); animation: bloom 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
-        .flower { opacity: 0; transform-origin: center; transform: scale(0); animation: bloom 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
-        @keyframes growStem { to { stroke-dashoffset: 0; } }
-        @keyframes bloom { to { opacity: 1; transform: scale(1); } }
-        .d-1 { animation-delay: 0.2s; } .d-2 { animation-delay: 0.6s; } .d-3 { animation-delay: 1.0s; } .d-4 { animation-delay: 1.4s; } .d-5 { animation-delay: 1.8s; } .d-6 { animation-delay: 2.2s; }
+        /* --- STATIC WRAPPING IVY FRAME --- */
+        .vine-frame { position: absolute; pointer-events: none; z-index: 50; filter: drop-shadow(2px 4px 5px rgba(0,0,0,0.9)); }
+        
+        /* Full side coverage with slight overlap */
+        .vine-tl { top: -35px; left: -35px; width: 50%; height: 100px; }
+        .vine-tr { top: -35px; right: -35px; width: 50%; height: 100px; transform: scaleX(-1); }
+        .vine-bl { bottom: -35px; left: -35px; width: 50%; height: 100px; transform: scaleY(-1); }
+        .vine-br { bottom: -35px; right: -35px; width: 50%; height: 100px; transform: scale(-1); }
+        
+        /* Side Pillars */
+        .vine-side-l { top: 40px; left: -25px; width: 40px; height: calc(100% - 80px); background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 100"><path d="M20 0 Q 30 25 10 50 T 20 100" stroke="%233e2723" stroke-width="3" fill="none"/></svg>') no-repeat center; z-index: 50; }
+        .vine-side-r { top: 40px; right: -25px; width: 40px; height: calc(100% - 80px); transform: scaleX(-1); background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 100"><path d="M20 0 Q 30 25 10 50 T 20 100" stroke="%233e2723" stroke-width="3" fill="none"/></svg>') no-repeat center; z-index: 50; }
 
-        /* BUTTERFLIES */
+        /* Note: Animations removed. Static display. */
+        
         .butterfly { position: absolute; width: 20px; height: 20px; z-index: 70; pointer-events: none; transform-style: preserve-3d; will-change: transform, top, left; transition: top 4s ease-in-out, left 4s ease-in-out, transform 1s ease-in-out; }
         .butterfly-body { position: absolute; top: 50%; left: 50%; width: 4px; height: 14px; background: #222; border-radius: 5px; transform: translate(-50%, -50%); }
         .wing { position: absolute; top: 0; width: 14px; height: 22px; border-radius: 50% 50% 10% 50%; opacity: 0.9; filter: drop-shadow(0 0 4px currentColor); }
@@ -106,14 +95,12 @@
         @keyframes flapLeft { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(60deg); } }
         @keyframes flapRight { 0% { transform: scaleX(-1) rotateY(0deg); } 100% { transform: scaleX(-1) rotateY(60deg); } }
         .butterfly.landed .wing { animation-duration: 3s; }
-
-        /* ROSE PETALS */
+        
         .petal { position: fixed; top: -50px; z-index: 25; pointer-events: none; opacity: 0.9; border-radius: 50% 0 50% 50%; background: linear-gradient(135deg, var(--petal-color), rgba(0,0,0,0.1)); animation: fall linear forwards, sway ease-in-out infinite alternate; }
         .petal.pink { --petal-color: #ffb7c5; } .petal.red { --petal-color: #dc143c; } .petal.maroon { --petal-color: #800020; }
         @keyframes fall { 0% { top: -10vh; } 100% { top: 110vh; } }
         @keyframes sway { 0% { transform: translateX(-40px) rotate(0deg); } 100% { transform: translateX(40px) rotate(45deg); } }
 
-        /* Modals & Layout */
         .findie-logo-fixed { position: fixed; top: 10px; right: 10px; display: flex; align-items: center; gap: 8px; opacity: 0.95; transition: all 0.4s; text-decoration: none; color: var(--gold); font-family: var(--ui-font); font-size: 0.6rem; padding: 6px 12px; border-radius: 4px; background: rgba(0,0,0,0.85); z-index: 9999; border: 1px solid rgba(212,175,55,0.6); }
         .findie-logo-fixed:hover { opacity: 1; transform: translateY(-2px); border-color: #fff; }
         .copyright-footer { position: fixed; bottom: 5px; width: 100%; text-align: center; font-family: var(--ui-font); font-size: 0.5rem; color: rgba(255,255,255,0.3); text-transform: uppercase; z-index: 500; }
@@ -167,43 +154,51 @@
 
         <div class="dialogue-wrapper">
             <div class="dialogue-box">
-                <!-- 4 CORNER SYSTEM TO CREATE FULL FRAME -->
-                <svg class="vine-frame vine-tl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="stem-path" d="M0 25 C 20 20 60 30 100 25" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <path class="stem-path" d="M25 0 C 30 20 20 60 25 100" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <path class="leaf d-1" d="M10 25 Q -5 15 5 5 Z" fill="#6b8c42"/>
-                    <path class="leaf d-2" d="M40 25 Q 50 10 30 5 Z" fill="#2d4a22"/>
-                    <path class="leaf d-3" d="M70 25 Q 80 40 60 45 Z" fill="#556b2f"/>
-                    <path class="leaf d-4" d="M25 40 Q 40 50 45 30 Z" fill="#9acd32"/>
-                    <path class="leaf d-5" d="M25 80 Q 10 90 5 70 Z" fill="#6b8c42"/>
-                    <g class="flower d-6" transform="translate(15, 15) scale(0.6)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
+                <!-- STATIC HIGH DENSITY IVY WRAP (No Animation) -->
+                <!-- TOP HORIZONTAL WRAP -->
+                <svg class="vine-frame vine-tl" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-10 40 C 20 20 80 50 140 30 Q 180 20 210 40" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <!-- DENSE LEAVES CLUSTER -->
+                    <path d="M10 40 Q 0 30 10 20 Q 25 25 15 40 Z" fill="#6b8c42"/>
+                    <path d="M30 30 Q 40 10 50 30 Q 40 45 30 30 Z" fill="#2d4a22"/>
+                    <path d="M50 40 Q 60 55 70 40 Q 60 25 50 40 Z" fill="#556b2f"/>
+                    <path d="M80 35 Q 70 20 90 20 Q 95 35 80 35 Z" fill="#9acd32"/>
+                    <path d="M110 30 Q 120 10 130 30 Q 115 40 110 30 Z" fill="#6b8c42"/>
+                    <path d="M140 35 Q 150 50 160 30 Q 150 20 140 35 Z" fill="#556b2f"/>
+                    <path d="M170 30 Q 160 15 180 25 Q 175 40 170 30 Z" fill="#2d4a22"/>
+                    <g transform="translate(40, 20) scale(0.7)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
+                    <g transform="translate(140, 20) scale(0.7)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q -10 10 -20 0" fill="#d461a6"/></g>
                 </svg>
-                <svg class="vine-frame vine-tr" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="stem-path" d="M0 25 C 40 30 80 20 100 25" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <path class="stem-path" d="M75 0 C 80 20 70 60 75 100" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <path class="leaf d-1" d="M10 25 Q 0 10 20 5 Z" fill="#556b2f"/>
-                    <path class="leaf d-2" d="M50 25 Q 60 40 40 45 Z" fill="#6b8c42"/>
-                    <path class="leaf d-3" d="M90 25 Q 100 10 80 5 Z" fill="#2d4a22"/>
-                    <path class="leaf d-4" d="M75 50 Q 90 60 95 40 Z" fill="#9acd32"/>
-                    <g class="flower d-5" transform="translate(85, 15) scale(0.6)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#d461a6"/></g>
+
+                <svg class="vine-frame vine-tr" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-10 40 C 40 20 100 50 160 30 Q 200 20 230 40" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <path d="M20 40 Q 10 25 30 20 Q 35 35 20 40 Z" fill="#556b2f"/>
+                    <path d="M50 35 Q 60 15 70 35 Q 55 45 50 35 Z" fill="#2d4a22"/>
+                    <path d="M90 30 Q 100 10 110 30 Q 95 40 90 30 Z" fill="#9acd32"/>
+                    <path d="M130 35 Q 140 50 150 30 Q 140 20 130 35 Z" fill="#6b8c42"/>
+                    <g transform="translate(100, 20) scale(0.7)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
                 </svg>
-                <svg class="vine-frame vine-bl" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="stem-path" d="M0 75 C 30 70 70 80 100 75" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <path class="stem-path" d="M25 0 C 20 30 30 70 25 100" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <path class="leaf d-1" d="M20 75 Q 10 90 30 95 Z" fill="#2d4a22"/>
-                    <path class="leaf d-2" d="M60 75 Q 70 60 50 55 Z" fill="#6b8c42"/>
-                    <path class="leaf d-3" d="M25 20 Q 10 10 5 30 Z" fill="#556b2f"/>
-                    <path class="leaf d-4" d="M25 60 Q 40 50 45 70 Z" fill="#9acd32"/>
-                    <g class="flower d-5" transform="translate(25, 85) scale(0.6)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
+
+                <svg class="vine-frame vine-bl" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-10 40 C 30 60 90 20 150 40 Q 190 50 220 30" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <path d="M15 40 Q 5 25 25 30 Q 20 50 15 40 Z" fill="#6b8c42"/>
+                    <path d="M45 35 Q 55 15 65 35 Q 50 50 45 35 Z" fill="#2d4a22"/>
+                    <path d="M85 40 Q 95 60 105 40 Q 90 30 85 40 Z" fill="#556b2f"/>
+                    <path d="M125 35 Q 135 20 145 35 Q 130 45 125 35 Z" fill="#9acd32"/>
+                    <g transform="translate(60, 45) scale(0.7)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#d461a6"/></g>
                 </svg>
-                <svg class="vine-frame vine-br" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="stem-path" d="M0 75 C 40 80 80 70 100 75" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <path class="stem-path" d="M75 0 C 70 40 80 80 75 100" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <path class="leaf d-1" d="M40 75 Q 50 90 30 95 Z" fill="#556b2f"/>
-                    <path class="leaf d-2" d="M80 75 Q 90 60 70 55 Z" fill="#2d4a22"/>
-                    <path class="leaf d-3" d="M75 30 Q 90 20 95 40 Z" fill="#6b8c42"/>
-                    <g class="flower d-4" transform="translate(85, 85) scale(0.6)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#d461a6"/></g>
+
+                <svg class="vine-frame vine-br" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M-10 40 C 30 20 90 50 150 30 Q 190 20 220 40" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <path d="M20 40 Q 10 25 30 20 Q 35 35 20 40 Z" fill="#556b2f"/>
+                    <path d="M60 35 Q 70 15 80 35 Q 65 45 60 35 Z" fill="#2d4a22"/>
+                    <path d="M100 30 Q 110 10 120 30 Q 105 40 100 30 Z" fill="#9acd32"/>
+                    <path d="M140 35 Q 150 50 160 30 Q 150 20 140 35 Z" fill="#6b8c42"/>
                 </svg>
+
+                <!-- SIDE FILLERS (Vertical) -->
+                <div style="position:absolute; top:40px; bottom:40px; left:-20px; width:40px; background:url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 40 100\'><path d=\'M20 0 Q 5 25 20 50 T 20 100\' stroke=\'%233e2723\' stroke-width=\'3\' fill=\'none\'/><path d=\'M10 20 Q 0 10 10 0\' fill=\'%236b8c42\'/><path d=\'M30 60 Q 40 50 30 40\' fill=\'%232d4a22\'/><path d=\'M15 80 Q 5 70 15 60\' fill=\'%23556b2f\'/></svg>'); z-index:51;"></div>
+                <div style="position:absolute; top:40px; bottom:40px; right:-20px; width:40px; transform:scaleX(-1); background:url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 40 100\'><path d=\'M20 0 Q 35 25 20 50 T 20 100\' stroke=\'%233e2723\' stroke-width=\'3\' fill=\'none\'/><path d=\'M10 20 Q 0 10 10 0\' fill=\'%236b8c42\'/><path d=\'M30 60 Q 40 50 30 40\' fill=\'%232d4a22\'/><path d=\'M15 80 Q 5 70 15 60\' fill=\'%23556b2f\'/></svg>'); z-index:51;"></div>
 
                 <div class="speaker-name">
                     <img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal">
@@ -391,7 +386,6 @@
             currentLang = code; localStorage.setItem('arcane_lang', code);
             const data = translations[code]; const en = translations['en'];
             
-            // Set Body Class for Font Override
             document.body.className = `lang-${code}`;
 
             document.querySelectorAll('.lang-btn').forEach(b => { b.classList.remove('active'); if (b.innerText === data.name) b.classList.add('active'); });
