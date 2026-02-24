@@ -112,16 +112,18 @@
         .butterfly.landed .wing { animation-duration: 3s; }
         
         .ember {
-            position: fixed; bottom: -10px; width: 4px; height: 4px; border-radius: 50%;
-            background: rgba(255, 140, 0, 0.8); /* Orange/Gold fire */
-            box-shadow: 0 0 10px rgba(255, 69, 0, 0.8);
-            pointer-events: none; z-index: 10;
-            animation: rise 10s linear forwards;
+            position: fixed; bottom: -10px; width: 2px; height: 2px; border-radius: 50%;
+            background: #fff; /* White center for hot look */
+            box-shadow: 0 0 5px rgba(255, 200, 50, 1), 0 0 10px rgba(255, 100, 0, 0.8); /* Intense glow */
+            pointer-events: none; z-index: 70; /* Above dialogue box background */
+            animation: firefly-rise linear forwards;
         }
-        @keyframes rise {
-            0% { bottom: -10px; transform: translateX(0); opacity: 0; }
-            20% { opacity: 1; }
-            100% { bottom: 100vh; transform: translateX(100px); opacity: 0; }
+        @keyframes firefly-rise {
+            0% { bottom: -10px; transform: translateX(0) scale(1); opacity: 0; }
+            20% { opacity: 1; transform: translateX(10px) scale(1.2); }
+            50% { transform: translateX(-10px) scale(0.8); }
+            80% { opacity: 0.8; }
+            100% { bottom: 25vh; transform: translateX(5px) scale(0.5); opacity: 0; }
         }
 
         .petal { position: fixed; top: -50px; z-index: 25; pointer-events: none; opacity: 1.0; border-radius: 50% 0 50% 50%; background: var(--petal-color); animation: fall linear forwards, sway ease-in-out infinite alternate; box-shadow: 0 0 2px rgba(0,0,0,0.3); }
@@ -561,10 +563,16 @@
             startAutoTalk();
             resetIdleTimer(); // Start idle watch
             // Butterflies removed per request
-            setInterval(spawnPetal, 1600); // Petals reduced to half (slower spawn rate)
+            setInterval(spawnPetal, 1600); // Petals reduced to half
             setInterval(() => {
-                const ember = document.createElement('div'); ember.className = 'ember'; ember.style.left = Math.random() * 100 + 'vw'; ember.style.animationDuration = (Math.random() * 5 + 5) + 's'; ember.style.opacity = Math.random(); document.body.appendChild(ember); setTimeout(() => ember.remove(), 10000);
-            }, 300);
+                const ember = document.createElement('div'); 
+                ember.className = 'ember'; 
+                ember.style.left = Math.random() * 100 + 'vw'; 
+                // Randomize duration for varied speed (slower = more firefly-like)
+                ember.style.animationDuration = (Math.random() * 4 + 6) + 's'; 
+                document.body.appendChild(ember); 
+                setTimeout(() => ember.remove(), 10000);
+            }, 200); // Spawn slightly more frequent to compensate for short life
         };
         window.onclick = (e) => { 
             resetIdleTimer(); 
