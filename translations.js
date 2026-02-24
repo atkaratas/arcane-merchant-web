@@ -11,13 +11,13 @@ const translations = {
         "ending": "Open your own shop in the heart of a Medieval Fantasy realm! Stock your shelves with everything from potions and swords to mysterious crystals and legendary artifacts. Set your prices, earn your customers' trust and become the richest merchant in the town!",
         "ui": {
             "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Watch Chronicles",
             "menu_wares": "Browse Wares",
             "menu_rumors": "Ask Rumors",
             "menu_common": "The Common Room",
             "menu_about": "About the Game",
             "menu_steam": "Wishlist on Steam",
-            "menu_demo": "Play Demo Now!",
             "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
             "modal_wares_title": "Manifest of Wonders",
             "modal_rumors_title": "Whispers from the Void",
@@ -72,14 +72,14 @@ const translations = {
         ],
         "ending": "Orta Çağ Fantezi dünyasının kalbinde kendi dükkanını aç! Raflarını iksirlerden kılıçlara, gizemli kristallerden efsanevi eserlere kadar her şeyle doldur. Fiyatlarını belirle, müşterilerinin güvenini kazan ve kasabanın en zengin tüccarı ol!",
         "ui": {
-            "game_subtitle": "ORTA ÇAĞ FANTEZİ DÜKKAN SİMÜLASYONU • 10 NİSAN 2026'DA YAYINDA!",
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Günlükleri İzle",
             "menu_wares": "Ürünlere Göz At",
             "menu_rumors": "Söylentileri Sor",
             "menu_common": "Ortak Salon",
             "menu_about": "Oyun Hakkında",
             "menu_steam": "Steam İstek Listesi",
-            "menu_demo": "Hemen Demoyu Oyna!",
             "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
             "modal_wares_title": "Harikalar Manifestosu",
             "modal_rumors_title": "Boşluktan Fısıltılar",
@@ -134,6 +134,8 @@ const translations = {
         ],
         "ending": "在中世纪奇幻王国的中心开设你自己的商店！在货架上摆满从药水和剑到神秘水晶和传奇神器的所有物品。设定价格，赢得顾客的信任，成为镇上最富有的商人！",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "观看编年史",
             "menu_wares": "浏览商品",
             "menu_rumors": "询问传闻",
@@ -194,6 +196,8 @@ const translations = {
         ],
         "ending": "在中世紀奇幻王國的中心開設您自己的商店！在貨架上擺滿從藥水和劍到神秘水晶和傳奇神器的所有物品。設定價格，贏得顧客的信任，成為鎮上最富有的商人！",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "觀看編年史",
             "menu_wares": "瀏覽商品",
             "menu_rumors": "詢問傳聞",
@@ -254,6 +258,8 @@ const translations = {
         ],
         "ending": "Ouvrez votre propre boutique au cœur d'un royaume médiéval fantastique ! Remplissez vos étagères de tout, des potions et épées aux cristaux mystérieux et artefacts légendaires. Fixez vos prix, gagnez la confiance de vos clients et devenez le marchand le plus riche de la ville !",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Voir les Chroniques",
             "menu_wares": "Parcourir les Marchandises",
             "menu_rumors": "Demander des Rumeurs",
@@ -314,6 +320,8 @@ const translations = {
         ],
         "ending": "Eröffne deinen eigenen Laden im Herzen eines mittelalterlichen Fantasy-Reichs! Fülle deine Regale mit allem, von Tränken und Schwertern bis hin zu geheimnisvollen Kristallen und legendären Artefakten. Lege deine Preise fest, gewinne das Vertrauen deiner Kunden und werde der reichste Händler der Stadt!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Chroniken ansehen",
             "menu_wares": "Waren durchstöbern",
             "menu_rumors": "Gerüchte fragen",
@@ -374,6 +382,8 @@ const translations = {
         ],
         "ending": "中世ファンタジー王国の中心で自分のお店を開こう！ポーションや剣から、神秘的なクリスタルや伝説のアーティファクトまで、あらゆるものを棚に並べよう。価格を設定し、顧客の信頼を勝ち取り、街で一番の大商人になろう！",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "年代記を見る",
             "menu_wares": "商品を見る",
             "menu_rumors": "噂を聞く",
@@ -434,6 +444,8 @@ const translations = {
         ],
         "ending": "중세 판타지 왕국의 중심에 나만의 상점을 여세요! 물약과 검부터 신비한 수정과 전설적인 유물까지 모든 것으로 선반을 채우세요. 가격을 정하고, 고객의 신뢰를 얻고, 마을에서 가장 부유한 상인이 되세요!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "연대기 보기",
             "menu_wares": "상품 찾아보기",
             "menu_rumors": "소문 묻기",
@@ -494,7 +506,8 @@ const translations = {
         ],
         "ending": "Otwórz własny sklep w sercu średniowiecznego królestwa fantasy! Wypełnij swoje półki wszystkim, od mikstur i mieczy po tajemnicze kryształy i legendarne artefakty. Ustalaj ceny, zdobywaj zaufanie klientów i zostań najbogatszym kupcem w mieście!",
         "ui": {
-            "game_subtitle": "SYMULATOR ŚREDNIOWIECZNEGO SKLEPU FANTASY • PREMIERA 10 KWIETNIA 2026!",
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Oglądaj Kroniki",
             "menu_wares": "Przeglądaj Towary",
             "menu_rumors": "Pytaj o Plotki",
@@ -555,6 +568,8 @@ const translations = {
         ],
         "ending": "Abra sua própria loja no coração de um reino de fantasia medieval! Encha suas prateleiras com tudo, desde poções e espadas até cristais misteriosos e artefatos lendários. Defina seus preços, conquiste a confiança de seus clientes e torne-se o comerciante mais rico da cidade!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Ver Crônicas",
             "menu_wares": "Navegar nos Itens",
             "menu_rumors": "Perguntar Rumores",
@@ -615,14 +630,14 @@ const translations = {
         ],
         "ending": "Откройте свой собственный магазин в самом сердце средневекового фэнтезийного королевства! Заполните полки всем: от зелий и мечей до таинственных кристаллов и легендарных артефактов. Устанавливайте цены, завоевывайте доверие клиентов и станьте самым богатым торговцем в городе!",
         "ui": {
-            "game_subtitle": "СРЕДНЕВЕКОВЫЙ ФЭНТЕЗИ-СИМУЛЯТОР МАГАЗИНА • ВЫХОД 10 АПРЕЛЯ 2026 Г.!",
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Смотреть Хроники",
             "menu_wares": "Просмотр Товаров",
             "menu_rumors": "Спросить Слухи",
             "menu_common": "Общая Комната",
             "menu_about": "Об Игре",
             "menu_steam": "В Желаемое Steam",
-            "menu_demo": "Играть в демо сейчас!",
             "footer_rights": "© 2026 Findie Studios. All Rights Reserved.",
             "modal_wares_title": "Манифест Чудес",
             "modal_rumors_title": "Шепот из Пустоты",
@@ -677,6 +692,8 @@ const translations = {
         ],
         "ending": "¡Abre tu propia tienda en el corazón de un reino de fantasía medieval! Llena tus estanterías con todo, desde pociones y espadas hasta cristales misteriosos y artefactos legendarios. ¡Fija tus precios, gánate la confianza de tus clientes y conviértete en el comerciante más rico de la ciudad!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Ver Crónicas",
             "menu_wares": "Explorar Mercancías",
             "menu_rumors": "Preguntar Rumores",
@@ -737,6 +754,8 @@ const translations = {
         ],
         "ending": "Otvorite sopstvenu prodavnicu u srcu Srednjovekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cene, zaradite poverenje svojih kupaca i postanite najbogatiji trgovac u gradu!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Gledaj Hronike",
             "menu_wares": "Pregledaj Robu",
             "menu_rumors": "Pitaj za Glasine",
@@ -797,6 +816,8 @@ const translations = {
         ],
         "ending": "Otvorite vlastitu trgovinu u srcu Srednjovjekovnog Fantastičnog kraljevstva! Napunite svoje police svime, od napitaka i mačeva do tajanstvenih kristala i legendarnih artefakata. Odredite svoje cijene, zaradite povjerenje svojih kupaca i postanite najbogatiji trgovac u gradu!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Gledaj Kronike",
             "menu_wares": "Pregledaj Robu",
             "menu_rumors": "Pitaj za Glasine",
@@ -857,6 +878,8 @@ const translations = {
         ],
         "ending": "Otvorte si vlastný obchod v srdci stredovekého Fantasy kráľovstva! Naplňte svoje regály všetkým od elixírov a mečov po tajomné kryštály a legendárne artefakty. Nastavte si ceny, získajte dôveru svojich zákazníkov a staňte sa najbohatším obchodníkom v meste!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Sledovať Kroniky",
             "menu_wares": "Prehliadať Tovar",
             "menu_rumors": "Opýtať sa na Klebety",
@@ -917,6 +940,8 @@ const translations = {
         ],
         "ending": "فروشگاه خود را در قلب یک قلمرو فانتزی قرون وسطایی باز کنید! قفسه‌های خود را با همه چیز از معجون‌ها و شمشیرها تا کریستال‌های مرموز و مصنوعات افسانه‌ای پر کنید. قیمت‌های خود را تعیین کنید، اعتماد مشتریان خود را جلب کنید و به ثروتمندترین تاجر شهر تبدیل شوید!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "تماشای وقایع",
             "menu_wares": "مرور کالاها",
             "menu_rumors": "پرسیدن شایعات",
@@ -977,6 +1002,8 @@ const translations = {
         ],
         "ending": "মধ্যযুগীয় ফ্যান্টাসি রাজ্যের হৃদয়ে আপনার নিজস্ব দোকান খুলুন! ওষুধ এবং তলোয়ার থেকে শুরু করে রহস্যময় স্ফটিক এবং কিংবদন্তি নিদর্শন পর্যন্ত সবকিছু দিয়ে আপনার তাকগুলি পূরণ করুন। আপনার দাম নির্ধারণ করুন, আপনার গ্রাহকদের বিশ্বাস অর্জন করুন এবং শহরের সবচেয়ে ধনী বণিক হয়ে উঠুন!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "ক্রনিকলস দেখুন",
             "menu_wares": "পণ্য ব্রাউজ করুন",
             "menu_rumors": "গুজব জিজ্ঞাসা করুন",
@@ -1037,6 +1064,8 @@ const translations = {
         ],
         "ending": "قرون وسطی کے تصوراتی دائرے کے دل میں اپنی دکان کھولیں! دوائیاں اور تلواروں سے لے کر پراسرار کرسٹل اور افسانوی نمونوں تک ہر چیز کے ساتھ اپنی شیلف کو اسٹاک کریں۔ اپنی قیمتیں مقرر کریں، اپنے گاہکوں کا اعتماد حاصل کریں اور شہر کے امیر ترین تاجر بنیں!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "تاریخ دیکھیں",
             "menu_wares": "سامان براؤز کریں",
             "menu_rumors": "افواہیں پوچھیں",
@@ -1097,6 +1126,8 @@ const translations = {
         ],
         "ending": "Atidarykite savo parduotuvę Viduramžių Fantastinės karalystės širdyje! Užpildykite lentynas viskuo – nuo gėrimų ir kardų iki paslaptingų kristalų ir legendinių artefaktų. Nustatykite kainas, pelnykite klientų pasitikėjimą ir tapkite turtingiausiu pirkliu mieste!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Žiūrėti Kronikas",
             "menu_wares": "Naršyti Prekes",
             "menu_rumors": "Klausti Gandų",
@@ -1157,6 +1188,8 @@ const translations = {
         ],
         "ending": "Atveriet savu veikalu Viduslaiku Fantāzijas karaļvalsts sirdī! Piepildiet plauktus ar visu, sākot no mikstūrām un zobeniem līdz noslēpumainiem kristāliem un leģendāriem artefaktiem. Nosakiet cenas, iegūstiet klientu uzticību un kļūstiet par bagātāko tirgotāju pilsētā!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Skatīties Hronikas",
             "menu_wares": "Pārlūkot Preces",
             "menu_rumors": "Jautāt Baumas",
@@ -1217,6 +1250,8 @@ const translations = {
         ],
         "ending": "Ava oma pood Keskaegse Fantaasiakuningriigi südames! Täida oma riiulid kõigega alates jookidest ja mõõkadest kuni salapäraste kristallide ja legendaarsete esemeteni. Määra hinnad, võida klientide usaldus ja saa linna rikkaimaks kaupmeheks!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Vaata Kroonikaid",
             "menu_wares": "Sirvi Kaupu",
             "menu_rumors": "Küsi Kuulujutte",
@@ -1277,6 +1312,8 @@ const translations = {
         ],
         "ending": "Odprite svojo trgovino v srcu Srednjeveškega Fantazijskega kraljestva! Napolnite police z vsem, od napojev in mečev do skrivnostnih kristalov in legendarnih artefaktov. Določite cene, pridobite zaupanje strank in postanite najbogatejši trgovec v mestu!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Glej Kronike",
             "menu_wares": "Brskaj po Blagu",
             "menu_rumors": "Vprašaj za Govorice",
@@ -1337,6 +1374,8 @@ const translations = {
         ],
         "ending": "Obre la teva pròpia botiga al cor d'un regne de fantasia medieval! Omple les teves prestatgeries amb tot, des de pocions i espases fins a cristalls misteriosos i artefactes llegendaris. Fixa els teus preus, guanya't la confiança dels teus clients i converteix-te en el comerciant més ric de la ciutat!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Veure Cròniques",
             "menu_wares": "Explorar Mercaderies",
             "menu_rumors": "Preguntar Rumors",
@@ -1397,6 +1436,8 @@ const translations = {
         ],
         "ending": "Opnaðu þína eigin búð í hjarta Miðalda Fantasíuríkis! Fylltu hillurnar með öllu frá drykkjum og sverðum til dularfullra kristalla og goðsagnakenndra gripa. Settu verðin, ávinnaðu þér traust viðskiptavina og vertu ríkasti kaupmaðurinn í bænum!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Horfa á Annála",
             "menu_wares": "Skoða Varning",
             "menu_rumors": "Spyrja um Orðróm",
@@ -1457,6 +1498,8 @@ const translations = {
         ],
         "ending": "Apri la tua bottega nel cuore di un regno Fantasy Medievale! Riempi gli scaffali di tutto, dalle pozioni alle spade leggendarie. Fissa i prezzi, guadagna la fiducia e diventa il mercante più ricco!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Guarda le Cronache",
             "menu_wares": "Sfoglia le Merci",
             "menu_rumors": "Chiedi Voci",
@@ -1511,6 +1554,8 @@ const translations = {
         ],
         "ending": "Open je eigen winkel in een Middeleeuws Fantasierijk! Vul je planken met alles van drankjes tot legendarische zwaarden. Bepaal prijzen, win vertrouwen en word de rijkste!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Bekijk Kronieken",
             "menu_wares": "Bekijk Waren",
             "menu_rumors": "Vraag Geruchten",
@@ -1565,6 +1610,8 @@ const translations = {
         ],
         "ending": "افتح متجرك الخاص في قلب مملكة الخيال! املأ أرففك بكل شيء من الجرعات والسيوف إلى الكريستالات الغامضة. حدد أسعارك، واكسب الثقة وكن الأغنى!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "شاهد السجلات",
             "menu_wares": "تصفح البضائع",
             "menu_rumors": "اسأل عن الشائعات",
@@ -1619,6 +1666,8 @@ const translations = {
         ],
         "ending": "Mở cửa hàng riêng giữa vương quốc Giả tưởng! Lấp đầy kệ với mọi thứ từ thuốc đến kiếm huyền thoại. Định giá, giành lòng tin và trở thành người giàu nhất!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Xem Biên Niên Sử",
             "menu_wares": "Xem Hàng Hóa",
             "menu_rumors": "Hỏi Tin Đồn",
@@ -1673,6 +1722,8 @@ const translations = {
         ],
         "ending": "เปิดร้านค้าของคุณเองในใจกลางอาณาจักรแฟนตาซี! เติมชั้นวางด้วยทุกสิ่งตั้งแต่น้ำยาไปจนถึงดาบในตำนาน กำหนดราคา ได้รับความไว้วางใจ และกลายเป็นเศรษฐี!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "ดูพงศาวดาร",
             "menu_wares": "ดูสินค้า",
             "menu_rumors": "ถามข่าวลือ",
@@ -1727,6 +1778,8 @@ const translations = {
         ],
         "ending": "Buka tokomu sendiri di jantung kerajaan Fantasi! Isi rak dengan segalanya mulai dari ramuan hingga pedang legendaris. Tetapkan harga, menangkan kepercayaan, dan jadi yang terkaya!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Lihat Kronik",
             "menu_wares": "Jelajahi Barang",
             "menu_rumors": "Tanya Rumor",
@@ -1781,6 +1834,8 @@ const translations = {
         ],
         "ending": "Відкрийте власну крамницю в серці Фентезі-королівства! Заповніть полиці всім: від зілля до легендарних мечів. Встановлюйте ціни, здобувайте довіру та станьте найбагатшим!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Дивитися Хроніки",
             "menu_wares": "Товари",
             "menu_rumors": "Запитати Чутки",
@@ -1835,6 +1890,8 @@ const translations = {
         ],
         "ending": "Otevři si vlastní obchod v srdci Fantasy království! Naplň regály vším od lektvarů po legendární meče. Určuj ceny, získej důvěru a staň se boháčem!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Sledovat Kroniky",
             "menu_wares": "Procházet Zboží",
             "menu_rumors": "Ptát se na Drby",
@@ -1889,6 +1946,8 @@ const translations = {
         ],
         "ending": "Nyisd meg saját boltodat a Fantasy Királyság szívében! Töltsd meg a polcokat bájitalokkal és legendás kardokkal. Szabj árakat, nyerd el a bizalmat és légy te a leggazdagabb!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Krónikák Megtekintése",
             "menu_wares": "Áruk Böngészése",
             "menu_rumors": "Pletykák Kérdezése",
@@ -1943,6 +2002,8 @@ const translations = {
         ],
         "ending": "Deschide-ți propriul magazin în inima unui regat Fantastic! Umple rafturile cu orice, de la poțiuni la săbii legendare. Stabilește prețuri, câștigă încredere și devino cel mai bogat!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Vezi Cronicile",
             "menu_wares": "Răsfoiește Mărfuri",
             "menu_rumors": "Întreabă Zvonuri",
@@ -1997,6 +2058,8 @@ const translations = {
         ],
         "ending": "Ανοίξτε το δικό σας κατάστημα στην καρδιά ενός Βασιλείου Φαντασίας! Γεμίστε τα ράφια με τα πάντα, από φίλτρα μέχρι θρυλικά σπαθιά. Ορίστε τιμές, κερδίστε εμπιστοσύνη και γίνετε ο πλουσιότερος!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Δείτε Χρονικά",
             "menu_wares": "Περιήγηση Εμπορευμάτων",
             "menu_rumors": "Ρωτήστε Φήμες",
@@ -2051,6 +2114,8 @@ const translations = {
         ],
         "ending": "Öppna din egen butik i hjärtat av ett Fantasyrike! Fyll hyllorna med allt från drycker till legendariska svärd. Sätt priser, vinn förtroende och bli rikast!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Se Krönikor",
             "menu_wares": "Bläddra bland Varor",
             "menu_rumors": "Fråga om Rykten",
@@ -2105,6 +2170,8 @@ const translations = {
         ],
         "ending": "Åbn din egen butik i hjertet af et Fantasirige! Fyld hylderne med alt fra eliksirer til legendariske sværd. Sæt priser, vind tillid og bliv rigest!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Se Krøniker",
             "menu_wares": "Gennemse Varer",
             "menu_rumors": "Spørg om Rygtet",
@@ -2159,6 +2226,8 @@ const translations = {
         ],
         "ending": "Avaa oma puotisi Fantasiakuningaskunnan sydämessä! Täytä hyllyt kaikella taikajuomista legendaarisiin miekkoihin. Aseta hinnat, voita luottamus ja rikastu!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Katso Kronikat",
             "menu_wares": "Selaa Tuotteita",
             "menu_rumors": "Kysy Huhuja",
@@ -2213,6 +2282,8 @@ const translations = {
         ],
         "ending": "Åpne din egen butikk i hjertet av et Fantasyrike! Fyll hyllene med alt fra eliksirer til legendariske sverd. Sett priser, vinn tillit og bli rikest!",
         "ui": {
+            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
+            "menu_demo": "PLAY DEMO NOW!",
             "menu_watch": "Se Krøniker",
             "menu_wares": "Bla i Varer",
             "menu_rumors": "Spør om Rykter",
