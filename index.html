@@ -925,6 +925,17 @@
             stopC();
         }
 
+        // MISSING FUNCTION RESTORED
+        function showModal(modalId) {
+            closeModals(); // Close others first
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('visible');
+            } else {
+                console.error("Modal not found:", modalId);
+            }
+        }
+
         function showVideoModal() {
             const modal = document.getElementById('video-modal'), video = document.getElementById('video-player');
             const src = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/hls_264_master.m3u8';
