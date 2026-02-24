@@ -235,7 +235,7 @@
     <div id="rumors-modal" class="modal"><div class="parchment" style="max-width: 600px;"><span class="close-modal" onclick="closeModals()">&times;</span><h2 style="font-size: 1.8rem; margin-bottom: 25px;">Whispers from the Void</h2><div style="margin-top: 20px; text-align: left;"><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="txt-specs-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 15px;">⚡ Scroll of Summoning</p><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;"><div><p id="txt-specs-min" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Minimum Invocation</p><ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;"><li><strong>OS:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> i5-4460 / Ryzen 3 1200</li><li><strong>RAM:</strong> 8 GB</li><li><strong>GPU:</strong> GTX 960M / 750 Ti</li><li><strong>Space:</strong> 2 GB available</li></ul></div><div><p id="txt-specs-rec" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Recommended Ritual</p><ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;"><li><strong>OS:</strong> Windows 10 / 11</li><li><strong>CPU:</strong> i5-9400 / Ryzen 5 3600</li><li><strong>RAM:</strong> 16 GB</li><li><strong>GPU:</strong> GTX 1660 / RTX 2060</li><li><strong>Space:</strong> 2 GB available</li></ul></div></div></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-1-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-1-desc" style="font-style: italic; opacity: 0.8;"></p></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-2-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-2-desc" style="font-style: italic; opacity: 0.8;"></p></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-3-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-3-desc" style="font-style: italic; opacity: 0.8;"></p></div><div><p id="rumor-4-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-4-desc" style="font-style: italic; opacity: 0.8;"></p></div></div></div></div>
     <div id="community-modal" class="modal"><div class="parchment"><span class="close-modal" onclick="closeModals()">&times;</span><h2>The Common Room</h2><div class="community-links"><a href="https://www.findiestudios.com/" target="_blank" class="community-item"><span class="community-icon">🏰</span> Findie</a><a href="https://discord.gg/findiestudios" target="_blank" class="community-item"><span class="community-icon">⚔️</span> Discord</a><a href="https://x.com/FindieStudios" target="_blank" class="community-item"><span class="community-icon">📜</span> Twitter</a><a href="https://www.youtube.com/@FindieStudios" target="_blank" class="community-item"><span class="community-icon">🛡️</span> YouTube</a><a href="https://www.instagram.com/findiestudios" target="_blank" class="community-item"><span class="community-icon">🏺</span> Instagram</a><a href="https://www.tiktok.com/@findiestudios" target="_blank" class="community-item"><span class="community-icon">🎭</span> TikTok</a><a href="https://www.reddit.com/r/arcanemerchant" target="_blank" class="community-item"><span class="community-icon">⚒️</span> Reddit</a><a href="https://www.linkedin.com/company/findiestudios" target="_blank" class="community-item"><span class="community-icon">🗝️</span> LinkedIn</a></div></div></div>
     <div id="about-modal" class="modal"><div class="parchment" style="max-width: 850px; width: 95vw;"><span class="close-modal" onclick="closeModals()">&times;</span><div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 15px;"><h2 style="margin: 0; border: none;">The Merchant's Guide</h2></div><div id="about-content" style="margin-top: 20px; line-height: 1.6; font-size: 1.1rem;"><p id="about-intro" style="margin-bottom: 25px; font-style: italic;"></p><div id="about-features" style="display: grid; grid-template-columns: 1fr; gap: 20px;"></div></div></div></div>
-    <div id="video-modal" class="modal"><div class="parchment" style="max-width: 900px; background: #0a0a0a; border: 2px solid var(--gold); padding: 10px;"><span class="close-modal" onclick="closeVideoModal()">&times;</span><div class="video-container"><video id="video-player" controls muted playsinline></video></div></div></div>
+    <div id="video-modal" class="modal" style="background: rgba(0,0,0,0.9);"><div class="parchment" style="max-width: 900px; background: #000; border: 2px solid var(--gold); padding: 10px; position: relative;"><span class="close-modal" onclick="closeVideoModal()" style="color: #fff; top: -40px; left: 0;">&times;</span><div class="video-container" style="padding-top: 56.25%; position: relative;"><video id="video-player" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls playsinline></video></div></div></div>
 
     <script src="translations.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -312,25 +312,28 @@
 
         function showVideoModal() {
             const modal = document.getElementById('video-modal'), video = document.getElementById('video-player');
-            // Using a high-compatibility direct Steam MP4 link
+            // Using a high-compatibility direct Steam MP4 link (480p for faster load)
             const mp4Src = 'https://video.fastly.steamstatic.com/store_trailers/4086760/1025836541/d1d348ada576efe61787479707370305904dfecb/1769431428/movie480.mp4';
             
             modal.classList.add('visible');
             
-            // Set basic video attributes
-            video.setAttribute('src', mp4Src);
+            // Set basic video attributes to ensure compatibility
+            video.src = mp4Src;
             video.setAttribute('playsinline', '');
             video.setAttribute('webkit-playsinline', '');
-            video.controls = true; // Show controls by default to ensure user can play
-            video.muted = false; // Let it have sound if they click
+            video.setAttribute('preload', 'auto');
+            video.controls = true;
+            video.muted = false;
             
+            // Force reload to ensure the new src is picked up
             video.load();
             
-            // Critical fix for mobile: try to play, if fails, just let user hit the big play button
+            // Play with interaction handling
             const playPromise = video.play();
             if (playPromise !== undefined) {
                 playPromise.catch(error => {
-                    console.log("Autoplay blocked, user interaction required.");
+                    console.log("Autoplay blocked or load failed.");
+                    // Fallback: the controls are already visible, user can click play
                 });
             }
         }
