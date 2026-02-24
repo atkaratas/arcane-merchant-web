@@ -771,7 +771,7 @@
                     <img src="images/arcane_initial_logo.jpg" class="story-avatar">
                     <div class="story-info">
                         <span class="story-username">Arcane Merchant</span>
-                        <span class="story-time">New Arrival</span>
+                        <span class="story-time" id="txt-story-subtitle">New Arrival</span>
                     </div>
                 </div>
 
@@ -797,10 +797,10 @@
                 
                 <!-- UNIFIED STYLE: SCROLL OF SUMMONING -->
                 <div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;">
-                    <p style="font-weight: bold; color: #5d2e0a; margin-bottom: 15px;">⚡ Scroll of Summoning</p>
+                    <p id="txt-specs-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 15px;">⚡ Scroll of Summoning</p>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;">
                         <div>
-                            <p style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Minimum Invocation</p>
+                            <p id="txt-specs-min" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Minimum Invocation</p>
                             <ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;">
                                 <li><strong>OS:</strong> Windows 10 (64-bit)</li>
                                 <li><strong>CPU:</strong> i5-4460 / Ryzen 3 1200</li>
@@ -810,7 +810,7 @@
                             </ul>
                         </div>
                         <div>
-                            <p style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Recommended Ritual</p>
+                            <p id="txt-specs-rec" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Recommended Ritual</p>
                             <ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;">
                                 <li><strong>OS:</strong> Windows 10 / 11</li>
                                 <li><strong>CPU:</strong> i5-9400 / Ryzen 5 3600</li>
@@ -866,9 +866,7 @@
             <span class="close-modal" onclick="closeModals()">&times;</span>
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(139, 69, 19, 0.3); padding-bottom: 15px;">
                 <h2 style="margin: 0; border: none;">The Merchant's Guide</h2>
-                <select id="lang-select" onchange="updateAboutText(this.value)" style="background: rgba(139, 69, 19, 0.1); border: 1px solid #8b4513; color: #2c1e0f; padding: 5px 10px; font-family: var(--ui-font); cursor: pointer; border-radius: 4px;">
-                    <!-- Options populated by JS -->
-                </select>
+                <!-- Language Select Removed (Cleaned Up) -->
             </div>
             
             <div id="about-content" style="margin-top: 20px; line-height: 1.6; font-size: 1.1rem;">
@@ -1167,11 +1165,23 @@
             safeText('#about-modal h2', 'modal_about_title');
             safeText('.copyright-footer', 'footer_rights');
             
-            const scrollTitle = document.querySelector('#rumors-modal h3');
-            if(scrollTitle) {
-                const titleText = (data.ui && data.ui['specs_title']) ? data.ui['specs_title'] : (en.ui ? en.ui['specs_title'] : "Specs");
-                scrollTitle.innerText = "⚡ " + titleText;
-            }
+            // Updated Specs Titles
+            const specsTitle = (data.ui && data.ui['specs_title']) ? data.ui['specs_title'] : (en.ui ? en.ui['specs_title'] : "Scroll of Summoning");
+            const elSpecs = document.getElementById('txt-specs-title');
+            if(elSpecs) elSpecs.innerText = "⚡ " + specsTitle;
+
+            safeText('#txt-specs-min', 'specs_min');
+            safeText('#txt-specs-rec', 'specs_rec');
+            
+            // New Arrival Subtitle (Manual translation map if missing in JS, or default EN)
+            const subtitleMap = {
+                'tr': 'Yeni Gelen', 'de': 'Neuankömmling', 'fr-FR': 'Nouvel Arrivant', 'es-ES': 'Recién Llegado',
+                'ru-RU': 'Новое Поступление', 'zh': '新到货', 'zh-TW': '新到貨', 'ja-JP': '新入荷', 'ko': '신상품',
+                'pt-BR': 'Recém Chegado', 'it': 'Nuovo Arrivo', 'pl-PL': 'Nowa Dostawa'
+            };
+            const subText = subtitleMap[code] || "New Arrival";
+            const elSub = document.getElementById('txt-story-subtitle');
+            if(elSub) elSub.innerText = subText;
             
             const mName = (data.ui && data.ui['merchant_name']) ? data.ui['merchant_name'] : (en.ui ? en.ui['merchant_name'] : "Merchant");
             const seal = document.querySelector('.speaker-name');
