@@ -1610,8 +1610,8 @@ const translations = {
         ],
         "ending": "افتح متجرك الخاص في قلب مملكة الخيال! املأ أرففك بكل شيء من الجرعات والسيوف إلى الكريستالات الغامضة. حدد أسعارك، واكسب الثقة وكن الأغنى!",
         "ui": {
-            "game_subtitle": "MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!",
-            "menu_demo": "PLAY DEMO NOW!",
+            "game_subtitle": "محاكي متجر الفنتازيا العصور الوسطى • الإصدار 10 أبريل 2026!",
+            "menu_demo": "العب العرض التجريبي الآن!",
             "menu_watch": "شاهد السجلات",
             "menu_wares": "تصفح البضائع",
             "menu_rumors": "اسأل عن الشائعات",
