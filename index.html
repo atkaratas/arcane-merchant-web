@@ -68,18 +68,25 @@
         }
         .game-icon-seal { width: 24px; height: 24px; object-fit: contain; }
 
-        /* --- STATIC WRAPPING IVY FRAME --- */
+        /* --- STATIC WRAPPING IVY FRAME (EMOJI STYLE) --- */
         .vine-frame { position: absolute; pointer-events: none; z-index: 50; filter: drop-shadow(2px 4px 5px rgba(0,0,0,0.9)); }
         
-        /* Full side coverage with slight overlap */
+        /* Full side coverage */
         .vine-tl { top: -35px; left: -35px; width: 50%; height: 100px; }
         .vine-tr { top: -35px; right: -35px; width: 50%; height: 100px; transform: scaleX(-1); }
         .vine-bl { bottom: -35px; left: -35px; width: 50%; height: 100px; transform: scaleY(-1); }
         .vine-br { bottom: -35px; right: -35px; width: 50%; height: 100px; transform: scale(-1); }
         
-        /* Note: Animations removed. Static display. */
-        
-        .butterfly { position: absolute; width: 20px; height: 20px; z-index: 70; pointer-events: none; transform-style: preserve-3d; will-change: transform, top, left; transition: top 4s ease-in-out, left 4s ease-in-out, transform 1s ease-in-out; }
+        /* Side Pillars */
+        .vine-side-l { top: 40px; left: -25px; width: 40px; height: calc(100% - 80px); background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 100"><path d="M20 0 Q 30 25 10 50 T 20 100" stroke="%233e2723" stroke-width="3" fill="none"/></svg>') no-repeat center; z-index: 50; }
+        .vine-side-r { top: 40px; right: -25px; width: 40px; height: calc(100% - 80px); transform: scaleX(-1); background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 100"><path d="M20 0 Q 30 25 10 50 T 20 100" stroke="%233e2723" stroke-width="3" fill="none"/></svg>') no-repeat center; z-index: 50; }
+
+        /* BUTTERFLY (Faster & 3D) */
+        .butterfly { 
+            position: absolute; width: 20px; height: 20px; z-index: 3000; /* Super high to sit on menus */
+            pointer-events: none; transform-style: preserve-3d; will-change: transform, top, left; 
+            transition: top 2s ease-in-out, left 2s ease-in-out, transform 0.5s ease-in-out; /* 2x FASTER */
+        }
         .butterfly-body { position: absolute; top: 50%; left: 50%; width: 4px; height: 14px; background: #222; border-radius: 5px; transform: translate(-50%, -50%); }
         .wing { position: absolute; top: 0; width: 14px; height: 22px; border-radius: 50% 50% 10% 50%; opacity: 0.9; filter: drop-shadow(0 0 4px currentColor); }
         .wing.left { right: 50%; transform-origin: 100% 50%; animation: flapLeft 0.15s infinite alternate ease-in-out; }
@@ -89,6 +96,8 @@
         .bt-purple { color: #e056fd; } .bt-purple .wing { background: radial-gradient(circle at 30% 30%, #e056fd, #8e44ad); }
         @keyframes flapLeft { 0% { transform: rotateY(0deg); } 100% { transform: rotateY(60deg); } }
         @keyframes flapRight { 0% { transform: scaleX(-1) rotateY(0deg); } 100% { transform: scaleX(-1) rotateY(60deg); } }
+        
+        /* Landed State: Slow Flap */
         .butterfly.landed .wing { animation-duration: 3s; }
         
         .petal { position: fixed; top: -50px; z-index: 25; pointer-events: none; opacity: 0.9; border-radius: 50% 0 50% 50%; background: linear-gradient(135deg, var(--petal-color), rgba(0,0,0,0.1)); animation: fall linear forwards, sway ease-in-out infinite alternate; }
@@ -145,47 +154,50 @@
             <img src="images/official_logo.png" alt="Arcane Merchant Logo" class="official-logo">
             <p>MEDIEVAL FANTASY SHOP SIMULATOR • APRIL 10 2026 RELEASE!</p>
         </div>
-        <div class="menu-container"><button class="menu-btn">Loading...</button></div>
+        <div class="menu-container">
+            <!-- Buttons injected by JS (ID's important for butterflies) -->
+        </div>
 
         <div class="dialogue-wrapper">
             <div class="dialogue-box">
-                <!-- STATIC HIGH DENSITY IVY WRAP (No Animation) -->
+                <!-- EMOJI VINE FRAME (Organic & Detailed) -->
                 <!-- TOP LEFT -->
                 <svg class="vine-frame vine-tl" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-10 40 C 20 20 80 50 140 30 Q 180 20 210 40" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <!-- Small, dense leaves -->
-                    <path d="M10 40 Q 0 30 10 20 Q 25 25 15 40 Z" fill="#6b8c42" transform="scale(0.6) translate(10,10)"/>
-                    <path d="M30 30 Q 40 10 50 30 Q 40 45 30 30 Z" fill="#2d4a22" transform="scale(0.6) translate(20,20)"/>
-                    <path d="M50 40 Q 60 55 70 40 Q 60 25 50 40 Z" fill="#556b2f" transform="scale(0.6) translate(30,10)"/>
-                    <!-- More leaves -->
-                    <circle cx="20" cy="35" r="4" fill="#6b8c42"/> <circle cx="45" cy="25" r="3" fill="#2d4a22"/>
-                    <circle cx="70" cy="30" r="5" fill="#556b2f"/> <circle cx="95" cy="40" r="4" fill="#9acd32"/>
-                    <g transform="translate(40, 20) scale(0.5)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
+                    <!-- Emoji Injection via Text -->
+                    <text x="5" y="45" font-size="20">🌿</text> <text x="25" y="30" font-size="18">🍃</text>
+                    <text x="50" y="45" font-size="22">🌿</text> <text x="75" y="35" font-size="16">☘️</text>
+                    <text x="100" y="40" font-size="20">🍃</text> <text x="130" y="30" font-size="18">🌿</text>
+                    <text x="160" y="35" font-size="20">🌸</text> <!-- Orchid -->
                 </svg>
 
+                <!-- TOP RIGHT -->
                 <svg class="vine-frame vine-tr" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-10 40 C 40 20 100 50 160 30 Q 200 20 230 40" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <circle cx="20" cy="35" r="4" fill="#6b8c42"/> <circle cx="50" cy="25" r="5" fill="#2d4a22"/>
-                    <circle cx="80" cy="30" r="4" fill="#556b2f"/> <circle cx="110" cy="40" r="3" fill="#9acd32"/>
-                    <g transform="translate(100, 20) scale(0.5)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
+                    <text x="10" y="40" font-size="18">🍃</text> <text x="40" y="30" font-size="22">🌿</text>
+                    <text x="70" y="45" font-size="18">☘️</text> <text x="100" y="25" font-size="20">🌸</text>
+                    <text x="130" y="40" font-size="22">🌿</text> <text x="160" y="30" font-size="16">🍃</text>
                 </svg>
 
+                <!-- BOTTOM LEFT -->
                 <svg class="vine-frame vine-bl" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-10 40 C 30 60 90 20 150 40 Q 190 50 220 30" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <circle cx="30" cy="45" r="4" fill="#6b8c42"/> <circle cx="60" cy="35" r="5" fill="#2d4a22"/>
-                    <circle cx="90" cy="40" r="4" fill="#556b2f"/> <circle cx="120" cy="30" r="3" fill="#9acd32"/>
-                    <g transform="translate(60, 45) scale(0.5)"><circle cx="0" cy="0" r="5" fill="#ffd700"/><path d="M0 0 Q 10 10 20 0" fill="#e056fd"/></g>
+                    <text x="20" y="45" font-size="20">🌿</text> <text x="50" y="35" font-size="18">🍃</text>
+                    <text x="80" y="50" font-size="16">☘️</text> <text x="110" y="30" font-size="22">🌿</text>
+                    <text x="140" y="40" font-size="20">🌸</text>
                 </svg>
 
+                <!-- BOTTOM RIGHT -->
                 <svg class="vine-frame vine-br" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-10 40 C 30 20 90 50 150 30 Q 190 20 220 40" stroke="#3e2723" stroke-width="3" stroke-linecap="round" fill="none"/>
-                    <circle cx="20" cy="35" r="4" fill="#6b8c42"/> <circle cx="50" cy="25" r="5" fill="#2d4a22"/>
-                    <circle cx="80" cy="30" r="4" fill="#556b2f"/> <circle cx="110" cy="40" r="3" fill="#9acd32"/>
+                    <text x="15" y="40" font-size="18">🍃</text> <text x="45" y="25" font-size="22">🌿</text>
+                    <text x="75" y="45" font-size="20">🌸</text> <text x="105" y="30" font-size="18">☘️</text>
+                    <text x="135" y="40" font-size="20">🌿</text>
                 </svg>
 
                 <!-- SIDE FILLERS (Vertical) -->
-                <div style="position:absolute; top:40px; bottom:40px; left:-20px; width:40px; background:url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 40 100\'><path d=\'M20 0 Q 5 25 20 50 T 20 100\' stroke=\'%233e2723\' stroke-width=\'3\' fill=\'none\'/><circle cx=\'10\' cy=\'20\' r=\'4\' fill=\'%236b8c42\'/><circle cx=\'30\' cy=\'60\' r=\'3\' fill=\'%232d4a22\'/></svg>'); z-index:51;"></div>
-                <div style="position:absolute; top:40px; bottom:40px; right:-20px; width:40px; transform:scaleX(-1); background:url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 40 100\'><path d=\'M20 0 Q 35 25 20 50 T 20 100\' stroke=\'%233e2723\' stroke-width=\'3\' fill=\'none\'/><circle cx=\'10\' cy=\'20\' r=\'4\' fill=\'%236b8c42\'/><circle cx=\'30\' cy=\'60\' r=\'3\' fill=\'%232d4a22\'/></svg>'); z-index:51;"></div>
+                <div style="position:absolute; top:40px; bottom:40px; left:-20px; width:40px; background:url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 40 100\'><path d=\'M20 0 Q 5 25 20 50 T 20 100\' stroke=\'%233e2723\' stroke-width=\'3\' fill=\'none\'/><text x=\'5\' y=\'20\' font-size=\'16\'>🌿</text><text x=\'15\' y=\'50\' font-size=\'14\'>🍃</text><text x=\'5\' y=\'80\' font-size=\'16\'>🌿</text></svg>'); z-index:51;"></div>
+                <div style="position:absolute; top:40px; bottom:40px; right:-20px; width:40px; transform:scaleX(-1); background:url('data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 40 100\'><path d=\'M20 0 Q 35 25 20 50 T 20 100\' stroke=\'%233e2723\' stroke-width=\'3\' fill=\'none\'/><text x=\'5\' y=\'20\' font-size=\'16\'>🌿</text><text x=\'15\' y=\'50\' font-size=\'14\'>🍃</text><text x=\'5\' y=\'80\' font-size=\'16\'>🌿</text></svg>'); z-index:51;"></div>
 
                 <div class="speaker-name">
                     <img src="images/arcane_initial_logo.jpg" class="game-icon-seal" alt="Seal">
@@ -199,7 +211,7 @@
         <div class="copyright-footer">© 2026 Findie Studios. All Rights Reserved.</div>
     </div>
 
-    <!-- Modals -->
+    <!-- Modals (Common Room, About, etc) kept same as before ... -->
     <div id="lang-modal" class="modal"><div class="parchment"><span class="close-modal" onclick="closeModals()">&times;</span><h2>Select Region</h2><div class="lang-grid" id="lang-grid"></div></div></div>
     <div id="wares-modal" class="modal" style="background: rgba(0,0,0,0.4);"><div class="parchment" style="max-width: 500px; padding: 0; background: transparent; box-shadow: none; border: none;"><span class="close-modal" onclick="closeModals()" style="z-index: 50; color: #fff; text-shadow: 0 0 10px #000; top: 20px; left: 20px;">&times;</span><div class="story-container"><div class="story-progress" id="story-progress"></div><div class="story-header"><img src="images/arcane_initial_logo.jpg" class="story-avatar"><div class="story-info"><span class="story-username">Arcane Merchant</span><span class="story-time" id="txt-story-subtitle">New Arrival</span></div></div><div class="story-content"><div class="story-bg" id="story-bg"></div><img id="story-image" src="" class="story-img-main"><video id="story-video" class="story-img-main" playsinline muted loop style="display: none;"></video></div><div class="tap-zone left" onclick="moveCarousel(-1)"></div><div class="tap-zone right" onclick="moveCarousel(1)"></div></div></div></div>
     <div id="rumors-modal" class="modal"><div class="parchment" style="max-width: 600px;"><span class="close-modal" onclick="closeModals()">&times;</span><h2 style="font-size: 1.8rem; margin-bottom: 25px;">Whispers from the Void</h2><div style="margin-top: 20px; text-align: left;"><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="txt-specs-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 15px;">⚡ Scroll of Summoning</p><div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.9rem;"><div><p id="txt-specs-min" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Minimum Invocation</p><ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;"><li><strong>OS:</strong> Windows 10 (64-bit)</li><li><strong>CPU:</strong> i5-4460 / Ryzen 3 1200</li><li><strong>RAM:</strong> 8 GB</li><li><strong>GPU:</strong> GTX 960M / 750 Ti</li><li><strong>Space:</strong> 2 GB available</li></ul></div><div><p id="txt-specs-rec" style="font-weight: bold; color: #8b4513; margin-bottom: 5px;">Recommended Ritual</p><ul style="list-style: none; padding: 0; opacity: 0.8; font-size: 0.8rem; line-height: 1.4;"><li><strong>OS:</strong> Windows 10 / 11</li><li><strong>CPU:</strong> i5-9400 / Ryzen 5 3600</li><li><strong>RAM:</strong> 16 GB</li><li><strong>GPU:</strong> GTX 1660 / RTX 2060</li><li><strong>Space:</strong> 2 GB available</li></ul></div></div></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-1-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-1-desc" style="font-style: italic; opacity: 0.8;"></p></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-2-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-2-desc" style="font-style: italic; opacity: 0.8;"></p></div><div style="margin-bottom: 25px; border-bottom: 1px dashed rgba(139, 69, 19, 0.2); padding-bottom: 15px;"><p id="rumor-3-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-3-desc" style="font-style: italic; opacity: 0.8;"></p></div><div><p id="rumor-4-title" style="font-weight: bold; color: #5d2e0a; margin-bottom: 5px;"></p><p id="rumor-4-desc" style="font-style: italic; opacity: 0.8;"></p></div></div></div></div>
@@ -229,16 +241,30 @@
         let isTyping = false;
         let hls;
 
+        // Interaction Timeout for "Idle" detection
+        let idleTimer;
+        let isIdle = false;
+
+        function resetIdleTimer() {
+            isIdle = false;
+            if (idleTimer) clearTimeout(idleTimer);
+            idleTimer = setTimeout(() => {
+                isIdle = true;
+                // Maybe force a butterfly to the Steam button here immediately?
+            }, 10000); // 10s idle
+        }
+
         function getQuotes() {
             if (!translations[currentLang] || !translations[currentLang].merchant) return translations['en'].merchant.quotes;
             return translations[currentLang].merchant.quotes;
         }
 
-        window.handleWatch = function() { resetAutoTalk(); showVideoModal(); typeWriter(getQuotes()[0], dialogueElement, 30); }
-        window.handleWares = function() { resetAutoTalk(); showModal('wares-modal'); initCarousel(); typeWriter(getQuotes()[1], dialogueElement, 30); }
-        window.handleRumors = function() { resetAutoTalk(); showModal('rumors-modal'); typeWriter(getQuotes()[4], dialogueElement, 30); }
-        window.handleCommunity = function() { resetAutoTalk(); showModal('community-modal'); typeWriter(getQuotes()[8], dialogueElement, 30); }
-        window.handleAbout = function() { resetAutoTalk(); showModal('about-modal'); typeWriter(getQuotes()[2], dialogueElement, 30); }
+        // Hook all interactions
+        window.handleWatch = function() { resetIdleTimer(); resetAutoTalk(); showVideoModal(); typeWriter(getQuotes()[0], dialogueElement, 30); }
+        window.handleWares = function() { resetIdleTimer(); resetAutoTalk(); showModal('wares-modal'); initCarousel(); typeWriter(getQuotes()[1], dialogueElement, 30); }
+        window.handleRumors = function() { resetIdleTimer(); resetAutoTalk(); showModal('rumors-modal'); typeWriter(getQuotes()[4], dialogueElement, 30); }
+        window.handleCommunity = function() { resetIdleTimer(); resetAutoTalk(); showModal('community-modal'); typeWriter(getQuotes()[8], dialogueElement, 30); }
+        window.handleAbout = function() { resetIdleTimer(); resetAutoTalk(); showModal('about-modal'); typeWriter(getQuotes()[2], dialogueElement, 30); }
 
         function startAutoTalk() {
             if (autoTalkInterval) clearInterval(autoTalkInterval);
@@ -257,6 +283,7 @@
         function closeModals() {
             document.querySelectorAll('.modal').forEach(m => m.classList.remove('visible'));
             stopC();
+            resetIdleTimer();
         }
 
         function showModal(modalId) {
@@ -384,7 +411,7 @@
                     let el; let text = "Menu Item";
                     try { text = (data.ui && data.ui[item.key]) ? data.ui[item.key] : (en.ui && en.ui[item.key] ? en.ui[item.key] : item.key); } catch(e) { text = item.key; }
                     if (item.link) {
-                        el = document.createElement('a'); el.href = item.link; el.target = "_blank"; el.className = 'menu-btn';
+                        el = document.createElement('a'); el.href = item.link; el.target = "_blank"; el.className = 'menu-btn btn-steam'; // Added class for targeting
                         el.style = "color: #fff; background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%); border-color: #66c0f4; display: flex; align-items: center; justify-content: center; gap: 10px;";
                         el.innerHTML = `<img src="images/steam_logo_official.jpg" width="20" height="20" style="border-radius: 50%;"> ${text}`;
                     } else {
@@ -451,41 +478,87 @@
             endingEl.innerText = data.ending || "";
         }
 
-        // --- MAJESTIC BUTTERFLY LOGIC ---
+        // --- MAJESTIC BUTTERFLY LOGIC (2x Faster & Smart Landing) ---
         function spawnButterfly() {
             const dialogueBox = document.querySelector('.dialogue-box'); if (!dialogueBox) return;
-            if (document.querySelectorAll('.butterfly').length >= 4) return;
-            const b = document.createElement('div'); const colorClass = ['bt-gold', 'bt-blue', 'bt-purple'][Math.floor(Math.random() * 3)];
-            b.className = `butterfly ${colorClass}`; b.innerHTML = '<div class="butterfly-body"></div><div class="wing left"></div><div class="wing right"></div>';
+            if (document.querySelectorAll('.butterfly').length >= 5) return;
+
+            const b = document.createElement('div'); 
+            const colorClass = ['bt-gold', 'bt-blue', 'bt-purple'][Math.floor(Math.random() * 3)];
+            b.className = `butterfly ${colorClass}`; 
+            b.innerHTML = '<div class="butterfly-body"></div><div class="wing left"></div><div class="wing right"></div>';
+
+            // Collect Potential Landing Spots (Vines + Menus + Steam)
             const corners = [ { id: 'tl', x: 20, y: 20 }, { id: 'tr', x: dialogueBox.offsetWidth - 40, y: 20 }, { id: 'bl', x: 20, y: dialogueBox.offsetHeight - 40 }, { id: 'br', x: dialogueBox.offsetWidth - 40, y: dialogueBox.offsetHeight - 40 } ];
-            const targetCorner = corners[Math.floor(Math.random() * corners.length)];
-            const startX = Math.random() * window.innerWidth; const startY = Math.random() * window.innerHeight;
-            b.style.left = startX + 'px'; b.style.top = startY + 'px';
+            
+            // Add Menu Buttons as Targets
+            const menuBtns = document.querySelectorAll('.menu-btn');
+            const menuTargets = [];
+            menuBtns.forEach(btn => {
+                const rect = btn.getBoundingClientRect();
+                const boxRect = dialogueBox.getBoundingClientRect(); // relative to box? No, absolute for flight
+                // Just store absolute targets for now
+            });
+            
+            // Simplified: If Idle -> Target Steam Button specifically
+            let targetType = 'vine';
+            let targetX, targetY;
+            const steamBtn = document.querySelector('.btn-steam');
+
+            if (isIdle && steamBtn && Math.random() > 0.3) {
+                // High chance to target steam if idle
+                const rect = steamBtn.getBoundingClientRect();
+                targetX = rect.left + rect.width - 20; // Corner of button
+                targetY = rect.top;
+                targetType = 'steam';
+            } else {
+                // Vine corner relative to Dialogue Box
+                const targetCorner = corners[Math.floor(Math.random() * corners.length)];
+                const boxRect = dialogueBox.getBoundingClientRect();
+                targetX = boxRect.left + targetCorner.x + (Math.random() * 40 - 20); 
+                targetY = boxRect.top + targetCorner.y + (Math.random() * 40 - 20);
+            }
+
+            const startX = Math.random() * window.innerWidth; 
+            const startY = Math.random() * window.innerHeight;
+            b.style.left = startX + 'px'; 
+            b.style.top = startY + 'px';
+            
             document.body.appendChild(b);
-            const boxRect = dialogueBox.getBoundingClientRect();
-            const destX = boxRect.left + targetCorner.x + (Math.random() * 40 - 20); const destY = boxRect.top + targetCorner.y + (Math.random() * 40 - 20);
+
+            // 1. Fly to Target (2s = 2x faster)
             requestAnimationFrame(() => {
-                b.style.left = destX + 'px'; b.style.top = destY + 'px';
-                const angle = Math.atan2(destY - startY, destX - startX) * 180 / Math.PI;
+                b.style.left = targetX + 'px';
+                b.style.top = targetY + 'px';
+                const angle = Math.atan2(targetY - startY, targetX - startX) * 180 / Math.PI;
                 b.style.transform = `rotate(${angle + 90}deg) scale(0.8)`;
             });
+
+            // 2. Land
             setTimeout(() => {
-                b.classList.add('landed'); b.style.transform = `rotate(${Math.random() * 360}deg) scale(0.8)`;
+                b.classList.add('landed'); 
+                // Adjust rotation to sit properly
+                b.style.transform = `rotate(${Math.random() * 360}deg) scale(0.8)`;
+                
+                // 3. Wait & Take off
+                const waitTime = targetType === 'steam' ? 4000 : 5000 + Math.random() * 4000;
+                
                 setTimeout(() => {
                     b.classList.remove('landed');
-                    const exitX = destX + (Math.random() - 0.5) * 500; const exitY = destY - 500;
-                    b.style.left = exitX + 'px'; b.style.top = exitY + 'px'; b.style.opacity = '0';
-                    setTimeout(() => b.remove(), 4000);
-                }, 5000 + Math.random() * 5000);
-            }, 4000);
+                    const exitX = targetX + (Math.random() - 0.5) * 500; 
+                    const exitY = targetY - 500;
+                    b.style.left = exitX + 'px';
+                    b.style.top = exitY + 'px';
+                    b.style.opacity = '0';
+                    setTimeout(() => b.remove(), 2000);
+                }, waitTime);
+            }, 2000); // 2s Flight duration
         }
 
-        // --- ROSE PETAL SYSTEM (Slow & Sway) ---
+        // --- ROSE PETAL SYSTEM ---
         function spawnPetal() {
             const p = document.createElement('div'); const colors = ['pink', 'red', 'maroon']; p.classList.add('petal', colors[Math.floor(Math.random() * colors.length)]);
-            const startLeft = Math.random() * 100; 
-            const fallDuration = 10 + Math.random() * 10;
-            const swayDuration = 3 + Math.random() * 3;
+            const startLeft = Math.random() * 100; const fallDuration = 10 + Math.random() * 10; const swayDuration = 3 + Math.random() * 3;
             p.style.left = startLeft + 'vw'; p.style.width = (10 + Math.random() * 15) + 'px'; p.style.height = p.style.width;
             p.style.animationDuration = `${fallDuration}s, ${swayDuration}s`;
             document.body.appendChild(p); setTimeout(() => { p.remove(); }, fallDuration * 1000);
@@ -495,14 +568,16 @@
             initLanguage(); 
             const ui = document.getElementById('game-ui'); if (ui) ui.classList.add('ready');
             startAutoTalk();
-            setInterval(spawnButterfly, 6000); 
+            resetIdleTimer(); // Start idle watch
+            setInterval(spawnButterfly, 3000); // More frequent spawn since they fly faster
             setInterval(spawnPetal, 800); 
             setInterval(() => {
                 const ember = document.createElement('div'); ember.className = 'ember'; ember.style.left = Math.random() * 100 + 'vw'; ember.style.animationDuration = (Math.random() * 5 + 5) + 's'; ember.style.opacity = Math.random(); document.body.appendChild(ember); setTimeout(() => ember.remove(), 10000);
             }, 300);
         };
         const closeAll = e => { if (e.target.classList.contains('modal')) closeVideoModal(); };
-        window.onclick = closeAll; window.ontouchstart = closeAll;
+        window.onclick = () => { resetIdleTimer(); closeAll(); }; 
+        window.ontouchstart = () => { resetIdleTimer(); closeAll(); };
     </script>
 </body>
 </html>
